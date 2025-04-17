@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    tools:context=".apps.event.ui.EventAlertActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/height_44"
+            android:background="@drawable/bg_ffffff_radius_55"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_110"
+                android:layout_marginEnd="@dimen/width_44"
+                android:gravity="center"
+                android:text="@string/msg_alert_mobile_number1"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <EditText
+                android:id="@+id/edit_alert_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:inputType="phone"
+                android:layout_marginStart="@dimen/width_66"
+                android:layout_marginEnd="@dimen/width_66"
+                android:hint="@string/hint_input_mobile_number"
+                android:layout_marginTop="@dimen/height_52"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textSize="@dimen/textSize_33pt"
+                android:textColorHint="@color/color_787878"
+                android:textColor="@color/color_333333"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/height_30"
+                android:background="@drawable/bg_mobile_number_input"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_ea5506"
+                android:drawableStart="@drawable/ic_exclamation"
+                android:text="@string/msg_alert_mobile_number2"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/height_45"
+                android:layout_marginStart="@dimen/width_70"
+                android:drawablePadding="@dimen/width_27"
+                android:gravity="center_vertical"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_135"
+                android:layout_marginTop="@dimen/height_63"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginBottom="@dimen/height_70"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/text_alert_mobile_number_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_ea5506_radius_27"
+                    android:gravity="center"
+                    android:text="@string/word_confirm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_39pt" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_alert_mobile_number_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_alert_close"
+            android:layout_gravity="end"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

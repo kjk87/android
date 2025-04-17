@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.withdraw.ui.WithdrawActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/height_400"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_88"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_333333"
+                    android:text="@string/word_retention_point"
+                    android:layout_marginEnd="@dimen/width_20"
+                    android:textSize="@dimen/textSize_44pt"/>
+
+
+                <TextView
+                    android:id="@+id/text_withdraw_retention_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_ea5506"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize_65pt"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_66"
+                android:text="@string/msg_select_withdraw_point"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_85"
+                android:layout_marginTop="@dimen/height_58"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold"
+                    android:text="@string/word_withdraw_point"
+                    android:background="@drawable/bg_828282_radius_13"/>
+
+                <View
+                    android:layout_width="@dimen/width_7"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold"
+                    android:text="@string/word_withdraw_price"
+                    android:background="@drawable/bg_828282_radius_13"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_withdraw_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_21"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_30"
+                android:text="@string/word_expect_withdraw"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_21"
+                android:padding="@dimen/width_44"
+                android:background="@drawable/bg_border_3px_333333_transparent_radius_27">
+
+                <TextView
+                    android:id="@+id/text_withdraw_point_expect_rp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_ea5506"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/text_withdraw_point_fee_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_ea5506"
+                    android:textSize="@dimen/textSize_35pt"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_75"
+                android:text="@string/word_account_info"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_withdraw_bank"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_32"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/bg_border_3px_333333_transparent_radius_27"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_select_bank_name"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:drawableEnd="@drawable/ic_my_arrow"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_898989"
+                android:textSize="@dimen/textSize_38pt" />
+
+
+            <EditText
+                android:id="@+id/edit_withdraw_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_32"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/bg_border_3px_333333_transparent_radius_27"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_account_number"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:inputType="number"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_898989"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <LinearLayout
+                android:id="@+id/layout_withdraw_point_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/bg_f7f7f7_radius_55"
+                android:layout_marginTop="@dimen/height_56"
+                android:padding="@dimen/width_44"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_333333"
+                        android:text="@string/word_withdraw_use_point"
+                        android:textSize="@dimen/textSize_38pt" />
+
+                    <TextView
+                        android:id="@+id/text_withdraw_point_use_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_33">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_expect_withdraw"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/textSize_38pt" />
+
+                    <TextView
+                        android:id="@+id/text_withdraw_point_expect_rp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_ea5506"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_100"
+                android:orientation="vertical"
+                android:padding="@dimen/width_44"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/bg_f7f7f7_radius_27">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textColor="@color/color_333333"
+                    android:text="@string/msg_withdraw_desc"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/width_44"
+            android:background="@color/color_f7f7f7">
+
+            <CheckBox
+                android:id="@+id/check_withdraw_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@drawable/ic_check"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/width_22"
+                android:text="@string/msg_withdraw_point_agree_desc"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_33pt" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_155"
+            android:background="@color/color_ea5506"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/word_cash_exchange"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.join.JoinActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_200">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_55"
+                android:layout_marginEnd="@dimen/width_44"
+                android:text="@string/msg_input_recommend_key"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_33pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_input_recommender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_105"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/underbar_dedede_ffffff_4px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:maxLength="20"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_898989"
+                android:textSize="@dimen/textSize_38pt" />
+
+
+
+            <TextView
+                android:id="@+id/text_input_recommender_reg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginStart="@dimen/width_44"
+                android:background="@drawable/gradient_ea5506_f47916_radius_22"
+                android:layout_marginTop="@dimen/height_55"
+                android:gravity="center"
+                android:text="@string/word_reg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

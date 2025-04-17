@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension"/>
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float"/>
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference"/>
+        <attr name="metaButtonBarButtonStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1"/>
+            <flag name="right" value="2"/>
+            <flag name="top" value="4"/>
+            <flag name="bottom" value="8"/>
+        </attr>
+
+        <attr name="mode">
+            <enum name="normal" value="0"/>
+            <enum name="same_level" value="1"/>
+        </attr>
+
+        <attr name="flingVelocity" format="integer"/>
+
+        <attr name="minDistRequestDisallowParent" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeLayout">
+        <!--where view must be located in default state-->
+        <attr name="gravity">
+            <enum name="left" value="-1"/>
+            <enum name="right" value="1"/>
+            <enum name="center" value="0"/>
+        </attr>
+
+        <!--Does view should been stick after touch up-->
+        <attr name="sticky" format="dimension">
+            <!--stick mode is off-->
+            <enum name="none" value="-2"/>
+            <!--stick view if it has reached offset equals to its width-->
+            <enum name="self" value="-1"/>
+        </attr>
+        <attr name="sticky_sensitivity" format="float"/>
+
+        <!--the maximum offset that view can be moved-->
+        <attr name="clamp" format="dimension">
+            <enum name="parent" value="-1"/>
+            <enum name="self" value="-2"/>
+        </attr>
+
+        <!--move view to clamp if the offset reached this value-->
+        <attr name="bring_to_clamp" format="dimension">
+            <enum name="no" value="-1"/>
+        </attr>
+
+        <!--enable or disable swipe gestures -->
+        <attr name="swipe_enabled" format="boolean"/>
+
+        <!--enable or disable swipe gestures from left side-->
+        <attr name="left_swipe_enabled" format="boolean"/>
+
+        <!--enable or disable swipe gestures from right side-->
+        <attr name="right_swipe_enabled" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="MaskableLayout">
+        <attr name="mask" format="reference"/>
+        <attr name="porterduffxfermode">
+            <enum name="ADD" value="0"/>
+            <enum name="CLEAR" value="1"/>
+            <enum name="DARKEN" value="2"/>
+            <enum name="DST" value="3"/>
+            <enum name="DST_ATOP" value="4"/>
+            <enum name="DST_IN" value="5"/>
+            <enum name="DST_OUT" value="6"/>
+            <enum name="DST_OVER" value="7"/>
+            <enum name="LIGHTEN" value="8"/>
+            <enum name="MULTIPLY" value="9"/>
+            <enum name="OVERLAY" value="10"/>
+            <enum name="SCREEN" value="11"/>
+            <enum name="SRC" value="12"/>
+            <enum name="SRC_ATOP" value="13"/>
+            <enum name="SRC_IN" value="14"/>
+            <enum name="SRC_OUT" value="15"/>
+            <enum name="SRC_OVER" value="16"/>
+            <enum name="XOR" value="17"/>
+        </attr>
+        <attr name="anti_aliasing" format="boolean"/>
+    </declare-styleable>
+    
+    <declare-styleable name="GradeBar">
+        <attr name="grade_y" format="reference"/>
+        <attr name="grade_g" format="reference"/>
+        <attr name="grade_h" format="reference"/>
+        <attr name="grade_margin" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="StartPointSeekBar">
+        <attr name="minValue" format="float"/>
+        <attr name="maxValue" format="float"/>
+        <attr name="thumbDrawable" format="reference"></attr>
+        <attr name="thumbPressedDrawable" format="reference"></attr>
+        <attr name="defaultBackgroundColor" format="color"></attr>
+        <attr name="defaultBackgroundRangeColor" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="contentTextSize" format="dimension"/>
+        <attr name="contentTextColor" format="color"/>
+        <attr name="contentLineSpacingMultiplier" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="expandText" format="string"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="collapseText" format="string"/>
+        <attr name="expandCollapseTextColor" format="color"/>
+        <attr name="DrawableAndTextGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FadingTextView">
+        <attr name="texts" format="string" />
+        <attr name="timeout" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightScrollView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

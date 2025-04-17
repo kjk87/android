@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_55"
+        android:layout_marginEnd="@dimen/width_55"
+        android:background="@drawable/bg_ffffff_radius_55"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_66"
+                android:gravity="center"
+                android:text="@string/word_lucky_draw_upper_en"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_49pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_alert_lucky_draw_join_engage_ball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_45"
+                android:drawablePadding="@dimen/width_10"
+                android:gravity="center"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_38pt"
+                app:drawableStartCompat="@drawable/ic_lucky_draw_ball_m" />
+
+            <TextView
+                android:id="@+id/text_alert_lucky_draw_join_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_44"
+                android:gravity="center"
+                android:text="@string/msg_alert_lucky_draw_join_desc"
+                android:textColor="@color/color_ff5e5e"
+                android:textSize="@dimen/textSize_38pt"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_135"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginTop="@dimen/height_72"
+            android:layout_marginEnd="@dimen/width_44"
+            android:layout_marginBottom="@dimen/height_66">
+
+            <TextView
+                android:id="@+id/text_alert_lucky_draw_join_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/width_22"
+                android:layout_weight="1"
+                android:background="@drawable/bg_eeeeee_radius_27"
+                android:gravity="center"
+                android:text="@string/word_cancel"
+                android:textColor="@color/color_cdcdcd"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text_alert_lucky_draw_join"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ea5506_radius_27"
+                android:gravity="center"
+                android:text="@string/msg_join"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+</RelativeLayout>

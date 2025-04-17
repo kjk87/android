@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_48"
+        android:layout_marginStart="@dimen/width_60"
+        android:layout_marginEnd="@dimen/width_60"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <io.github.florent37.shapeofview.shapes.CircleView
+            android:layout_width="@dimen/width_90"
+            android:layout_height="@dimen/width_90"
+            android:layout_marginEnd="@dimen/width_21">
+
+            <ImageView
+                android:id="@+id/image_event_reply_edit_profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_profile_default"/>
+
+
+        </io.github.florent37.shapeofview.shapes.CircleView>
+
+        <TextView
+            android:id="@+id/text_event_reply_edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_2e2e2e"
+            android:textSize="@dimen/textSize_30pt"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_event_reply_edit_contents"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_795"
+        android:layout_marginTop="@dimen/height_51"
+        android:background="@drawable/bg_border_c2c2c2_radius_12"
+        android:gravity="start|top"
+        android:layout_marginStart="@dimen/width_78"
+        android:layout_marginEnd="@dimen/width_78"
+        android:hint="@string/msg_input_contents"
+        android:paddingEnd="@dimen/width_48"
+        android:paddingStart="@dimen/width_42"
+        android:paddingBottom="@dimen/height_42"
+        android:paddingTop="@dimen/width_48"
+        android:textColor="@color/color_2e2e2e"
+        android:textColorHint="@color/color_a3a3a3"
+        android:textSize="@dimen/textSize_36pt"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/width_78"
+        android:layout_marginTop="@dimen/height_36">
+
+        <TextView
+            android:id="@+id/text_event_reply_edit_cancel"
+            android:layout_width="@dimen/width_280"
+            android:layout_height="@dimen/height_120"
+            android:layout_marginEnd="@dimen/width_18"
+            android:background="@drawable/bg_cdcdcd_radius_13"
+            android:gravity="center"
+            android:text="@string/word_cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_30pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_event_reply_edit_complete"
+            android:layout_width="@dimen/width_280"
+            android:layout_height="@dimen/height_120"
+            android:background="@drawable/bg_ea5506_radius_13"
+            android:gravity="center"
+            android:text="@string/word_complete_edit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_30pt"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

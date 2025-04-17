@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_14"
+        android:layout_marginEnd="@dimen/width_14"
+        android:layout_marginBottom="@dimen/height_60"
+        android:layout_marginTop="@dimen/height_10"
+        android:background="@color/white"
+        android:elevation="@dimen/width_5"
+        app:shape_roundRect_bottomLeftRadius="@dimen/width_27"
+        app:shape_roundRect_bottomRightRadius="@dimen/width_27"
+        app:shape_roundRect_topLeftRadius="@dimen/width_27"
+        app:shape_roundRect_topRightRadius="@dimen/width_27">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_play_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_482">
+
+                <ImageView
+                    android:id="@+id/image_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/text_play_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:fontFamily="@font/pyeongchangepeace_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_100pt"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_play_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_a6000000_top_radius_27"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_12"
+                            android:text="@string/msg_win_remain_time"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_36pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_play_win_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_78"
+                            android:fontFamily="@font/pyeongchangepeace_bold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_100pt"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_play_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_40"
+                android:paddingTop="@dimen/height_24"
+                android:paddingEnd="@dimen/width_40"
+                android:paddingBottom="@dimen/height_24">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_play_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/text_play_join_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_808080"
+                        android:textSize="@dimen/textSize_28pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_play_graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_9">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_10"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_eef2f6_radius_100" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_play_join_rate_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_play_join_rate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0">
+
+                            <View
+                                android:id="@+id/view_play_graph"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_10"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/bg_ea5506_radius_100" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/image_play_graph"
+                            android:layout_width="@dimen/width_25"
+                            android:layout_height="@dimen/width_25"
+                            android:background="@drawable/bg_circle_f2c94c"
+                            android:src="@drawable/ic_lucky_draw_rate" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_75"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/height_15"
+                    android:background="@drawable/bg_border_3px_ea5506_transparent_radius_11">
+
+                    <TextView
+                        android:id="@+id/text_play_win_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/textSize_28pt"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="@string/word_win_rate2"/>
+
+                    <TextView
+                        android:id="@+id/text_play_join"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/textSize_28pt"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/bg_ea5506_right_radius_11"
+                        android:text="@string/word_play_join"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/height_9">
+
+                    <TextView
+                        android:id="@+id/text_play_join_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_232323"
+                        android:drawableStart="@drawable/ic_wow_ball_s"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/width_15"
+                        android:textSize="@dimen/textSize_28pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+</RelativeLayout>

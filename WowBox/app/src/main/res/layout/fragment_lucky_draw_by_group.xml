@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_lucky_draw_by_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_lucky_draw_by_group_not_exist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:background="@drawable/bg_232323_radius_38"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/height_55"
+        android:paddingBottom="@dimen/height_55"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_lucky_draw_boy_group_not_exist1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_not_exist_lucky_draw"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_49pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_lucky_draw_boy_group_not_exist2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_not_exist_lucky_draw_desc"
+                android:textColor="@color/color_dcdcdc"
+                android:textSize="@dimen/textSize_38pt" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

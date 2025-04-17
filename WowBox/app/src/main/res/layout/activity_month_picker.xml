@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/date_picker_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:np_dividerColor="@color/color_48b778"
+                android:layout_marginEnd="@dimen/width_60"
+                app:np_formatter="@string/number_picker_formatter"
+                app:np_height="@dimen/height_600"
+                app:np_max="2018"
+                app:np_min="1900"
+                app:np_selectedTextColor="@color/white"
+                app:np_selectedTextSize="@dimen/textSize_50pt"
+                app:np_textColor="@color/white"
+                app:np_textSize="@dimen/textSize_50pt"
+                app:np_value="1991"
+                app:np_width="@dimen/width_203"/>
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/date_picker_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:np_dividerColor="@color/color_48b778"
+                app:np_formatter="@string/number_picker_formatter"
+                app:np_height="@dimen/height_600"
+                app:np_max="12"
+                app:np_min="1"
+                app:np_selectedTextColor="@color/white"
+                app:np_selectedTextSize="@dimen/textSize_50pt"
+                app:np_textColor="@color/white"
+                app:np_textSize="@dimen/textSize_50pt"
+                app:np_value="12"
+                app:np_width="@dimen/width_203"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date_picker_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_135"
+            android:layout_marginTop="@dimen/height_30"
+            android:background="@color/color_48b778"
+            android:gravity="center"
+            android:text="@string/word_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_39pt"/>
+
+    </LinearLayout>
+</RelativeLayout>

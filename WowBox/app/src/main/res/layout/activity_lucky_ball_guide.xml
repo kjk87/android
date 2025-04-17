@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.GuideActivity"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/height_200"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/width_992"
+                android:layout_height="@dimen/height_1452"
+                android:layout_marginTop="@dimen/height_110"
+                android:src="@drawable/img_lucky_ball_guide"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/text_lucky_ball_guide_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_110"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/word_confirm"
+        android:layout_marginBottom="@dimen/height_70"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:textSize="@dimen/textSize_44pt"
+        android:background="@drawable/gradient_ea5506_f47916_radius_22"/>
+
+
+</RelativeLayout>

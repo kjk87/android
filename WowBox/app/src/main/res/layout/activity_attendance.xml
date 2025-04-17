@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.attendance.ui.AttendanceActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/height_300"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_570"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_attendance_banner"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_attendance_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_465"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginEnd="@dimen/width_44"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/height_33"
+                    android:paddingBottom="@dimen/height_33"
+                    android:paddingStart="@dimen/width_50"
+                    android:paddingEnd="@dimen/width_50"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_232323_radius_27">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textColor="@color/color_dcdcdc"
+                        android:text="@string/msg_attendance_desc1"/>
+
+                    <TextView
+                        android:id="@+id/text_attendance_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="@dimen/height_13"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textColor="@color/color_dcdcdc"
+                        android:layout_marginTop="@dimen/height_44"
+                        android:text="@string/msg_attendance_desc2"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_127"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_220"
+                android:text="@string/word_withdrawal_caution_title"
+                android:textColor="@color/color_333333"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_22"
+                android:text="@string/msg_attendance_desc3"
+                android:textColor="@color/color_454545"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_10"
+                android:text="@string/msg_attendance_desc4"
+                android:textColor="@color/color_454545"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_10"
+                android:text="@string/msg_attendance_desc5"
+                android:textColor="@color/color_454545"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_10"
+                android:text="@string/msg_attendance_desc6"
+                android:textColor="@color/color_454545"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/text_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_138"
+        android:background="@drawable/bg_ea5506_radius_27"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginBottom="@dimen/height_88"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/word_attendance"
+        android:textSize="@dimen/textSize_44pt"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

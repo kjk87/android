@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/width_60"
+    android:layout_marginEnd="@dimen/width_60"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_39"
+        android:orientation="horizontal">
+
+        <io.github.florent37.shapeofview.shapes.CircleView
+            android:layout_width="@dimen/width_90"
+            android:layout_height="@dimen/width_90"
+            android:layout_marginEnd="@dimen/width_21">
+
+            <ImageView
+                android:id="@+id/image_event_reply_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </io.github.florent37.shapeofview.shapes.CircleView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_event_reply_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_2e2e2e"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_event_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_757575"
+                android:textSize="@dimen/textSize_30pt" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_event_reply_reg_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_15"
+            android:paddingEnd="@dimen/width_30"
+            android:textColor="@color/color_9e9e9e"
+            android:textSize="@dimen/textSize_30pt" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_3"
+        android:background="@color/color_ededed"
+        android:layout_marginTop="@dimen/height_39"/>
+</LinearLayout>

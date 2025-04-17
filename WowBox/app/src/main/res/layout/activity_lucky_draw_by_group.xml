@@ -1,0 +1,140 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_1b1b1b"
+        app:elevation="0dp"
+        app:expanded="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_1b1b1b"
+            app:contentScrim="@color/color_1b1b1b"
+            app:expandedTitleTextAppearance="@style/TransparentText"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <io.github.florent37.shapeofview.shapes.RoundRectView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_743"
+                    android:layout_marginEnd="@dimen/width_44"
+                    android:layout_marginStart="@dimen/width_44"
+                    app:shape_roundRect_bottomLeftRadius="@dimen/width_49"
+                    app:shape_roundRect_bottomRightRadius="@dimen/width_49"
+                    app:shape_roundRect_topLeftRadius="@dimen/width_49"
+                    app:shape_roundRect_topRightRadius="@dimen/width_49">
+
+                    <ImageView
+                        android:id="@+id/image_lucky_draw_by_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+                <TextView
+                    android:id="@+id/text_lucky_draw_by_group_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/height_55"
+                    android:textSize="@dimen/textSize_44pt"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_138"
+            android:layout_marginTop="@dimen/height_55">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:background="@color/color_595959"
+                android:layout_alignParentBottom="true"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layout_lucky_draw_by_group_active_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/text_lucky_draw_by_group_active_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/word_active_lucky_draw_en"
+                        android:textColor="@color/color_ffffff_77f5ae"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view_lucky_draw_by_group_active_tab_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_3"
+                        android:background="@drawable/color_transparent_77f5ae"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_lucky_draw_by_group_end_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/text_lucky_draw_by_group_end_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/word_end_lucky_draw_en"
+                        android:textColor="@color/color_ffffff_77f5ae"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view_lucky_draw_by_group_end_tab_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_3"
+                        android:background="@drawable/color_transparent_77f5ae"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/lucky_draw_by_group_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_69"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

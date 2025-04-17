@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.my.ui.OpensourceLicenceActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/width_44"
+            android:paddingEnd="@dimen/width_44"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_232323_radius_55"
+                android:layout_marginTop="@dimen/height_50"
+                android:orientation="vertical"
+                android:padding="@dimen/width_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_title1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:text="@string/open_source_desc1"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_url1"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_license1"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_232323_radius_55"
+                android:layout_marginTop="@dimen/height_50"
+                android:orientation="vertical"
+                android:padding="@dimen/width_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_title2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:text="@string/open_source_desc2"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_url2"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_license2"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_232323_radius_55"
+                android:layout_marginTop="@dimen/height_50"
+                android:orientation="vertical"
+                android:padding="@dimen/width_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_title3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:text="@string/open_source_desc3"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_url3"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_license3"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_232323_radius_55"
+                android:layout_marginTop="@dimen/height_50"
+                android:orientation="vertical"
+                android:padding="@dimen/width_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_title4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:text="@string/open_source_desc4"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_url4"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_license4"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_232323_radius_55"
+                android:layout_marginTop="@dimen/height_50"
+                android:orientation="vertical"
+                android:padding="@dimen/width_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_title5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:text="@string/open_source_desc5"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_url5"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_license5"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_232323_radius_55"
+                android:layout_marginTop="@dimen/height_50"
+                android:orientation="vertical"
+                android:padding="@dimen/width_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_title6"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:text="@string/open_source_desc6"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_url6"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_license6"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_232323_radius_55"
+                android:layout_marginTop="@dimen/height_50"
+                android:orientation="vertical"
+                android:padding="@dimen/width_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_title7"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:text="@string/open_source_desc7"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_url7"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_license7"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_232323_radius_55"
+                android:layout_marginTop="@dimen/height_50"
+                android:orientation="vertical"
+                android:padding="@dimen/width_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_title8"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:text="@string/open_source_desc8"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_url8"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_license8"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_232323_radius_55"
+                android:layout_marginTop="@dimen/height_50"
+                android:orientation="vertical"
+                android:padding="@dimen/width_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_title9"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:text="@string/open_source_desc9"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_url9"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_license9"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_232323_radius_55"
+                android:layout_marginTop="@dimen/height_50"
+                android:orientation="vertical"
+                android:padding="@dimen/width_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_title10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:text="@string/open_source_desc10"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_url10"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_license10"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_232323_radius_55"
+                android:layout_marginTop="@dimen/height_50"
+                android:orientation="vertical"
+                android:padding="@dimen/width_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_title11"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:text="@string/open_source_desc11"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_url11"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_source_license11"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

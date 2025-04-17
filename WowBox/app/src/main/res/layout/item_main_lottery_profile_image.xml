@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_main_lottery_profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="@dimen/width_127"
+        android:layout_height="@dimen/width_127"
+        android:background="@drawable/bg_circle_77f5ae"
+        android:layout_centerInParent="true"/>
+
+    <io.github.florent37.shapeofview.shapes.CircleView
+        android:layout_width="@dimen/width_124"
+        android:layout_height="@dimen/width_124"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/image_main_lottery_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_ea5506"
+            android:scaleType="fitXY"/>
+
+    </io.github.florent37.shapeofview.shapes.CircleView>
+
+
+</RelativeLayout>

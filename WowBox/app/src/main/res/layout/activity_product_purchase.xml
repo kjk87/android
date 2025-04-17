@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.product.ui.ProductPurchaseActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/width_44"
+            android:paddingEnd="@dimen/width_44">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_input_shipping_site"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:text="@string/word_receiver"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <EditText
+                android:id="@+id/edit_product_purchase_receiver"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_receiver"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:text="@string/word_country"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <TextView
+                android:id="@+id/text_product_purchase_country"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:hint="@string/msg_select_shipping_country"
+                android:drawableEnd="@drawable/ic_join_arrow_down"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:text="@string/word_address"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <EditText
+                android:id="@+id/edit_product_purchase_zip_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/word_zip_code"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <EditText
+                android:id="@+id/edit_product_purchase_address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_detail_address"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <EditText
+                android:id="@+id/edit_product_purchase_city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/word_city_en"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <EditText
+                android:id="@+id/edit_product_purchase_state"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/word_state_en"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:text="@string/word_contact"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <TextView
+                android:id="@+id/text_product_purchase_contact_nation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/word_country_no"
+                android:inputType="number"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+
+            <EditText
+                android:id="@+id/edit_product_purchase_contact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_contact"
+                android:inputType="phone"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_shipping_req_product"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_33"
+                android:background="@drawable/bg_232323_radius_55"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_49"
+                android:paddingTop="@dimen/height_55"
+                android:paddingEnd="@dimen/width_49"
+                android:paddingBottom="@dimen/height_55">
+
+                <io.github.florent37.shapeofview.shapes.RoundRectView
+                    android:layout_width="@dimen/width_174"
+                    android:layout_height="@dimen/width_174"
+                    android:layout_marginEnd="@dimen/width_55"
+                    app:shape_roundRect_bottomLeftRadius="@dimen/width_13"
+                    app:shape_roundRect_bottomRightRadius="@dimen/width_13"
+                    app:shape_roundRect_topLeftRadius="@dimen/width_13"
+                    app:shape_roundRect_topRightRadius="@dimen/width_13">
+
+                    <ImageView
+                        android:id="@+id/image_product_purchase_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_product_purchase_product_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_38pt" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_product_purchase_product_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/width_10"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_44pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_point_unit"
+                            android:textColor="@color/color_dcdcdc"
+                            android:textSize="@dimen/textSize_38pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_41"
+                android:background="@drawable/bg_232323_radius_55"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_49"
+                android:paddingTop="@dimen/height_55"
+                android:paddingEnd="@dimen/width_49"
+                android:paddingBottom="@dimen/height_55">
+
+                <TextView
+                    android:id="@+id/text_product_purchase_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_product_purchase_agree_desc"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_33pt" />
+
+                <include
+                    android:id="@+id/layout_contact_us"
+                    layout="@layout/layout_contact_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_58"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/text_product_purchase_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_138"
+                android:layout_marginBottom="@dimen/height_65"
+                android:layout_marginTop="@dimen/height_65"
+                android:background="@drawable/bg_48b778_radius_30"
+                android:gravity="center"
+                android:text="@string/word_req_shipping"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

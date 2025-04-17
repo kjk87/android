@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apps.withdraw.ui.WithdrawReqCompleteActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_250"
+            android:src="@drawable/ic_withdraw_req_complete_check"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_complete_req_withdraw"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/textSize_55pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_90"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_f7f7f7_radius_27"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginEnd="@dimen/width_44"
+            android:layout_marginTop="@dimen/height_130"
+            android:padding="@dimen/width_44"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textColor="@color/color_333333"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_withdraw_use_point"/>
+
+                <TextView
+                    android:id="@+id/text_withdraw_req_complete_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textColor="@color/color_333333"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_18">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textColor="@color/color_333333"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_withdraw_price"/>
+
+                <TextView
+                    android:id="@+id/text_withdraw_req_complete_withdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textColor="@color/color_ea5506"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="@dimen/height_130"
+            android:layout_marginStart="@dimen/width_44"
+            android:text="@string/word_account_info"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/width_50"
+            android:paddingEnd="@dimen/width_50"
+            android:paddingTop="@dimen/height_15"
+            android:paddingBottom="@dimen/height_15"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/height_15"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginEnd="@dimen/width_44"
+            android:background="@drawable/bg_border_3px_333333_transparent_radius_27">
+
+            <ImageView
+                android:id="@+id/image_withdraw_req_complete_bank"
+                android:layout_width="@dimen/width_150"
+                android:layout_height="@dimen/width_150"
+                android:layout_marginEnd="@dimen/width_35"
+                android:scaleType="center"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_withdraw_req_complete_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/color_333333"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize_38pt"/>
+
+                <TextView
+                    android:id="@+id/text_withdraw_req_complete_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/color_898989"
+                    android:layout_marginTop="@dimen/height_8"
+                    android:textSize="@dimen/textSize_33pt"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/text_withdraw_req_complete_withdraw_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_135"
+        android:background="@drawable/bg_ea5506_radius_27"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_120"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/word_confirm_withdraw_history"
+        android:textSize="@dimen/textSize_44pt" />
+
+
+
+
+
+</RelativeLayout>

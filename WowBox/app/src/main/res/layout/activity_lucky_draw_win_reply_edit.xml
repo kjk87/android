@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.luckydraw.ui.LuckyDrawWinReplyEditActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_58"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_lucky_draw_win_reply_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_3px_ea5506_transparent_radius_33"
+            android:textSize="@dimen/textSize_38pt"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_898989"
+            android:gravity="top"
+            android:maxLength="50"
+            android:paddingTop="@dimen/height_33"
+            android:paddingBottom="@dimen/height_33"
+            android:paddingStart="@dimen/width_44"
+            android:paddingEnd="@dimen/width_44"
+            android:minHeight="@dimen/height_252" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/text_lucky_draw_win_reply_edit_complete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_138"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginBottom="@dimen/height_65"
+        android:layout_marginTop="@dimen/height_65"
+        android:background="@drawable/bg_ea5506_radius_27"
+        android:gravity="center"
+        android:text="@string/word_complete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold" />
+
+</RelativeLayout>

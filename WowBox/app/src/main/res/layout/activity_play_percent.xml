@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.GuideActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_878"
+            android:layout_height="@dimen/width_878"
+            android:layout_marginTop="@dimen/height_60"
+            android:background="@drawable/bg_play_percent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textColor="@color/black"
+                    android:text="@string/word_win_rate3"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/height_16">
+
+                    <com.yy.mobile.rollingtextview.RollingTextView
+                        android:id="@+id/text_play_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/color_ea5506"
+                        android:textSize="@dimen/textSize_160pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/color_ea5506"
+                        android:textSize="@dimen/textSize_160pt"
+                        android:text="@string/word_percent" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_725"
+            android:layout_height="@dimen/height_144"
+            android:background="@drawable/bg_border_888888_radius_16"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/height_30"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/width_43"
+                    android:drawableStart="@drawable/ic_luckyball"
+                    android:drawablePadding="@dimen/width_27"
+                    android:gravity="center_vertical"
+                    android:text="@string/word_my_ball"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize_52pt" />
+
+                <TextView
+                    android:id="@+id/text_play_percent_retention_ball"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_52pt"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_33pt"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/height_108"
+            android:text="@string/msg_play_percent_desc"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/text_play_percent_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_110"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginStart="@dimen/width_44"
+        android:background="@drawable/gradient_ea5506_f47916_radius_22"
+        android:layout_marginTop="@dimen/height_55"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="@string/msg_confirm_win_rate"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/height_70"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

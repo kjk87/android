@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.luckyball.ui.LuckyBallExchangeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/width_44"
+            android:paddingEnd="@dimen/width_44">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_88"
+                android:paddingStart="@dimen/width_49"
+                android:paddingEnd="@dimen/width_49"
+                android:paddingTop="@dimen/height_69"
+                android:paddingBottom="@dimen/height_66"
+                android:background="@drawable/bg_232323_radius_55">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_1a1a1a_radius_110"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/width_13">
+
+                        <TextView
+                            android:id="@+id/text_lucky_ball_exchange_point_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/width_13"
+                            android:drawableEnd="@drawable/ic_equal"
+                            android:drawablePadding="@dimen/width_13"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/height_44"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_lucky_ball_exchange_lucky_ball_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_ball_gray"
+                            android:drawablePadding="@dimen/width_13"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/height_44"
+                            android:textStyle="bold" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:text="@string/msg_exchange_luckyball_desc"
+                        android:textStyle="bold" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_ball_exchange"
+                    android:layout_alignParentEnd="true"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="@dimen/width_15"
+                android:gravity="center_vertical"
+                android:text="@string/word_retention_point"
+                android:textColor="@color/color_77f5ae"
+                android:layout_marginTop="@dimen/height_22"
+                android:textSize="@dimen/textSize_38pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_lucky_ball_exchange_retention_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/height_16"
+                android:textSize="@dimen/textSize_66pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/color_878787"
+                android:textSize="@dimen/textSize_33pt"
+                android:text="@string/word_exchange_luckyball_amount"
+                android:layout_marginTop="@dimen/height_67"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/height_24"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_lucky_ball_exchange"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/height_130"
+                    android:background="@drawable/bg_232323_radius_33"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/width_41"
+                    android:inputType="number"
+                    android:paddingEnd="@dimen/width_41"
+                    android:textColor="@color/color_878787"
+                    android:textColorHint="@color/color_878787"
+                    android:layout_marginEnd="@dimen/width_41"
+                    android:textSize="@dimen/textSize_38pt"/>
+
+                <TextView
+                    android:id="@+id/text_lucky_ball_exchange_all"
+                    android:layout_width="@dimen/width_196"
+                    android:layout_height="@dimen/height_130"
+                    android:textSize="@dimen/textSize_49pt"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/word_all_en"
+                    android:background="@drawable/bg_border_3px_ffffff_262626_radius_35"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/text_lucky_ball_exchange_maximum_ball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt"
+                android:text="@string/html_exchange_luckyball_maximum"
+                android:layout_marginTop="@dimen/height_33"/>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/text_lucky_ball_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_135"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginBottom="@dimen/height_85"
+        android:background="@drawable/bg_48b778_radius_27"
+        android:gravity="center"
+        android:text="@string/msg_exchange_luckyball"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

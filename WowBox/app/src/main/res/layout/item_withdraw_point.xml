@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_85"
+    android:layout_marginBottom="@dimen/height_22"
+    android:background="@drawable/btn_bg_border_454545_ea5506_radius_15">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_withdraw_point"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_ea5506_ffffff"
+                android:textSize="@dimen/textSize_38pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_withdraw_percent"
+                android:layout_width="@dimen/width_153"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/height_8"
+                android:layout_marginBottom="@dimen/height_8"
+                android:background="@drawable/btn_bg_ea5506_ffffff_radius_13"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/width_10"
+                android:textColor="@color/color_ffffff_ea5506"
+                android:textSize="@dimen/textSize_38pt"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_withdraw_line" />
+
+        <TextView
+            android:id="@+id/text_withdraw_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:textColor="@color/color_ea5506_ffffff"
+            android:textSize="@dimen/textSize_38pt"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

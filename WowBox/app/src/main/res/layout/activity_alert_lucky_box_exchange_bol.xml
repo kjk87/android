@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@drawable/bg_232323_radius_55"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/height_186"
+            android:text="@string/word_lucky_box_bol_back_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_54pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_alert_lucky_box_exchange_bol_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/height_66"
+            android:textColor="@color/color_ff5e5e"
+            android:textSize="@dimen/textSize_72pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_66"
+            android:gravity="center"
+            android:text="@string/msg_lucky_box_bol_back_desc2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_42pt" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_15"
+            android:gravity="center"
+            android:text="@string/msg_lucky_box_bol_back_desc3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_36pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_48"
+            android:layout_marginStart="@dimen/width_40"
+            android:layout_marginEnd="@dimen/width_40"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/height_174"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_alert_lucky_box_exchange_bol_cancel"
+                style="?attr/metaButtonBarStyle"
+                android:layout_width="@dimen/width_0"
+                android:layout_height="@dimen/height_150"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/width_16"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold"
+                android:text="@string/word_cancel"
+                android:visibility="visible"
+                android:background="@drawable/bg_878787_radius_30"/>
+
+
+            <TextView
+                android:id="@+id/text_alert_lucky_box_exchange_bol_confirm"
+                style="?attr/metaButtonBarStyle"
+                android:layout_width="@dimen/width_0"
+                android:layout_height="@dimen/height_150"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:text="@string/word_confirm"
+                android:background="@drawable/bg_48b778_radius_27"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

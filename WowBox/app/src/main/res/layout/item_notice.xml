@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_faq_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/width_44"
+        android:paddingEnd="@dimen/width_44"
+        android:paddingTop="@dimen/height_38"
+        android:paddingBottom="@dimen/height_38"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginBottom="@dimen/height_33"
+        android:orientation="vertical"
+        android:background="@drawable/bg_f7f7f7_radius_38">
+        
+        <TextView
+            android:id="@+id/text_notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/textSize_50pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_notice_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_454545"
+            android:textSize="@dimen/textSize_33pt"
+            android:layout_marginTop="@dimen/height_33"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

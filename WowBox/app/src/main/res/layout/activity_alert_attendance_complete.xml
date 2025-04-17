@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000">
+
+    <LinearLayout
+        android:id="@+id/layout_alert_attendance_complete1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_55"
+        android:layout_marginEnd="@dimen/width_55"
+        android:background="@drawable/bg_alert_point1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_alert_attendance_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_60pt"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/height_66"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_alert_attendance_complete2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_216"
+            android:layout_marginTop="@dimen/height_72"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginEnd="@dimen/width_44"
+            android:background="@drawable/bg_alert_point2">
+
+            <LinearLayout
+                android:id="@+id/layout_alert_attendance_complete_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/width_40"
+                android:orientation="horizontal"/>
+
+            <ImageView
+                android:id="@+id/image_alert_attendance_complete_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_alert_point"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/layout_alert_attendance_complete_amount"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_alert_attendance_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_44pt"
+            android:layout_marginTop="@dimen/height_27"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/text_alert_attendance_complete_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_135"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginEnd="@dimen/width_44"
+            android:layout_marginBottom="@dimen/height_65"
+            android:layout_marginTop="@dimen/height_65"
+            android:background="@drawable/bg_border_3px_ffffff_29000000_radius_30"
+            android:gravity="center"
+            android:text="@string/word_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/width_33"
+            android:layout_marginTop="@dimen/height_33"
+            android:layout_marginEnd="@dimen/width_33"
+            android:gravity="center_horizontal"
+            app:shape_roundRect_bottomLeftRadius="@dimen/width_66"
+            app:shape_roundRect_bottomRightRadius="@dimen/width_66"
+            app:shape_roundRect_topLeftRadius="@dimen/width_66"
+            app:shape_roundRect_topRightRadius="@dimen/width_66">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_300"
+                    android:background="@drawable/bg_alert_google_review_top" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_102"
+                        android:src="@drawable/ic_alert_google_review" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_44"
+                        android:layout_marginTop="@dimen/height_50"
+                        android:layout_marginEnd="@dimen/width_44"
+                        android:gravity="center"
+                        android:text="@string/msg_google_review_desc1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_66"
+                        android:layout_marginTop="@dimen/height_63"
+                        android:layout_marginEnd="@dimen/width_66"
+                        android:gravity="center"
+                        android:text="@string/msg_google_review_desc2"
+                        android:textColor="@color/color_8d8d8d"
+                        android:textSize="@dimen/textSize_33pt" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_66"
+                        android:src="@drawable/ic_alert_google_review_rating" />
+
+
+                    <TextView
+                        android:id="@+id/text_alert_google_review_write"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_100"
+                        android:layout_marginStart="@dimen/width_66"
+                        android:layout_marginTop="@dimen/height_66"
+                        android:layout_marginEnd="@dimen/width_66"
+                        android:layout_marginBottom="@dimen/height_66"
+                        android:background="@drawable/gradient_ea5506_f47916_radius_22"
+                        android:gravity="center"
+                        android:text="@string/word_review_write"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_39pt" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </FrameLayout>
+
+
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <ImageView
+            android:id="@+id/text_alert_google_review_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_alert_google_review_close" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

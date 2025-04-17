@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.join.JoinActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_200">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_55"
+                android:layout_marginEnd="@dimen/width_44"
+                android:text="@string/word_phone_number"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_33pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_update_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_105"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/underbar_dedede_ffffff_4px"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_898989"
+                android:textSize="@dimen/textSize_38pt" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_16"
+                android:layout_marginEnd="@dimen/width_44"
+                android:text="@string/msg_join_mobile_ex"
+                android:textColor="@color/color_abb1bb"
+                android:textSize="@dimen/textSize_33pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_update_mobile_number_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_135"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginStart="@dimen/width_44"
+                android:background="@drawable/bg_ea5506_radius_27"
+                android:layout_marginTop="@dimen/height_55"
+                android:gravity="center"
+                android:text="@string/word_reg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

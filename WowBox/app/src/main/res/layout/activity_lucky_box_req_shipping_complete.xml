@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.luckybox.ui.LuckyBoxPayCompleteActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_600"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/width_120"
+            android:layout_height="@dimen/width_120"
+            android:src="@drawable/ic_lucky_box_pay_complete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_42"
+            android:text="@string/word_complete_req_shipping"
+            android:textColor="@color/color_ea5506"
+            android:textSize="@dimen/textSize_48pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_lucky_box_req_shipping_complete_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/height_60"
+            android:textColor="@color/color_2e2e2e"
+            android:textSize="@dimen/textSize_36pt"
+            android:gravity="center"
+            android:text="@string/msg_lucky_box_delivery_pay_complete_desc" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginTop="@dimen/height_150"
+            android:layout_marginEnd="@dimen/width_60">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_2e2e2e"
+                android:textSize="@dimen/textSize_42pt"
+                android:text="@string/word_shipping_fee"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_lucky_box_req_shipping_complete_shipping_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_2e2e2e"
+                android:textSize="@dimen/textSize_42pt"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_6"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_2e2e2e" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120"
+            android:layout_marginTop="@dimen/height_48">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/width_60"
+                android:text="@string/word_use_point"
+                android:textColor="@color/color_2e2e2e"
+                android:textSize="@dimen/textSize_42pt"/>
+
+            <TextView
+                android:id="@+id/text_lucky_box_req_shipping_complete_use_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_60"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/color_2e2e2e"
+                android:textStyle="bold"
+                android:textSize="@dimen/textSize_42pt"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"
+                android:background="@color/color_c2c2c2"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/width_60"
+                android:text="@string/word_pay_price"
+                android:textColor="@color/color_2e2e2e"
+                android:textStyle="bold"
+                android:textSize="@dimen/textSize_42pt"/>
+
+            <TextView
+                android:id="@+id/text_lucky_box_req_shipping_complete_pg_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_60"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/color_fc5c57"
+                android:textStyle="bold"
+                android:textSize="@dimen/textSize_42pt"/>
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_168"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_lucky_box_req_shipping_complete_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_2e2e2e"
+            android:gravity="center"
+            android:text="@string/word_go_main"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_45pt" />
+
+
+        <TextView
+            android:id="@+id/text_lucky_box_req_shipping_complete_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_ea5506"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/word_go_container"
+            android:textSize="@dimen/textSize_45pt" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

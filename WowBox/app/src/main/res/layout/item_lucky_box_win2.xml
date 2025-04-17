@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_wowbox_win"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/width_33"
+    android:paddingEnd="@dimen/width_33">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="@dimen/width_105"
+            android:layout_height="@dimen/width_105"
+            android:layout_marginEnd="@dimen/width_27"
+            app:shape_roundRect_bottomLeftRadius="@dimen/width_17"
+            app:shape_roundRect_bottomRightRadius="@dimen/width_17"
+            app:shape_roundRect_topLeftRadius="@dimen/width_17"
+            app:shape_roundRect_topRightRadius="@dimen/width_17">
+
+            <ImageView
+                android:id="@+id/image_lucky_box_win_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_lucky_box_win_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_27pt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_12"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/text_lucky_box_win_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/width_10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_27pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_lucky_box_win_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_27pt" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

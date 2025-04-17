@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_60"
+        android:layout_marginTop="@dimen/height_60"
+        android:layout_marginEnd="@dimen/width_60"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_lucky_box_open_product_image"
+            android:layout_width="@dimen/width_270"
+            android:layout_height="@dimen/width_270"
+            android:layout_marginEnd="@dimen/width_24"
+            android:scaleType="centerCrop" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_lucky_box_open_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/color_2e2e2e"
+                android:textSize="@dimen/textSize_36pt" />
+
+            <TextView
+                android:id="@+id/text_lucky_box_open_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_42"
+                android:textColor="@color/color_ea5506"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_lucky_box_open_effective_date"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_54"
+                android:layout_marginTop="@dimen/height_6"
+                android:background="@drawable/bg_ea5506_radius_11"
+                android:gravity="center"
+                android:paddingStart="@dimen/width_15"
+                android:paddingEnd="@dimen/width_15"
+                android:textSize="@dimen/textSize_30pt"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_72"
+                android:layout_marginTop="@dimen/height_30">
+
+                <TextView
+                    android:id="@+id/text_lucky_box_open_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_c2c2c2"
+                    android:textSize="@dimen/textSize_30pt" />
+
+                <TextView
+                    android:id="@+id/text_lucky_box_open_remain_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="@dimen/width_180"
+                    android:paddingStart="@dimen/width_30"
+                    android:paddingEnd="@dimen/width_30"
+                    android:background="@drawable/bg_ffeeee_radius_12"
+                    android:gravity="center"
+                    android:textColor="@color/color_2e2e2e"
+                    android:textSize="@dimen/textSize_36pt" />
+
+                <TextView
+                    android:id="@+id/text_lucky_box_open_shipping_status"
+                    android:layout_width="@dimen/width_180"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_36pt" />
+
+                <TextView
+                    android:id="@+id/text_lucky_box_open_req_shipping2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ea5506_radius_11"
+                    android:drawablePadding="@dimen/width_6"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/width_30"
+                    android:paddingEnd="@dimen/width_30"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_req_shipping"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_30pt"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:drawableStartCompat="@drawable/ic_lucky_box_req_shipping" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_lucky_box_open_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginStart="@dimen/width_60"
+        android:layout_marginTop="@dimen/height_30"
+        android:layout_marginEnd="@dimen/width_60"
+        android:background="@color/color_c2c2c2" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_lucky_box_open_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_102"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/height_30"
+        android:layout_marginEnd="@dimen/width_60"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_lucky_box_open_req_bol_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_border_3px_ea5506_transparent_radius_12"
+            android:drawablePadding="@dimen/width_6"
+            android:gravity="center"
+            android:paddingStart="@dimen/width_30"
+            android:paddingTop="@dimen/height_21"
+            android:paddingEnd="@dimen/width_30"
+            android:paddingBottom="@dimen/height_21"
+            android:textColor="@color/color_ea5506"
+            android:textSize="@dimen/textSize_30pt"
+            android:layout_marginEnd="@dimen/width_18"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_lucky_box_bol_exchange" />
+
+
+        <TextView
+            android:id="@+id/text_lucky_box_open_req_point_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_border_3px_ea5506_transparent_radius_12"
+            android:drawablePadding="@dimen/width_6"
+            android:gravity="center"
+            android:paddingStart="@dimen/width_30"
+            android:paddingTop="@dimen/height_21"
+            android:paddingEnd="@dimen/width_30"
+            android:paddingBottom="@dimen/height_21"
+            android:textColor="@color/color_ea5506"
+            android:textSize="@dimen/textSize_30pt"
+            android:layout_marginEnd="@dimen/width_18"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_lucky_box_cash_exchange" />
+
+
+        <TextView
+            android:id="@+id/text_lucky_box_open_req_shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_ea5506_radius_13"
+            android:drawablePadding="@dimen/width_6"
+            android:gravity="center"
+            android:paddingStart="@dimen/width_30"
+            android:paddingTop="@dimen/height_21"
+            android:paddingEnd="@dimen/width_30"
+            android:paddingBottom="@dimen/height_21"
+            android:text="@string/word_req_shipping"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_30pt"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_lucky_box_req_shipping" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/text_lucky_box_open_cash_exchanged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_30pt"
+        android:textColor="@color/color_c2c2c2"
+        android:layout_marginTop="@dimen/height_45"
+        android:layout_gravity="end"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/width_60"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/text_lucky_box_open_review"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_102"
+        android:textSize="@dimen/textSize_30pt"
+        android:textColor="@color/color_ea5506"
+        android:text="@string/msg_reg_lucky_box_review"
+        android:paddingStart="@dimen/width_42"
+        android:paddingEnd="@dimen/width_42"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/height_30"
+        android:background="@drawable/bg_border_3px_ea5506_transparent_radius_12"
+        android:drawablePadding="@dimen/width_12"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/width_60"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_lucky_box_review" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_30"
+        android:background="@color/color_f8f8f8"
+        android:layout_marginTop="@dimen/height_75"/>
+
+</LinearLayout>

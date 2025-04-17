@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_fafafa"
+            android:paddingStart="@dimen/width_44"
+            android:paddingTop="@dimen/height_22"
+            android:paddingEnd="@dimen/width_44"
+            android:paddingBottom="@dimen/height_22">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/msg_event_win_impression_description1"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_33pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_event_win_impression_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end"
+                android:background="@drawable/bg_ea5506_radius_72"
+                android:gravity="center"
+                android:paddingStart="@dimen/width_55"
+                android:paddingTop="@dimen/height_22"
+                android:paddingEnd="@dimen/width_55"
+                android:paddingBottom="@dimen/height_22"
+                android:text="@string/word_write"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_event_win_impression_contents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="@string/hint_win_impression"
+            android:maxLength="50"
+            android:padding="@dimen/width_44"
+            android:textColor="@color/color_232323"
+            android:textColorHint="@color/color_d0d0d0"
+            android:textSize="@dimen/textSize_57pt" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apps.product.ui.ProductPurchaseHistoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_product_purchase_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/text_product_purchase_history_not_exist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/height_500"
+            android:text="@string/msg_not_exist_purchase_history"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textSize_40pt"/>
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/layout_contact_us"
+        layout="@layout/layout_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginTop="@dimen/height_58"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginBottom="@dimen/height_88" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

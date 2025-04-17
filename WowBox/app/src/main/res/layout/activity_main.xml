@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.main.ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_188"
+            android:background="@color/white">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_188"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_play_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/height_22">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="@dimen/height_10"
+                        android:gravity="center"
+                        android:text="@string/word_play2"
+                        android:textColor="@color/color_cdcdcd_ea5506"
+                        android:textSize="@dimen/textSize_33pt"
+                        app:drawableTopCompat="@drawable/gnb_main_lucky_ball" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_lucky_draw_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/height_22">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="@dimen/height_10"
+                        android:gravity="center"
+                        android:text="@string/word_lucky_draw_en"
+                        android:textColor="@color/color_cdcdcd_ea5506"
+                        android:textSize="@dimen/textSize_33pt"
+                        app:drawableTopCompat="@drawable/gnb_main_lucky_draw" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_event_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/height_22">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="@dimen/height_10"
+                        android:gravity="center"
+                        android:text="@string/word_event2"
+                        android:textColor="@color/color_cdcdcd_ea5506"
+                        android:textSize="@dimen/textSize_33pt"
+                        app:drawableTopCompat="@drawable/gnb_main_event" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_reward_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/height_22">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/word_reward_en"
+                        android:textColor="@color/color_cdcdcd_ea5506"
+                        android:drawablePadding="@dimen/height_10"
+                        android:textSize="@dimen/textSize_33pt"
+                        app:drawableTopCompat="@drawable/gnb_main_reward" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_point_mall_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/height_22">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/height_10"
+                        android:gravity="center"
+                        android:text="@string/word_point_mall_en"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/color_cdcdcd_ea5506"
+                        android:textSize="@dimen/textSize_33pt"
+                        app:drawableTopCompat="@drawable/gnb_main_point_mall" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/height_22">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/word_my_en"
+                        android:textColor="@color/color_cdcdcd_ea5506"
+                        android:drawablePadding="@dimen/height_10"
+                        android:textSize="@dimen/textSize_33pt"
+                        app:drawableTopCompat="@drawable/gnb_main_my" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

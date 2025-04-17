@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apps.luckybox.ui.LuckyBoxProductInfoActivity">
+
+    <com.lejel.wowbox.apps.common.component.TouchyWebView
+        android:id="@+id/webview_lucky_draw_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/text_lucky_draw_detail_join"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_168"
+        android:background="@color/color_ea5506"
+        android:gravity="center"
+        android:text="@string/word_recruit_ing"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_45pt"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>

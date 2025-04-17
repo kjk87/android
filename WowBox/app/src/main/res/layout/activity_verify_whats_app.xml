@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".apps.verify.ui.VerifyWhatsAppActivity">
+
+    <TextView
+        android:id="@+id/text_verify_whats_app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:drawablePadding="@dimen/width_22"
+        android:layout_marginTop="@dimen/height_27"
+        android:textSize="@dimen/textSize_50pt"
+        android:textColor="@color/color_333333"
+        android:text="@string/msg_input_verify_code"
+        android:drawableTop="@drawable/ic_whatsapp"/>
+
+    <TextView
+        android:id="@+id/text_verify_whats_app_mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_10"
+        android:textSize="@dimen/textSize_33pt"
+        android:textColor="@color/color_333333"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edit_verify_whats_app_mobile_otp"
+        android:layout_width="@dimen/width_471"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underbar_ea5506_ffffff_6px"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textSize="@dimen/height_88"
+        android:layout_marginTop="@dimen/height_58"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_verify_whats_app_resend_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_50"
+        android:textSize="@dimen/textSize_33pt"
+        android:textColor="@color/color_333333"
+        android:visibility="gone"
+        android:gravity="center"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_verify_whats_app_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_50"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_33pt"
+            android:textColor="@color/color_333333"
+            android:layout_marginEnd="@dimen/width_10"
+            android:text="@string/msg_verify_code_desc3"/>
+
+        <TextView
+            android:id="@+id/text_verify_whats_app_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_33pt"
+            android:textColor="@color/color_ea5506"
+            android:textStyle="bold"
+            android:text="@string/word_resend"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

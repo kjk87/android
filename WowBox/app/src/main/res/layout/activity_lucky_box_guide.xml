@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_d00000"
+    tools:context=".apps.luckybox.ui.LuckyBoxGuideActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2385"
+                android:src="@drawable/img_luckybox_guide1"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1907"
+                android:src="@drawable/img_luckybox_guide2"/>
+
+
+            <ImageView
+                android:layout_width="@dimen/width_980"
+                android:layout_height="@dimen/height_1571"
+                android:background="@color/white"
+                android:src="@drawable/img_luckybox_guide3"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_1030"
+                android:layout_height="@dimen/height_1176"
+                android:layout_gravity="end"
+                android:src="@drawable/img_luckybox_guide4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_36pt"
+                android:text="@string/msg_lucky_box_guide"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/height_80"
+                android:layout_marginBottom="@dimen/height_80"
+                android:textColor="@color/white"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

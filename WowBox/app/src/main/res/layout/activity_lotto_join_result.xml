@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_event_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000">
+
+
+    <LinearLayout
+        android:id="@+id/layout_lotto_join_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_72"
+        android:layout_marginEnd="@dimen/width_72"
+        android:background="@drawable/bg_ffffff_radius_33"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/height_69"
+        android:paddingBottom="@dimen/height_69">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_49pt"
+            android:textColor="@color/color_333333"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/word_join_complete"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_44pt"
+            android:textColor="@color/color_454545"
+            android:layout_marginTop="@dimen/height_44"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/msg_issued_lotto_number"/>
+
+        <LinearLayout
+            android:id="@+id/layout_lotto_join_result_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_55"/>
+
+        <TextView
+            android:id="@+id/text_lotto_result_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_135"
+            android:layout_marginTop="@dimen/height_49"
+            android:layout_marginStart="@dimen/width_49"
+            android:layout_marginEnd="@dimen/width_49"
+            android:background="@drawable/bg_ea5506_radius_27"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/word_confirm"
+            android:textSize="@dimen/textSize_44pt" />
+
+    </LinearLayout>
+
+</RelativeLayout>

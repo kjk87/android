@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.luckydraw.ui.LuckyDrawGuideActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/height_200"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_83"
+            android:text="@string/word_wowbox_upper_en"
+            android:textColor="@color/color_77f5ae"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_15"
+            android:text="@string/word_lucky_draw_upper_en"
+            android:textColor="@color/color_333333"
+            android:fontFamily="@font/pyeongchangepeace_bold"
+            android:textSize="@dimen/textSize_83pt"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_130"
+            android:src="@drawable/img_lucky_draw_guide" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginTop="@dimen/height_127"
+            android:layout_marginEnd="@dimen/width_44"
+            android:background="@drawable/bg_border_dot_3px_696969_1b1b1b_radius_44"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/width_49"
+            android:paddingTop="@dimen/height_55"
+            android:paddingEnd="@dimen/width_49"
+            android:paddingBottom="@dimen/height_55">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_lucky_draw_upper_q_en"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_15"
+                android:text="@string/msg_lucky_draw_guide_desc1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_15"
+                android:text="@string/msg_lucky_draw_guide_desc2"
+                android:textColor="@color/color_ff5e5e"
+                android:textSize="@dimen/textSize_38pt" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_70d58f_1dc5a0"
+            android:layout_marginTop="@dimen/height_166"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_83"
+                android:text="@string/word_lucky_draw_upper_en"
+                android:textColor="@color/color_147961"
+                android:textSize="@dimen/textSize_44pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_15"
+                android:text="@string/word_progress"
+                android:textColor="@color/color_232323"
+                android:fontFamily="@font/pyeongchangepeace_bold"
+                android:textSize="@dimen/textSize_94pt"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_99"
+                android:src="@drawable/img_lucky_draw_guide1" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_41"
+                android:background="@drawable/bg_5c30935d_radius_138"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_27"
+                android:paddingTop="@dimen/height_15"
+                android:paddingEnd="@dimen/width_27"
+                android:paddingBottom="@dimen/height_15">
+
+                <TextView
+                    android:layout_width="@dimen/width_74"
+                    android:layout_height="@dimen/width_74"
+                    android:layout_marginEnd="@dimen/width_22"
+                    android:background="@drawable/bg_circle_ffffff"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/color_48b778"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_recruit_ing"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_49pt"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_41"
+                android:text="@string/msg_lucky_draw_guide_desc3"
+                android:textColor="@color/color_1b1b1b"
+                android:layout_marginStart="@dimen/width_50"
+                android:layout_marginEnd="@dimen/width_50"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_44pt" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_88"
+                android:src="@drawable/ic_lucky_draw_guide_arrow_down" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_88"
+                android:src="@drawable/img_lucky_draw_guide2" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_41"
+                android:background="@drawable/bg_5c30935d_radius_138"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_27"
+                android:paddingTop="@dimen/height_15"
+                android:paddingEnd="@dimen/width_27"
+                android:paddingBottom="@dimen/height_15">
+
+                <TextView
+                    android:layout_width="@dimen/width_74"
+                    android:layout_height="@dimen/width_74"
+                    android:layout_marginEnd="@dimen/width_22"
+                    android:background="@drawable/bg_circle_ffffff"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/color_48b778"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_select_lucky_draw_number"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_49pt"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_41"
+                android:text="@string/msg_lucky_draw_guide_desc4"
+                android:textColor="@color/color_1b1b1b"
+                android:layout_marginStart="@dimen/width_50"
+                android:layout_marginEnd="@dimen/width_50"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_44pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_22"
+                android:text="@string/msg_lucky_draw_guide_desc5"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/width_50"
+                android:layout_marginEnd="@dimen/width_50"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_44pt" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_88"
+                android:src="@drawable/ic_lucky_draw_guide_arrow_down" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_88"
+                android:src="@drawable/img_lucky_draw_guide3" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_41"
+                android:background="@drawable/bg_5c30935d_radius_138"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_27"
+                android:paddingTop="@dimen/height_15"
+                android:paddingEnd="@dimen/width_27"
+                android:paddingBottom="@dimen/height_15">
+
+                <TextView
+                    android:layout_width="@dimen/width_74"
+                    android:layout_height="@dimen/width_74"
+                    android:layout_marginEnd="@dimen/width_22"
+                    android:background="@drawable/bg_circle_ffffff"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/color_48b778"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_announce_winner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_49pt"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_41"
+                android:text="@string/msg_lucky_draw_guide_desc6"
+                android:textColor="@color/color_1b1b1b"
+                android:layout_marginStart="@dimen/width_50"
+                android:layout_marginEnd="@dimen/width_50"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_44pt" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_88"
+                android:src="@drawable/ic_lucky_draw_guide_arrow_down" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_88"
+                android:src="@drawable/img_lucky_draw_guide4" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_41"
+                android:background="@drawable/bg_5c30935d_radius_138"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_27"
+                android:paddingTop="@dimen/height_15"
+                android:paddingEnd="@dimen/width_27"
+                android:paddingBottom="@dimen/height_15">
+
+                <TextView
+                    android:layout_width="@dimen/width_74"
+                    android:layout_height="@dimen/width_74"
+                    android:layout_marginEnd="@dimen/width_22"
+                    android:background="@drawable/bg_circle_ffffff"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/color_48b778"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_receive_gift"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_49pt"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_41"
+                android:layout_marginBottom="@dimen/height_166"
+                android:text="@string/msg_lucky_draw_guide_desc7"
+                android:textColor="@color/color_1b1b1b"
+                android:layout_marginStart="@dimen/width_50"
+                android:layout_marginEnd="@dimen/width_50"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_44pt" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_ff4242_transparent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_83"
+                android:gravity="center"
+                android:text="@string/msg_lucky_draw_guide_desc8"
+                android:textColor="@color/white"
+                android:fontFamily="@font/pyeongchangepeace_bold"
+                android:textSize="@dimen/textSize_72pt"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_88"
+                android:src="@drawable/img_lucky_draw_guide5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_33"
+                android:layout_marginBottom="@dimen/height_190"
+                android:text="@string/msg_lucky_draw_guide_desc9"
+                android:textColor="@color/color_454545"
+                android:layout_marginStart="@dimen/width_50"
+                android:layout_marginEnd="@dimen/width_50"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_38pt" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginEnd="@dimen/width_44"
+            android:background="@drawable/bg_border_dot_3px_696969_1b1b1b_radius_44"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/width_49"
+            android:paddingTop="@dimen/height_55"
+            android:paddingEnd="@dimen/width_49"
+            android:paddingBottom="@dimen/height_55"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_lucky_draw_ball_m"
+                android:drawablePadding="@dimen/width_15"
+                android:gravity="center"
+                android:text="@string/word_luckyball_q"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_15"
+                android:text="@string/msg_lucky_draw_guide_desc10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_200"
+            android:gravity="center"
+            android:text="@string/word_luckyball_earned_method"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_72pt"
+            android:visibility="gone"
+            android:fontFamily="@font/pyeongchangepeace_bold"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginEnd="@dimen/width_44"
+            android:layout_marginTop="@dimen/height_99"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/width_27"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/height_90"
+                android:paddingBottom="@dimen/height_50"
+                android:background="@drawable/bg_232323_radius_27"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_60pt"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/word_buff_en"/>
+
+                <ImageView
+                    android:layout_width="@dimen/width_120"
+                    android:layout_height="@dimen/width_120"
+                    android:scaleType="center"
+                    android:layout_marginTop="@dimen/height_8"
+                    android:src="@drawable/ic_lucky_draw_guide_buff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_243"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textColor="@color/color_dcdcdc"
+                    android:gravity="center"
+                    android:text="@string/msg_lucky_draw_guide_desc11"/>
+
+                <TextView
+                    android:id="@+id/text_lucky_draw_guide_exchange_buff"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_130"
+                    android:background="@drawable/bg_48b778_radius_36"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/word_exchange_buff"
+                    android:layout_marginTop="@dimen/height_47"
+                    android:layout_marginStart="@dimen/width_36"
+                    android:layout_marginEnd="@dimen/width_36"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/height_90"
+                android:paddingBottom="@dimen/height_50"
+                android:background="@drawable/bg_232323_radius_27"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_60pt"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/word_point"/>
+
+                <ImageView
+                    android:layout_width="@dimen/width_120"
+                    android:layout_height="@dimen/width_120"
+                    android:scaleType="center"
+                    android:layout_marginTop="@dimen/height_8"
+                    android:src="@drawable/ic_lucky_draw_guide_point"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_243"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textColor="@color/color_dcdcdc"
+                    android:gravity="center"
+                    android:text="@string/msg_lucky_draw_guide_desc12"/>
+
+                <TextView
+                    android:id="@+id/text_lucky_draw_guide_exchange_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_130"
+                    android:background="@drawable/bg_48b778_radius_36"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/word_exchange_point"
+                    android:layout_marginTop="@dimen/height_47"
+                    android:layout_marginStart="@dimen/width_36"
+                    android:layout_marginEnd="@dimen/width_36"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginEnd="@dimen/width_44"
+            android:layout_marginTop="@dimen/height_27"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/width_27"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/height_90"
+                android:paddingBottom="@dimen/height_50"
+                android:background="@drawable/bg_232323_radius_27"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_60pt"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/word_invite"/>
+
+                <ImageView
+                    android:layout_width="@dimen/width_120"
+                    android:layout_height="@dimen/width_120"
+                    android:scaleType="center"
+                    android:layout_marginTop="@dimen/height_8"
+                    android:src="@drawable/ic_lucky_draw_guide_invite"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_243"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textColor="@color/color_dcdcdc"
+                    android:gravity="center"
+                    android:text="@string/msg_lucky_draw_guide_desc13"/>
+
+                <TextView
+                    android:id="@+id/text_lucky_draw_guide_exchange_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_130"
+                    android:background="@drawable/bg_48b778_radius_36"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/word_invite_friend"
+                    android:layout_marginTop="@dimen/height_47"
+                    android:layout_marginStart="@dimen/width_36"
+                    android:layout_marginEnd="@dimen/width_36"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/height_90"
+                android:paddingBottom="@dimen/height_50"
+                android:background="@drawable/bg_232323_radius_27"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_60pt"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/word_telegram"/>
+
+                <ImageView
+                    android:layout_width="@dimen/width_120"
+                    android:layout_height="@dimen/width_120"
+                    android:scaleType="center"
+                    android:layout_marginTop="@dimen/height_8"
+                    android:src="@drawable/ic_lucky_draw_guide_telegram"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_243"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textColor="@color/color_dcdcdc"
+                    android:gravity="center"
+                    android:text="@string/msg_lucky_draw_guide_desc14"/>
+
+                <TextView
+                    android:id="@+id/text_lucky_draw_guide_exchange_telegram"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_130"
+                    android:background="@drawable/bg_48b778_radius_36"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/word_auth_telegram"
+                    android:layout_marginTop="@dimen/height_47"
+                    android:layout_marginStart="@dimen/width_36"
+                    android:layout_marginEnd="@dimen/width_36"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.core.widget.NestedScrollView>

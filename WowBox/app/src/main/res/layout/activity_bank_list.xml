@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apps.withdraw.ui.BankListActivity">
+
+    <EditText
+        android:id="@+id/edit_bank_list_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_133"
+        android:layout_margin="@dimen/width_44"
+        android:background="@drawable/bg_border_3px_333333_transparent_radius_27"
+        android:paddingStart="@dimen/width_44"
+        android:paddingEnd="@dimen/width_44"
+        android:drawablePadding="@dimen/width_44"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_898989"
+        android:hint="@string/msg_input_bank_name"
+        android:textSize="@dimen/textSize_33pt"
+        android:drawableStart="@drawable/ic_bank_search"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_3"
+        android:background="@color/color_333333"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_bank_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_44"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

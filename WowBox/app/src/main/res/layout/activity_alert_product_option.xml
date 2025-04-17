@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_600"
+        android:background="@drawable/bg_ffffff_top_radius_55"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_100"
+            android:layout_marginTop="@dimen/height_30"
+            android:layout_marginStart="@dimen/width_54"
+            android:layout_marginEnd="@dimen/width_54">
+
+            <TextView
+                android:id="@+id/text_alert_product_option_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_top_prev"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_38pt"
+                android:textColor="@color/color_333333"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_alert_product_option"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/width_54"
+            android:layout_marginEnd="@dimen/width_54"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

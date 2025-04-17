@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.join.JoinCompleteActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/height_160">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/width_875"
+                    android:layout_height="@dimen/height_786"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/img_join_complete" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_38"
+                android:gravity="center"
+                android:text="@string/msg_join_complete"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_50pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_44"
+                android:gravity="center"
+                android:text="@string/msg_join_complete2"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_108"
+                android:layout_marginEnd="@dimen/width_44"
+                android:text="@string/word_recommend_code"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_33pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_input_recommender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_105"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/bg_f7f7f7_radius_33"
+                android:layout_marginTop="@dimen/height_16"
+                android:gravity="center_vertical"
+                android:maxLength="20"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:hint="@string/msg_input_recommend_key"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_898989"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_16"
+                android:text="@string/msg_input_recommend_key_desc"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_27pt" />
+
+
+            <TextView
+                android:id="@+id/text_join_complete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_66"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/gradient_ea5506_f47916_radius_22"
+                android:gravity="center"
+                android:text="@string/word_complete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.buff.ui.BuffGuerrillaMiningActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/height_66"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_570"
+                android:src="@drawable/img_guerrilla_banner" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_333b3f_radius_27"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_66"
+                android:paddingStart="@dimen/width_50"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingTop="@dimen/height_33"
+                android:paddingBottom="@dimen/height_33"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:drawablePadding="@dimen/width_22"
+                    android:text="@string/word_join_method"
+                    android:drawableStart="@drawable/ic_buff_guerrilla_join"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_44"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/width_44"
+                        android:layout_height="@dimen/width_44"
+                        android:textSize="@dimen/textSize_16pt"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="@dimen/width_22"
+                        android:gravity="center"
+                        android:background="@drawable/bg_circle_373737"
+                        android:text="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textColor="@color/white"
+                        android:text="@string/msg_buff_guerrilla_join_desc1"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/width_44"
+                        android:layout_height="@dimen/width_44"
+                        android:textSize="@dimen/textSize_16pt"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="@dimen/width_22"
+                        android:gravity="center"
+                        android:background="@drawable/bg_circle_373737"
+                        android:text="2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textColor="@color/white"
+                        android:text="@string/msg_buff_guerrilla_join_desc2"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/width_44"
+                        android:layout_height="@dimen/width_44"
+                        android:textSize="@dimen/textSize_16pt"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="@dimen/width_22"
+                        android:gravity="center"
+                        android:background="@drawable/bg_circle_373737"
+                        android:text="3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textColor="@color/white"
+                        android:text="@string/msg_buff_guerrilla_join_desc3"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_2a3541_radius_27"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_44"
+                android:paddingStart="@dimen/width_50"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingTop="@dimen/height_33"
+                android:paddingBottom="@dimen/height_33"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:drawablePadding="@dimen/width_22"
+                    android:text="@string/word_withdrawal_caution_title"
+                    android:drawableStart="@drawable/ic_buff_guerrilla_question"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/height_44"
+                    android:text="@string/msg_buff_guerrilla_caution_desc1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:text="@string/msg_buff_guerrilla_caution_desc2"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_333545_radius_27"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_44"
+                android:paddingStart="@dimen/width_50"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingTop="@dimen/height_33"
+                android:paddingBottom="@dimen/height_33"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:drawablePadding="@dimen/width_22"
+                    android:text="@string/word_buff_channel"
+                    android:drawableStart="@drawable/ic_buff_guerrilla_channel"/>
+
+                <RelativeLayout
+                    android:id="@+id/layout_buff_guerrilla_telegram"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_110"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:background="@drawable/bg_232323_radius_33">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_44"
+                        android:drawableStart="@drawable/ic_mining_telegram"
+                        android:drawablePadding="@dimen/width_27"
+                        android:gravity="center"
+                        android:text="@string/word_telegram"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_38pt" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/width_44"
+                        android:src="@drawable/ic_my_arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_buff_guerrilla_discord"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_110"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:background="@drawable/bg_232323_radius_33">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_44"
+                        android:drawableStart="@drawable/ic_mining_discord"
+                        android:drawablePadding="@dimen/width_27"
+                        android:gravity="center"
+                        android:text="@string/word_discord"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_38pt" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/width_44"
+                        android:src="@drawable/ic_my_arrow" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_27"
+                    android:text="@string/msg_lucky_draw_check_private_desc"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_33pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

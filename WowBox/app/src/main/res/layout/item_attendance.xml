@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/width_10"
+    android:layout_marginEnd="@dimen/width_10"
+    android:gravity="center_horizontal">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_f7f7f7_radius_10"
+        android:paddingTop="@dimen/height_11"
+        android:paddingBottom="@dimen/height_11"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_attendance_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textSize_33pt"
+            android:textColor="@color/color_333333"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/image_attendance_check"
+            android:layout_width="@dimen/width_66"
+            android:layout_height="@dimen/width_66"
+            android:src="@drawable/ic_exchange_point"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/height_33"
+            android:layout_centerInParent="true"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/text_attendance_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/textSize_33pt"
+        android:textColor="@color/color_333333"
+        android:layout_marginTop="@dimen/width_22"
+        android:textStyle="bold"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

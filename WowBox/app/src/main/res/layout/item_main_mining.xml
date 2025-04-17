@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_main_mining_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_mining1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_main_mining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/width_60"
+            android:layout_marginBottom="@dimen/height_245"
+            android:src="@drawable/ic_mining1" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_main_mining1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_88"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_mining1_desc1"
+                android:textColor="@color/color_dcdcdc"
+                android:textSize="@dimen/textSize_44pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_22"
+                android:text="@string/msg_mining1_desc2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_88pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:background="@drawable/bg_29000000_radius_33"
+                android:paddingStart="@dimen/width_50"
+                android:paddingTop="@dimen/height_27"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingBottom="@dimen/height_27"
+                android:text="@string/msg_mining1_desc3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_50pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_63"
+                android:text="@string/msg_mining1_desc4"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_24"
+                android:text="@string/msg_mining1_desc5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_24"
+                android:text="@string/msg_mining1_desc6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_main_mining2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_88"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_mining2_desc1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_88pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:background="@drawable/bg_29000000_radius_33"
+                android:paddingStart="@dimen/width_50"
+                android:paddingTop="@dimen/height_27"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingBottom="@dimen/height_27"
+                android:text="@string/msg_mining2_desc2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_50pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_63"
+                android:text="@string/msg_mining2_desc3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_24"
+                android:text="@string/msg_mining2_desc4"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_main_mining3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_88"
+            android:layout_marginEnd="@dimen/width_72"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_mining3_desc1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_88pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:background="@drawable/bg_29000000_radius_33"
+                android:paddingStart="@dimen/width_50"
+                android:paddingTop="@dimen/height_27"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingBottom="@dimen/height_27"
+                android:text="@string/msg_mining3_desc2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_50pt"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_main_mining3_recommend_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_63"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_recommend_code"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_110"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:background="@drawable/bg_ffffff_radius_33">
+
+                    <TextView
+                        android:id="@+id/text_main_mining3_recommend_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_44"
+                        android:textColor="@color/color_6f6f6f"
+                        android:textSize="@dimen/textSize_38pt" />
+
+                    <ImageView
+                        android:id="@+id/image_main_mining3_recommend_key_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/width_44"
+                        android:src="@drawable/ic_copy_mining" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_mining3_invite_mining"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_110"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:background="@drawable/bg_ffffff_radius_33">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_44"
+                        android:text="@string/word_invite_mining_history"
+                        android:textColor="@color/color_373737"
+                        android:textSize="@dimen/textSize_38pt" />
+
+                    <TextView
+                        android:id="@+id/text_main_mining3_invite_mining_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/width_44"
+                        android:drawableEnd="@drawable/ic_arrow_mining"
+                        android:drawablePadding="@dimen/width_16"
+                        android:textColor="@color/color_373737"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_63"
+                android:text="@string/msg_mining3_desc3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_main_mining4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_88"
+            android:layout_marginEnd="@dimen/width_72"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_mining4_desc1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_88pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:background="@drawable/bg_29000000_radius_33"
+                android:paddingStart="@dimen/width_50"
+                android:paddingTop="@dimen/height_27"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingBottom="@dimen/height_27"
+                android:text="@string/msg_mining4_desc2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_50pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_63"
+                android:text="@string/word_buff_channel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <RelativeLayout
+                android:id="@+id/layout_main_mining4_telegram"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110"
+                android:layout_marginTop="@dimen/height_22"
+                android:background="@drawable/bg_ffffff_radius_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:drawableStart="@drawable/ic_mining_telegram"
+                    android:drawablePadding="@dimen/width_27"
+                    android:gravity="center"
+                    android:text="@string/word_telegram"
+                    android:textColor="@color/color_1b1b1b"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/width_44"
+                    android:src="@drawable/ic_arrow_mining" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_main_mining4_discord"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110"
+                android:layout_marginTop="@dimen/height_22"
+                android:background="@drawable/bg_ffffff_radius_33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:drawableStart="@drawable/ic_mining_discord"
+                    android:drawablePadding="@dimen/width_27"
+                    android:gravity="center"
+                    android:text="@string/word_discord"
+                    android:textColor="@color/color_1b1b1b"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/width_44"
+                    android:src="@drawable/ic_arrow_mining" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_main_mining5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_88"
+            android:layout_marginEnd="@dimen/width_72"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_mining5_desc1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_88pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_main_mining5_remain_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_63"
+                android:text="@string/msg_mining5_desc2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:id="@+id/text_main_mining5_remain_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_22"
+                android:background="@drawable/bg_29000000_radius_33"
+                android:gravity="center"
+                android:paddingStart="@dimen/width_50"
+                android:paddingTop="@dimen/height_27"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingBottom="@dimen/height_27"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_50pt"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_365"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/height_88">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/width_22"
+                    android:background="@drawable/bg_342f2e_radius_33">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_227"
+                        android:layout_marginTop="@dimen/height_22"
+                        android:layout_marginStart="@dimen/width_20"
+                        android:layout_marginEnd="@dimen/width_20"
+                        android:background="@drawable/bg_ffffff_radius_27">
+
+                        <TextView
+                            android:id="@+id/text_main_mining5_ticket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_38pt"
+                            android:textColor="@color/color_1b1b1b"
+                            android:drawableTop="@drawable/ic_ad_mining_ticket"
+                            android:drawablePadding="@dimen/height_16"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/height_27">
+
+                        <TextView
+                            android:id="@+id/text_main_mining5_step1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_38pt"
+                            android:layout_centerInParent="true"
+                            android:text="@string/word_step1"/>
+
+                        <ImageView
+                            android:id="@+id/image_main_mining5_play1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_ad_mining_play"/>
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/width_22"
+                    android:background="@drawable/bg_342f2e_radius_33">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_227"
+                        android:layout_marginTop="@dimen/height_22"
+                        android:layout_marginStart="@dimen/width_20"
+                        android:layout_marginEnd="@dimen/width_20"
+                        android:background="@drawable/bg_ffffff_radius_27">
+
+                        <TextView
+                            android:id="@+id/text_main_mining5_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawableTop="@drawable/ic_ad_mining_point"
+                            android:drawablePadding="@dimen/height_16"
+                            android:gravity="center"
+                            android:textColor="@color/color_1b1b1b"
+                            android:textSize="@dimen/textSize_38pt" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/height_27">
+
+                        <TextView
+                            android:id="@+id/text_main_mining5_step2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_38pt"
+                            android:layout_centerInParent="true"
+                            android:text="@string/word_step2"/>
+
+                        <ImageView
+                            android:id="@+id/image_main_mining5_play2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_ad_mining_play"/>
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_342f2e_radius_33">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_227"
+                        android:layout_marginTop="@dimen/height_22"
+                        android:layout_marginStart="@dimen/width_20"
+                        android:layout_marginEnd="@dimen/width_20"
+                        android:background="@drawable/bg_ffffff_radius_27">
+
+                        <TextView
+                            android:id="@+id/text_main_mining5_buff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawableTop="@drawable/ic_ad_mining_buff"
+                            android:drawablePadding="@dimen/height_16"
+                            android:gravity="center"
+                            android:textColor="@color/color_1b1b1b"
+                            android:textSize="@dimen/textSize_38pt" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/height_27">
+
+                        <TextView
+                            android:id="@+id/text_main_mining5_step3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_38pt"
+                            android:layout_centerInParent="true"
+                            android:text="@string/word_step3"/>
+
+                        <ImageView
+                            android:id="@+id/image_main_mining5_play3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_ad_mining_play"/>
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_63"
+                android:text="@string/msg_mining5_desc3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        
+        <TextView
+            android:id="@+id/text_main_mining"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_130"
+            android:background="@drawable/bg_ffffff_radius_36"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginBottom="@dimen/height_40"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

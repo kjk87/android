@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/height_5"
+    android:elevation="@dimen/width_5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/width_44"
+        android:paddingEnd="@dimen/width_44"
+        android:paddingBottom="@dimen/height_100"
+        android:paddingTop="@dimen/height_55"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="@dimen/width_110"
+                android:layout_height="@dimen/width_110"
+                android:layout_marginEnd="@dimen/width_33">
+
+                <ImageView
+                    android:id="@+id/image_header_event_reply_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_profile_default" />
+
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_header_event_reply_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/textSize_27pt"
+                    android:layout_marginTop="@dimen/height_10"
+                    android:text="@string/word_prize_en"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_header_event_reply_reg_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_15"
+                android:textColor="@color/color_abb1bb"
+                android:layout_gravity="bottom"
+                android:textSize="@dimen/textSize_30pt" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_header_event_reply_impression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height_232"
+            android:layout_marginTop="@dimen/height_44"
+            android:paddingStart="@dimen/width_33"
+            android:paddingEnd="@dimen/height_33"
+            android:paddingTop="@dimen/height_22"
+            android:paddingBottom="@dimen/height_22"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/textSize_44pt"
+            android:background="@drawable/bg_border_dedede_radius_16"/>
+
+    </LinearLayout>
+
+</LinearLayout>

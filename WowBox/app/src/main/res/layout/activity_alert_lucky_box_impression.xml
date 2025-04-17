@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000">
+
+    <LinearLayout
+        android:id="@+id/layout_alert_lucky_box_impression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginTop="@dimen/height_372"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@drawable/bg_ffffff_radius_24"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_alert_lucky_box_impression_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/height_120"
+            android:text="@string/word_lucky_box_impression_title"
+            android:textColor="@color/color_2e2e2e"
+            android:textSize="@dimen/textSize_54pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_alert_lucky_box_impression_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_66"
+            android:gravity="center"
+            android:text="@string/msg_lucky_box_impression_desc"
+            android:textColor="@color/color_525961"
+            android:textSize="@dimen/textSize_36pt" />
+
+        <EditText
+            android:id="@+id/edit_alert_lucky_box_impression"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_450"
+            android:layout_marginStart="@dimen/width_69"
+            android:layout_marginTop="@dimen/height_45"
+            android:layout_marginEnd="@dimen/width_69"
+            android:background="@drawable/bg_border_eef2f6_radius_18"
+            android:gravity="top"
+            android:hint="@string/hint_win_impression"
+            android:padding="@dimen/width_30"
+            android:textColor="@color/color_2e2e2e"
+            android:textColorHint="@color/color_9e9e9e"
+            android:textSize="@dimen/textSize_36pt" />
+
+        <TextView
+            android:id="@+id/text_alert_lucky_box_impression_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/height_30"
+            android:layout_marginEnd="@dimen/width_69"
+            android:maxLength="50"
+            android:textColor="@color/color_525961"
+            android:textSize="@dimen/textSize_36pt" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_156"
+            android:layout_marginTop="@dimen/height_84"
+            android:background="@drawable/bg_fc5c57_radius_bottom_24"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/text_alert_lucky_box_impression_complete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/word_write_complete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_alert_lucky_box_impression_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize_42pt"
+        android:text="@string/msg_write_next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_66"
+        android:layout_below="@id/layout_alert_lucky_box_impression"
+        android:background="@drawable/underbar_ffffff_transparent"/>
+
+
+</RelativeLayout>

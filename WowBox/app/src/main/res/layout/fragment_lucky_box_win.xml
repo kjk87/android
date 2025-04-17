@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_138"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="@string/word_win_history"
+            android:textSize="@dimen/textSize_60pt"
+            android:layout_marginStart="@dimen/width_44"/>
+
+    </RelativeLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_lucky_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            app:expanded="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_lucky_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:contentScrim="@color/white"
+                app:expandedTitleTextAppearance="@style/TransparentText"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_307"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginEnd="@dimen/width_44"
+                    android:src="@drawable/img_lucky_box_win_banner"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_lucky_box_win_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_83"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_lucky_box_win_history_not_exist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_400"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/msg_not_exist_win_history"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_32pt"
+                app:drawableTopCompat="@drawable/ic_search_none" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_lucky_box_win_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_400"
+            android:visibility="gone"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ProgressBar
+                android:layout_width="@dimen/width_120"
+                android:layout_height="@dimen/width_120"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/width_40"
+                android:indeterminateDrawable="@drawable/rotate_data_loading"
+                android:indeterminateOnly="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/height_30"
+                android:gravity="center"
+                android:textColor="@color/color_b7b7b7"
+                android:textStyle="bold"
+                android:textSize="@dimen/textSize_32pt"
+                android:text="@string/msg_data_loading"/>
+
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</LinearLayout>

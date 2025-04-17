@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "775720348313",
+    "project_id": "wowbox-ef072",
+    "storage_bucket": "wowbox-ef072.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775720348313:android:145151a80aeee1e660a608",
+        "android_client_info": {
+          "package_name": "com.lejel.wowbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775720348313-0efgm8o5p8tektim88i594mousvf9ike.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lejel.wowbox",
+            "certificate_hash": "bc4e58d2d7a053811958246afdf641dedcdcb527"
+          }
+        },
+        {
+          "client_id": "775720348313-4atkodug3knj4bqqmlg1rjgkbu684dj7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lejel.wowbox",
+            "certificate_hash": "daf5edcec5e68b5b50c275ee88345b9a5308a1a7"
+          }
+        },
+        {
+          "client_id": "775720348313-fih7607aa30i88cq7b8vhtdvqt641jhk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lejel.wowbox",
+            "certificate_hash": "5342e92c36a552e17775daa491783184837212ef"
+          }
+        },
+        {
+          "client_id": "775720348313-ptdvc6c4v2148k4p3is5jj01haunsbvg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lejel.wowbox",
+            "certificate_hash": "455d57c6077a3735f3b2a29bf75968ff306fa84e"
+          }
+        },
+        {
+          "client_id": "775720348313-jc1ft9nbgftmqqnsdjgrp07bit5icmig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDESHC2XOI23rqaRLTGIgz3NxmAGuQluzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775720348313-jc1ft9nbgftmqqnsdjgrp07bit5icmig.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "775720348313-nustfgock4do0rpcu78clon7pr1gtb5d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kr.co.root37.wowbox"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

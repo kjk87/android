@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.event.ui.EventImpressionActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_event_impression"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_event_impression_join"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_225"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:background="@color/color_d8d8d8"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/width_54"
+            android:paddingEnd="@dimen/width_54"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="@dimen/width_165"
+                android:layout_height="@dimen/width_165"
+                android:layout_marginEnd="@dimen/width_30"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/image_event_impression_join_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_ea5506"
+                    android:src="@drawable/ic_profile_default"
+                    android:scaleType="fitXY"/>
+
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+            <TextView
+                android:id="@+id/text_event_impression_lotto_join_count"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_fc5c57"
+                android:textSize="@dimen/textSize_42pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

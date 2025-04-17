@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apps.luckydraw.ui.LuckyDrawJoinActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginTop="@dimen/height_47"
+        android:layout_marginEnd="@dimen/width_44"
+        android:background="@drawable/bg_f7f7f7_radius_55"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/width_49"
+        android:paddingTop="@dimen/height_55"
+        android:paddingEnd="@dimen/width_49"
+        android:paddingBottom="@dimen/height_55">
+
+        <TextView
+            android:id="@+id/text_lucky_draw_join_draw_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/textSize_49pt"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_55"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_10"
+                android:text="@string/word_retention_ball"
+                android:textColor="@color/color_ea5506"
+                android:textSize="@dimen/textSize_38pt"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/text_lucky_draw_join_retention_ball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/width_10"
+                android:gravity="center"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_lucky_draw_ball" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_10"
+                android:text="@string/word_join_price"
+                android:textColor="@color/color_ea5506"
+                android:textSize="@dimen/textSize_38pt"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/text_lucky_draw_join_ball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/width_10"
+                android:gravity="center"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_lucky_draw_ball" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1"
+            android:layout_marginTop="@dimen/height_22"
+            android:layout_marginBottom="@dimen/height_22"
+            android:background="@color/color_373737" />
+
+        <TextView
+            android:id="@+id/text_lucky_draw_join_remain_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/underbar_ff5e5e_transparent"
+            android:textColor="@color/color_ff5e5e"
+            android:textSize="@dimen/textSize_38pt" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_f7f7f7_radius_55"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/width_55"
+        android:paddingTop="@dimen/height_65"
+        android:paddingEnd="@dimen/width_55"
+        android:paddingBottom="@dimen/height_65">
+
+        <RelativeLayout
+            android:id="@+id/layout_lucky_draw_join_first"
+            android:layout_width="@dimen/width_216"
+            android:layout_height="@dimen/height_232"
+            android:layout_marginEnd="@dimen/width_33"
+            android:background="@drawable/bg_lucky_draw_join_number">
+
+            <com.yy.mobile.rollingtextview.RollingTextView
+                android:id="@+id/text_lucky_draw_join_first"
+                android:layout_width="@dimen/width_110"
+                android:layout_height="@dimen/width_110"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_circle_ffc046"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_43pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_lucky_draw_join_second"
+            android:layout_width="@dimen/width_216"
+            android:layout_height="@dimen/height_232"
+            android:layout_marginEnd="@dimen/width_33"
+            android:background="@drawable/bg_lucky_draw_join_number">
+
+            <com.yy.mobile.rollingtextview.RollingTextView
+                android:id="@+id/text_lucky_draw_join_second"
+                android:layout_width="@dimen/width_110"
+                android:layout_height="@dimen/width_110"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_circle_3278ff"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_43pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_lucky_draw_join_third"
+            android:layout_width="@dimen/width_216"
+            android:layout_height="@dimen/height_232"
+            android:background="@drawable/bg_lucky_draw_join_number">
+
+            <com.yy.mobile.rollingtextview.RollingTextView
+                android:id="@+id/text_lucky_draw_join_third"
+                android:layout_width="@dimen/width_110"
+                android:layout_height="@dimen/width_110"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_circle_ff5e5e"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_43pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7" />
+
+
+    <TextView
+        android:id="@+id/text_lucky_draw_join_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/msg_lucky_draw_join_desc1"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/textSize_49pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_lucky_draw_number_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_22"
+        android:drawablePadding="@dimen/width_10"
+        android:gravity="center"
+        android:text="@string/word_lucky_draw_number_question"
+        android:textColor="@color/color_ea5506"
+        android:textSize="@dimen/textSize_38pt"
+        app:drawableStartCompat="@drawable/ic_point_question" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_44"
+        android:text="@string/word_selected_lucky_draw_number"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_lucky_draw_join_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_132"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginTop="@dimen/height_10" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_138"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_lucky_draw_join_win_rate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/width_22"
+            android:layout_weight="1"
+            android:background="@drawable/bg_595959_radius_30"
+            android:gravity="center"
+            android:text="@string/word_win_rate"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_lucky_draw_join_select"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_3278ff_radius_30"
+            android:gravity="center"
+            android:text="@string/word_select_lucky_draw_number"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RelativeLayout
+        android:id="@+id/layout_lucky_draw_join"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_138"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginTop="@dimen/height_36"
+        android:layout_marginEnd="@dimen/width_44"
+        android:background="@drawable/bg_ea5506_radius_27"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/msg_join"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_lucky_draw_join_engage_ball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_33"
+                android:background="@drawable/bg_ffffff_radius_13"
+                android:drawablePadding="@dimen/width_10"
+                android:gravity="center"
+                android:padding="@dimen/width_10"
+                android:textColor="@color/color_ff6060"
+                android:textSize="@dimen/textSize_33pt"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_wow_ball_s" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_main_lucky_draw_gift"
+        android:layout_width="@dimen/width_836"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/width_24"
+        android:background="@drawable/bg_f7f7f7_radius_38"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="@dimen/height_33">
+
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="@dimen/width_270"
+            android:layout_height="@dimen/width_270"
+            android:layout_marginEnd="@dimen/width_33"
+            app:shape_roundRect_bottomLeftRadius="@dimen/width_13"
+            app:shape_roundRect_bottomRightRadius="@dimen/width_13"
+            app:shape_roundRect_topLeftRadius="@dimen/width_13"
+            app:shape_roundRect_topRightRadius="@dimen/width_13">
+
+            <ImageView
+                android:id="@+id/image_main_lucky_draw_gift"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_main_lucky_draw_gift_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_main_lucky_draw_gift_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_38pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_main_lucky_draw_gift_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_10"
+                android:drawablePadding="@dimen/width_10"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/textSize_38pt"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_lucky_draw_winner" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/layout_main_lucky_draw_image"
+        android:layout_width="@dimen/width_836"
+        android:layout_height="@dimen/height_336"
+        android:layout_marginEnd="@dimen/width_24"
+        app:shape_roundRect_bottomLeftRadius="@dimen/width_38"
+        app:shape_roundRect_bottomRightRadius="@dimen/width_38"
+        app:shape_roundRect_topLeftRadius="@dimen/width_38"
+        app:shape_roundRect_topRightRadius="@dimen/width_38">
+
+        <ImageView
+            android:id="@+id/image_main_lucky_draw_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+</FrameLayout>

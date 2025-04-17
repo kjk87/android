@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_source_title1" translatable="false">com.airbnb.android:lottie:3.1.0</string>
+    <string name="open_source_desc1" translatable="false">설명: Lottie SDK</string>
+    <string name="open_source_url1" translatable="false">URL: https://github.com/airbnb/lottie/</string>
+    <string name="open_source_license1" translatable="false">License: Apache 2.0</string>
+
+    <string name="open_source_title2" translatable="false">com.github.bumptech.glide:glide:4.15.1</string>
+    <string name="open_source_desc2" translatable="false">설명: An image loading and caching library</string>
+    <string name="open_source_url2" translatable="false">URL: https://github.com/bumptech/glide</string>
+    <string name="open_source_license2" translatable="false">License: https://github.com/bumptech/glide/blob/master/LICENSE</string>
+
+    <string name="open_source_title3" translatable="false">com.github.bumptech.glide:compiler:4.15.1</string>
+    <string name="open_source_desc3" translatable="false">설명: An image loading and caching library</string>
+    <string name="open_source_url3" translatable="false">URL: https://github.com/bumptech/glide</string>
+    <string name="open_source_license3" translatable="false">License: https://github.com/bumptech/glide/blob/master/LICENSE</string>
+
+    <string name="open_source_title4" translatable="false">it.sephiroth.android.library.imagezoom:imagezoom:1.0.5</string>
+    <string name="open_source_desc4" translatable="false">설명: ImageView widget with zoom and pan capabilities</string>
+    <string name="open_source_url4" translatable="false">URL: https://github.com/sephiroth74/ImageViewZoom</string>
+    <string name="open_source_license4" translatable="false">License: MIT</string>
+
+    <string name="open_source_title5" translatable="false">com.shawnlin:number-picker:2.4.13</string>
+    <string name="open_source_desc5" translatable="false">설명: library that provides a simple and customizable NumberPicker</string>
+    <string name="open_source_url5" translatable="false">URL: https://github.com/ShawnLin013/NumberPicker</string>
+    <string name="open_source_license5" translatable="false">License: MIT</string>
+
+    <string name="open_source_title6" translatable="false">io.github.florent37:shapeofview:1.4.7</string>
+    <string name="open_source_desc6" translatable="false">설명: Give a custom shape to any android view Useful for Material Design 2</string>
+    <string name="open_source_url6" translatable="false">URL: https://github.com/florent37/ShapeOfView</string>
+    <string name="open_source_license6" translatable="false">License: Apache 2.0</string>
+
+    <string name="open_source_title7" translatable="false">com.github.yalantis:ucrop:2.2.8</string>
+    <string name="open_source_desc7" translatable="false">설명: Image Cropping Library</string>
+    <string name="open_source_url7" translatable="false">URL: https://github.com/Yalantis/uCrop</string>
+    <string name="open_source_license7" translatable="false">License: Apache 2.0</string>
+
+    <string name="open_source_title8" translatable="false">jp.co.cyberagent.android.gpuimage:gpuimage-library:2.1.0</string>
+    <string name="open_source_desc8" translatable="false">설명: Android filters based on OpenGL</string>
+    <string name="open_source_url8" translatable="false">URL: https://github.com/cats-oss/android-gpuimage</string>
+    <string name="open_source_license8" translatable="false">License: Apache 2.0</string>
+
+    <string name="open_source_title9" translatable="false">com.squareup:otto:1.3.8</string>
+    <string name="open_source_desc9" translatable="false">설명: An enhanced Guava-based event bus with emphasis on Android support</string>
+    <string name="open_source_url9" translatable="false">URL: https://github.com/square/otto</string>
+    <string name="open_source_license9" translatable="false">License: Apache 2.0</string>
+
+    <string name="open_source_title10" translatable="false">com.squareup.retrofit2:retrofit:2.9.0</string>
+    <string name="open_source_desc10" translatable="false">설명: A type-safe HTTP client for Android</string>
+    <string name="open_source_url10" translatable="false">URL: https://square.github.io/retrofit/</string>
+    <string name="open_source_license10" translatable="false">License: Apache 2.0</string>
+
+    <string name="open_source_title11" translatable="false">com.squareup.retrofit2:converter-gson:2.9.0</string>
+    <string name="open_source_desc11" translatable="false">설명: A Converter which uses Gson for serialization to and from JSON</string>
+    <string name="open_source_url11" translatable="false">URL: https://github.com/square/retrofit/tree/master/retrofit-converters/gson</string>
+    <string name="open_source_license11" translatable="false">License: Apache 2.0</string>
+
+</resources>

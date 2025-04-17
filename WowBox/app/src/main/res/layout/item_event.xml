@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/layout_event"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_747"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:elevation="@dimen/width_5"
+        android:layout_marginBottom="@dimen/height_10"
+        android:layout_marginTop="@dimen/height_10"
+        app:shape_roundRect_bottomLeftRadius="@dimen/width_55"
+        app:shape_roundRect_bottomRightRadius="@dimen/width_55"
+        app:shape_roundRect_topLeftRadius="@dimen/width_55"
+        app:shape_roundRect_topRightRadius="@dimen/width_55">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_event"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/text_event_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_80"
+                android:fontFamily="@font/pyeongchangepeace_bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_75pt"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/width_44"
+                android:paddingEnd="@dimen/width_44"
+                android:paddingTop="@dimen/height_22"
+                android:paddingBottom="@dimen/height_22"
+                android:visibility="gone"
+                android:background="@drawable/bg_a6000000_radius_138"/>
+
+            <ImageView
+                android:id="@+id/image_event_win_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:gravity="center"
+                android:src="@drawable/img_banner_event_result"/>
+
+            <TextView
+                android:id="@+id/text_event_proceeding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_banner_event_mark"
+                android:textSize="@dimen/textSize_32pt"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/width_34"
+                android:layout_marginStart="@dimen/width_34"
+                android:textStyle="bold"
+                android:text="@string/word_proceeding"/>
+
+            <LinearLayout
+                android:id="@+id/layout_event_close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_a6000000"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_110"
+                    android:src="@drawable/ic_event_banner_character"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_12"
+                    android:text="@string/msg_win_remain_time"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/text_event_win_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_78"
+                    android:fontFamily="@font/pyeongchangepeace_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_100pt"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+</RelativeLayout>

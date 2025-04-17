@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="@dimen/height_354"
+        android:layout_height="@dimen/height_354"
+        app:shape_roundRect_bottomLeftRadius="@dimen/width_13"
+        app:shape_roundRect_bottomRightRadius="@dimen/width_13"
+        app:shape_roundRect_topLeftRadius="@dimen/width_13"
+        app:shape_roundRect_topRightRadius="@dimen/width_13"
+        android:layout_marginEnd="@dimen/width_33">
+
+        <ImageView
+            android:id="@+id/image_inquire_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/image_inquire_image_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_inquire_image_del"
+            android:layout_margin="@dimen/width_10"
+            android:layout_gravity="end"/>
+
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/width_50"
+        android:paddingEnd="@dimen/width_50"
+        android:paddingTop="@dimen/height_38"
+        android:paddingBottom="@dimen/height_38"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/height_22"
+        android:background="@drawable/bg_border_3px_333333_transparent_radius_27">
+
+        <ImageView
+            android:id="@+id/image_bank"
+            android:layout_width="@dimen/width_150"
+            android:layout_height="@dimen/width_150"
+            android:background="@drawable/bg_ffffff_radius_27"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bank_line"
+            android:layout_marginStart="@dimen/width_50"
+            android:layout_marginEnd="@dimen/width_50"/>
+
+        <TextView
+            android:id="@+id/text_bank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/color_454545"
+            android:textSize="@dimen/textSize_40pt"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_138">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:text="@string/word_reward"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/width_44"
+            android:textSize="@dimen/textSize_60pt"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:id="@+id/text_main_reward_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="@dimen/width_44"
+            android:paddingEnd="@dimen/width_44"
+            android:paddingTop="@dimen/height_15"
+            android:paddingBottom="@dimen/height_15"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/bg_ea5506_radius_13"
+            android:layout_marginEnd="@dimen/width_44"
+            android:textSize="@dimen/textSize_38pt"
+            android:visibility="visible"
+            android:text="@string/word_login" />
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_overlapTop="@dimen/height_500"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/height_200"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_53"
+                    android:background="@color/color_f2f2f2"
+                    android:layout_alignParentBottom="true"/>
+
+                <io.github.florent37.shapeofview.shapes.RoundRectView
+                    android:id="@+id/image_main_reward_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_516"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginEnd="@dimen/width_44"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:layout_marginBottom="@dimen/height_22"
+                    app:shape_roundRect_bottomLeftRadius="@dimen/width_27"
+                    app:shape_roundRect_bottomRightRadius="@dimen/width_27"
+                    app:shape_roundRect_topLeftRadius="@dimen/width_27"
+                    app:shape_roundRect_topRightRadius="@dimen/width_27">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_invite_banner" />
+
+                </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_f2f2f2"
+                android:paddingStart="@dimen/width_44"
+                android:paddingEnd="@dimen/width_44"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_333333"
+                    android:text="@string/word_attendance"
+                    android:layout_gravity="center_horizontal" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/height_27"
+                    android:paddingBottom="@dimen/height_27"
+                    android:elevation="@dimen/width_5"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:background="@drawable/bg_ffffff_radius_27">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_33pt"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/width_27"
+                        android:textColor="@color/color_333333"
+                        android:text="@string/word_attendance_status" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_main_reward_attendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_17"
+                        android:layout_marginEnd="@dimen/width_17"
+                        android:layout_marginTop="@dimen/height_15" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/height_66"
+                    android:textColor="@color/color_4f4f4f"
+                    android:text="@string/msg_main_reward_attendance_desc1" />
+
+                <TextView
+                    android:id="@+id/text_main_reward_attendance"
+                    android:layout_width="@dimen/width_590"
+                    android:layout_height="@dimen/height_116"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="@string/word_req_reward"
+                    android:layout_marginTop="@dimen/height_53"
+                    android:visibility="gone"
+                    android:layout_marginBottom="@dimen/height_44"
+                    android:background="@drawable/bg_ea5506_radius_138" />
+
+                <TextView
+                    android:id="@+id/text_main_reward_attendance_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_66pt"
+                    android:textColor="@color/color_ea5506"
+                    android:layout_marginTop="@dimen/height_53"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_main_reward_attendance_day_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_22pt"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:textColor="@color/color_828282"
+                    android:layout_marginBottom="@dimen/height_27"
+                    android:visibility="gone"
+                    android:text="@string/msg_main_reward_attendance_desc2" />
+
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/layout_main_reward_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_22"
+                layout="@layout/item_event" />
+
+            <io.github.florent37.shapeofview.shapes.RoundRectView
+                android:id="@+id/image_main_reward_point_mall"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_516"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_22"
+                app:shape_roundRect_bottomLeftRadius="@dimen/width_27"
+                app:shape_roundRect_bottomRightRadius="@dimen/width_27"
+                app:shape_roundRect_topLeftRadius="@dimen/width_27"
+                app:shape_roundRect_topRightRadius="@dimen/width_27">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_point_mall_banner" />
+
+            </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="mail_address">
+        <item>naver.com</item>
+        <item>hanmail.net</item>
+        <item>daum.net</item>
+        <item>nate.com</item>
+        <item>gmail.com</item>
+        <item>hotmail.com</item>
+        <item>직접입력</item>
+    </string-array>
+    <string-array name="country">
+        <item>GH|Ghana</item>
+        <item>GA|가봉</item>
+        <item>GY|가이아나</item>
+        <item>GM|감비아</item>
+        <item>GP|과달루페</item>
+        <item>GT|과테말라</item>
+        <item>GU|괌</item>
+        <item>GD|그레나다</item>
+        <item>GE|그루지야</item>
+        <item>GR|그리스</item>
+        <item>GL|그린란드</item>
+        <item>GN|기니</item>
+        <item>GW|기니비사우</item>
+        <item>NA|나미비아</item>
+        <item>NR|나우루</item>
+        <item>NG|나이지리아</item>
+        <item>AQ|남극 대륙</item>
+        <item>ZA|남아프리카공화국</item>
+        <item>NL|네덜란드</item>
+        <item>AN|네덜란드령 안틸레스</item>
+        <item>NP|네팔</item>
+        <item>NO|노르웨이</item>
+        <item>NF|노퍽 섬</item>
+        <item>NZ|뉴질랜드</item>
+        <item>NC|뉴칼레도니아</item>
+        <item>NU|니우에 섬</item>
+        <item>NE|니제르</item>
+        <item>NI|니카과라</item>
+        <item>TW|대만</item>
+        <item>KR|대한민국</item>
+        <item>DK|덴마크</item>
+        <item>DM|도미니카</item>
+        <item>DO|도미니카 공화국</item>
+        <item>DE|독일</item>
+        <item>TL|동티모르</item>
+        <item>LA|라오스</item>
+        <item>LR|라이베리아</item>
+        <item>LV|라트비아</item>
+        <item>RU|러시아</item>
+        <item>LB|레바논</item>
+        <item>LS|레소토</item>
+        <item>RE|레위니옹</item>
+        <item>RO|루마니아</item>
+        <item>LU|룩셈부르크</item>
+        <item>LT|리투아니아</item>
+        <item>LI|리히텐슈타인</item>
+        <item>MG|마다가스카르</item>
+        <item>MQ|마르티니크</item>
+        <item>MH|마샬 군도</item>
+        <item>YT|마요트 섬</item>
+        <item>MK|마케도니아 공화국</item>
+        <item>MW|말라위</item>
+        <item>MY|말레이시아</item>
+        <item>ML|말리</item>
+        <item>MX|멕시코</item>
+        <item>MC|모나코</item>
+        <item>MA|모로코</item>
+        <item>MU|모리셔스</item>
+        <item>MR|모리타니아</item>
+        <item>MZ|모잠비크</item>
+        <item>MS|몬세라트</item>
+        <item>MD|몰도바</item>
+        <item>MV|몰디브</item>
+        <item>MT|몰타</item>
+        <item>MN|몽골</item>
+        <item>US|미국</item>
+        <item>VI|미국령 버진 제도</item>
+        <item>AS|미국령 사모아</item>
+        <item>UM|미국령 군소 제도</item>
+        <item>MM|미얀마</item>
+        <item>FM|미크로네시아</item>
+        <item>VU|바누아투</item>
+        <item>BH|바레인</item>
+        <item>BB|바베이도스</item>
+        <item>VA|바티칸 시국</item>
+        <item>BS|바하마</item>
+        <item>BD|방글라데시</item>
+        <item>BM|버뮤다</item>
+        <item>BJ|베냉</item>
+        <item>VE|베네수엘라</item>
+        <item>VN|베트남</item>
+        <item>BE|벨기에</item>
+        <item>BY|벨로루시</item>
+        <item>BZ|벨리즈</item>
+        <item>BA|보스니아 헤르체고비나</item>
+        <item>BW|보츠와나</item>
+        <item>BO|볼리비아</item>
+        <item>BI|부룬디</item>
+        <item>BF|부르키나 파소</item>
+        <item>BV|부베이 섬</item>
+        <item>BT|부탄</item>
+        <item>MP|북마리아나 제도</item>
+        <item>BG|불가리아</item>
+        <item>BR|브라질</item>
+        <item>BN|브루나이</item>
+        <item>WS|사모아</item>
+        <item>SA|사우디아라비아</item>
+        <item>GS|사우스 조지아 사우스 샌드위치 제도</item>
+        <item>CY|사이프러스</item>
+        <item>SM|산마리노</item>
+        <item>ST|상투메</item>
+        <item>PM|생피에르</item>
+        <item>EH|서사하라</item>
+        <item>SN|세네갈</item>
+        <item>SR|수리남</item>
+        <item>SC|세이셸</item>
+        <item>VC|세인트빈센트</item>
+        <item>LC|세인트루시아</item>
+        <item>KN|세인트키츠</item>
+        <item>SH|세인트헬레나 섬</item>
+        <item>SO|소말리아</item>
+        <item>SB|솔로몬 제도</item>
+        <item>LK|스리랑카</item>
+        <item>SJ|스발바르 얀 마이엔 제도</item>
+        <item>SZ|스와질란드</item>
+        <item>SE|스웨덴</item>
+        <item>CH|스위스</item>
+        <item>ES|스페인</item>
+        <item>SK|슬로바키아</item>
+        <item>SI|슬로베니아</item>
+        <item>SY|시리아</item>
+        <item>SL|시에라리온</item>
+        <item>SG|싱가포르</item>
+        <item>AE|아랍 에미리트 연합국</item>
+        <item>AW|아루바 섬</item>
+        <item>AM|아르메니아</item>
+        <item>AR|아르헨티나</item>
+        <item>IS|아이슬란드</item>
+        <item>HT|아이티</item>
+        <item>IE|아일랜드</item>
+        <item>AZ|아제르바이잔</item>
+        <item>AF|아프가니스탄</item>
+        <item>AD|안도라</item>
+        <item>AL|알바니아</item>
+        <item>DZ|알제리</item>
+        <item>AI|앙귈라</item>
+        <item>AG|안티구아</item>
+        <item>ER|에리트레아</item>
+        <item>EE|에스토니아</item>
+        <item>EC|에콰도르</item>
+        <item>ET|에티오피아</item>
+        <item>SV|엘살바도르</item>
+        <item>GB|영국</item>
+        <item>VG|영국령 버진 제도</item>
+        <item>IO|영국령 인도양 식민지</item>
+        <item>YE|예멘</item>
+        <item>OM|오만</item>
+        <item>AU|호주</item>
+        <item>AT|오스트리아</item>
+        <item>HN|온두라스</item>
+        <item>JO|요르단</item>
+        <item>UG|우간다</item>
+        <item>UY|우루과이</item>
+        <item>UZ|우즈베키스탄</item>
+        <item>UA|우크라이나</item>
+        <item>WF|월리스</item>
+        <item>IL|이스라엘</item>
+        <item>EG|이집트</item>
+        <item>IT|이탈리아</item>
+        <item>IN|인도</item>
+        <item>ID|인도네시아</item>
+        <item>JP|일본</item>
+        <item>JM|자메이카</item>
+        <item>ZM|잠비아</item>
+        <item>GQ|적도 기니</item>
+        <item>CN|중국</item>
+        <item>MO|중국(마카오 자치구)</item>
+        <item>HK|홍콩</item>
+        <item>CF|중앙아프리카 공화국</item>
+        <item>DJ|지부티</item>
+        <item>GI|지브롤터</item>
+        <item>ZW|짐바브웨</item>
+        <item>TD|차드</item>
+        <item>CZ|체코 공화국</item>
+        <item>CL|칠레</item>
+        <item>CM|카메룬</item>
+        <item>CV|카보베르데</item>
+        <item>KZ|카자흐스탄</item>
+        <item>QA|카타르</item>
+        <item>KH|캄보디아</item>
+        <item>CA|캐나다</item>
+        <item>KE|케냐</item>
+        <item>KY|케이맨 제도</item>
+        <item>KM|코모로</item>
+        <item>CR|코스타리카</item>
+        <item>CC|코코스(킬링) 제도</item>
+        <item>CI|코트디부아르</item>
+        <item>CO|콜롬비아</item>
+        <item>CG|콩고</item>
+        <item>CD|콩고민주공화국</item>
+        <item>KW|쿠웨이트</item>
+        <item>CK|쿡 제도</item>
+        <item>HR|크로아티아</item>
+        <item>CX|크리스마스 섬</item>
+        <item>KG|키르기스스탄</item>
+        <item>KI|키리바시</item>
+        <item>TJ|타지키스탄</item>
+        <item>TZ|탄자니아</item>
+        <item>TH|태국</item>
+        <item>TC|터크스 케이커스 제도</item>
+        <item>TR|터키</item>
+        <item>TG|토고</item>
+        <item>TK|토켈라우 제도</item>
+        <item>TO|통가</item>
+        <item>TM|투르크메니스탄</item>
+        <item>TV|투발루</item>
+        <item>TN|튀니지</item>
+        <item>TT|트리니다드 토바고</item>
+        <item>PA|파나마</item>
+        <item>PY|파라과이</item>
+        <item>PK|파키스탄</item>
+        <item>PG|파푸아뉴기니</item>
+        <item>PW|팔라우</item>
+        <item>FO|페로 제도</item>
+        <item>PE|페루</item>
+        <item>PT|포르투갈</item>
+        <item>FK|포클랜드 제도</item>
+        <item>PL|폴란드</item>
+        <item>PR|푸에르토리코</item>
+        <item>FR|프랑스</item>
+        <item>GF|프랑스령 기아나</item>
+        <item>TF|프랑스령 남부</item>
+        <item>PF|프랑스령 폴리네시아</item>
+        <item>FJ|피지</item>
+        <item>PN|핏케언 섬</item>
+        <item>FI|핀란드</item>
+        <item>PH|필리핀</item>
+        <item>HM|허드 맥도널드 제도</item>
+        <item>HU|헝가리</item>
+    </string-array>
+
+</resources>

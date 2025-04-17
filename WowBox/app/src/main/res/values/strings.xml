@@ -1,0 +1,1128 @@
+<resources>
+    <string name="word_confirm">Konfirmasi</string>
+    <string name="word_notice_alert">Pemberitahuan</string>
+    <string name="expand_string">Lainnya</string>
+    <string name="collapsed_string">Tutup</string>
+    <string name="msg_alert_login_join">Ini adalah layanan khusus member.</string>
+    <string name="word_login_join">Masuk / Daftar</string>
+    <string name="word_cancel">Batal</string>
+    <string name="word_google_login">Masuk dengan Google</string>
+    <string name="msg_grant_permission_title">Instruksi otorisasi</string>
+    <string name="msg_grant_permission_desc">Untuk menggunakan WOWBOX  \n Silakan izinkan izin di bawah ini.</string>
+    <string name="msg_notification_permission_title">Mengirim pemberitahuan</string>
+    <string name="msg_notification_permission_desc">Saya menyetujui izin pemberitahuan untuk menerima berita acara langsung dari WOWBOX.</string>
+    <string name="msg_disconnected_network">Anda tidak terhubung ke jaringan.</string>
+    <string name="msg_check_network_status">Silakan periksa status koneksi jaringan Anda,\nSilakan coba lagi.</string>
+    <string name="server_error_default">Kami mohon maaf atas ketidaknyamanan ini.\nSilakan coba lagi nanti.</string>
+    <string name="msg_grant_permission">Menyetujui izin</string>
+    <string name="msg_alert_notification_permission_denied">Anda telah menolak izin untuk mengirim pemberitahuan.\nUntuk mengizinkan izin\n[Pengaturan] &gt; [Aplikasi] &gt; [WOWBOX] &gt; [Pemberitahuan]\nUntuk mengizinkan pemberitahuan, izinkan izinnya.</string>
+    <string name="msg_server_checking">Server sedang diperiksa. \nSilakan coba lagi nanti.</string>
+    <string name="msg_minor_update">Versi baru telah diperbarui.\nApakah Anda ingin memperbarui?</string>
+    <string name="word_update">Perbarui</string>
+    <string name="msg_major_update">Layanan WOWBOX\nFitur baru telah ditambahkan.\nSilakan lanjutkan dengan pembaruan.</string>
+    <string name="word_join">Daftar</string>
+    <string name="html_join_nation_title">Pilih negara&lt;font color=#ea5506&gt;*&lt;/font&gt;</string>
+    <string name="html_join_nickname_title">Nama panggilan&lt;font color=#ea5506&gt;*&lt;/font&gt;</string>
+    <string name="html_join_email_title">Email&lt;font color=#ea5506&gt;*&lt;/font&gt;</string>
+    <string name="msg_input_nickname">Masukkan nama kamu.</string>
+    <string name="msg_input_change_nickname">Masukkan nama panggilan yang ingin Anda ubah.</string>
+    <string name="msg_input_email">Masukkan email Anda.</string>
+    <string name="msg_select_birthday">Pilih tanggal lahir Anda.</string>
+    <string name="msg_input_recommend_key">Silakan masukkan kode referral</string>
+    <string name="html_join_recommend_key_desc">Masukkan kode referral Anda dan Anda akan menerima &lt;font color=#ff5e5e&gt;&lt;b&gt;%1$sP&lt;/b&gt;&lt;/font&gt;</string>
+    <string name="word_duple_check">Cek duplikat</string>
+    <string name="word_my_recommend_key">Kode Referral Saya</string>
+    <string name="msg_invite_receive_benefit">Undang dan dapatkan hadiah</string>
+    <string name="word_total_agree">Setuju</string>
+    <string name="word_view_contents">Lihat konten</string>
+    <string name="word_complete">Selesai</string>
+    <string name="word_select">Pilih</string>
+    <string name="msg_usable_nickname">Nama panggilan tersedia.</string>
+    <string name="msg_input_email_id">Masukkan ID email.</string>
+    <string name="format_msg_input_over">Masukkan setidaknya %1$d karakter.</string>
+    <string name="msg_duplicate_nickname">Nama panggilan sudah digunakan.</string>
+    <string name="msg_check_duplicate_nickname">Silakan periksa apakah ada nama panggilan ganda.</string>
+    <string name="msg_select_nation">Silakan pilih negara Anda.</string>
+    <string name="msg_agree_terms">Mohon terima syarat dan ketentuan.</string>
+    <string name="msg_failed_join">Gagal mendaftar ke taman.</string>
+    <string name="word_this_week_win_price">Hadiah minggu ini</string>
+    <string name="msg_lotto_guide">Apa itu CONTEST?</string>
+    <string name="word_daily_bonus">Bonus Harian</string>
+    <string name="word_join_history">Partisipasi</string>
+    <string name="word_winner">Pemenang</string>
+    <string name="word_use_method">Bagaimana cara menggunakan</string>
+    <string name="format_lottery_round">%1$s kali</string>
+    <string name="msg_lotto_announce_date">Tanggal Pengundian</string>
+    <string name="msg_lotto_announce_date_format">dd.MM.yyyy</string>
+    <string name="msg_quit">Tekan tombol \'Kembali\' sekali lagi untuk keluar.</string>
+    <string name="msg_make_buff_wallet">Membuat Buff Wallet</string>
+    <string name="word_point">Poin</string>
+    <string name="word_retention_point">Poin Saya</string>
+    <string name="word_retention_ball">Lucky Ball Saya</string>
+    <string name="word_retention_candy">Candy yang di simpan</string>
+    <string name="word_luckyball_q">Lucky Ball?</string>
+    <string name="word_luckyball_earned_method">Cara mendapatkan Lucky Balls</string>
+    <string name="word_gift_shop">Gift shop </string>
+    <string name="word_gift_card">Gift card</string>
+    <string name="word_goods_shop">Merchandise shop</string>
+    <string name="word_exchange_candy">Ubah ke candy</string>
+    <string name="word_exchange_buff_coin">Beralih ke Buff coin</string>
+    <string name="word_exchange_buff">Beralih ke BUFF</string>
+    <string name="word_exchange_point">Beralih ke Poin</string>
+    <string name="word_exchange_luckyball">Alihkan ke lucky balls</string>
+    <string name="msg_exchange_luckyball">Beralih ke lucky balls</string>
+    <string name="msg_exchange_luckyball_desc">Anda dapat dikonversi poin ke Lucky Balls</string>
+    <string name="word_exchange_luckyball_amount">Jumlah lucky balls yang akan ditukar</string>
+    <string name="msg_input_exchange_luckyball_amount">Masukkan jumlah lucky balls yang ingin Anda tukar</string>
+    <string name="html_exchange_luckyball_maximum">Jumlah maksimum lucky balls yang dapat Anda tukarkan &lt;font color=#ff5e5e&gt;&lt;b&gt;%1$s&lt;/b&gt;&lt;/font&gt;</string>
+    <string name="msg_join">Mengikuti</string>
+    <string name="word_etc">Lainnya</string>
+    <string name="word_gift_shop_history">Riwayat pembelian Gift Shop</string>
+    <string name="word_goods_shop_history">Riwayat pembelian merchandise shop</string>
+    <string name="word_invite_friend">Undang Teman</string>
+    <string name="word_invite">Undang</string>
+    <string name="word_invite_friend_event">Event undang teman</string>
+    <string name="msg_invite_friend_event_desc">Nomor pemenang Lotere Korea resmi\n Ini adalah acara untuk memilih pemenang.</string>
+    <string name="msg_invite_gift_desc1">Untuk setiap 1 orang yang Anda undang</string>
+    <string name="msg_invite_gift_desc2">50 tiket CONTEST</string>
+    <string name="msg_invite_gift_desc3">Untuk setiap 5 orang yang Anda undang</string>
+    <string name="msg_invite_gift_desc4">1 Balls untuk setiap 5 undangan</string>
+    <string name="msg_inquiry">Hubungi kami</string>
+    <string name="word_inquiry_history">Hubungi Kami</string>
+    <string name="word_notice">Pengumuman</string>
+    <string name="word_setting">Pengaturan</string>
+    <string name="format_joinable_remain_minute">Anda memiliki waktu %1$s menit dan %2$s detik lagi untuk bergabung.</string>
+    <string name="format_joinable_remain_seconds">Anda memiliki %1$s seconds tersisa sampai Anda dapat berpartisipasi.</string>
+    <string name="msg_minute_join_desc">Semakin banyak entri yang anda buat, semakin besar kesempatan anda untuk menang.</string>
+    <string name="msg_lottery_join_progress">Anda memasuki CONTEST.</string>
+    <string name="msg_lotto_join_complete">Entri CONTEST anda telah selesai.</string>
+    <string name="format_input_number">Masukkan nomor di bawah ini untuk mencegah makro.  \nSilakan masukkan nomor %1$s.</string>
+    <string name="msg_invalid_number">Angka-angkanya tidak cocok.</string>
+    <string name="format_ball_unit">%1$s</string>
+    <string name="msg_over_enable_exchange_ball">Anda telah melebihi jumlah Balls yang dapat ditukarkan.</string>
+    <string name="msg_completed_exchange_ball">Penukaran Balls selesai.</string>
+    <string name="msg_lack_point">Anda kehabisan poin.</string>
+    <string name="msg_lack_ball">Anda kehabisan Balls.</string>
+    <string name="msg_alert_exchange_luckyball_title">Apakah Anda ingin menukar ke Lucky Balls?</string>
+    <string name="msg_alert_exchange_luckyball_desc">Balls yang telah ditukar\nTidak dapat dikonversi kembali menjadi poin.</string>
+    <string name="msg_exchange">Konversi</string>
+    <string name="word_exchange_luckyball_complete">Konversi Balls selesai</string>
+    <string name="msg_exchange_luckyball_complete_desc">Anda dapat memeriksa Permen Anda yang telah dikonversi di [Saya] &gt; [Balls] di bawah [Balls].\nDi [Saya] &gt; [Balls].</string>
+    <string name="word_minus_point">Poin dikurangi</string>
+    <string name="word_exchanged_luckyball">Konversi Balls</string>
+    <string name="msg_buff_coin_desc">BUFF adalah koin eksklusif (WOWBOX) yang berbasis blockchain.</string>
+    <string name="msg_do_not_show_again">Lihat lagi</string>
+    <string name="word_close">Tutup</string>
+    <string name="word_lottery_join_date">Tanggal Masuk</string>
+    <string name="format_lotto_my_join_count_title">%1$s Jumlah entri dalam putaran</string>
+    <string name="format_lotto_my_join_count">Nomor %1$s</string>
+    <string name="msg_not_exist_lottery_join_list">Saya tidak memiliki entri.</string>
+    <string name="format_lotto_win_number">Nomor Pemenang Kontes Sebanyak %1$s</string>
+    <string name="word_win_status2">Status Kemenangan</string>
+    <string name="word_grade">Angka yang sama</string>
+    <string name="word_total_win_prize">Total Kemenangan</string>
+    <string name="word_win_prize_per_person">Kemenangan per orang</string>
+    <string name="word_winner_count">Jumlah pemenang</string>
+    <string name="format_count_unit6">%1$s lembar</string>
+    <string name="format_count_unit4">%1$s orang</string>
+    <string name="word_my_win_result">Kemenangan saya</string>
+    <string name="msg_confirm_result">Periksa hasil Anda</string>
+    <string name="msg_not_win">Saya tidak menang</string>
+    <string name="word_invite_method">Cara mengundang</string>
+    <string name="msg_invite_method_desc">- Kode referral Anda akan secara otomatis dimasukkan hanya jika teman Anda mengklik pesan undangan yang Anda kirim dan mengunduh aplikasi.\n\n- Pengguna iOS harus memasukkan kode referral dengan benar pada kolom kode referral saat mendaftar karena kode referral tidak dimasukkan secara otomatis.</string>
+    <string name="word_recommend_code">Kode Referral</string>
+    <string name="msg_copied_clipboard">telah disalin ke clipboard anda.</string>
+    <string name="msg_lottery_guide_desc1">Nomor pemenang Lotere Korea resmi\nIni adalah acara untuk memilih pemenang.</string>
+    <string name="msg_lottery_guide_title2">Berapa banyak yang akan saya menangkan?</string>
+    <string name="msg_lottery_guide_desc2"> Berapa besar hadiahnya? Jumlah hadiah bervariasi tergantung pada pengundian,\nHadiah 1, 2, dan 3 akan dibagi dengan jumlah pemenang jika ada lebih dari satu pemenang\nKemenangan akan dibagi dengan jumlah pemenang.</string>
+    <string name="msg_lottery_guide_title3">Prosedur</string>
+    <string name="msg_lottery_guide_desc3">01. Entri CONTEST</string>
+    <string name="msg_lottery_guide_desc4">Tekan tombol [MULAI] setiap kali\nNomor entri CONTEST akan keluar secara otomatis.</string>
+    <string name="msg_lottery_guide_desc5">02. Pengumuman Pemenang!</string>
+    <string name="msg_lottery_guide_desc6">Setiap minggu, pemenang akan diumumkan berdasarkan nomor resmi Lotere Korea\nPemenang akan diumumkan dari peringkat \n 1~ 5 berdasarkan nomor resmi Lotere Korea.</string>
+    <string name="msg_lottery_guide_desc7">03. Terima kemenangan anda!</string>
+    <string name="msg_lottery_guide_desc8">Klik tombol [DAPATKAN] di layar [Detail Kemenangan].\nPoin kemenangan akan dikreditkan.</string>
+    <string name="msg_lottery_condition1">Mencocokkan 6 angka</string>
+    <string name="msg_lottery_condition2">Mencocokkan 5 angka + Angka Bonus\nMencocokkan Angka Bonus</string>
+    <string name="msg_lottery_condition3">Mencocokkan 5 angka</string>
+    <string name="msg_lottery_condition4">Mencocokkan 4 angka</string>
+    <string name="msg_lottery_condition5">Mencocokkan 3 angka</string>
+    <string name="msg_total_receive_lotto_ticket">Dapatkan tiket CONTEST sekaligus</string>
+    <string name="msg_total_receive_lotto_ticket_desc">Anda dapat mendapatkan hingga 50 tiket CONTEST sekaligus.</string>
+    <string name="msg_complete_receive_lotto">Tiket CONTEST Anda telah dibayar.</string>
+    <string name="word_save_complete">Diperoleh</string>
+    <string name="word_win_number">Nomor yang menang</string>
+    <string name="msg_complete_receive_win">Hadiah anda telah dibayarkan.</string>
+    <string name="format_cong_win">Selamat anda telah memenangkan %1$s, dst.</string>
+    <string name="format_lotto_win_point">Anda telah memenangkan %1$sP!</string>
+    <string name="format_lotto_win_cash">Anda telah memenangkan Rp %1$s!</string>
+    <string name="format_lotto_win_lotto">Anda telah memenangkan tiket CONTEST %1$s!</string>
+    <string name="format_brand_count">Merek (%1$s)</string>
+    <string name="word_sort_low_price">Harga Terendah</string>
+    <string name="word_sort_high_price">Harga Tertinggi</string>
+    <string name="word_sort_recent">Terbaru</string>
+    <string name="word_sort_past">Terlama</string>
+    <string name="word_product_detail">Detail produk</string>
+    <string name="word_gift_card_purchase">Beli kartu hadiah</string>
+    <string name="word_send_method">Metode pengiriman</string>
+    <string name="word_send_email">kirim Email</string>
+    <string name="word_sent_email">Email terkirim</string>
+    <string name="word_send_wait">Menunggu untuk dikirim</string>
+    <string name="word_send_complete">Terkirim</string>
+    <string name="msg_view_return_reason">Lihat alasan penolakan</string>
+    <string name="msg_can_not_refund_gift_card">Kartu hadiah tidak dapat dikembalikan dan tidak dapat ditukar.</string>
+    <string name="msg_purchase">Beli sekarang</string>
+    <string name="word_email">Email</string>
+    <string name="word_purchase_price">Jumlah yang dibayarkan</string>
+    <string name="word_discount_point">Poin yang dikurangi</string>
+    <string name="msg_gift_card_purchase_terms">Saya telah membaca dan menyetujui tindakan pencegahan di bawah ini.</string>
+    <string name="msg_gift_card_purchase_terms_desc">Kami tidak bertanggung jawab atas denda apa pun yang disebabkan oleh alamat email yang tidak diverifikasi. Pastikan Anda telah memasukkan alamat email yang benar.</string>
+    <string name="msg_complete_purchase">Pembelian Anda telah selesai.</string>
+    <string name="msg_complete_req_shipping">Permintaan pengiriman Anda sudah selesai.</string>
+    <string name="msg_complete_join">Entri Anda telah dikirimkan.</string>
+    <string name="msg_not_found_gift_card">Kartu hadiah ini tidak ada.</string>
+    <string name="msg_not_found_product">Produk ini tidak ada.</string>
+    <string name="msg_alert_gift_card_purchase">Apakah Anda yakin ingin membeli?</string>
+    <string name="html_alert_gift_card_purchase_desc">&lt;font color=#ff5e5e&gt;&lt;b&gt;Kami tidak bertanggung jawab atas segala&lt;br&gt;kekurangan yang disebabkan oleh alamat email yang tidak terverifikasi&lt;/b&gt;&lt;/font&gt;.</string>
+    <string name="msg_agree_gift_card_purchase_caution">Mohon menerima tindakan pencegahan.</string>
+    <string name="word_point_config">Kelola Poin</string>
+    <string name="word_luckyball_config">Kelola Balls</string>
+    <string name="msg_view_history">Lihat riwayat</string>
+    <string name="msg_not_exist_history">Tidak ada riwayat.</string>
+    <string name="msg_not_exist_purchase_history">Tidak ada riwayat pembelian.</string>
+    <string name="word_point_used_history_detail">Detail penukaran poin</string>
+    <string name="word_point_retrieve_history_detail">Detail penukaran poin</string>
+    <string name="word_point_charge_history_detail">Detail perolehan poin</string>
+    <string name="word_point_provide_history_detail">Detail penukaran poin</string>
+    <string name="word_rp_used_history_detail">Detail penukaran Rp</string>
+    <string name="word_rp_retrieve_history_detail">Detail penukaran Rp</string>
+    <string name="word_rp_charge_history_detail">Detail perolehan Rp</string>
+    <string name="word_rp_provide_history_detail">Detail penukaran Rp</string>
+    <string name="word_use_point">Poin yang ditukarkan</string>
+    <string name="word_retrieve_point">Jumlah poin Penukaran</string>
+    <string name="word_charge_point">Poin yang diperoleh</string>
+    <string name="word_provide_point">Poin yang dibayarkan</string>
+    <string name="word_use_rp">Rp yang ditukarkan</string>
+    <string name="word_retrieve_rp">Jumlah Rp Penukaran</string>
+    <string name="word_charge_rp">Rp yang diperoleh</string>
+    <string name="word_provide_rp">Rp yang dibayarkan</string>
+    <string name="word_use_type">Jenis Penukaran</string>
+    <string name="word_retrieve_type">Jenis Penukaran</string>
+    <string name="word_charge_type">Jenis Penghasilan</string>
+    <string name="word_provide_type">Jenis Pembayaran</string>
+    <string name="word_use_date">Tanggal Penukaran</string>
+    <string name="word_retrieve_date">Tanggal Penebusan</string>
+    <string name="word_charge_date">Tanggal Penghasilan</string>
+    <string name="word_provide_date">Tanggal Pembayaran</string>
+    <string name="word_req_partner">Aplikasi mitra</string>
+    <string name="word_resend_email">Kirim ulang email</string>
+    <string name="word_partner_earn_process">Proses penghasilan mitra</string>
+    <string name="word_partner_earn_process1">Aplikasi mitra</string>
+    <string name="msg_partner_earn_process1_desc">Aplikasi mitra disetujui dan kode mitra dikeluarkan</string>
+    <string name="word_partner_earn_process2">Pendaftaran rujukan</string>
+    <string name="msg_partner_earn_process2_desc">Masukkan kode mitra dan daftarkan rujukan saat pendaftaran</string>
+    <string name="word_partner_earn_process3">Mereferensikan rujukan CONTEST</string>
+    <string name="html_partner_earn_process3_desc">Mereferensikan setiap masuk rujukan CONTEST  1.000x = &lt;font colour=#77f5ae&gt;$%1$s&lt;/font&gt;</string>
+    <string name="word_expect_earn">Perkiraan Pendapatan</string>
+    <string name="html_partner_earn_1">Referensi &lt;font colour=#77f5ae&gt;100.000&lt;/font&gt;</string>
+    <string name="html_partner_earn_2">Masuk CONTEST &lt;font color=#77f5ae&gt;Rata-rata 10x&lt;/font&gt;</string>
+    <string name="word_30day">30 hari</string>
+    <string name="word_expect_earn_30day">Perkiraan pendapatan</string>
+    <string name="msg_expect_earn_caution">Perkiraan pendapatan dapat bervariasi di setiap negara.</string>
+    <string name="html_partner_name_title">Nama Mitra &lt;font color=#ea5506&gt;*&lt;/font&gt;</string>
+    <string name="word_running_channel">Saluran Operasi (pilih)</string>
+    <string name="msg_input_partner_name">Masukkan nama mitra Anda.</string>
+    <string name="msg_input_url">Masukkan URL Anda</string>
+    <string name="msg_valid_email">Masukkan ID email Anda dalam format yang benar.</string>
+    <string name="msg_partner_req_agree">Saya setuju untuk menerima email.</string>
+    <string name="msg_partner_req_agree_desc">Email yang Anda berikan akan dikirimi formulir yang diperlukan untuk mendaftar menjadi mitra.</string>
+    <string name="msg_agree_email">Saya setuju untuk menerima email.</string>
+    <string name="msg_input_valid_url_instar">Masukkan URL Instagram Anda dalam format yang benar.</string>
+    <string name="msg_input_valid_url_youtube">Masukkan URL YouTube Anda.</string>
+    <string name="msg_input_valid_url_x">Masukkan tanda X pada format URL.</string>
+    <string name="msg_partner_req_pending_title">Aplikasi mitra Anda sedang ditinjau.</string>
+    <string name="msg_partner_req_pending_desc">Silakan kirim email ke\nAnda telah dikirimi formulir yang diperlukan untuk mengajukan permohonan menjadi mitra.\nJika Anda tidak menerimanya, silakan klik tombol kirim ulang.\nPersetujuan mitra dapat memakan waktu hingga 3 hari sejak tanggal pengajuan.</string>
+    <string name="msg_partner_req_complete">Ke email yang Anda masukkan \nFormulir yang diperlukan untuk aplikasi mitra telah dikirim ke alamat email yang Anda berikan.\nJika Anda tidak menerimanya, silakan klik tombol kirim ulang.\nPersetujuan mitra dapat memakan waktu hingga 3 hari sejak tanggal pengajuan.</string>
+    <string name="msg_resend_email_complete">Email Anda telah dikirim ulang.</string>
+    <string name="msg_you_are_partner">Anda telah menjadi mitra resmi WOWBOX.</string>
+    <string name="word_total_commission">Penghasilan Kumulatif</string>
+    <string name="word_this_month_commission">Penghasilan bulan ini</string>
+    <string name="word_commission_in_duration">Penghasilan dalam Periode</string>
+    <string name="word_partner_commission_config">Manajemen Penghasilan Mitra</string>
+    <string name="word_commission_calculate_config">Kelola Pembayaran</string>
+    <string name="word_alert_date_title">Tanggal khusus</string>
+    <string name="word_today">Hari ini</string>
+    <string name="word_yesterday">Kemarin</string>
+    <string name="format_last_day">Hari%1$s terakhir</string>
+    <string name="word_commission_ad_type">Penghasilan CONTEST</string>
+    <string name="word_commission_ball_type">Pendapatan Konversi Balls</string>
+    <string name="word_commission_bonus_type">Pendapatan BONUS</string>
+    <string name="msg_profit_partner_desc">Penghasilan mitra diselesaikan pada hari terakhir setiap bulan. \nJika penyelesaian kurang dari $1.000, maka akan digulirkan.</string>
+    <string name="msg_not_exist_profit_partner">Aku masih menyelesaikan.</string>
+    <string name="word_my_profit">Pemukiman saya</string>
+    <string name="word_transfered_profit">Pembayaran Carryover</string>
+    <string name="word_master_profit">Penghasilan utama</string>
+    <string name="word_total_profit">Jumlah total penyelesaian</string>
+    <string name="word_detail_history">Detail</string>
+    <string name="word_profit_complete">Penyelesaian selesai</string>
+    <string name="word_master_profit_detail">Rincian penghasilan master</string>
+    <string name="word_sub_partner">Sub Mitra</string>
+    <string name="word_total_master_profit">Akumulasi Penghasilan Master</string>
+    <string name="format_mater_profit">Keuntungan Master %1$s</string>
+    <string name="format_profit">Keuntungan %1$s</string>
+    <string name="word_profile_config">Mengelola profil</string>
+    <string name="word_profile_image_setting">Pengaturan gambar profil</string>
+    <string name="word_alarm_box">Kotak masuk</string>
+    <string name="word_nickname">Nama panggilan</string>
+    <string name="word_gender">Jenis kelamin</string>
+    <string name="word_male">Laki-laki</string>
+    <string name="word_female">Wanita</string>
+    <string name="word_birthday">Tanggal lahir</string>
+    <string name="word_nation">Negara</string>
+    <string name="word_select_photo">Pilih foto</string>
+    <string name="msg_gallery_description1">Pilih foto yang akan didaftarkan dari daftar di bawah ini.</string>
+    <string name="msg_gallery_description2">(Anda dapat mendaftarkan hingga 10 foto).</string>
+    <string name="msg_gallery_description3">Klik di sini untuk mengambil foto</string>
+    <string name="msg_failed_granted_permission">Izin tidak diterima.</string>
+    <string name="msg_editing_image">Gambar sedang diedit</string>
+    <string name="msg_do_not_attach_broken_image">Kami tidak dapat melampirkan gambar yang rusak.</string>
+    <string name="word_total">Semua</string>
+    <string name="msg_not_exist_notification_box">Tidak ada riwayat pemberitahuan.</string>
+    <string name="msg_not_exist_inquire_title">Tidak ada riwayat kontak.</string>
+    <string name="msg_not_exist_inquire_desc">Jika Anda memiliki pertanyaan tentang layanan kami\nJangan ragu untuk menghubungi kami!</string>
+    <string name="msg_not_exist_invite_history">Riwayat undangan teman Anda tidak ada.</string>
+    <string name="word_pending_reply">Tunggu balasan</string>
+    <string name="word_complete_reply">Menjawab</string>
+    <string name="word_general">Umum</string>
+    <string name="word_partnership">Afiliasi</string>
+    <string name="word_error">Eror</string>
+    <string name="format_inquire_count">Pertanyaan %1$s</string>
+    <string name="msg_input_title">Silakan masukkan subjek.</string>
+    <string name="msg_input_inquire_contents">Silakan masukkan pertanyaan Anda.</string>
+    <string name="msg_input_inquire_contents_over10">Masukkan minimal 10 karakter untuk pertanyaan Anda.</string>
+    <string name="html_inquire_title_title">Subjek&lt;font color=#ea5506&gt;*&lt;/font&gt;</string>
+    <string name="html_inquire_contents_title">Deskripsi &lt;font color=#ea5506&gt;*&lt;/font&gt;</string>
+    <string name="word_attach_image">Gambar terlampir</string>
+    <string name="word_next">Berikutnya</string>
+    <string name="format_msg_image_count">Anda hanya dapat melampirkan hingga %1$d gambar.</string>
+    <string name="msg_image_list_description">Pilih foto jika Anda ingin mengeditnya.</string>
+    <string name="word_delete">Hapus</string>
+    <string name="word_brightness">Kecerahan</string>
+    <string name="word_contrast">Kontras</string>
+    <string name="word_saturation">Saturasi</string>
+    <string name="word_image_edit">Mengedit foto</string>
+    <string name="msg_select_delete_image">Pilih foto yang ingin Anda hapus.</string>
+    <string name="word_delete_image">Menghapus foto</string>
+    <string name="msg_max_image_count">Hingga 10 foto\nAnda dapat mendaftar.</string>
+    <string name="msg_select_inquire_type">Pilih jenis pertanyaan Anda.</string>
+    <string name="msg_alert_inquire">Silakan pilih\nApakah Anda ingin menghubungi kami?</string>
+    <string name="msg_complete_inquire">Pertanyaan Anda telah terdaftar.</string>
+    <string name="word_account_info">Informasi akun</string>
+    <string name="word_terms">Syarat dan Ketentuan</string>
+    <string name="word_version_info">Versi</string>
+    <string name="word_opensource_licence">Lisensi Sumber Terbuka</string>
+    <string name="word_alarm_setting">Pemberitahuan</string>
+    <string name="word_log_out">Log out</string>
+    <string name="word_withdrawal">Berhenti berlangganan</string>
+    <string name="word_withdrawal_cancel">Pembatalan</string>
+    <string name="word_request_withdrawal">Minta pembatalan</string>
+    <string name="word_current_version">Versi saat ini</string>
+    <string name="word_latest_version">Versi terbaru</string>
+    <string name="msg_latest_version">Ini adalah versi terbaru.</string>
+    <string name="word_service_alarm">Pemberitahuan layanan</string>
+    <string name="msg_service_alarm_desc">Anda dapat mengatur preferensi Anda untuk pengumuman layanan, acara, dan banyak lagi!</string>
+    <string name="word_marketing_receiving_agree">Ikut serta dalam email dan pemasaran teks</string>
+    <string name="word_service_alarm_on">Notifikasi layanan diaktifkan.</string>
+    <string name="word_service_alarm_off">Pemberitahuan layanan berhenti berlangganan.</string>
+    <string name="word_marketing_alarm_on">Anda telah setuju untuk menerima pemasaran.</string>
+    <string name="word_marketing_alarm_off">Anda telah berhenti berlangganan pemasaran.</string>
+    <string name="word_withdrawal_title">Apa yang harus dilakukan ketika Anda membatalkan akun Anda</string>
+    <string name="word_withdrawal_caution_title">Harap diperhatikan</string>
+    <string name="word_must_read">Wajib Dibaca</string>
+    <string name="word_retention_history">Memegang Sejarah</string>
+    <string name="word_buff_coin">Buffcoin</string>
+    <string name="word_withdrawal_method_title">Cara membatalkan keanggotaan Anda</string>
+    <string name="msg_withdrawal_method_desc">Ketika Anda memilih untuk menarik keanggotaan Anda, proses verifikasi email akan dilakukan untuk mencegah pencurian ilegal dan kerusakan pada kepentingan Anda.</string>
+    <string name="word_withdrawal_waiting_title">Setelah menyelesaikan verifikasi email, Anda dapat mengajukan penarikan keanggotaan.</string>
+    <string name="msg_withdrawal_waiting_desc">Masa tunggu untuk pembatalan keanggotaan, Ada masa tunggu penarikan selama 14 hari setelah verifikasi selesai, dan Anda dapat membatalkan masa tunggu penarikan.</string>
+    <string name="word_auth_email">Verifikasi email</string>
+    <string name="msg_withdrawal_auth_phone_desc">Untuk mencegah pencurian ilegal dan kerusakan pada kepentingan Anda\nSilakan lanjutkan dengan proses verifikasi nomor telepon.</string>
+    <string name="msg_withdrawal_reason_desc">Mohon beritahu kami alasan Anda berhenti berlangganan.\nKami akan menggunakannya sebagai sumber daya penting untuk peningkatan layanan.</string>
+    <string name="msg_withdrawal_reason1">Tujuan penghapusan catatan</string>
+    <string name="msg_withdrawal_reason2">Karena tidak nyaman untuk digunakan dan saya memiliki banyak disabilitas</string>
+    <string name="msg_withdrawal_reason3">Saya tidak tertarik dengan layanan ini</string>
+    <string name="msg_withdrawal_reason4">Saya jarang menggunakan layanan ini</string>
+    <string name="msg_select_withdrawal_reason">Silakan pilih alasan penarikan.</string>
+    <string name="msg_input_withdrawal_reason">Masukkan alasan Anda untuk berhenti berlangganan.</string>
+    <string name="msg_send_auth_email">Kirim email verifikasi</string>
+    <string name="msg_alert_cancel_auth">Verifikasi email akan dikirim ke\nAnda harus memverifikasi email Anda lagi.\nApakah Anda ingin berhenti?</string>
+    <string name="msg_alert_withdrawal">Apakah Anda ingin mengajukan pembatalan?</string>
+    <string name="msg_input_auth_number">Silakan masukkan nomor verifikasi Anda.</string>
+    <string name="msg_input_auth_number_desc">Masukkan nomor verifikasi di email dalam waktu 24 jam.</string>
+    <string name="word_auth_number">Nomor verifikasi</string>
+    <string name="msg_input_6number">Silakan masukkan 6 digit.</string>
+    <string name="msg_not_receive_email">Tidak menerima email verifikasi?</string>
+    <string name="msg_not_receive_email2">Jika Anda tidak menerima email</string>
+    <string name="msg_not_receive_reason">•Periksa apakah alamat email yang Anda masukkan sudah benar.\n-Periksa folder spam\n•Kosongkan kotak surat Anda. </string>
+    <string name="msg_not_matched_auth_number">Nomor verifikasi tidak cocok.</string>
+    <string name="msg_complete_withdrawal">Permintaan pembatalan Anda telah selesai.</string>
+    <string name="msg_complete_withdrawal_desc">Jika Anda tidak melakukan login ulang dalam waktu 14 hari, permohonan Anda akan dibatalkan secara otomatis.\nDibatalkan secara otomatis.</string>
+    <string name="msg_alert_waiting_leave">Penarikan dana Anda tertunda.</string>
+    <string name="msg_alert_waiting_leave_desc">Apakah Anda telah membatalkan permohonan penarikan dana Anda?</string>
+    <string name="msg_complete_withdrawal_cancel">Permohonan penarikan dana Anda telah dibatalkan.</string>
+    <string name="msg_complete_withdrawal_cancel_desc">Silakan masuk lagi dari layar login.</string>
+    <string name="msg_lucky_draw_live_desc">Ini adalah acara untuk memilih pemenang dengan mengundi nomor keberuntungan secara real time.</string>
+    <string name="word_recruit_ing">Rekruitmen</string>
+    <string name="word_recruit_complete">Rekrutmen selesai</string>
+    <string name="word_announce_wait">Tunggu pengumuman pemenang</string>
+    <string name="word_announce_complete">Diumumkan</string>
+    <string name="msg_view_winner">Lihat pemenang</string>
+    <string name="msg_view_live">Menonton siaran LANGSUNG</string>
+    <string name="msg_checking_win_announce_date">Memeriksa jadwal pengundian LIVE.</string>
+    <string name="format_lotto_win_announce_date">Pemenang diumumkan untuk %1$s</string>
+    <string name="msg_not_exist_lucky_draw">Tidak ada acara yang sedang berlangsung saat ini.</string>
+    <string name="msg_not_exist_lucky_draw_desc">Kami akan kembali dengan yang baru.</string>
+    <string name="msg_look_around_gift">Jelajahi hadiah</string>
+    <string name="format_lucky_draw_gift_count">%1$s orang pemenang</string>
+    <string name="word_total_gift_price">Total Hadiah</string>
+    <string name="word_select_lucky_draw_number">Acak Bola Keberuntungan</string>
+    <string name="word_selected_lucky_draw_number">Nomor keberuntungan yang anda pilih</string>
+    <string name="word_win_rate">Peluang menang</string>
+    <string name="word_lucky_draw_number_question">Apa yang dimaksud dengan Angka Keberuntungan?</string>
+    <string name="word_lucky_draw_number">Angka Keberuntungan</string>
+    <string name="word_win_lucky_draw_number">Memenangkan Nomor Keberuntungan</string>
+    <string name="msg_alert_lucky_draw_number_desc">Nomor keberuntungan adalah \nNomor unik Anda sendiri.\nPilih nomor keberuntungan Anda sekarang!</string>
+    <string name="format_lucky_draw_remain_count">Kombinasi angka yang tersisa %1$s</string>
+    <string name="msg_select_lucky_draw_number">Pilihlah nomor keberuntungan anda.</string>
+    <string name="msg_over_max_join_count">Anda telah melebihi jumlah maksimum entri.</string>
+    <string name="msg_alert_lucky_draw_join_desc">Entri Balls anda tidak akan dikembalikan.</string>
+    <string name="msg_alert_lucky_draw_join_desc2">Apakah anda yakin ingin masuk?</string>
+    <string name="msg_error_not_exist_lucky_draw">Tidak ada.</string>
+    <string name="word_free">Gratis</string>
+    <string name="html_win_rate_title">%1$s entri&lt;br&gt;&lt;font color=#ea5506&gt;Peluang menang&lt;/font&gt;</string>
+    <string name="word_lucky_draw_purchase_history">Entri saya</string>
+    <string name="msg_not_exist_draw_purchase_history">Tidak ada riwayat entri.</string>
+    <string name="word_join_price">Biaya Layanan</string>
+    <string name="word_reply">Komentar</string>
+    <string name="word_me">(saya)</string>
+    <string name="msg_not_exist_reply">Komentar tidak ada.</string>
+    <string name="format_reply_count">Komentar (%1$s)</string>
+    <string name="msg_input_reply">Silakan masukkan komentar Anda.</string>
+    <string name="word_reg">Daftar</string>
+    <string name="word_reg_win_impression">Daftarkan kemenangan Anda</string>
+    <string name="word_modify_win_impression">Edit komentar</string>
+    <string name="msg_hint_impression">Silakan tulis komentar kemenangan Anda.\n(Harap masukkan minimal 5 karakter)</string>
+    <string name="msg_cong">Selamat!</string>
+    <string name="msg_lucky_draw_win_desc">WOWBOX Operations akan mengirimkan email kepada Anda berisi instruksi tentang cara mengklaim hadiah Anda.\nKami akan mengirimkan email notifikasi kepada Anda.</string>
+    <string name="msg_write_win_impression">Tulis ulasan</string>
+    <string name="word_purchase_history">Detail pembelian</string>
+    <string name="word_return_reason">Alasan penolakan</string>
+    <string name="msg_community_apply_return_reason_desc">Silakan periksa alasan penolakan dan kirim ulang gambar yang diambil.</string>
+    <string name="word_product_agree_title">Informasi dan Perjanjian Pembelian</string>
+    <string name="msg_product_agree_desc">Kami tidak bertanggung jawab atas denda yang disebabkan oleh alamat pengiriman yang belum dikonfirmasi. Mohon periksa kembali alamat pengiriman Anda saat mendaftar.\nJika produk yang Anda minta sudah habis, permintaan Anda dapat dibatalkan.</string>
+    <string name="word_req_shipping">Minta Pengiriman</string>
+    <string name="word_input_shipping_site">Masukkan alamat pengiriman</string>
+    <string name="word_receiver">Penerima</string>
+    <string name="msg_input_receiver">Masukkan nama penerima.</string>
+    <string name="word_contact">Kontak</string>
+    <string name="msg_input_contact">Masukkan nomor kontak.</string>
+    <string name="msg_invalid_phone_number">Formulir nomor telepon tidak benar.</string>
+    <string name="word_address">Alamat</string>
+    <string name="msg_input_address">Silakan masukkan alamat.</string>
+    <string name="msg_input_zip_code">Masukkan kode pos.</string>
+    <string name="msg_input_detail_address">Silakan masukkan alamat jalan.</string>
+    <string name="msg_input_city">Silakan masukkan kota.</string>
+    <string name="msg_input_state">Silakan masukkan negara bagian.</string>
+    <string name="word_shipping_req_product">Barang yang akan dikirim</string>
+    <string name="word_search_address">Alamat Pencarian</string>
+    <string name="msg_alert_product_purchase_title">Apakah Anda yakin telah memasukkan alamat pengiriman yang benar?</string>
+    <string name="html_alert_product_purchase_desc">&lt;font color=#ff5e5e&gt;&lt;b&gt;Kami tidak bertanggung jawab atas denda apa pun karena alamat pengiriman yang dimasukkan salah&lt;/b&gt;&lt;/font&gt;</string>
+    <string name="word_country">Negara</string>
+    <string name="word_country_no">Kode Negara</string>
+    <string name="msg_select_shipping_country">Pilih negara tujuan pengiriman.</string>
+    <string name="msg_input_country_no">Masukkan kode negara.</string>
+    <string name="word_zip_code">Kode Pos</string>
+    <string name="word_search_shipping">Melacak pengiriman</string>
+    <string name="word_shipping_wait">Menunggu pengiriman</string>
+    <string name="word_shipping_ing">Dalam perjalanan</string>
+    <string name="word_shipping_complete">Terkirim</string>
+    <string name="word_auth_telegram">Verifikasi Telegram</string>
+    <string name="word_auth_telegram_complete">Telegram terverifikasi</string>
+    <string name="word_give_1">1Pembayaran</string>
+    <string name="word_give_1_complete">1Pembayaran selesai</string>
+    <string name="msg_auth_telegram_desc1">1. Masuk ke ruang grup Telegram penggemar</string>
+    <string name="msg_auth_telegram_desc2">2. Ambil tangkapan layar setelah mengetik salam</string>
+    <string name="word_auth_image">Gambar verifikasi</string>
+    <string name="msg_attach_auth_image">Silakan lampirkan gambar verifikasi.</string>
+    <string name="msg_auth_apply">Ajukan permohonan verifikasi</string>
+    <string name="msg_alert_auth_telegram_title">Verifikasi Telegram\nPermohonan Anda telah selesai.</string>
+    <string name="msg_alert_auth_telegram_desc">Verifikasi mungkin memerlukan waktu lebih dari 3 hari sejak tanggal pengajuan\nMungkin membutuhkan waktu lebih dari 3 hari.</string>
+    <string name="msg_auth_pending">Verifikasi sedang ditinjau.</string>
+    <string name="msg_auth_pending_desc">Verifikasi mungkin memerlukan waktu hingga 3 hari sejak tanggal pengajuan.</string>
+    <string name="msg_auth_return">Verifikasi Anda telah ditolak.</string>
+    <string name="msg_auth_complete">Verifikasi telah selesai.</string>
+    <string name="word_my_image">Gambar Anda</string>
+    <string name="word_default_image">Gambar default</string>
+    <string name="msg_complete_profile_image">Perubahan gambar profil Anda selesai.</string>
+    <string name="msg_notification_box_delete_desc">Anda dapat menghapus notifikasi dengan mengusap ke kiri.</string>
+    <string name="msg_alert_delete_notification_box">Apakah Anda yakin ingin menghapus alarm?</string>
+    <string name="word_my_invite_list">Riwayat rujukan</string>
+    <string name="word_invite_count">Jumlah teman yang diundang</string>
+    <string name="word_before_round_winner">Pemenang sebelumnya</string>
+    <string name="html_lottery_qna1_title">&lt;b&gt;Q.&lt;/b&gt; Kapan batas waktu untuk setiap CONTEST mingguan?</string>
+    <string name="html_lottery_qna1_desc">&lt;b&gt;A.&lt;/b&gt; Batas waktunya adalah setiap hari Sabtu pukul 20:30 waktu setempat.</string>
+    <string name="html_lottery_qna2_title">&lt;b&gt;Q.&lt;/b&gt; Kapan pemenang CONTEST mingguan diumumkan?</string>
+    <string name="html_lottery_qna2_desc">>&lt;b&gt;A.&lt;/b&gt;. Pemenang akan diumumkan setiap hari Senin pukul 12:00 siang waktu setempat.</string>
+    <string name="html_lottery_qna3_title">&lt;b&gt;Q.&lt;/b&gt; Partisipasi saya telah hilang!</string>
+    <string name="html_lottery_qna3_desc">&lt;b&gt;A.&lt;/b&gt; Riwayat partisipasi Anda akan diatur ulang ketika CONTEST ditutup untuk putaran tersebut.</string>
+    <string name="msg_lucky_draw_guide_desc1">Ini adalah acara di mana pemenang dipilih dengan menggambar nomor lamaran unik.</string>
+    <string name="msg_lucky_draw_guide_desc2">Semakin banyak anda ikut, semakin besar peluang anda untuk menang!</string>
+    <string name="msg_lucky_draw_guide_desc3">Masuk ke kompetisi saat ini.</string>
+    <string name="msg_lucky_draw_guide_desc4">Gunakan nomor keberuntungan unik Anda sendiri untuk masuk.</string>
+    <string name="msg_lucky_draw_guide_desc5">[TIP] Semakin banyak entri yang Anda buat, semakin besar peluang Anda untuk menang!</string>
+    <string name="msg_lucky_draw_guide_desc6">Pemenang akan diumumkan setelah semua entri diterima.</string>
+    <string name="msg_lucky_draw_guide_desc7">Pemenang akan menerima email untuk mengklaim hadiah mereka.</string>
+    <string name="msg_lucky_draw_guide_desc8">Apa yang dimaksud dengan lencana LIVE?</string>
+    <string name="msg_lucky_draw_guide_desc9">Ini adalah cara untuk memilih pemenang dengan mengundi nomor keberuntungan selama siaran LIVE real-time.</string>
+    <string name="msg_lucky_draw_guide_desc10">Satu Balls akan dipotong per nomor sebagai tiket masuk untuk mengikuti LUCKY DRAW.</string>
+    <string name="msg_lucky_draw_guide_desc11">Penggemar Koin Resmi WOWBOX\nUntuk mencocokkan harga pasar\nDapat dikonversi menjadi Balls.</string>
+    <string name="msg_lucky_draw_guide_desc12">1.000P untuk 1 Balls\nUntuk 1 Balls.</string>
+    <string name="msg_lucky_draw_guide_desc13">Untuk setiap 5 teman yang Anda undang\n1 Balls untuk setiap 5 teman yang Anda undang.</string>
+    <string name="msg_lucky_draw_guide_desc14">Jika Anda memverifikasi Telegram resmi BUFF\nAnda akan menerima Balls.</string>
+    <string name="word_progress">Prosedur</string>
+    <string name="word_announce_winner">Pengumuman Pemenang</string>
+    <string name="word_receive_gift">Menerima hadiah Anda</string>
+    <string name="format_invite_description">WOWBOX\nKode Referral : %1$s</string>
+    <string name="word_share">Bagikan</string>
+    <string name="word_modify">Koreksi</string>
+    <string name="msg_lucky_draw_join_desc1">Bola kuning, biru, atau merah akan dipilih secara acak dari\n1 ~ 100 kali akan dipilih secara acak.</string>
+    <string name="msg_lucky_draw_join_desc2">Bola kuning dan bola merah akan menjadi\n1~100 kali.</string>
+    <string name="msg_lucky_draw_join_desc3">Bola kuning adalah\n1~100 kali akan dipilih secara acak.</string>
+    <string name="word_ball_used_history_detail">Detail Penggunaan Balls</string>
+    <string name="word_ball_retrieve_history_detail">Detail Koleksi Balls</string>
+    <string name="word_ball_charge_history_detail">Rincian Penghasilan Balls</string>
+    <string name="word_ball_provide_history_detail">Detail Pembayaran Balls</string>
+    <string name="word_use_ball">Balls yang Digunakan</string>
+    <string name="word_retrieve_ball">Balls yang Dikumpulkan</string>
+    <string name="word_charge_ball">Balls yang Diperoleh</string>
+    <string name="word_provide_ball">Pembayaran Balls</string>
+    <string name="msg_input_nickname_over_2">Harap masukkan minimal 2 karakter</string>
+    <string name="msg_join_complete">Selamat bergabung dengan\nWowbox!</string>
+    <string name="msg_join_complete2">Dapatkan Lucky Ball dan coba tantangan untuk\nmemenangkan hadiah yang kamu inginkan.</string>
+    <string name="msg_start">Mulai</string>
+    <string name="msg_alarm_agree_title">Apakah Anda yakin ingin menerima notifikasi?</string>
+    <string name="msg_alarm_agree_desc">Jika Anda tidak setuju untuk menerima notifikasi, Anda tidak akan dapat berpartisipasi dalam acara dan hadiah, \nPoin tidak dapat diterima.</string>
+    <string name="word_agree">Setuju</string>
+    <string name="word_dis_agree">Tidak setuju</string>
+    <string name="msg_total_view">Lihat keseluruhan</string>
+    <string name="msg_total_view_banner">Lihat semua spanduk</string>
+    <string name="msg_join_later">Silakan masuk sebentar lagi!</string>
+    <string name="msg_report">Laporan</string>
+    <string name="msg_report_option1">Komersial/Promosi</string>
+    <string name="msg_report_option2">Kata-kata tidak senonoh/Serangan pribadi</string>
+    <string name="msg_report_option3">Informasi ilegal</string>
+    <string name="msg_report_option4">Pemaparan informasi pribadi</string>
+    <string name="msg_report_option5">Kecabulan/Seksualitas</string>
+    <string name="msg_report_option6">Pengulangan konten yang sama</string>
+    <string name="msg_report_option7">Alasan lain</string>
+    <string name="msg_select_report_reason">Pilih alasan laporan Anda.</string>
+    <string name="msg_input_etc_reason">Silakan masukkan alasan lain.</string>
+    <string name="msg_reported_reply">Anda telah melaporkan komentar ini.</string>
+    <string name="msg_lottery_invite_desc">50 tiket CONTEST per undangan!</string>
+    <string name="word_inquire_type">Jenis pertanyaan</string>
+    <string name="msg_already_active_partner">Anda sudah menjadi mitra yang disetujui.</string>
+    <string name="word_warning">Wajib Baca</string>
+    <string name="msg_join_email_desc">Masukkan alamat email yang valid karena kami akan mengirimkan notifikasi hadiah ke email yang Anda masukkan.</string>
+    <string name="msg_not_exist_selectable_number">Tidak ada nomor yang bisa dipilih.</string>
+    <string name="msg_go_gift_shop">Jelajahi toko hadiah</string>
+    <string name="word_lack_ball">Balls Suku</string>
+    <string name="msg_lucky_ball_earn_method">Cara mendapatkan Balls</string>
+    <string name="msg_make_buff_wallet_desc1">Untuk membuat dompet\nDiperlukan verifikasi email satu kali.</string>
+    <string name="msg_make_buff_wallet_desc2">Buff adalah koin eksklusif WOWBOX berbasis blockchain.\nBuat dompet Buff dan dapatkan berbagai keuntungan.</string>
+    <string name="msg_alert_close_make_buff_wallet">Jika pembuatan dompet terganggu, verifikasi email akan diperlukan lagi.\n\nApakah Anda ingin berhenti membuat dompet Anda?</string>
+    <string name="msg_complete_make_buff_wallet">Pembuatan dompet selesai.</string>
+    <string name="msg_failed_make_buff_wallet">Pembuatan dompet gagal.</string>
+    <string name="msg_alread_joined_email">Alamat email ini sudah terdaftar.</string>
+    <string name="word_winning_history">Kemenangan Anda</string>
+    <string name="word_luxury_shop">Toko Mewah</string>
+    <string name="msg_alert_make_wallet">Hanya pengguna yang telah membuat dompet BUFF\nIni adalah acara yang hanya dapat diikuti oleh pengguna yang telah membuat dompet.</string>
+    <string name="msg_make_wallet">Buat dompet</string>
+    <string name="msg_not_exist_product">Hadiah tidak ada.</string>
+    <string name="msg_condition_winning">Kriteria Pemenang</string>
+    <string name="word_profit_transfer">Rollover</string>
+    <string name="msg_wrong_recommend_key">Kode Referral tidak valid.\nMohon periksa kembali.</string>
+    <string name="msg_can_not_use_cursing">Dilarang menggunakan kata-kata kotor.</string>
+    <string name="msg_loading_ad">Memuat iklan.\nSilakan coba lagi nanti.</string>
+    <string name="word_join_end_date_time">Batas waktu partisipasi</string>
+    <string name="msg_point_desc">Poin dapat dikonversi menjadi WowMall Points untuk membeli barang pilihan Anda.\nPoin dapat diperoleh melalui potongan harga WOWBOX atau kemenangan dalam acara.</string>
+    <string name="msg_master_profit_desc">Anda akan menerima keuntungan tambahan yang setara dengan persentase keuntungan master Anda dari jumlah keuntungan sub-mitra Anda.</string>
+    <string name="word_master_profit_ratio">Persentase Keuntungan Master</string>
+    <string name="word_my_master_profit">Keuntungan Master yang Anda terima</string>
+    <string name="word_total_benfit">Akumulasi Dividen</string>
+    <string name="word_retention_buff">BUFF yang Ditahan</string>
+    <string name="word_daily_benefit">Penghasilan Harian</string>
+    <string name="word_calculate_history">Riwayat Penyelesaian</string>
+    <string name="msg_daily_benefit_desc1">Hasil Undian WOWBOX akan dikreditkan kepada Anda setiap hari berdasarkan rasio BUFF Anda setiap hari berdasarkan rasio BUFF Anda.</string>
+    <string name="msg_daily_benefit_desc2">Keuntungan $ 10.000 / 10% dari rasio BUFF saya = $ 1.000</string>
+    <string name="msg_calculate_history_desc1">Setiap bulan, Anda akan dibayarkan dividen untuk bulan sebelumnya. Dividen akan dibayarkan ke dompet koin yang Anda siapkan saat berpartisipasi dalam dividen, dan secara otomatis akan diteruskan ke bulan berikutnya jika jumlah penyelesaian bulan sebelumnya kurang dari $10.</string>
+    <string name="msg_benefit_history_not_exist">Tidak ada dividen dalam periode pencarian.</string>
+    <string name="word_search">Pencarian</string>
+    <string name="msg_input_startday_before_endday">Masukkan tanggal mulai sebelum tanggal akhir.</string>
+    <string name="msg_input_endday_after_startday">Masukkan tanggal akhir setelah tanggal mulai.</string>
+    <string name="word_date">Tanggal</string>
+    <string name="word_total_proceeds">Total Pembayaran</string>
+    <string name="word_my_benefit">Dividen Saya</string>
+    <string name="word_status">Status</string>
+    <string name="word_profit_pending">Penyelesaian</string>
+    <string name="msg_mining_desc">BUFF, inilah cara Anda menambang!</string>
+    <string name="msg_mining1_desc1">Daftar Baru di Coinstore</string>
+    <string name="msg_mining1_desc2">Airdrop BUFF</string>
+    <string name="msg_mining1_desc3">Total 500.000 BUFF</string>
+    <string name="msg_mining1_desc4">-Pembayaran 100%</string>
+    <string name="msg_mining1_desc5">-Hingga 10.000 BUFF per orang</string>
+    <string name="msg_mining1_desc6">-BUFF akan dikirim ke dompet MetaMask Anda.</string>
+    <string name="msg_mining2_desc1">Penambangan Kehadiran BUFF</string>
+    <string name="msg_mining2_desc2">BUFF senilai 1 USD untuk 30 hari kehadiran</string>
+    <string name="msg_mining2_desc3">-Dapatkan poin secara acak untuk kehadiran harian</string>
+    <string name="msg_mining2_desc4">-Setelah 30 hari kehadiran, Anda akan menerima BUFF senilai 1 USD.</string>
+    <string name="msg_mining3_desc1">Penambangan Undangan BUFF</string>
+    <string name="msg_mining3_desc2">Dapatkan BUFF senilai 2 USD untuk setiap 5 referensi yang Anda undang</string>
+    <string name="msg_mining3_desc3">-Kode referensi harus dimasukkan saat mendaftar untuk diterapkan.</string>
+    <string name="word_invite_mining_history">Riwayat Penambangan Undangan</string>
+    <string name="msg_mining4_desc1">Penambangan Gerilya BUFF</string>
+    <string name="msg_mining4_desc2">Dapatkan BUFF dengan sistem siapa cepat dia dapat.</string>
+    <string name="msg_mining5_desc1">Penambangan Iklan BUFF</string>
+    <string name="msg_mining5_desc2">Sampai diatur ulang</string>
+    <string name="msg_mining5_desc3">•Anda bisa mendapatkan CONTEST tiket dengan menonton iklan langkah demi langkah.</string>
+    <string name="msg_airdrop">Airdrop BUFF</string>
+    <string name="msg_mining">Menambang BUFF</string>
+    <string name="msg_attendance_desc1">Tanggal pemeriksaan kehadiran terakhir</string>
+    <string name="msg_attendance_desc2">Waktu berikutnya Anda dapat memeriksa kehadiran Anda adalah 24 jam setelah pemeriksaan terakhir.</string>
+    <string name="msg_attendance_desc3">- Anda harus menekan tombol [Periksa Kehadiran] untuk memeriksa kehadiran Anda.</string>
+    <string name="msg_attendance_desc4">- Poin diberikan secara acak untuk kehadiran harian.</string>
+    <string name="msg_attendance_desc5">- Anda akan mendapatkan 1,000P setelah absen 30 hari.</string>
+    <string name="msg_attendance_desc6">- Setelah 30 hari kehadiran, maka akan dimulai kembali dari hari ke-1.</string>
+    <string name="word_attendance">Periksa Kehadiran</string>
+    <string name="word_attendance_complete">Pemeriksaan kehadiran selesai</string>
+    <string name="msg_not_eanble_attendance_time">Ini bukan waktu yang tersedia.</string>
+    <string name="format_attendance_complete">Kehadiran selesai %1$s hari</string>
+    <string name="word_save_point">Dapatkan poin</string>
+    <string name="word_save_buff">Dapatkan BUFF</string>
+    <string name="word_save_ticket">Dapatkan Tiket CONTEST</string>
+    <string name="word_invite_mining_buff_amount">Jumlah BUFF penambangan undangan</string>
+    <string name="msg_buff_air_drop_desc1">Untuk merayakan listing BUFF Coin di Coinstore, kami memberikan BUFF sebagai airdrop untuk mendorong lebih banyak orang untuk memahami dan bergabung dengan kami.</string>
+    <string name="msg_buff_air_drop_desc2">Pastikan untuk memasukkan alamat dompet MetaMask BUFF Anda, dan kami tidak bertanggung jawab atas kerugian apa pun yang disebabkan oleh alamat dompet yang tidak terverifikasi.</string>
+    <string name="word_event_period">Periode Acara</string>
+    <string name="word_air_drop">Airdrop</string>
+    <string name="word_join_method">Bagaimana cara berpartisipasi</string>
+    <string name="word_meta_mask_join_method">Cara mendaftar ke MetaMask</string>
+    <string name="word_meta_mask_copy_address_method">Cara menyalin alamat dompet MetaMask Anda</string>
+    <string name="msg_view_guide_video">Tonton video panduannya</string>
+    <string name="msg_buff_token_address">Alamat Kontrak Token BUFF</string>
+    <string name="msg_my_meta_mask_address">Alamat dompet MetaMask saya</string>
+    <string name="msg_buff_air_drop_event_period_desc1">Acara</string>
+    <string name="msg_buff_air_drop_event_period_desc2">Selalu berlangsung</string>
+    <string name="msg_buff_air_drop_event_period_desc3">Pembayaran Airdrop</string>
+    <string name="msg_buff_air_drop_event_period_desc4">Akan dibayarkan secara berurutan sejak tanggal aplikasi</string>
+    <string name="msg_buff_air_drop_air_drop_desc1">Total 500.000 BUFF</string>
+    <string name="msg_buff_air_drop_air_drop_desc2">Hingga 10.000 BUFF per orang</string>
+    <string name="msg_buff_air_drop_air_drop_desc3">Jumlah koin BUFF akan didistribusikan secara acak kepada setiap individu.</string>
+    <string name="msg_buff_air_drop_air_drop_desc4">Peserta airdrop dijamin 100% akan mendapatkan bayaran.</string>
+    <string name="msg_buff_air_drop_join_method_desc1">Masukkan alamat dompet MetaMask BUFF Anda untuk menerima airdrop.</string>
+    <string name="msg_buff_air_drop_join_method_desc2">Klik tombol [Ajukan Airdrop].</string>
+    <string name="msg_buff_air_drop_join_method_desc3">Token akan dikirim ke dompet MetaMask BUFF Anda secara berurutan.</string>
+    <string name="msg_buff_air_drop_token_address_desc1">Masukkan alamat di bawah ini saat menambahkan token MetaMask.</string>
+    <string name="msg_buff_air_drop_meta_mask_address_desc1">Silakan masukkan alamat dompet MetaMask BUFF Anda yang telah disalin.</string>
+    <string name="msg_buff_air_drop_pending_desc1">Alamat dompet MetaMask sedang diverifikasi.</string>
+    <string name="msg_buff_air_drop_pending_desc2">Mungkin diperlukan waktu 3 hari sejak tanggal aplikasi.</string>
+    <string name="msg_buff_air_drop_return_desc1">Aplikasi airdrop Anda ditolak.</string>
+    <string name="msg_buff_air_drop_normal_desc1">Airdrop BUFF selesai</string>
+    <string name="msg_alert_apply_air_drop">BUFF akan dikirim ke alamat dompet MetaMask Anda\nApakah Anda ingin mengajukan airdrop?</string>
+    <string name="msg_input_meta_mask_address">Silakan masukkan alamat dompet MetaMask Anda.</string>
+    <string name="msg_dupliate_meta_mask_address">Alamat dompet MetaMask ini sudah ada.</string>
+    <string name="msg_alert_air_drop_return_desc">Silakan periksa alasan penolakan dan ajukan kembali.</string>
+    <string name="word_apply_buff_air_drop">Ajukan permohonan BUFF Airdrop</string>
+    <string name="msg_input_private_number">Silakan masukkan nomor partisipasi Anda.</string>
+    <string name="word_input_private_number">Masukkan nomor partisipasi</string>
+    <string name="msg_lucky_draw_check_private_desc">(Nomor partisipasi Guerrilla Mining Anda akan dikirimkan kepada Anda di saluran resmi BUFF).</string>
+    <string name="msg_not_exist_complete_lucky_draw">Acara telah berakhir.</string>
+    <string name="msg_buff_guerrilla_join_desc1">Anda akan menerima nomor partisipasi Guerrilla Mining secara acak di Telegram dan Discord resmi BUFF.</string>
+    <string name="msg_buff_guerrilla_join_desc2">Buka Aplikasi WOWBOX dan masukkan nomor partisipasi Guerrilla Mining yang sesuai.</string>
+    <string name="msg_buff_guerrilla_join_desc3">Peserta Guerrilla Mining dijamin 100% menang dan akan menerima BUFF sebagai hadiahnya.</string>
+    <string name="msg_buff_guerrilla_caution_desc1">Jumlah peserta Guerrilla Mining pertama kali dan jumlah BUFF yang menang dapat berbeda setiap saat.</string>
+    <string name="msg_buff_guerrilla_caution_desc2">BUFF yang menang akan dikirim ke dompet WOWBOX Anda.</string>
+    <string name="word_container">Simpan</string>
+    <string name="word_buy_wowbox">Beli WOWBOX</string>
+    <string name="word_origin_price">Harga Asli Produk</string>
+    <string name="format_money_unit">Rp %1$s</string>
+    <string name="msg_data_loading">Data sedang dimuat.\nMohon tunggu sebentar.</string>
+    <string name="word_product_info">Informasi Produk</string>
+    <string name="html_msg_buy_lucky_box_desc1">Dapatkan &lt;b&gt;Points&lt;/b&gt; dan tukarkan dengan produk favorit Anda di &lt;b&gt;WowMall&lt;/b&gt;.</string>
+    <string name="msg_buy_lucky_box_desc_title1">WOWBOX bikin untung tanpa rugi</string>
+    <string name="msg_buy_lucky_box_desc_title2">Bagaimana jika tidak sesuai dengan yang Anda inginkan?</string>
+    <string name="word_luckybox_guide">Tentang WOWBOX</string>
+    <string name="msg_lucky_box_guide_desc">- WOWBOX yang telah Anda bayar dapat ditemukan di Perpustakaan WOWBOX Anda.\n- Jika Anda membuka WOWBOX yang belum dibuka, Anda akan dipilih secara acak untuk memenangkan salah satu item yang terdaftar.</string>
+    <string name="word_refund_exchange_info">Pengembalian/Penukaran</string>
+    <string name="msg_lucky_box_refund_desc">• Pembayaran hanya dapat dibatalkan untuk WOWBOX yang belum dibuka dalam waktu 7 hari sejak tanggal pembayaran.\n• Jika Anda telah membuka WOWBOX dan mendapatkan item, WOWBOX telah digunakan dan tidak dapat dibatalkan.\n• Jika barang yang Anda terima rusak, Anda dapat menukarnya atau mendapatkan pengembalian dana sebesar harga WOWBOX yang telah Anda bayarkan.\n• Penukaran dan pengembalian dana tidak tersedia karena perubahan pikiran, ketidakpuasan, dll. yang tidak disebabkan oleh produk yang cacat.”</string>
+    <string name="word_delivery_info">Informasi pengiriman</string>
+    <string name="msg_lucky_box_delivery_desc">- Barang-barang yang diperoleh dari WOWBOX dapat dikirimkan melalui permintaan pengiriman terpisah di [Loker WOWBOX] &gt; [Loker Produk].\nBiaya pengiriman dasar adalah Rp 15.000 dan dapat bervariasi tergantung produk atau wilayah.</string>
+    <string name="word_agree_buy">Konfirmasi Ketentuan Pembelian dan Setuju untuk Melanjutkan Pembayaran</string>
+    <string name="word_total_buy_price">Jumlah total pembayaran</string>
+    <string name="msg_agree_lucky_box_buy_terms">Untuk melanjutkan pembayaran\nMohon setujui syarat dan ketentuan yang berlaku.</string>
+    <string name="msg_fail_pay">Pembayaran gagal.</string>
+    <string name="word_not_open_box">Wowbox belum terbuka</string>
+    <string name="word_product_container">Loker Produk</string>
+    <string name="word_lucky_box_container">Penyimpanan WOWBOX</string>
+    <string name="msg_lucky_box_open">Buka WOWBOX</string>
+    <string name="word_pay_cancel">Pembayaran dibatalkan</string>
+    <string name="format_remain_days">Tersisa %1$s hari lagi</string>
+    <string name="format_remain_time">Tersisa %1$s jam lagi</string>
+    <string name="word_lucky_box_open">Buka WOWBOX</string>
+    <string name="msg_alert_lucky_box_open_desc1">Ketika Anda membuka WOWBOX Anda, Anda akan menerima sisa\nTerlepas dari apakah kotak yang belum dibuka dibuka atau tidak\nPembayaran tidak dapat dibatalkan.</string>
+    <string name="msg_alert_lucky_box_open_desc1_2">Setelah WOWBOX dibuka\nPembayaran tidak dapat dibatalkan.</string>
+    <string name="msg_alert_lucky_box_open_desc2">Apakah Anda ingin membuka WOWBOX?</string>
+    <string name="word_disable_pay_cancel">Pembayaran tidak dapat dibatalkan</string>
+    <string name="msg_not_exist_not_open_box">Kotak yang belum dibuka tidak ada.</string>
+    <string name="msg_not_open_lucky_box_caution_desc">Pembayaran tidak dapat dibatalkan untuk WOWBOX yang sudah kedaluwarsa.</string>
+    <string name="msg_failed_pay_cancel">Pembatalan pembayaran gagal.</string>
+    <string name="msg_expired_pay_cancel">Pembatalan tidak dapat dilakukan karena periode telah berakhir.</string>
+    <string name="format_total_count">Total (%1$s)</string>
+    <string name="word_bonus_benefit">Penawaran bonus!</string>
+    <string name="msg_lucky_box_bonus_benefit_desc">Dapatkan Balls\nMendapatkan hadiah uang tunai secara langsung!</string>
+    <string name="msg_lucky_box_result_desc">Anda dapat memeriksa hadiah yang Anda menangkan di [Loker Hadiah], dan jika Anda tidak menyukai hadiah tersebut, kami akan mengembalikan biaya pengambilan WOWBOX.</string>
+    <string name="word_go_main">Pergi ke halaman utama</string>
+    <string name="word_go_container">Pergi ke simpanan WOWBOX</string>
+    <string name="format_origin_price">Harga Rp %1$s</string>
+    <string name="format_save">Dapatkan %1$s!</string>
+    <string name="format_next_lucky_box">Sisa unboxing WOWBOX (%1$s)</string>
+    <string name="msg_cong_win">Selamat atas kemenangan Anda!</string>
+    <string name="format_join_price">Harga Keberuntungan Rp %1$s</string>
+    <string name="msg_not_exist_win_history">Tidak ada detail pemenang.</string>
+    <string name="msg_lucky_box_win_desc">Hadiah unboxing WOWBOX akan ditampilkan secara real-time.</string>
+    <string name="word_modified">Edit</string>
+    <string name="word_lucky_box_impression_title">Tunggu, tunggu, tunggu!</string>
+    <string name="msg_lucky_box_impression_desc">Apakah Anda menyukai barang yang Anda minta?\nTolong bagikan keberuntungan Anda dengan menulis komentar.</string>
+    <string name="hint_win_impression">Tolong tuliskan komentar kemenangan Anda.\n(Harap masukkan minimal 5 karakter)</string>
+    <string name="format_count_per">%1$d/%2$d</string>
+    <string name="word_modify_impression">Edit komentar pemenang</string>
+    <string name="msg_write_next">Saya akan melakukannya di lain waktu</string>
+    <string name="word_write_impression">Tulis komentar</string>
+    <string name="msg_input_win_impression">Masukkan komentar pemenang (minimal 5 karakter).</string>
+    <string name="word_write_complete">Selesai</string>
+    <string name="msg_wrote_impression">Komentar Anda telah dikirimkan.</string>
+    <string name="msg_delete_comment">Komentar Anda telah dihapus.</string>
+    <string name="html_total_count2">Semua &lt;b&gt;(%1$s)&lt;/b&gt;</string>
+    <string name="msg_input_contents">Silakan masukkan konten.</string>
+    <string name="word_reply_edit">Edit komentar</string>
+    <string name="word_complete_edit">Perubahan selesai</string>
+    <string name="msg_reg_lucky_box_review">Tulis ulasan dan dapatkan poin</string>
+    <string name="format_cash_back">Tukarkan %1$sP</string>
+    <string name="format_bol_back">Tukarkan %1$s</string>
+    <string name="word_preparing_goods">Produk dalam persiapan</string>
+    <string name="word_shipping_ready">Menunggu pengiriman</string>
+    <string name="word_shipping">Sedang proses pengiriman</string>
+    <string name="format_exchanged_lucky_box_cash">%1$sP telah ditukar.</string>
+    <string name="format_exchanged_lucky_box_bol">%1$s  barang telah ditukar.</string>
+    <string name="msg_not_exist_open_box">Tidak ada barang yang disimpan.</string>
+    <string name="word_lucky_box_cash_back_title">Pengembalian biaya pengambilan</string>
+    <string name="msg_lucky_box_cash_back_desc1">Barang yang Anda pilih akan dikembalikan dengan biaya pengambilan.\nApakah Anda ingin pengembalian dana?</string>
+    <string name="msg_lucky_box_cash_back_desc2">(&lt;font color=#fc5c57&gt;%1$sP&lt;/font&gt; Anda dapat memeriksa pengembalian dana Anda di [Mengatur Poin])</string>
+    <string name="msg_cash_back_complete">Penukaran selesai.</string>
+    <string name="word_pay_info">Informasi pembayaran</string>
+    <string name="word_pay_date">Tanggal Pembayaran</string>
+    <string name="word_pay_method">Metode pembayaran</string>
+    <string name="word_shipping_fee">Biaya pengiriman</string>
+    <string name="word_shipping_site_info">Alamat pengiriman</string>
+    <string name="word_receiver_address">Alamat penerima</string>
+    <string name="word_shipping_memo">Permintaan pengiriman</string>
+    <string name="word_free_ship">Pengiriman gratis</string>
+    <string name="word_shipping_history_detail">Detail pengiriman</string>
+    <string name="word_lucky_box_bol_back_title">Pengembalian Dana Balls</string>
+    <string name="format_lucky_box_bol_back_desc1">Pengembalian Dana Balls %1$s</string>
+    <string name="msg_lucky_box_bol_back_desc2">Balls yang ditukar tidak dapat dikonversi menjadi poin.\nApakah Anda yakin ingin menukar Balls?</string>
+    <string name="msg_lucky_box_bol_back_desc3">(Anda dapat memeriksa riwayat penukaran Anda di [Kelola Balls].</string>
+    <string name="word_buy_complete">Pembelian selesai</string>
+    <string name="format_count_unit">%1$s unit</string>
+    <string name="msg_lucky_box_pay_complete_desc">WOWBOX yang Anda beli adalah\n[Penyimpanan WOWBOX].</string>
+    <string name="word_pay_price">Pembayaran</string>
+    <string name="msg_question_pay_back">Pembayaran sedang berlangsung.\nApakah Anda ingin membatalkannya?</string>
+    <string name="word_pay_delviery_fee">Bayar untuk pengiriman</string>
+    <string name="word_complete_req_shipping">Permintaan pengiriman selesai</string>
+    <string name="msg_lucky_box_delivery_pay_complete_desc">Untuk hasil pengiriman anda dapat mengeceknya di \n[Loker WOWBOX] > [Loker Produk].</string>
+    <string name="word_wow_box_select">Pilih WOWBOX</string>
+    <string name="word_wow_box_buy_1_desc">Biaya layanan\nRP 3.000 akan ditambahkan.</string>
+    <string name="word_point_use">Tukarkan poin</string>
+    <string name="word_rp_use">Tukarkan Rp</string>
+    <string name="msg_input_use_rp">Silakan masukkan RP yang ingin Anda tukarkan.</string>
+    <string name="format_bonus_point">Bonus : %1$sP</string>
+    <string name="html_retention_cash">Rp&lt;font colour=#ea5506&gt;&lt;b&gt;%1$s&lt;/b&gt;&lt;/font&gt;</string>
+    <string name="html_retention_point">Poin&lt;font colour=#ea5506&gt;&lt;b&gt;%1$sP&lt;/b&gt;&lt;/font&gt;</string>
+    <string name="msg_select_wow_box">Pilih WOWBOX yang ingin Anda beli.</string>
+    <string name="html_name">Nama Depan&lt;font colour=#ea5506&gt;*&lt;/font&gt;</string>
+    <string name="html_family_name">Nama Belakang&lt;font colour=#ea5506&gt;*&lt;/font&gt;</string>
+    <string name="msg_input_name">Masukkan nama depan Anda.</string>
+    <string name="msg_input_family_name">Masukkan nama belakang Anda.</string>
+    <string name="word_receiver_info">Informasi penerima</string>
+    <string name="word_shipping_info">Kirim ke informasi</string>
+    <string name="word_add_price">Biaya tambahan</string>
+    <string name="word_address1">Alamat</string>
+    <string name="word_address2">Alamat2</string>
+    <string name="msg_input_address1">Silakan masukkan alamat.</string>
+    <string name="msg_input_address2">Silakan masukkan alamat2.</string>
+    <string name="word_state">Provinsi</string>
+    <string name="word_city">Kota</string>
+    <string name="word_sub_district">Kecamatan</string>
+    <string name="word_pay_detail">Rincian pembayaran</string>
+    <string name="word_total_pay_price">Jumlah total</string>
+    <string name="msg_select_option">Pilih salah satu opsi.</string>
+    <string name="word_post_code">Kode Pos</string>
+    <string name="msg_input_post_code">Silakan masukkan kode pos Anda.</string>
+    <string name="msg_not_exist_goods">Produk tidak ada.</string>
+    <string name="msg_select_before_option">Silakan pilih opsi langkah sebelumnya.</string>
+    <string name="word_sold_out">Stok habis</string>
+    <string name="word_name">Nama depan</string>
+    <string name="word_family_name">Nama belakang</string>
+    <string name="word_point_pay">Bayar dengan poin</string>
+    <string name="word_qr_pay">QR_CODE</string>
+    <string name="msg_ad_view_reward">Dapatkan imbalan untuk melaporkan iklan</string>
+    <string name="msg_reward_invite_title">Dapatkan penghasilan seumur hidup!</string>
+    <string name="msg_reward_invite_desc">Satu undangan dan penghasilan seumur hidup!\nAjak teman Anda terlebih dahulu dan dapatkan penghasilan seumur hidup!</string>
+    <string name="msg_reward_event_title">Setiap jam!</string>
+    <string name="msg_reward_event_desc">Menangkan poin, dan hadiah lainnya setiap jam!</string>
+    <string name="msg_reward_lotto_title">Ini adalah ledakan besar!</string>
+    <string name="msg_reward_lotto_desc">Menangkan Poin dengan nomor pemenang Lotere Korea resmi! (Gratis masuk setiap hari!)</string>
+    <string name="msg_reward_rp_title">Hanya Rp yang akan dimenangkan!</string>
+    <string name="msg_reward_rp_desc">Pemenang secara acak akan dipilih dan diberikan Rp!\nSemakin banyak Anda berpartisipasi, semakin besar peluang Anda untuk menang!</string>
+    <string name="msg_reward_attendance_title">Kehadiran adalah kuncinya!</string>
+    <string name="msg_reward_attendance_desc">Menangkan poin secara acak hanya dengan hadir setiap hari!\nDapatkan 1,000P untuk 30 hari kehadiran!</string>
+    <string name="word_reward">Hadiah</string>
+    <string name="word_join_complete">Entri selesai</string>
+    <string name="msg_issued_lotto_number">Nomor CONTEST Anda telah dikeluarkan.</string>
+    <string name="word_save_rp">Rp yang diperoleh</string>
+    <string name="word_retention_rp">Rp di tangan</string>
+    <string name="word_cash_exchange">Tukarkan dengan uang tunai</string>
+    <string name="msg_rp_desc">Rp dapat ditukarkan dengan uang tunai.\nRp dapat diperoleh oleh pengguna yang memasukkan kode referral mereka untuk membayar WOWBOX atau dengan memenangkan event.\nMasukkan Rp untuk menarik</string>
+    <string name="msg_input_withdraw_point_title">Masukkan jumlah Poin yang ingin ditarik.</string>
+    <string name="msg_input_withdraw_point">Silahkan masukkan jumlah Poin yang ingin ditarik</string>
+    <string name="msg_enable_withdraw_150000">Minimal 150,000P atau lebih.</string>
+    <string name="word_bank_name">Nama Bank</string>
+    <string name="msg_input_bank_name">Masukkan nama bank untuk penarikan Anda.</string>
+    <string name="msg_select_bank_name">Silakan pilih bank untuk penarikan.</string>
+    <string name="word_account_name">Depositor</string>
+    <string name="msg_input_account_name">Silakan masukkan deposan.</string>
+    <string name="word_account_number">Rekening Deposito</string>
+    <string name="msg_input_account_number">Nomor Rekening Anda.</string>
+    <string name="msg_withdraw_desc">• Penukaran uang tunai hanya dapat dilakukan dengan buku tabungan atas nama Anda\n\n• Penukaran uang tunai membutuhkan waktu hingga 10 hari sejak tanggal penerimaan.\n\n• Poin akan langsung dipotong pada saat pengajuan penukaran uang tunai.</string>
+    <string name="word_expect_withdraw_rp">Rp yang akan ditarik</string>
+    <string name="msg_alert_withdraw_title">Apakah anda ingin mengajukan penukaran tunai?</string>
+    <string name="msg_alert_withdraw_desc">Ini mungkin memerlukan waktu hingga 10 hari.</string>
+    <string name="msg_withdraw_fee">Biaya Transfer</string>
+    <string name="word_withdraw_history">Riwayat</string>
+    <string name="word_withdraw_history2">Riwayat Penarikan</string>
+    <string name="word_withdraw_pending">Penarikan Tertunda</string>
+    <string name="word_withdraw_complete">Penarikan Selesai</string>
+    <string name="word_point_exchange">Penukaran Poin</string>
+    <string name="format_wow_box_count">WOWBOX %1$s</string>
+    <string name="word_phone_number">Nomor Telepon</string>
+    <string name="msg_input_phone_number">Silakan masukkan nomor telepon Anda.</string>
+    <string name="word_benefit">Keuntungan</string>
+    <string name="html_invite_desc1">Dapatkan &lt;font colour=#ea5506&gt;&lt;b&gt;1% dari harga pembelian&lt;/b&gt;&lt;/font&gt; setiap kali ada referral yang membeli WOWBOX</string>
+    <string name="msg_point_mall_desc">Anda dapat menukar poin WowMall dan membeli produk yang diinginkan.</string>
+    <string name="msg_select_provinsi">Pilih Provinsi.</string>
+    <string name="msg_select_kabkota">Pilih Kota.</string>
+    <string name="msg_select_kecamatan">Pilih Kecamatan.</string>
+    <string name="msg_select_kode_pos">Pilih Kode Pos.</string>
+    <string name="msg_main_reward_title">Dapatkan Rp kredit poin tiap hari selama  365 hari</string>
+    <string name="msg_open_lucky_box_caution_desc">Produk yang tidak diatur pada pengiriman dalam jangka waktu 7 hari akan otomatis diubah menjadi Poin</string>
+    <string name="word_wow_mall_point_exchange">Penukaran Poin WowMall</string>
+    <string name="msg_wow_mall_point_exchange_desc">Penukaran Poin dan pembelian\nproduk dari WowMall</string>
+    <string name="word_input_exchange_point">Masukkan Poin yang akan ditukar</string>
+    <string name="msg_input_exchange_point">Harap masukkan Poin yang akan ditukar</string>
+    <string name="msg_point_exchange_terms_title">Saya sudah membaca dan setuju dengan peringatan ini</string>
+    <string name="msg_point_exchange_terms_desc">Saat sudah melakukan penukaran Poin WowMall,\nanda tidak bisa menukarkan Poin tersebut menjadi Poin WOWBOX</string>
+    <string name="word_expect_exchange_point">Poin akan ditukarkan</string>
+    <string name="msg_alert_point_excahnge_title">Anda yakin akan menukarkan Poin anda?</string>
+    <string name="msg_complete_point_exchange">Penukaran Poin berhasil!</string>
+    <string name="html_join_recommender_desc"><![CDATA[Masukkan kode referral anda untuk mendapatkan <font colour=#ea5506>%1$sP</font>]]></string>
+    <string name="word_service_charge">Biaya Layanan</string>
+    <string name="msg_agree_caution">Berikan tanda setuju untuk peringatan ini</string>
+    <string name="word_rp_config">Kelola Rp</string>
+    <string name="word_reward_reg_recommender">Pendaftaran Reward untuk referral anda</string>
+    <string name="word_win_history">Riwayat Hadiah</string>
+    <string name="msg_not_exist_notice">Tidak ada pengumuman</string>
+    <string name="msg_withdrawal_caution_desc">Pemberitahuan! Setelah melakukan pengembalian akun yang anda gunakan tidak dapat digunakan kembali.\n\nSeluruh riwayat penggunaan yang tersedia dari WOWBOX akan dihapuskan meliputi uang poin anda akan hangus.</string>
+    <string name="msg_complete_req_withdraw">Permintaan pengembalian berhasil</string>
+    <string name="word_move_point_mall">Pindah ke Poin Mall</string>
+    <string name="msg_complet_refund_point">Poin telah dikembalikan</string>
+    <string name="word_refund_point">Pengembalian Poin</string>
+    <string name="word_req_cancel">Permintaan Pembatalan</string>
+    <string name="msg_lucky_box_cancel_desc1">Apakah Anda ingin mengajukan permintaan pembatalan\nuntuk WOWBOX anda yang belum dibuka?</string>
+    <string name="msg_lucky_box_cancel_desc2">("Status pembatalan akan diberitahukan melalui email yang Anda masukkan saat pendaftaran.\nPermintaan pembatalan telah selesai.)</string>
+    <string name="word_cancel_complete">Pembatalan WOWBOX selesai</string>
+    <string name="msg_lucky_box_cancel_complete_desc1">Permohonan pembatalan anda selesai</string>
+    <string name="msg_lucky_box_cancel_complete_desc2">(Anda dapat memeriksa Rp yang dikembalikan\ndi riwayat pengelolaan Rp Anda.)</string>
+    <string name="word_req_cancel_complete">Permintaan pembatalan WOWBOX Selesai</string>
+    <string name="msg_lucky_box_cancel_req_complete_desc1">Permohonan pembatalan anda selesai</string>
+    <string name="msg_lucky_box_cancel_req_complete_desc2">Harap dicatat bahwa WOWBOX yang Anda beli tidak akan ditampilkan, dan jika pembatalan tidak memungkinkan, WOWBOX tersebut akan ditampilkan kembali.</string>
+    <string name="word_join_reward">Hadiah Pendaftaran</string>
+    <string name="msg_product_purchase_agree_desc">Setujui detail pengiriman dan pembayaran.</string>
+    <string name="word_shipping_company_info">Informasi pengiriman</string>
+    <string name="word_shipping_company">Perusahaan pengiriman</string>
+    <string name="word_shipping_number">Nomor faktur</string>
+    <string name="msg_enable_after_reset">Dapat berpartisipasi lagi setelah reset</string>
+    <string name="msg_select_withdraw_point">Silakan pilih poin yang ingin Anda tarik.</string>
+    <string name="word_expect_withdraw">Jumlah Penarikan</string>
+    <string name="format_withdraw_fee_percent">(%1$s%% pengurangan)</string>
+    <string name="word_withdraw_use_point">Poin Pengurangan</string>
+    <string name="msg_withdraw_point_agree_desc">Konfirmasi poin pengurangan dan setuju untuk melanjutkan penukaran uang tunai.</string>
+    <string name="msg_alert_withdraw_point_agree">Persetujuan Proses Penukaran Uang Tunai</string>
+    <string name="word_bank_select_list">Daftar Pilihan Bank</string>
+    <string name="word_withdraw_price">Jumlah Penarikan</string>
+    <string name="msg_agree">Setuju</string>
+    <string name="word_confirm_withdraw_history">Periksa Riwayat Penarikan</string>
+    <string name="word_withdraw">Penarikan</string>
+    <string name="msg_click_for_input_recommend_key">Klik di sini untuk memasukkan kode referral (jika ada)</string>
+    <string name="msg_recommend_key_desc">(Anda bisa mendaftar tanpa memasukkan kode referensi)</string>
+    <string name="word_referral_code">Kode Referral</string>
+    <string name="word_withdraw_point">Poin Penarikan</string>
+    <string name="word_lucky_price">Harga Keberuntungan</string>
+    <string name="word_winner_by_times">Daftar Pemenang</string>
+    <string name="word_my_join_history">Partisipasi Saya</string>
+    <string name="word_my_win_history">Riwayat Kemanangan</string>
+    <string name="msg_need_verification_email">Diperlukan verifikasi email kali</string>
+    <string name="word_proceeding">Sedang diproses</string>
+    <string name="format_event_win_code">Nomor Pemenang: %1$s</string>
+    <string name="word_skip">Lewati</string>
+    <string name="word_login">Masuk</string>
+    <string name="word_wow_ball_event">LuckyBall Play</string>
+    <string name="word_live_event">Undian Live Stream</string>
+    <string name="msg_question_play_join">Apakah Anda Yakin Ingin Berpartisipasi?</string>
+    <string name="msg_alert_play_caution">LuckyBall yang Anda masukkan tidak dapat dikembalikan.</string>
+    <string name="format_msg_use_bol">%1$s LuckyBall</string>
+    <string name="msg_alert_ball_lack_desc1">Belanja Untuk Dapatkan LuckyBall</string>
+    <string name="msg_alert_ball_lack_desc2">Undang teman kamu dapatkan 3 Lucky Ball</string>
+    <string name="msg_alert_ball_lack_desc3">Dapatkan Lucky Ball setiap waktu</string>
+    <string name="msg_invite_benefit1_desc1">Undang Teman Kamu Dan Dapatkan</string>
+    <string name="msg_invite_benefit1_desc2">1,000 Poin</string>
+    <string name="msg_invite_benefit1_desc3">Setiap Kamu Mengundangnya</string>
+    <string name="msg_invite_benefit2_desc1">Undang 1 Teman</string>
+    <string name="msg_invite_benefit2_desc2">Dapatkan 3 LuckyBall… !!!</string>
+    <string name="msg_invite_benefit2_desc3">Ikuti Undian LuckyBall dan dapatkan barang yang Anda inginkan dengan LuckyBall!</string>
+    <string name="word_attendance_status">Daftar Kehadiran</string>
+    <string name="msg_main_reward_attendance_desc1">Jika Anda menyelesaikan kehadiran selama 7 hari\nAkan dimulai kembali lagi dari hari pertama</string>
+    <string name="msg_main_reward_attendance_desc2">(Setelah 24 jam dari waktu check-in, Anda dapat melakukan check-in berikutnya)</string>
+    <string name="word_req_reward">Claim Hadiah</string>
+    <string name="format_days">Hari ke %1$d</string>
+    <string name="format_days2">Hari %1$d</string>
+    <string name="word_winner_by_times2">Daftar\nPemenang</string>
+    <string name="word_my_join_history2">Partisipasi\nSaya</string>
+    <string name="word_my_win_history2">Riwayat\nKemanangan</string>
+    <string name="word_total_win_history">Semua Riwayat Kemenangan</string>
+    <string name="word_event_win_history">Riwayat Pemenang Event</string>
+    <string name="msg_sign_up">Mendaftar</string>
+    <string name="msg_agree_join_terms">Saya telah membaca dan menyetujui syarat dan ketentuan di bawah ini.</string>
+    <string name="msg_wow_ball_desc">LuckyBall adalah tiket masuk untuk mendapatkan hadiah pilihan Anda di tab [LuckyBall].</string>
+    <string name="msg_win_remain_time">Sisa waktu pengumuman pemenang</string>
+    <string name="html_event_time"><![CDATA[<font color=#ff4646>Sedang Proses</font> %1$s]]></string>
+    <string name="format_real_time_event_join_count">Jumlah peserta saat live: %1$d</string>
+    <string name="format_real_time_event_winner_count">Jumlah pemenang saat live: %1$d</string>
+    <string name="format_event_winner_count">Jumlah pemenang: %1$d</string>
+    <string name="format_winner_count">Total pemenang: %1$s</string>
+    <string name="msg_not_exist_winner">Belum ada pemenang.\n Silakan coba kembali di event berikutnya!</string>
+    <string name="format_joinable_count">Kamu dapat berpartisipasi di %1$s sebanyak %2$s kali.</string>
+    <string name="msg_already_join_event">Kamu telah berpartisipasi dalam event ini.</string>
+    <string name="msg_already_join_event2">Silahkan ikuti event berikutnya.</string>
+    <string name="word_one_day">1 Hari</string>
+    <string name="word_one_week">1 Minggu</string>
+    <string name="word_one_month">1 Bulan</string>
+    <string name="msg_can_not_join_time_event">Ini bukan waktu yang tepat untuk mengikuti event ini.</string>
+    <string name="msg_closed_event">Event ini telah berakhir</string>
+    <string name="word_detail_view2">Lihat selengkapnya</string>
+    <string name="msg_event_win_impression_description1">Silakan tulis komentar hasil kemenangan kamu.</string>
+    <string name="word_write">Tulis</string>
+    <string name="msg_retry_after">Silakan coba lagi dalam beberapa saat.</string>
+    <string name="msg_checking_event_result">Sedang mengecek hasil pemenang…</string>
+    <string name="msg_celebration">Selamat Anda beruntung</string>
+    <string name="msg_write_winner_description">Bagi pemenang pada akhir pekan (Jumat, Sabtu, Minggu), voucher hadiah akan dikirimkan secara kolektif melalui hanphone pada hari Senin sore. Terima kasih  atas pengertiannya.</string>
+    <string name="msg_write_winner_description2">Silakan tulis komentar kamu sebagai pemenang.</string>
+    <string name="msg_write_winner_impression">Tulis komentar kamu sebagai pemenang</string>
+    <string name="format_bol_reward">%1$s telah didapatkan.</string>
+    <string name="msg_next_time_event">Maaf coba lagi</string>
+    <string name="msg_join_other_event">Silakan berpartisipasi di event lainnya juga ya.</string>
+    <string name="msg_event_join_progress">Sedang mengikuti event.</string>
+    <string name="msg_not_exist_event">Tidak ada event yang sedang berlangsung.</string>
+    <string name="msg_not_exist_event_win_impression">Belum ada komentar untuk pemenang.</string>
+    <string name="word_win_impression">Komentar pemenang.</string>
+    <string name="html_msg_play_join_count3"><![CDATA[<font color=#ea5506>%1$s partisipasi</font>]]></string>
+    <string name="msg_alert_mobile_number1">Untuk menerima hadiah, silakan masukkan nomor telepon kamu satu kali saja.</string>
+    <string name="msg_alert_mobile_number2">• Voucher akan dikirim ke nomor di atas\n• Jangan salah masukan nomor kamu</string>
+    <string name="hint_input_mobile_number">Masukan Nomor Kamu</string>
+    <string name="msg_completed">Pengaturan nomor telepon telah selesai.</string>
+    <string name="msg_input_verify_code">Masukan Kode Verifikasi</string>
+    <string name="format_verify_code_desc1">Kode verifikasi telah dikirim melalui WhatsApp\nke %1$s</string>
+    <string name="format_sms_verify_code_desc1">Kode verifikasi telah dikirim melalui SMS\nke %1$s</string>
+    <string name="html_verify_code_desc2"><![CDATA[Mohon tunggu dalam <b>%1$s detik</b> untuk kirim ulang.]]></string>
+    <string name="msg_verify_code_desc3">Tidak menerima kode verifikasi?</string>
+    <string name="word_resend">Kirim ulang</string>
+    <string name="msg_join_mobile_ex">Contoh: 08123456789</string>
+    <string name="msg_alread_joined_mobile_number">Nomor telepon ini sudah terdaftar.</string>
+    <string name="msg_update_mobile_number_desc">Silahkan daftarkan nomor telepon untuk verifikasi</string>
+    <string name="word_verify_mobile_number">Verifikasi Nomor Telepon</string>
+    <string name="word_verify_method">Metode Verifikasi</string>
+    <string name="msg_select_very_type_desc">Klik metode di bawah ini buat lanjut verfikasi.</string>
+    <string name="msg_alert_event_verify_mobile">Untuk mengikuti acara,\nverifikasi nomor telepon kamu terlebih dahulu.\nApakah kamu ingin melanjutkan?</string>
+    <string name="msg_alert_wallet_verify_mobile">Untuk membuat dompet,\nverifikasi nomor telepon kamu terlebih dahulu.\nApakah kamu ingin melanjutkan?</string>
+    <string name="msg_alert_verify_mobile">verifikasi nomor telepon kamu terlebih dahulu.\nApakah kamu ingin melanjutkan?</string>
+    <string name="msg_alert_lucky_draw_verify_mobile">Untuk mengikuti Lucky Draw,\nverifikasi nomor telepon kamu terlebih dahulu.\nApakah kamu ingin melanjutkan?</string>
+    <string name="word_continue_reg">Lanjut Daftar</string>
+    <string name="word_input_recommend_key">Masukan Kode Referral</string>
+    <string name="msg_input_recommend_key_desc">*Gunakan kode referral untuk mendapatkan 2 Lucky Ball</string>
+    <string name="word_percentage">Persentase</string>
+    <string name="word_win_rate2">% Kemenangan</string>
+    <string name="word_win_rate3">Kemungkinan menang</string>
+    <string name="word_play_join">Ikuti</string>
+    <string name="word_before">Kembali</string>
+    <string name="word_next2">Selanjutnya</string>
+    <string name="msg_confirm_win_rate">Lihat peluang menang</string>
+    <string name="msg_share">Bagikan</string>
+    <string name="msg_now_reg">Daftar Sekarang</string>
+    <string name="msg_can_not_cal_win_percent_none_ball">Kamu belum memilki Lucky Ball,\nsehingga perhitungan peluang menang tidak dapat dilakukan</string>
+    <string name="word_copy">Salin</string>
+    <string name="msg_duplicate_phone_number">Nomormu sudah terdaftar.</string>
+    <string name="msg_google_review_desc1">Selamat atas kemenangan kamu!</string>
+    <string name="msg_google_review_desc2">Pengalamanmu sangat berharga bagi kami. Beri kami bintang 5 untuk mendukung terus berkembangnya fitur-fitur menarik!</string>
+    <string name="word_review_write">Beri Rating</string>
+    <string name="msg_already_joined_google">Kamu sudah terdaftar melalui Google.</string>
+    <string name="msg_already_joined_apple">Kamu sudah terdaftar melalui Apple.</string>
+
+    <string name="word_extra_benefit" translatable="false">Extra benefit</string>
+    <string name="word_get_lucky_ball_title" translatable="false">Panduan Extra benefit</string>
+    <string name="word_play_guide_title" translatable="false">Panduan Play</string>
+    <string name="msg_play_guide1_desc1" translatable="false">Apa itu Lucky Ball?</string>
+    <string name="msg_play_guide1_desc2" translatable="false">Lucky Ball memberi kamu kesempatan untuk memenangkan hadiah\nmenarik secara gratis! Setelah jumlah peserta terpenuhi,\npemenang akan dipilih secara acak.</string>
+    <string name="msg_play_guide2_desc1" translatable="false">Misal, untuk voucher senilai Rp 10.000, jika jumlah peserta\nsebanyak 10 orang sudah terpenuhi, maka pemenang\nakan diumumkan secara otomatis.</string>
+    <string name="msg_play_guide2_desc2" translatable="false">Satu Lucky Ball dapat digunakan untuk satu kali undian</string>
+    <string name="msg_play_guide3_desc1" translatable="false">Pemenang akan dipilih secara acak antara A dan B. B memiliki\npeluang menang sebesar 80%, sehingga lebih tinggi dibandingkan A.\nNamun, A juga memiliki peluang menang sebesar 20%.</string>
+    <string name="msg_play_guide4_desc1" translatable="false">Jika A mengikuti undian 10 kali dengan 10 Lucky Ball dan menjadi\nsatu-satunya peserta, maka peluang menang A menjadi 100%\nkarena tidak ada peserta lain.</string>
+    <string name="msg_play_guide4_desc2" translatable="false">Semakin banyak Lucky Ball, semakin banyak kesempatan untuk mengikuti\nundian, sehingga peluang menang akan semakin tinggi.</string>
+    <string name="msg_get_event_guide1_desc1" translatable="false">Cara mendapatkan Lucky Ball</string>
+    <string name="msg_get_event_guide1_desc2" translatable="false">Mari kita lihat satu per satu cara-cara untuk mendapatkan\nLucky Ball.</string>
+
+    <string name="msg_play_percent_desc" translatable="false">Ini adalah kemungkinan menang jika Anda mengajukan tiket\nkeberuntungan yang Anda miliki</string>
+    <string name="word_percent" translatable="false">%</string>
+    <string name="word_whatsapp" translatable="false">WhatsApp</string>
+    <string name="word_sms" translatable="false">SMS</string>
+    <string name="html_format_congratulation" translatable="false"><![CDATA[<font color=#f2844a>%1$s</font> Congratulation!]]></string>
+    <string name="html_guide_1" translatable="false"><![CDATA[Fitur yang memberikan kamu kesempatan untuk produk yang kamu inginkan dengan <b>Lucky Ball</b> secara <b>gratis!</b>]]></string>
+    <string name="html_guide_2" translatable="false"><![CDATA[Fitur yang memungkinkan kamu untuk<br>berpartisipasi dalam <b>Time Event</b><br>hingga 4 kali dalam sehari!]]></string>
+    <string name="html_guide_3" translatable="false"><![CDATA[Layanan yang memungkinkan pengguna untuk<br>melihat siapa saja yang telah berhasil memenangkan<br>undian atau berbagai event menarik lainnya]]></string>
+    <string name="html_guide_4" translatable="false"><![CDATA[Fitur yang memberikan pengalaman menyenangkan<br>dan peluang memenangkan voucher jutaan rupiah<br>secara <b>gratis!</b>]]></string>
+    <string name="msg_guide_desc" translatable="false">*Dapatkan Extra Bonus 3 Lucky Ball</string>
+    <string name="html_msg_play_join_count" translatable="false"><![CDATA[<font color=#ea5506>%1$s</font>/%2$s]]></string>
+    <string name="format_ticket_count" translatable="false">Ticket %1$s</string>
+    <string name="word_wowmall_en" translatable="false">WowMall</string>
+    <string name="msg_lucky_box_guide" translatable="false">(Beli WOWBOX Tanpa Kerugian Sekarang Juga Dan\nDapatkan Keberuntungan Besar!</string>
+    <string name="html_wow_box_count" translatable="false"><![CDATA[<b>%1$s</b> WOWBOX]]></string>
+    <string name="word_wow_box" translatable="false">WOWBOX</string>
+    <string name="word_lucky_ball" translatable="false">LUCKY BALL</string>
+    <string name="word_lucky_ball2" translatable="false">Lucky Ball</string>
+    <string name="word_event" translatable="false">EVENT</string>
+    <string name="word_time_event" translatable="false">TIME EVENT</string>
+    <string name="word_event2" translatable="false">Event</string>
+    <string name="word_prize_en" translatable="false">Pemenang</string>
+    <string name="word_prize_upper" translatable="false">PEMENANG</string>
+    <string name="word_free_voucher" translatable="false">VOUCHER GRATIS</string>
+    <string name="word_reward_en" translatable="false">Reward</string>
+    <string name="word_point_mall_en" translatable="false">Wow Mall</string>
+    <string name="app_name" translatable="false">WOWBOX</string>
+    <string name="word_question" translatable="false">\?</string>
+    <string name="word_step1" translatable="false">Step1</string>
+    <string name="word_step2" translatable="false">Step2</string>
+    <string name="word_step3" translatable="false">Step3</string>
+    <string name="word_buff_channel" translatable="false">BUFF Channel</string>
+    <string name="word_telegram" translatable="false">Telegram</string>
+    <string name="word_discord" translatable="false">Discord</string>
+    <string name="word_ex_en" translatable="false">ex</string>
+    <string name="msg_lottery_guide_title1" translatable="false">WOWBOX CONTEST?</string>
+    <string name="word_date_format" translatable="false">MM.yyyy</string>
+    <string name="word_date_format2" translatable="false">dd.MM.yyyy</string>
+    <string name="word_date_format3" translatable="false">dd.MM.yyyy HH:mm</string>
+    <string name="word_date_format4" translatable="false">dd.MM.yyyy HH:mm:ss</string>
+    <string name="format_join_rate" translatable="false">%1$s%%</string>
+    <string name="word_grade_1" translatable="false">1st</string>
+    <string name="word_grade_2" translatable="false">2nd</string>
+    <string name="word_grade_3" translatable="false">3rd</string>
+    <string name="format_grade_other" translatable="false">%1$sth</string>
+    <string name="format_msg_invite_url" translatable="false">https://www.wowboxapp.com/index.html?recommendKey=%1$s</string>
+    <string name="word_album_name" translatable="false">WOWBOX</string>
+    <string name="word_buff_telegram_en" translatable="false">buff telegram</string>
+    <string name="word_city_en" translatable="false">City</string>
+    <string name="word_state_en" translatable="false">State</string>
+    <string name="cs_email" translatable="false">cs@wowboxapp.com</string>
+    <string name="word_contact_us_en" translatable="false">CONTACT US</string>
+    <string name="format_faq_count" translatable="false">%1$s (%2$s)</string>
+    <string name="word_id_en" translatable="false">ID</string>
+    <string name="format_dollar_unit" translatable="false">RP %1$s</string>
+    <string name="format_dollar_unit2" translatable="false">RP %1$s</string>
+    <string name="word_money_unit" translatable="false">RP</string>
+    <string name="word_all_en" translatable="false">ALL</string>
+    <string name="word_faq_en" translatable="false">FAQ</string>
+    <string name="word_buff_en" translatable="false">buff</string>
+    <string name="word_rp_en" translatable="false">Rp</string>
+    <string name="word_ball_en" translatable="false">Ball</string>
+    <string name="word_buff_upper_en" translatable="false">BUFF</string>
+    <string name="word_start_en" translatable="false">START</string>
+    <string name="word_free_start_en" translatable="false">FREE START!</string>
+    <string name="word_days_en" translatable="false">DAYS</string>
+    <string name="word_hrs_en" translatable="false">HRS</string>
+    <string name="word_mins_en" translatable="false">MINS</string>
+    <string name="word_secs_en" translatable="false">SECS</string>
+    <string name="word_lotto_en" translatable="false">CONTEST</string>
+    <string name="word_lotto_ticket_en" translatable="false">CONTEST ticket</string>
+    <string name="word_lucky_draw_en" translatable="false">Lucky Draw</string>
+    <string name="word_gratis" translatable="false">GRATIS</string>
+    <string name="word_mining_en" translatable="false">Mining</string>
+    <string name="word_lucky_draw_upper_en" translatable="false">LUCKY DRAW</string>
+    <string name="word_lucky_draw_upper_q_en" translatable="false">LUCKY DRAW?</string>
+    <string name="word_lucky_draw_guide_en" translatable="false">LUCKY DRAW Panduan</string>
+    <string name="word_lottery_guide_en" translatable="false">CONTEST Panduan</string>
+    <string name="word_active_lucky_draw_en" translatable="false">Ongoing Event</string>
+    <string name="word_end_lucky_draw_en" translatable="false">Closed Event</string>
+    <string name="word_guide" translatable="false">Panduan</string>
+    <string name="word_voucher" translatable="false">VOUCHER</string>
+    <string name="word_lucky_draw_join_history_en" translatable="false">MY HISTORY</string>
+    <string name="word_luxury_hall_en" translatable="false">Luxury Hall</string>
+    <string name="word_my_en" translatable="false">My</string>
+    <string name="word_my_buff_en" translatable="false">My Buff</string>
+    <string name="word_live_en" translatable="false">LIVE</string>
+    <string name="word_live_en2" translatable="false">[LIVE]</string>
+    <string name="word_korea_lotto_en" translatable="false">Korea Official CONTEST</string>
+    <string name="word_qna" translatable="false">Q&amp;A</string>
+    <string name="word_wowbox_upper_en" translatable="false">WOWBOX</string>
+    <string name="format_point_unit" translatable="false">%1$sP</string>
+    <string name="format_percent_unit" translatable="false">%1$s%%</string>
+    <string name="word_point_unit" translatable="false">P</string>
+    <string name="word_rp_unit" translatable="false">Rp</string>
+    <string name="format_text_count" translatable="false">%1$d/%2$d</string>
+    <string name="format_lottery_unit" translatable="false">%1$s CONTEST Tickets</string>
+    <string name="word_free_en" translatable="false">FREE</string>
+    <string name="word_demo_login" translatable="false">DEMO LOGIN</string>
+    <string name="word_mystery_box" translatable="false">Mystery Box</string>
+    <string name="word_sign_up_google" translatable="false">Sign up with Google</string>
+    <string name="word_sign_in_google" translatable="false">Sign in with Google</string>
+    <string name="word_sign_up_upper" translatable="false">SIGN UP</string>
+    <string name="word_sign_in" translatable="false">Sign in</string>
+    <string name="word_or" translatable="false">or</string>
+    <string name="msg_login_desc1" translatable="false">Please login to continue to your account.</string>
+    <string name="msg_login_desc2" translatable="false">Need an account?</string>
+    <string name="word_create_one" translatable="false">Create one</string>
+    <string name="word_my_ball" translatable="false">My Ball</string>
+    <string name="word_play" translatable="false">PLAY</string>
+    <string name="word_play2" translatable="false">Play</string>
+    <string name="word_lucky_play" translatable="false">Lucky Play</string>
+    <string name="word_invite_friend_upper" translatable="false">UNDANG TEMAN</string>
+
+    <string name="file_provider_authority" translatable="false">com.lejel.wowbox.fileprovider</string>
+    <string name="number_picker_formatter" translatable="false">%02d</string>
+
+</resources>

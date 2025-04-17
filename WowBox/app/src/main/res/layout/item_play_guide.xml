@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layout_play_guide1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/height_100"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/width_675"
+                android:layout_height="@dimen/height_908"
+                android:src="@drawable/img_play_guide1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_44pt"
+                android:layout_marginTop="@dimen/height_100"
+                android:text="@string/msg_play_guide1_desc1"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_28pt"
+                android:text="@string/msg_play_guide1_desc2"
+                android:layout_marginTop="@dimen/height_66"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layout_play_guide2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/height_100"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/width_900"
+                android:layout_height="@dimen/height_1033"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/width_47"
+                android:src="@drawable/img_play_guide2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_28pt"
+                android:text="@string/msg_play_guide2_desc1"
+                android:layout_marginTop="@dimen/height_100"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_868d94"
+                android:textSize="@dimen/textSize_22pt"
+                android:text="@string/msg_play_guide2_desc2"
+                android:layout_marginTop="@dimen/height_66"
+                android:drawableStart="@drawable/ic_play_guide_info"
+                android:drawablePadding="@dimen/width_5"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layout_play_guide3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/height_100"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/width_895"
+                android:layout_height="@dimen/height_1033"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/width_33"
+                android:src="@drawable/img_play_guide3"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_28pt"
+                android:text="@string/msg_play_guide3_desc1"
+                android:layout_marginTop="@dimen/height_100"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layout_play_guide4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/height_100"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/width_673"
+                android:layout_height="@dimen/height_1033"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/width_33"
+                android:src="@drawable/img_play_guide4"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_28pt"
+                android:text="@string/msg_play_guide4_desc1"
+                android:layout_marginTop="@dimen/height_100"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_868d94"
+                android:textSize="@dimen/textSize_22pt"
+                android:text="@string/msg_play_guide4_desc2"
+                android:layout_marginTop="@dimen/height_66"
+                android:drawablePadding="@dimen/width_5"
+                android:drawableStart="@drawable/ic_play_guide_info"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

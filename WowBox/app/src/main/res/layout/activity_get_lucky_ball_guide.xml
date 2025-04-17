@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.GuideActivity"
+    android:orientation="vertical">
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager_get_lucky_ball_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/height_200"/>
+
+    <com.lejel.wowbox.apps.common.component.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator_get_lucky_ball_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsColor="@color/color_e5e5e5"
+        app:dotsCornerRadius="@dimen/width_16"
+        android:layout_centerHorizontal="true"
+        app:dotsSize="@dimen/width_78"
+        app:dotsHeight="@dimen/height_16"
+        app:dotsSpacing="@dimen/width_16"
+        app:dotsWidthFactor="2.57"
+        app:selectedDotColor="@color/color_ea5506"
+        app:progressMode="true"
+        android:layout_marginTop="@dimen/height_50"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_97"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_33"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:id="@+id/text_get_lucky_ball_guide_before"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/width_50"
+            android:textColor="@color/color_ea5506"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/word_before"
+            android:textSize="@dimen/textSize_44pt"
+            android:background="@drawable/bg_border_3px_ea5506_transparent_radius_22"/>
+
+        <TextView
+            android:id="@+id/text_get_lucky_ball_guide_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/word_next2"
+            android:textSize="@dimen/textSize_44pt"
+            android:background="@drawable/bg_ea5506_radius_22"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

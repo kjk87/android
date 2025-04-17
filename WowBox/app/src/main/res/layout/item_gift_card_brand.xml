@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_232323"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/height_55"
+        android:layout_marginTop="@dimen/height_55"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <io.github.florent37.shapeofview.shapes.CircleView
+            android:layout_width="@dimen/width_193"
+            android:layout_height="@dimen/width_193">
+
+
+            <ImageView
+                android:id="@+id/image_gift_card_brand"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_profile_default" />
+
+        </io.github.florent37.shapeofview.shapes.CircleView>
+
+
+        <TextView
+            android:id="@+id/text_gift_card_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_33pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_16"/>
+
+    </LinearLayout>
+</RelativeLayout>

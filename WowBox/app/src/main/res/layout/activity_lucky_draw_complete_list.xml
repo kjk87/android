@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.luckydraw.ui.MyLuckyDrawPurchaseActivity">
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycler_lucky_draw_complete"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+  <RelativeLayout
+      android:id="@+id/layout_lucky_draw_complete_not_exist"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/bg_f7f7f7_radius_38"
+      android:layout_marginStart="@dimen/width_44"
+      android:layout_marginEnd="@dimen/width_44"
+      android:paddingTop="@dimen/height_55"
+      android:paddingBottom="@dimen/height_55"
+      android:layout_marginTop="@dimen/height_100"
+      android:visibility="gone"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_333333"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize_49pt"
+        android:layout_centerInParent="true"
+        android:text="@string/msg_not_exist_draw_purchase_history"/>
+
+  </RelativeLayout>
+
+
+</RelativeLayout>

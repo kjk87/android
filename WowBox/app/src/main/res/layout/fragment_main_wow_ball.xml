@@ -1,0 +1,211 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_138"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/width_44"
+            android:text="@string/word_gratis"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/textSize_60pt"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/layout_main_wow_ball_guide"
+            android:layout_width="@dimen/width_346"
+            android:layout_height="@dimen/height_91"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/width_44"
+            android:visibility="gone"
+            android:background="@drawable/bg_ea5506_radius_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/word_guide"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_main_lucky_draw_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="@dimen/width_44"
+            android:paddingEnd="@dimen/width_44"
+            android:paddingTop="@dimen/height_15"
+            android:paddingBottom="@dimen/height_15"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/bg_ea5506_radius_13"
+            android:layout_marginEnd="@dimen/width_44"
+            android:textSize="@dimen/textSize_38pt"
+            android:visibility="gone"
+            android:text="@string/word_login"/>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            android:background="@color/white"
+            app:expanded="true">
+
+            <RelativeLayout
+                android:id="@+id/layout_main_wow_ball_retention_ball"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_116"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:paddingStart="@dimen/width_44"
+                android:paddingEnd="@dimen/width_44"
+                android:visibility="gone"
+                android:background="@drawable/bg_border_3px_e5e5e5_f77f7f7_radius_13"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_retention_ball"
+                    android:drawablePadding="@dimen/width_27"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textColor="@color/color_333333"
+                    android:gravity="center_vertical"
+                    android:drawableStart="@drawable/ic_luckyball"/>
+
+                <TextView
+                    android:id="@+id/text_main_wow_ball_retention_ball"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/width_27"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textColor="@color/color_333333"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"
+                    android:drawableEnd="@drawable/ic_my_arrow"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_116"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_22"
+                android:layout_marginEnd="@dimen/width_44"
+                android:visibility="gone"
+                android:background="@drawable/bg_border_3px_e5e5e5_f77f7f7_radius_72">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_main_wow_ball_play_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_ea5506_radius_72">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="@dimen/width_22"
+                            android:gravity="center"
+                            android:text="@string/word_wow_ball_event"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_38pt" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_main_wow_ball_lucky_draw"
+                        android:layout_width="@dimen/width_401"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:gravity="center"
+                        android:text="@string/word_live_event"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_main_wow_ball_lucky_draw_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_main_wow_ball_play"
+                        android:layout_width="@dimen/width_401"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:gravity="center"
+                        android:text="@string/word_wow_ball_event"/>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_ea5506_radius_72">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="@dimen/width_22"
+                            android:gravity="center"
+                            android:text="@string/word_live_event"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_38pt" />
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/main_wow_ball_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

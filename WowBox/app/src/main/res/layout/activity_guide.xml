@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_guide"
+    android:orientation="vertical"
+    tools:context=".apps.GuideActivity">
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_835"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_guide_bottom">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <com.lejel.wowbox.apps.common.ui.custom.DirectionIndicator
+                android:id="@+id/indicator_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_155" />
+
+
+            <TextView
+                android:id="@+id/text_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:gravity="center"
+                android:textColor="@color/color_333333"
+                android:layout_marginTop="@dimen/height_44"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/text_guide_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_110"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_30"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/gradient_ea5506_f47916_radius_22"
+                android:elevation="@dimen/width_5"
+                android:gravity="center"
+                android:text="@string/msg_now_reg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_28"
+                android:layout_marginBottom="@dimen/height_163"
+                android:text="@string/msg_guide_desc"
+                android:textColor="@color/color_868d94"
+                android:textSize="@dimen/textSize_28pt" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text_guide_skip"
+        android:layout_width="@dimen/width_238"
+        android:layout_height="@dimen/height_83"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginTop="@dimen/height_232"
+        android:background="@drawable/bg_border_3px_ffffff_transparent_radius_16"
+        android:gravity="center"
+        android:text="@string/word_skip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_33pt" />
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_90">
+        <TextView
+            android:id="@+id/text_lucky_box_not_open_expire_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_2e2e2e"
+            android:layout_marginStart="@dimen/width_60"
+            android:textSize="@dimen/textSize_30pt" />
+
+        <TextView
+            android:id="@+id/text_luck_box_not_open_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_30pt"
+            android:textColor="@color/color_545454"
+            android:text="@string/word_req_cancel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/width_60"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_luck_box_not_open_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_36"
+        android:layout_marginStart="@dimen/width_60"
+        android:textColor="@color/color_2e2e2e"
+        android:textSize="@dimen/textSize_72pt"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_luck_box_not_open_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_30"
+        android:background="@color/color_f8f8f8"
+        android:layout_marginTop="@dimen/height_90"/>
+</LinearLayout>
