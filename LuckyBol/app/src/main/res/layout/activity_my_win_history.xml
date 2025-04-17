@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pplus.luckybol.apps.my.ui.MyWinHistoryActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            app:expanded="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_580"
+                android:visibility="gone"
+                app:contentScrim="@color/white"
+                app:expandedTitleTextAppearance="@style/TransparentText"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_fc5c57">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout
+                            android:layout_width="@dimen/width_120"
+                            android:layout_height="@dimen/width_120"
+                            app:mask="@drawable/ic_mypage_profile_mask"
+                            app:porterduffxfermode="DST_IN">
+
+                            <ImageView
+                                android:id="@+id/image_my_win_history_profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_shop_profile_default" />
+
+                        </com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout>
+
+                        <TextView
+                            android:id="@+id/text_my_win_history_retention_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_15"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_87pt" />
+
+                        <TextView
+                            android:id="@+id/text_my_win_history_point_config"
+                            android:layout_width="@dimen/width_485"
+                            android:layout_height="@dimen/height_130"
+                            android:layout_marginTop="@dimen/height_30"
+                            android:background="@drawable/btn_mybol_bg"
+                            android:gravity="center"
+                            android:text="@string/msg_view_bol_history"
+                            android:textColor="@color/color_fc5c57"
+                            android:textSize="@dimen/textSize_38pt" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_168"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_win_history_my"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_underbar_transparent_fc5c57_10px">
+
+                        <TextView
+                            android:id="@+id/text_win_history_my"
+                            android:layout_width="@dimen/width_444"
+                            android:layout_height="@dimen/height_108"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/word_my_win_history"
+                            android:textColor="@color/color_737373_fc5c57"
+                            android:textSize="@dimen/textSize_42pt" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_win_history_total"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_underbar_transparent_fc5c57_10px">
+
+                        <TextView
+                            android:id="@+id/text_win_history_total"
+                            android:layout_width="@dimen/width_444"
+                            android:layout_height="@dimen/height_108"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/word_total_win_history"
+                            android:textColor="@color/color_737373_fc5c57"
+                            android:textSize="@dimen/textSize_42pt" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_win_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/text_win_history_not_exist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_300"
+                android:text="@string/msg_not_exist_win_history"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_40pt"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

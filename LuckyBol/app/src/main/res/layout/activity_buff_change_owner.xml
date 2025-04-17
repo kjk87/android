@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dp"
+            app:expanded="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_114"
+                android:background="@color/color_f7fafc"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_buff_change_owner_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_264"
+                android:background="@color/white"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_144"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:background="@drawable/bg_f7fafc_radius_12"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_buff_change_owner_search"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingEnd="@dimen/width_42"
+                        android:paddingStart="@dimen/width_42"
+                        android:textColorHint="@color/color_8c969f"
+                        android:hint="@string/msg_search_nickname"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_373c42"
+                        android:background="@drawable/bg_f7fafc_radius_12"/>
+
+                    <ImageView
+                        android:id="@+id/image_buff_change_owner_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:src="@drawable/ic_buff_member_search"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_buff_change_owner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/layout_buff_buff_change_owner_not_exist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/msg_not_exist_buff_member"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_40pt" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <TextView
+        android:id="@+id/text_buff_change_owner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_168"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_fc5c57"
+        android:gravity="center"
+        android:text="@string/word_change_group_owner"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_48pt"
+        android:textStyle="bold" />
+
+</RelativeLayout>

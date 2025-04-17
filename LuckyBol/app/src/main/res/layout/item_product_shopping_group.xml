@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/layout_product_shopping_group_mask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/height_30"
+        android:layout_marginStart="@dimen/width_60"
+        android:layout_marginTop="@dimen/height_20"
+        android:layout_marginEnd="@dimen/width_60"
+        android:layout_marginBottom="@dimen/height_60"
+        android:elevation="@dimen/width_20"
+        app:shape_roundRect_bottomLeftRadius="@dimen/width_24"
+        app:shape_roundRect_bottomRightRadius="@dimen/width_24"
+        app:shape_roundRect_topLeftRadius="@dimen/width_24"
+        app:shape_roundRect_topRightRadius="@dimen/width_24">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_960">
+
+                <ImageView
+                    android:id="@+id/image_product_shopping_group_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/luckybol_default_img" />
+
+                <TextView
+                    android:id="@+id/text_product_shopping_group_free_ship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="@dimen/height_60"
+                    android:background="@drawable/bg_fc5c57_radius_15"
+                    android:padding="@dimen/width_10"
+                    android:text="@string/word_free_ship"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_30pt"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/image_product_shopping_group_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/height_60"
+                    android:src="@drawable/ic_post_favorite"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_product_shopping_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_42"
+                android:layout_marginStart="@dimen/width_60"
+                android:textColor="@color/color_222222"
+                android:layout_marginBottom="@dimen/height_36"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:id="@+id/text_product_shopping_group_origin_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:textColor="@color/color_777777"
+                android:textSize="@dimen/textSize_42pt" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60"
+                android:layout_marginBottom="@dimen/height_40"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_product_shopping_group_discount_ratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/width_20"
+                    android:gravity="center"
+                    android:textColor="@color/color_ff4026"
+                    android:textSize="@dimen/textSize_66pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_product_shopping_group_sale_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_222222"
+                    android:textSize="@dimen/textSize_66pt"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/text_product_shopping_group_save_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fc5c57_radius_15"
+                    android:paddingStart="@dimen/width_12"
+                    android:paddingTop="@dimen/height_6"
+                    android:paddingEnd="@dimen/width_12"
+                    android:paddingBottom="@dimen/height_6"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_30pt" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+</RelativeLayout>

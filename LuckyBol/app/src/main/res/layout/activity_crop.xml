@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/width_60"
+    android:paddingTop="@dimen/height_30"
+    android:paddingEnd="@dimen/width_60"
+    android:paddingBottom="@dimen/height_60">
+
+    <com.pplus.luckybol.apps.common.component.CropImageView
+        android:id="@+id/crop_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/crop_fix_btn_rotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="28dp"
+        android:drawableTop="@drawable/btn_edit_image_rotation"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:text="@string/word_rotation"
+        android:textColor="@android:color/black"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:id="@+id/crop_rotate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/crop_btn_rotation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/btn_edit_image_rotation"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:text="@string/word_rotation"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/crop_btn_free"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/btn_edit_image_free_transform"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:text="@string/word_image_free"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/crop_btn_1_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/btn_edit_image_square"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:text="1:1"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/btn_crop_4_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/btn_edit_image_rect_wide"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:text="4:3"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/crop_btn_3_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/btn_edit_image_rect_high"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:text="3:4"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/crop_btn_bottom_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="@string/word_confirm"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+</LinearLayout>

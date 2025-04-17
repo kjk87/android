@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_171">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_72"
+                android:layout_marginRight="@dimen/width_72"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_740">
+
+                    <ImageView
+                        android:id="@+id/image_giftishow_detail"
+                        android:layout_width="@dimen/width_660"
+                        android:layout_height="@dimen/width_660"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_giftishow_detail_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:id="@+id/text_giftishow_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_54pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_giftishow_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_buff_cash"
+                    android:drawablePadding="@dimen/width_15"
+                    android:gravity="center"
+                    android:textColor="@color/color_fc5c57"
+                    android:textSize="@dimen/textSize_50pt" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:layout_marginTop="@dimen/height_60"
+                android:background="@color/color_f8f8f8"
+                android:paddingLeft="@dimen/width_54"
+                android:paddingRight="@dimen/width_54">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_use_note"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_giftishow_detail_use_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginTop="@dimen/height_30"
+                android:layout_marginEnd="@dimen/width_54"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_36pt" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_171"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_fc5c57"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_giftishow_detail_gift"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_fc5c57"
+            android:gravity="center"
+            android:text="@string/msg_gift"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_39pt"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/width_2"
+            android:layout_height="@dimen/height_45"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_8bbbf8" />
+
+        <TextView
+            android:id="@+id/text_giftishow_detail_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_fc5c57"
+            android:gravity="center"
+            android:text="@string/msg_exchange_by_cash"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_39pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

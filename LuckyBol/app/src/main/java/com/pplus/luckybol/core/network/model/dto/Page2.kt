@@ -1,0 +1,112 @@
+package com.pplus.luckybol.core.network.model.dto
+
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+/**
+ * Created by imac on 2018. 1. 15..
+ */
+@Parcelize
+class Page2(var seqNo: Long? = null,
+            var memberSeqNo: Long? = null,
+            var coopSeqNo: Long? = null,
+            var status: String? = null,
+            var name: String? = null,
+            var phone: String? = null,
+            var openBound: String? = null,
+            var zipCode: String? = null,
+            var roadAddress: String? = null,
+            var roadDetailAddress: String? = null,
+            var parcelAddress: String? = null,
+            var parcelDetailAddress: String? = null,
+            var latitude: Double? = null,
+            var longitude: Double? = null,
+            var catchphrase: String? = null,
+            var categoryText: String? = null,
+            var todayViewCount: Int? = null,
+            var totalViewCount: Int? = null,
+            var blind: Boolean = false,
+            var talkRecvBound: String? = null,
+            var talkDenyDay: String? = null,
+            var talkDenyStartTime: String? = null,
+            var talkDenyEndTime: String? = null,
+            var customerCount: Int? = null,
+            var plusCount: Int? = null,
+            var pageProp: String? = null,
+            var regDatetime: String? = null,
+            var modDatetime: String? = null,
+            var type: String? = null,
+            var modifierSeqNo: Long? = null,
+            var profileSeqNo: Long? = null,
+            var profileAttachment: Attachment? = null,
+            var bgSeqNo: Long? = null,
+            var valuationCount: Int? = null,
+            var valuationPoint: Int? = null,
+            var offerLimitDate: String? = null,
+            var virtualPage: String? = null,
+            var searchKeyword: String? = null,
+            var code: String? = null,
+            var introduction: String? = null,
+            var mainMovieUrl: String? = null,
+            var coopStatus: String? = null,
+            var pageLevel: Int? = null,
+            var authCode: String? = null,
+            var incorrectAuthCodeCount: Int? = null,
+            var agentSeqNo: Long? = null,
+            var recommendationCode: String? = null,
+            var settlementUrl: String? = null,
+            var distance: Double? = null,
+            var goods: Goods? = null,
+            var mainGoodsSeqNo: Long? = null,
+            var reviewCount: Int? = null,
+            var goodsCount: Int? = null,
+            var avgEval: Double? = null,
+            var homepageLink: String? = null,
+            var isLink: Boolean? = null,
+            var plus: Boolean? = null,
+            var hashtag: String? = null,
+            var numberList: List<PRNumber2>? = null,
+            var isShopOrderable: Boolean? = null,
+            var isPackingOrderable: Boolean? = null,
+            var isDeliveryOrderable: Boolean? = null,
+            var management: PageManagement? = null,
+            var usePrnumber: Boolean? = null,
+            var distributorAgentCode: String? = null,
+            var isSeller: Boolean? = null,
+            var isBrand: Boolean? = null,
+            var bank: String? = null,
+            var bankAccount: String? = null,
+            var depositor: String? = null,
+            var reason: String? = null,
+            var email: String? = null,
+            var licenseImage: String? = null,
+            var ableNfc: Boolean? = null,
+            var shopCode: String? = null,
+            var openHours: String? = null,
+            var holiday: String? = null,
+            var thumbnail: String? = null,
+            var isParkingAvailable: Boolean? = null,
+            var isValetParkingAvailable: Boolean? = null,
+            var goodsNotiType: String? = null,
+            var goodsNotification: String? = null,
+            var point: Float? = null,
+            var woodongyi: Boolean? = null,
+            var qrImage: String? = null,
+            var storeType: String? = null,
+            var categoryMinorSeqNo: Long? = null,
+            var categoryMajorSeqNo: Long? = null,
+            var deliveryFee: Int? = null,
+            var refundDeliveryFee: Int? = null,
+            var deliveryAddFee: Int? = null,
+            var deliveryMinPrice: Int? = null) : Parcelable {
+
+    override fun equals(other: Any?): Boolean {
+        if (other == null) return false
+
+        return if (other is Page2) {
+            other.seqNo == seqNo
+        } else {
+            false
+        }
+    }
+}

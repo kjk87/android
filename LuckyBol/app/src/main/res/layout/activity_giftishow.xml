@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.mobilegift.ui.GiftishowActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_168"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/text_giftishow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/width_40"
+            android:src="@drawable/ic_navbar_back" />
+
+
+        <TextView
+            android:id="@+id/text_giftishow_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_52pt"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/text_giftishow_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/underbar_fc5c57_ffffff"
+            android:drawableEnd="@drawable/ic_arrow_fc5c57"
+            android:drawablePadding="@dimen/width_20"
+            android:text="@string/word_login_join2"
+            android:textColor="@color/color_fc5c57"
+            android:visibility="gone"
+            android:textSize="@dimen/textSize_52pt" />
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            app:expanded="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <RelativeLayout
+                    android:id="@+id/layout_giftishow_retention_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_174"
+                    android:background="@color/color_fc5c57">
+
+                    <TextView
+                        android:id="@+id/text_giftishow_retention_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/width_12"
+                        android:drawableEnd="@drawable/ic_arrow_ffffff"
+                        android:textSize="@dimen/textSize_39pt" />
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_giftishow_brand"
+                android:layout_width="match_parent"
+                android:paddingStart="@dimen/width_72"
+                android:layout_height="@dimen/height_180"
+                android:layout_marginTop="@dimen/height_30"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_15"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/gradient_14000000"/>
+
+            <TextView
+                android:id="@+id/text_giftshow_brand_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_48pt"
+                android:layout_marginTop="@dimen/height_60"
+                android:layout_marginStart="@dimen/width_72"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:layout_marginTop="@dimen/height_24"
+                android:background="@color/color_e8ecf0"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_giftishow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_giftishow_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_400"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:layout_width="@dimen/width_120"
+                        android:layout_height="@dimen/width_120"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/width_40"
+                        android:indeterminateDrawable="@drawable/rotate_data_loading"
+                        android:indeterminateOnly="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/height_30"
+                        android:gravity="center"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textSize_32pt"
+                        android:text="@string/msg_data_loading"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+</LinearLayout>

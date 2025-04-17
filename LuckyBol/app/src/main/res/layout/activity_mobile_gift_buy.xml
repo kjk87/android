@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.mobilegift.ui.GiftishowBuyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/image_mobile_gift_buy_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/height_20"
+            android:layout_marginEnd="@dimen/width_20"
+            android:src="@drawable/ic_top_close" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_mobile_gift_buy_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_90"
+                android:layout_marginBottom="@dimen/height_6"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_64pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_mobile_gift_buy_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:gravity="center"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_42pt"
+                android:layout_marginBottom="@dimen/height_80"/>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_mobile_gift_buy_receiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:layout_marginBottom="@dimen/height_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_receiver"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_42pt" />
+
+                <TextView
+                    android:id="@+id/text_mobile_gift_buy_receiver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_42pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:layout_marginBottom="@dimen/height_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_brand_name"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_42pt" />
+
+                <TextView
+                    android:id="@+id/text_mobile_gift_buy_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_42pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:layout_marginBottom="@dimen/height_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_count"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_42pt" />
+
+                <TextView
+                    android:id="@+id/text_mobile_gift_buy_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_42pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:layout_marginBottom="@dimen/height_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_retention_cash"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_42pt" />
+
+                <TextView
+                    android:id="@+id/text_mobile_gift_buy_retention_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_fc5c57"
+                    android:textSize="@dimen/textSize_42pt" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:layout_marginBottom="@dimen/height_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_mobile_gift_use_cash"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_42pt" />
+
+                <TextView
+                    android:id="@+id/text_mobile_gift_buy_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_ff4646"
+                    android:textSize="@dimen/textSize_42pt" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mobile_gift_buy_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:layout_marginBottom="@dimen/height_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_input_msg"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_42pt" />
+
+                    <TextView
+                        android:id="@+id/text_mobile_gift_buy_msg_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/format_count_per"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_42pt" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edit_mobile_gift_buy_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_200"
+                    android:background="@drawable/border_color_d8d8d8_2px_f8f8f8"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:paddingTop="@dimen/height_20"
+                    android:paddingStart="@dimen/width_20"
+                    android:paddingEnd="@dimen/width_20"
+                    android:hint="@string/msg_input_mobile_gift_msg"
+                    android:gravity="top"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_bbbbbb"
+                    android:maxLength="30"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_32pt"
+                    android:textColor="@color/color_fc5c57"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:layout_marginBottom="@dimen/height_20"
+                    android:text="@string/msg_mobile_gift_msg_desc"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_mobile_gift_buy_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"
+                android:textSize="@dimen/textSize_50pt"
+                android:textColor="@color/color_232323"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/text_mobile_gift_buy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_171"
+                android:background="@color/color_fc5c57"
+                android:layout_marginTop="@dimen/height_90"
+                android:textSize="@dimen/textSize_50pt"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

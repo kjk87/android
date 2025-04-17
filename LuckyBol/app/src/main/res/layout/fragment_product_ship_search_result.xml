@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168">
+
+            <ImageView
+                android:id="@+id/image_product_ship_search_result_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/width_54"
+                android:src="@drawable/ic_navbar_back" />
+
+
+            <TextView
+                android:id="@+id/text_product_ship_search_result_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/word_search_result"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_70pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_product_ship_search_result_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/underbar_fc5c57_ffffff"
+                android:drawableEnd="@drawable/ic_arrow_fc5c57"
+                android:drawablePadding="@dimen/width_20"
+                android:text="@string/word_login_join2"
+                android:textColor="@color/color_fc5c57"
+                android:visibility="gone"
+                android:textSize="@dimen/textSize_52pt" />
+
+            <TextView
+                android:id="@+id/text_product_ship_search_result_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_40"
+                android:drawableStart="@drawable/ic_top_favorite_sel"
+                android:drawablePadding="@dimen/width_15"
+                android:gravity="center"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_44pt" />
+
+        </RelativeLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp"
+                app:expanded="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+<!--                    app:layout_scrollFlags="scroll|enterAlways">-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+
+                        <com.pplus.luckybol.apps.common.ui.custom.SlidingTabLayout
+                            android:id="@+id/tabLayout_product_ship_search_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_110"
+                            android:layout_marginTop="@dimen/height_30"
+                            android:background="@color/white"
+                            android:paddingStart="@dimen/width_54" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager_product_ship_search_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

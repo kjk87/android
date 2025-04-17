@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.product.ui.PurchaseAddInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_product_seller_info_product_image"
+                        android:layout_width="@dimen/width_240"
+                        android:layout_height="@dimen/width_240"
+                        android:layout_marginEnd="@dimen/width_30"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/luckybol_default_img" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_product_seller_info_product_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_45pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_product_seller_info_product_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_12"
+                            android:textColor="@color/color_ff4646"
+                            android:textSize="@dimen/textSize_51pt" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/text_product_seller_info_page_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_120"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_51pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_product_seller_info_page_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_39"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:background="@drawable/bg_e8e8e8_radius_18"
+                    android:drawableStart="@drawable/ic_tel"
+                    android:drawablePadding="@dimen/width_12"
+                    android:paddingStart="@dimen/width_30"
+                    android:paddingTop="@dimen/height_9"
+                    android:paddingEnd="@dimen/width_30"
+                    android:paddingBottom="@dimen/height_9"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_36pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_147"
+                    android:text="@string/word_introduce_text"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_51pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_product_seller_info_catchprase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_48"
+                    android:textColor="@color/color_808080"
+                    android:textSize="@dimen/textSize_45pt" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_117"
+                    android:text="@string/word_company_info"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_51pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_90"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/width_381"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_company_name"
+                        android:textColor="@color/color_808080"
+                        android:textSize="@dimen/textSize_45pt" />
+
+                    <TextView
+                        android:id="@+id/text_product_seller_info_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_45pt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_42"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/width_381"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_ceo"
+                        android:textColor="@color/color_808080"
+                        android:textSize="@dimen/textSize_45pt" />
+
+                    <TextView
+                        android:id="@+id/text_product_seller_info_ceo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_45pt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_42"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/width_381"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_company_number"
+                        android:textColor="@color/color_808080"
+                        android:textSize="@dimen/textSize_45pt" />
+
+                    <TextView
+                        android:id="@+id/text_product_seller_info_company_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_45pt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_42"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/width_381"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_company_address"
+                        android:textColor="@color/color_808080"
+                        android:textSize="@dimen/textSize_45pt" />
+
+                    <TextView
+                        android:id="@+id/text_product_seller_info_company_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_45pt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_product_seller_info_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_42"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/width_381"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_email"
+                        android:textColor="@color/color_808080"
+                        android:textSize="@dimen/textSize_45pt" />
+
+                    <TextView
+                        android:id="@+id/text_product_seller_info_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_45pt" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_f8f8f8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_26pt"
+                    android:textColor="@color/color_808080"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:layout_marginBottom="@dimen/height_30"
+                    android:text="@string/msg_legal_notice_desc"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

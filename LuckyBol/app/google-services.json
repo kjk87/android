@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "489778694768",
+    "firebase_url": "https://luckybol.firebaseio.com",
+    "project_id": "luckybol",
+    "storage_bucket": "luckybol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489778694768:android:0d83cb597df22b603ec2b5",
+        "android_client_info": {
+          "package_name": "com.pplus.luckybol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489778694768-v2191dflt3r1m2dn0gmbpolobte8sol4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pplus.luckybol",
+            "certificate_hash": "bc4e58d2d7a053811958246afdf641dedcdcb527"
+          }
+        },
+        {
+          "client_id": "489778694768-tcfum8ht7khfaa5vsu8kda75p6d92vho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pplus.luckybol",
+            "certificate_hash": "28df9b97f24e6e5bc3ed4193897d694df13dfbdc"
+          }
+        },
+        {
+          "client_id": "489778694768-27rf70v1bkpa0pd76gc9gkl81rtmqt0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc4Baw5LcP1rkCMC3lv1-ZA4XaIEVnSO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489778694768-27rf70v1bkpa0pd76gc9gkl81rtmqt0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

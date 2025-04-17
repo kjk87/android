@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.event.ui.LuckyLottoGuideActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/height_240"
+            android:background="@color/color_f7fafc"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_780"
+                android:src="@drawable/img_lucky_lotto_guide_banner" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_570"
+                android:src="@drawable/img_lucky_lotto_guide1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2430"
+                android:src="@drawable/img_lucky_lotto_guide2" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/image_lucky_lotto_guide_back"
+            android:layout_width="@dimen/width_90"
+            android:layout_height="@dimen/height_69"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/width_40"
+            android:layout_marginEnd="@dimen/width_40"
+            android:src="@drawable/ic_navbar_back_light" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

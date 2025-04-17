@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.event.ui.EventAlertActivity">
+
+    <LinearLayout
+        android:layout_width="@dimen/width_800"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/image_profile_set"
+            android:layout_width="@dimen/width_800"
+            android:layout_height="@dimen/height_1120"
+            android:src="@drawable/img_event_popup_info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_alert_profile_set_do_not_again"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/msg_do_not_show_again"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt"/>
+
+            <View
+                android:layout_width="@dimen/width_2"
+                android:layout_height="@dimen/height_45"
+                android:background="@color/color_8bbbf8"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/text_alert_profile_set_close"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/word_close"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

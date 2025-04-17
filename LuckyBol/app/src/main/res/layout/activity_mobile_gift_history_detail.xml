@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_60"
+                android:layout_marginTop="@dimen/height_60"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <ImageView
+                    android:id="@+id/image_mobile_gift_history_detail"
+                    android:layout_width="@dimen/height_460"
+                    android:layout_height="@dimen/height_460"
+                    android:layout_marginRight="@dimen/width_36"
+                    android:background="@drawable/border_color_d8d8d8_2px"
+                    android:padding="@dimen/width_2"
+                    android:scaleType="centerCrop"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_mobile_gift_history_detail_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_48pt"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/text_mobile_gift_history_detail_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_40"
+                            android:textColor="@color/color_737373"
+                            android:textSize="@dimen/textSize_38pt"/>
+
+                        <TextView
+                            android:id="@+id/text_mobile_gift_history_detail_receiver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_737373"
+                            android:textSize="@dimen/textSize_38pt"/>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_72"
+                    android:text="@string/word_buy_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_70"
+                android:layout_marginTop="@dimen/height_50"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_product_count"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_42pt"/>
+
+                <TextView
+                    android:id="@+id/text_mobile_gift_history_detail_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_70"
+                android:layout_marginBottom="@dimen/height_50"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_purchase_price"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_42pt"/>
+
+                <TextView
+                    android:id="@+id/text_mobile_gift_history_detail_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_ff4646"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_mobile_gift_history_detail_send_msg_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_72"
+                    android:text="@string/word_send_msg"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_mobile_gift_history_detail_send_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_160"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_40pt"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_72"
+                    android:text="@string/word_send_target"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_mobile_gift_history_detail_target"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_50"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:layout_marginTop="@dimen/height_50"
+                android:background="@color/color_d8d8d8"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/width_72"
+                android:paddingEnd="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_50"
+                android:textColor="@color/color_ff4646"
+                android:text="@string/msg_caution_mobile_gift"
+                android:textSize="@dimen/textSize_40pt"/>
+
+
+
+            <TextView
+                android:id="@+id/text_mobile_gift_history_detail_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/height_110"
+                android:layout_marginRight="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_50"
+                android:background="@drawable/underbar_737373_transparent"
+                android:text="@string/word_alert_cancel_refund"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_40pt"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

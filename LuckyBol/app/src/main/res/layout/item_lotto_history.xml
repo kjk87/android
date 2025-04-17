@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_lotto_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_660"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_660"
+        android:background="@color/color_4d000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_120"
+            android:minWidth="@dimen/width_375"
+            android:minHeight="@dimen/height_120"
+            android:background="@drawable/bg_80000000_radius_15">
+
+            <TextView
+                android:id="@+id/text_lotto_history_gift_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginTop="@dimen/height_180"
+            android:layout_marginEnd="@dimen/width_60"
+            android:background="@drawable/bg_ffffff_radius_24"
+            android:elevation="@dimen/width_10"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_36"
+                android:text="@string/word_lotto_win_number"
+                android:textColor="@color/color_212529"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layout_lotto_history_win_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_30"
+                android:orientation="horizontal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:layout_marginTop="@dimen/height_54"
+                android:background="@color/color_eef2f6" />
+
+            <TextView
+                android:id="@+id/text_lotto_history_win_announce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_36"
+                android:layout_marginBottom="@dimen/height_36"
+                android:drawableEnd="@drawable/ic_arrow_lotto_announce"
+                android:drawablePadding="@dimen/width_12"
+                android:gravity="center"
+                android:text="@string/msg_view_win_announce"
+                android:textColor="@color/color_ff4026"
+                android:textSize="@dimen/textSize_42pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_lotto_win_winner_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_96"
+                android:text="@string/word_lotto_winner"
+                android:textColor="@color/color_212529"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_162"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_42"
+                android:layout_marginEnd="@dimen/width_60"
+                android:background="@drawable/bg_f7fafc_radius_18">
+
+                <TextView
+                    android:id="@+id/text_lotto_history_winner_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_36"
+                    android:layout_marginTop="@dimen/height_42"
+                    android:drawableStart="@drawable/ic_lucky_lotto_caution"
+                    android:drawablePadding="@dimen/width_24"
+                    android:text="@string/msg_lucky_lotto_gift_desc"
+                    android:textColor="@color/color_373c42"
+                    android:textSize="@dimen/textSize_39pt" />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_lotto_history_winner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/layout_lotto_history_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_126"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginTop="@dimen/height_30"
+            android:layout_marginEnd="@dimen/width_60"
+            android:layout_marginBottom="@dimen/height_180"
+            android:background="@drawable/bg_border_eef2f6_radius_18">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableEnd="@drawable/ic_arrow_373c42"
+                android:drawablePadding="@dimen/width_24"
+                android:text="@string/msg_view_detail"
+                android:textColor="@color/color_282c33"
+                android:textSize="@dimen/textSize_42pt" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

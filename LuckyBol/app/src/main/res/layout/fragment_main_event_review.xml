@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp"
+                app:expanded="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_150"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    app:layout_scrollFlags="scroll|enterAlways">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_main_event_review_impression_tab"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_underbar_transparent_fc5c57_9px">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/word_win_impression"
+                            android:textColor="@color/color_8c969f_fc5c57"
+                            android:textSize="@dimen/textSize_39pt"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_main_event_review_review_tab"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_underbar_transparent_fc5c57_9px">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/word_photo_shot"
+                            android:textColor="@color/color_8c969f_fc5c57"
+                            android:textSize="@dimen/textSize_39pt"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager_main_event_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_main_event_review_enable_review_count"
+        android:layout_width="@dimen/width_936"
+        android:layout_height="@dimen/height_135"
+        android:textSize="@dimen/textSize_39pt"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/bg_373c42_radius_500"
+        android:layout_marginBottom="@dimen/height_120"/>
+
+</RelativeLayout>

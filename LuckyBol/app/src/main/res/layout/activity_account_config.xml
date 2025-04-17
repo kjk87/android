@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/width_54"
+        android:paddingRight="@dimen/width_54">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_60"
+            android:text="@string/word_id"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_39pt"/>
+
+        <TextView
+            android:id="@+id/text_account_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_45"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_45pt"/>
+
+
+        <LinearLayout
+            android:id="@+id/layout_account_config_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"
+                android:text="@string/word_password"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_39pt"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_120"
+                android:layout_marginTop="@dimen/height_18"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_45pt"/>
+
+                <TextView
+                    android:id="@+id/text_account_changePassword"
+                    android:layout_width="@dimen/width_210"
+                    android:layout_height="@dimen/height_120"
+                    android:background="@drawable/btn_login_blue"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/word_modified"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_39pt"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_account_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_93"
+            android:text="@string/word_name"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_39pt"/>
+
+        <TextView
+            android:id="@+id/text_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_45"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_45pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_120"
+            android:text="@string/word_certified_number"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_39pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_18"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_account_phoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_45pt"/>
+
+            <TextView
+                android:id="@+id/text_account_numberChange"
+                android:layout_width="@dimen/width_210"
+                android:layout_height="@dimen/height_120"
+                android:background="@drawable/btn_login_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/msg_change"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_account_secession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/height_90"
+        android:layout_marginEnd="@dimen/width_54"
+        android:background="@drawable/underbar_808080_ffffff"
+        android:text="@string/msg_secession"
+        android:textColor="@color/color_808080"
+        android:textSize="@dimen/textSize_45pt"/>
+
+</RelativeLayout>

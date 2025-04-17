@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view_gift_left_bar"
+        android:layout_width="@dimen/width_1"
+        android:layout_height="match_parent"
+        android:background="@color/color_e8e8e8" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_540">
+
+            <ImageView
+                android:id="@+id/image_gift"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/layout_gift_url"
+                android:layout_width="@dimen/width_114"
+                android:layout_height="@dimen/width_114"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/height_30"
+                android:layout_marginEnd="@dimen/height_30"
+                android:background="@drawable/bg_circle_40000000">
+
+                <ImageView
+                    android:layout_width="@dimen/width_66"
+                    android:layout_height="@dimen/width_66"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_gift_share" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_gift_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_30"
+            android:layout_marginTop="@dimen/height_30"
+            android:layout_marginEnd="@dimen/width_30"
+            android:maxLines="2"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_39pt" />
+
+        <TextView
+            android:id="@+id/text_gift_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_30"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_39pt" />
+
+        <TextView
+            android:id="@+id/text_gift_reward_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_30"
+            android:layout_marginBottom="@dimen/height_30"
+            android:textColor="@color/color_ff4646"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_39pt" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_gift_winner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/width_30"
+            android:paddingEnd="@dimen/width_30"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout
+                android:layout_width="@dimen/width_84"
+                android:layout_height="@dimen/width_84"
+                android:layout_marginEnd="@dimen/width_21"
+                app:mask="@drawable/ic_event_profile_default_mask"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/image_gift_winner_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_event_profile_default" />
+
+            </com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout>
+
+            <TextView
+                android:id="@+id/text_gift_winner_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/textSize_36pt"
+                android:textColor="@color/color_232323"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_gift_winner_friend"
+                android:layout_width="@dimen/width_120"
+                android:layout_height="@dimen/height_72"
+                android:background="@drawable/bg_fc5c57_radius_15">
+
+                <ImageView
+                    android:layout_width="@dimen/width_60"
+                    android:layout_height="@dimen/width_60"
+                    android:src="@drawable/ic_winner_friends"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_gift_right_bar"
+        android:layout_width="@dimen/width_1"
+        android:layout_height="match_parent"
+        android:background="@color/color_e8e8e8" />
+
+</LinearLayout>

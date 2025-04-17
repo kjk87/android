@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main_pad_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/height_168"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingStart="@dimen/width_54"-->
+<!--            android:paddingEnd="@dimen/width_54"-->
+<!--            android:paddingBottom="@dimen/height_20"-->
+<!--            android:visibility="visible">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/image_pad_back"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:paddingEnd="@dimen/width_30"-->
+<!--                android:src="@drawable/ic_navbar_back" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/layout_pad_search"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginEnd="@dimen/width_42"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/underbar_d8d8d8_ffffff_4px">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginStart="@dimen/width_40"-->
+<!--                    android:text="@string/hint_search_around"-->
+<!--                    android:textColor="@color/color_bbbbbb"-->
+<!--                    android:textSize="@dimen/textSize_48pt" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginEnd="@dimen/width_40"-->
+<!--                    android:src="@drawable/ic_search_gray" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/image_main_pad_plus_news"-->
+<!--                android:layout_width="@dimen/width_160"-->
+<!--                android:layout_height="@dimen/height_100"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:background="@drawable/btn_number_news"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/color_fc5c57"-->
+<!--                android:textSize="@dimen/textSize_32pt"-->
+<!--                android:text="@string/word_news2"-->
+<!--                android:textStyle="bold" />-->
+
+<!--        </LinearLayout>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_main_pad_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_main_pad_up_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/btn_number_down"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_180"
+                    android:background="@color/white"
+                    android:clickable="true">
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_main_pad_delete"
+                        android:layout_width="@dimen/width_125"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true">
+
+                        <ImageView
+                            android:id="@+id/image_main_pad_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/btn_number_delete" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/width_125"
+                        android:layout_toLeftOf="@id/layout_main_pad_delete"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/text_main_pad_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/trebucbd"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_85pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/trebucbd"
+                            android:text="#"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_85pt"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_main_number_pad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.pplus.luckybol.apps.common.ui.custom.dial.DialPadView
+                        android:id="@+id/view_main_number_pad"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_720"
+                        android:layout_marginBottom="@dimen/height_60" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

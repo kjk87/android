@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_75"
+        android:layout_height="@dimen/width_75"
+        android:background="@drawable/bg_circle_ffffff">
+
+        <com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout
+            android:layout_width="@dimen/width_72"
+            android:layout_height="@dimen/width_72"
+            android:layout_centerInParent="true"
+            app:mask="@drawable/bg_circle_000000"
+            app:porterduffxfermode="DST_IN">
+
+            <ImageView
+                android:id="@+id/image_buff_member"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_contact_profile_default"
+                android:scaleType="centerCrop" />
+
+        </com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

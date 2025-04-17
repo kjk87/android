@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.event.ui.MyLottoJoinListActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_card_config_not_exist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_540"
+        android:visibility="gone"
+        android:background="@color/color_f0f0f0">
+
+        <RelativeLayout
+            android:id="@+id/layout_card_config_reg"
+            android:layout_width="@dimen/width_510"
+            android:layout_height="@dimen/height_310"
+            android:background="@drawable/bg_card_default"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_card_add"
+                android:textSize="@dimen/textSize_28pt"
+                android:textColor="@color/color_b7b7b7"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:drawablePadding="@dimen/height_20"
+                android:text="@string/word_card_reg"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/layout_card_config_exist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            app:expanded="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:background="@color/color_f8f8f8"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <TextView
+                    android:id="@+id/text_card_config_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_32pt" />
+
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_card_config"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <TextView
+        android:id="@+id/text_card_config_reg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_171"
+        android:background="@color/color_fc5c57"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/textSize_39pt"
+        android:textColor="@color/white"
+        android:text="@string/msg_reg_card"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

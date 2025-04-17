@@ -1,0 +1,150 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="@dimen/height_0">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_360"
+            app:contentScrim="@color/white"
+            app:expandedTitleTextAppearance="@style/TransparentText"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/layout_ticket_config_retention_ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_point_config_retention_ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/img_lotto_coupon_icon"
+                        android:drawablePadding="@dimen/width_15"
+                        android:textColor="@color/color_fc5c57"
+                        android:textSize="@dimen/textSize_84pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_6"
+                        android:text="@string/word_use_enable_lotto_ticket"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_39pt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_ticket_config_not_retention_ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/msg_not_retention_ticket"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_39pt" />
+
+                    <TextView
+                        android:id="@+id/text_ticket_config_invite"
+                        android:layout_width="@dimen/width_350"
+                        android:layout_height="@dimen/height_120"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:background="@drawable/btn_white_shadow"
+                        android:gravity="center"
+                        android:text="@string/msg_invite"
+                        android:textColor="@color/color_fc5c57"
+                        android:textSize="@dimen/textSize_32pt"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_72"
+            android:background="@color/color_fafafa"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/width_54">
+
+
+            <TextView
+                android:id="@+id/text_ticket_config_sort_past"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/word_sort_past"
+                android:textColor="@color/color_808080_fc5c57"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <TextView
+                android:id="@+id/text_ticket_config_sort_recent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_54"
+                android:layout_toLeftOf="@id/text_ticket_config_sort_past"
+                android:gravity="center"
+                android:text="@string/word_sort_recent"
+                android:textColor="@color/color_808080_fc5c57"
+                android:textSize="@dimen/textSize_33pt" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_ticket_config"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/text_ticket_config_not_exist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_450"
+            android:text="@string/msg_not_exist_ticket_history"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_40pt"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

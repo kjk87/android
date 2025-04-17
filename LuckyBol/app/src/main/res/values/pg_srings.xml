@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="msg_cancel_isp">모바일 ISP 어플리케이션이 설치되어 있지 않습니다.\n설치를 눌러 진행 해 주십시요.\n취소를 누르면 결제가 취소 됩니다.</string>
+    <string name="msg_pg_cancel">(-1)결제를 취소 하셨습니다.</string>
+    <string name="word_install">설치</string>
+    <string name="msg_loading">로딩중입니다.\n잠시만 기다려주세요.</string>
+    <string name="word_hyundae">현대 앱카드</string>
+    <string name="word_samsung">삼성 앱카드</string>
+    <string name="word_lotte">롯데 앱카드</string>
+    <string name="word_shinhan">신한 앱카드</string>
+    <string name="word_kb">국민 앱카드</string>
+    <string name="word_hanask">하나SK 통합안심클릭</string>
+    <string name="msg_not_installed_app">어플리케이션이 설치되어 있지 않습니다.\n설치를 눌러 진행 해 주십시요.\n취소를 누르면 결제가 취소 됩니다.</string>
+    <string name="msg_not_valid_install_url">설치 url이 올바르지 않습니다.</string>
+    <string name="msg_failed_payment">결제를 실패하였습니다.</string>
+    <string name="word_mname">주식회사 피플러스</string>
+</resources>

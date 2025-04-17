@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"
+        android:layout_marginTop="@dimen/height_60"
+        android:orientation="horizontal">
+
+        <com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout
+            android:layout_width="@dimen/width_400"
+            android:layout_height="@dimen/height_300"
+            android:layout_marginEnd="@dimen/width_40"
+            app:mask="@drawable/bg_online_post_mask"
+            app:porterduffxfermode="DST_IN">
+
+            <ImageView
+                android:id="@+id/image_my_event_win"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/luckybol_default_img" />
+
+
+        </com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/width_40">
+
+
+            <TextView
+                android:id="@+id/text_my_event_win_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_my_event_win_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_36pt" />
+
+            <TextView
+                android:id="@+id/text_my_event_win_reg_review"
+                android:layout_width="@dimen/width_260"
+                android:layout_height="@dimen/height_80"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_28pt"
+                android:gravity="center"
+                android:text="@string/msg_reg_review"
+                android:background="@drawable/bg_fc5c57_radius_66"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_3"
+        android:layout_marginTop="@dimen/height_60"
+        android:background="@color/color_d8d8d8"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_27"
+        android:background="@color/color_f0f0f0"/>
+</LinearLayout>

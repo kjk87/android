@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@drawable/bg_ffffff_radius_24"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_120"
+            android:gravity="center"
+            android:text="@string/msg_enable_buff_join_after_24hour"
+            android:textColor="@color/color_525961"
+            android:textSize="@dimen/textSize_48pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_alert_buff_time_limit_remain_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_45"
+            android:gravity="center"
+            android:textColor="@color/color_fc5c57"
+            android:textSize="@dimen/textSize_48pt"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_156"
+            android:layout_marginTop="@dimen/height_96"
+            android:background="@drawable/bg_fc5c57_radius_bottom_24"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_alert_buff_time_limit_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/word_confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

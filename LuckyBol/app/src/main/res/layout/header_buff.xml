@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.buff.ui.BuffActivity">
+
+    <ImageView
+        android:id="@+id/image_buff_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_99000000" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_131"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/width_126"
+            android:layout_height="@dimen/height_105"
+            android:layout_marginStart="@dimen/width_324"
+            android:background="@drawable/line_ffffff" />
+
+        <TextView
+            android:id="@+id/text_buff_catchphrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/height_18"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_78pt" />
+
+        <View
+            android:layout_width="@dimen/width_126"
+            android:layout_height="@dimen/height_105"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/height_18"
+            android:layout_marginEnd="@dimen/width_318"
+            android:background="@drawable/line_ffffff" />
+
+        <TextView
+            android:id="@+id/text_buff_title"
+            android:layout_width="@dimen/width_336"
+            android:layout_height="@dimen/height_90"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_157"
+            android:background="@drawable/bg_73000000_radius_66"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_48pt" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_222"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginTop="@dimen/height_60"
+            android:layout_marginEnd="@dimen/width_60"
+            android:background="@drawable/bg_73000000_radius_24"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_buff_bol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_total_buff_bol"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_buff_total_bol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_18"
+                        android:drawablePadding="@dimen/width_15"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_buff_bol_w" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/width_24"
+                    android:src="@drawable/ic_arrow_ffffff" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/width_3"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/height_75"
+                android:layout_marginBottom="@dimen/height_75"
+                android:background="@color/color_1aeef2f6"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/layout_buff_cash"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_total_buff_cash"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_buff_total_cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_18"
+                        android:drawablePadding="@dimen/width_15"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_buff_cash_w" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/width_24"
+                    android:src="@drawable/ic_arrow_ffffff" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_294"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_buff_member"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_75"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/text_buff_member_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_arrow_ffffff"
+                android:drawablePadding="@dimen/width_6"
+                android:layout_marginStart="@dimen/width_18"
+                android:layout_toRightOf="@id/recycler_buff_member"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_270"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/img_buff_bottom" />
+
+    <ImageView
+        android:layout_width="@dimen/width_33"
+        android:layout_height="@dimen/width_33"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/height_24"
+        android:src="@drawable/ic_buff_arrow_down" />
+
+</RelativeLayout>

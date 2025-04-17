@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/height_6"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="@dimen/width_6"
+        android:layout_height="@dimen/height_144"
+        android:background="@drawable/gradient_14000000_horizontal"/>
+
+    <View
+        android:layout_width="@dimen/width_6"
+        android:layout_height="@dimen/height_144"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/gradient_14000000_horizontal_180"/>
+
+    <TextView
+        android:id="@+id/text_event_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144"
+        android:background="@drawable/color_transparent_white"
+        android:gravity="center"
+        android:textColor="@color/color_8c969f_fc5c57"
+        android:elevation="@dimen/width_6"
+        android:textSize="@dimen/textSize_42pt"
+        android:textStyle="bold" />
+
+</RelativeLayout>

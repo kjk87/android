@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--google-->
+    <!--<string name="google_client_id">935141842480-kjbb8jbiadr0tke9lf8qb8go1p6ir8um.apps.googleusercontent.com</string>-->
+
+    <!-- Your Facebook App ID from your app settings on https://developers.facebook.com/ -->
+    <!-- More details here: https://www.firebase.com/docs/android/guide/user/facebook.html -->
+    <string name="facebook_app_id">643498549911849</string>
+    <string name="fb_login_protocol_scheme">fb643498549911849</string>
+
+    <!-- Your Twitter consumer key and secret from your app settings on https://apps.twitter.com/ -->
+    <!-- More details here: https://www.firebase.com/docs/android/guide/user/twitter.html -->
+    <string name="twitter_consumer_key">w5jC5uteMDl5hME7PkwVifERb</string>
+    <string name="twitter_consumer_secret">ZF2STwW7NpfMjwp9eKUvtGY7JKyN3mbs2vg3VlBhhayCoED6W3</string>
+
+    <!--kakao-->
+    <string name="kakao_app_key">5a4021cd4cfcc9f1ebab8dba8772f8a7</string>
+    <string name="kakao_rest_key">821d16d3fca2032e92a117ee4a627b49</string>
+
+
+    <!--naver-->
+    <string name="naver_client_id">yla6BF3tDZQwzucyBPy3</string>
+    <string name="naver_client_secret">ECxHHjEVU2</string>
+
+
+    <string name="admob_id">ca-app-pub-6932639067773475~3641848105</string>
+    <string name="admob_interstitial_id">ca-app-pub-6932639067773475/8511031402</string>
+
+    <string name="adbrix_app_key">OoyeYCHz5EuDXnNvxzrqGA</string>
+    <string name="adbrix_secret_key">xsa4TNBMkkyMDPwdXou2aQ</string>
+
+    <string name="adpopcorn_app_key">738894776</string>
+    <string name="adpopcorn_hash_key">818f0525a2824fb5</string>
+
+    <!--boot pay id-->
+<!--    <string name="boot_pay_id">5bad94dab6d49c5a1b52ee74</string>-->
+    <string name="boot_pay_cash_id">5c36dafeb6d49c67f6bf706f</string>
+    <string name="boot_pay_id_stage">5c00fb0fb6d49c08cce3cc2a</string>
+<!--    <string name="boot_pay_id_dev">5c0504a0396fa60d65bd2c03</string>-->
+
+
+    <string name="boot_pay_kicc_id">5dddda344f74b4002c337d7f</string>
+
+    <string name="mobon_key">luckballapp</string>
+
+    <string name="buzvil_app_id">app-pub-494658663490567</string>
+    <string name="buzvil_native_id_12">489766569287026</string>
+    <string name="buzvil_native_id_lucky">352023122757984</string>
+    <string name="buzvil_native_id_free">340972716859569</string>
+    <string name="buzvil_feed_id">471544590114304</string>
+
+</resources>

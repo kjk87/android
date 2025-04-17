@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.buff.ui.BuffPostHiddenActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_327">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_212529"
+                        android:textSize="@dimen/textSize_54pt"
+                        android:text="@string/word_buff_post_hidden_setting"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_24"
+                        android:textColor="@color/color_6e7780"
+                        android:textSize="@dimen/textSize_39pt"
+                        android:text="@string/msg_buff_post_hidden_setting_desc"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/height_66"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_buff_post_hidden"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/width_18"
+                        android:textColor="@color/color_fc5c57"
+                        android:textSize="@dimen/textSize_48pt"
+                        android:textStyle="bold" />
+
+                    <com.pplus.luckybol.apps.common.ui.custom.SafeSwitchCompat
+                        android:id="@+id/switch_buff_post_hidden"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_switch_setting"
+                        android:paddingStart="@dimen/width_9"
+                        android:paddingEnd="@dimen/width_9"
+                        android:thumb="@drawable/ic_switch_thumb"
+                        app:switchMinWidth="@dimen/width_150"
+                        app:track="@drawable/track_switch_setting" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_24"
+                android:background="@color/color_f7fafc" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1959"
+                android:src="@drawable/img_buff_post_hidden_guide" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

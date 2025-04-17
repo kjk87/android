@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/width_72"
+        android:paddingRight="@dimen/width_72">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout
+                android:layout_width="@dimen/width_70"
+                android:layout_height="@dimen/width_70"
+                android:layout_marginEnd="@dimen/width_30"
+                app:mask="@drawable/img_commerce_profile_s_mask"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/image_event_reply_edit_profileImage"
+                    android:layout_width="@dimen/width_70"
+                    android:layout_height="@dimen/width_70"
+                    android:src="@drawable/img_post_profile_default"/>
+
+
+            </com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout>
+
+
+            <TextView
+                android:id="@+id/text_event_reply_edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_32pt"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_event_reply_edit_contents"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_604"
+            android:layout_marginTop="@dimen/height_50"
+            android:background="@drawable/border_color_777777_1px"
+            android:gravity="left|top"
+            android:hint="@string/msg_input_contents"
+            android:paddingEnd="@dimen/width_40"
+            android:paddingLeft="@dimen/width_40"
+            android:paddingRight="@dimen/width_40"
+            android:paddingStart="@dimen/width_40"
+            android:paddingTop="@dimen/width_40"
+            android:textColor="@color/color_525252"
+            android:textSize="@dimen/textSize_32pt"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/height_50">
+
+            <TextView
+                android:id="@+id/text_event_reply_edit_cancel"
+                android:layout_width="@dimen/width_222"
+                android:layout_height="@dimen/width_92"
+                android:layout_marginRight="@dimen/width_20"
+                android:background="@color/color_7f7f7f"
+                android:gravity="center"
+                android:text="@string/word_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_32pt"/>
+
+            <TextView
+                android:id="@+id/text_event_reply_edit_complete"
+                android:layout_width="@dimen/width_222"
+                android:layout_height="@dimen/width_92"
+                android:background="@color/color_fc5c57"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/word_complete_edit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_32pt"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

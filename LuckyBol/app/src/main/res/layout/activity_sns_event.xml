@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_fc5c57"
+    tools:context=".apps.main.ui.SnsEventActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1770"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/img_sns_event_1" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="@dimen/width_243"
+                android:layout_height="@dimen/height_84"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_120"
+                android:background="@drawable/bg_4d000000_radius_150"
+                android:gravity="center"
+                android:text="@string/word_event_01"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_39"
+                android:gravity="center"
+                android:text="@string/word_guerrilla_event"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_66pt"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/width_837"
+                android:layout_height="@dimen/height_711"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_114"
+                android:src="@drawable/img_sns_event_2" />
+
+            <TextView
+                android:id="@+id/text_sns_event_event_01_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_105"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_96"
+                android:layout_marginTop="@dimen/height_180"
+                android:background="@color/color_66000000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/msg_guerrilla_event_desc2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="@dimen/width_243"
+                android:layout_height="@dimen/height_84"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_120"
+                android:background="@drawable/bg_4d000000_radius_150"
+                android:gravity="center"
+                android:text="@string/word_event_02"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_sns_event_event_02_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_39"
+                android:gravity="center"
+                android:text="@string/msg_event_02_telegram_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_66pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_120"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image_sns_event_event_02_desc1"
+                            android:layout_width="@dimen/width_267"
+                            android:layout_height="@dimen/width_267"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_event_02_telegram1" />
+
+                        <TextView
+                            android:id="@+id/text_sns_event_event_02_desc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_24"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_39pt" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image_sns_event_event_02_desc2"
+                            android:layout_width="@dimen/width_267"
+                            android:layout_height="@dimen/width_267"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_event_02_telegram2" />
+
+                        <TextView
+                            android:id="@+id/text_sns_event_event_02_desc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_24"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_39pt" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image_sns_event_event_02_desc3"
+                            android:layout_width="@dimen/width_267"
+                            android:layout_height="@dimen/width_267"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_event_02_telegram3" />
+
+                        <TextView
+                            android:id="@+id/text_sns_event_event_02_desc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_24"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_39pt" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_sns_event_02_go"
+                android:layout_width="@dimen/width_960"
+                android:layout_height="@dimen/height_156"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_84"
+                android:src="@drawable/btn_event_02_telegram" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_96"
+                android:layout_marginTop="@dimen/height_96"
+                android:background="@color/color_66000000">
+
+                <TextView
+                    android:id="@+id/text_sns_event_event_02_desc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="@dimen/width_243"
+                android:layout_height="@dimen/height_84"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_120"
+                android:background="@drawable/bg_4d000000_radius_150"
+                android:gravity="center"
+                android:text="@string/word_event_03"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_sns_event_event_03_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_39"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_66pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_120"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image_sns_event_event_03_desc1"
+                            android:layout_width="@dimen/width_267"
+                            android:layout_height="@dimen/width_267"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_event_03_telegram1" />
+
+                        <TextView
+                            android:id="@+id/text_sns_event_event_03_desc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_24"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_39pt" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_267"
+                            android:layout_height="@dimen/width_267"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_event_03_telegram2" />
+
+                        <TextView
+                            android:id="@+id/text_sns_event_event_03_desc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_24"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_39pt" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_267"
+                            android:layout_height="@dimen/width_267"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_event_03_telegram3" />
+
+                        <TextView
+                            android:id="@+id/text_sns_event_event_03_desc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_24"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_39pt" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_96"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_72"
+                android:layout_marginEnd="@dimen/width_60"
+                android:background="@drawable/bg_66000000_radius_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/msg_event_03_desc"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_120"
+                android:layout_marginEnd="@dimen/width_60"
+                android:layout_marginBottom="@dimen/height_90"
+                android:background="@drawable/bg_ffffff_radius_30"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_event_03_link_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_48pt" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_108"
+                    android:layout_marginStart="@dimen/width_96"
+                    android:layout_marginTop="@dimen/height_18"
+                    android:layout_marginEnd="@dimen/width_96"
+                    android:background="@color/color_d9d9d9"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_event_03_link"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/width_42"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_42pt" />
+
+                    <ImageView
+                        android:id="@+id/image_event_03_link_copy"
+                        android:layout_width="@dimen/height_108"
+                        android:layout_height="@dimen/height_108"
+                        android:src="@drawable/btn_sns_event_copy" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <ImageView
+                    android:layout_width="@dimen/width_600"
+                    android:layout_height="@dimen/height_306"
+                    android:layout_marginTop="@dimen/height_90"
+                    android:src="@drawable/img_sns_event_03_banner" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/msg_event_03_desc2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_48pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/msg_event_03_desc3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_36pt" />
+
+                <ImageView
+                    android:id="@+id/image_event_03_share"
+                    android:layout_width="@dimen/width_816"
+                    android:layout_height="@dimen/height_126"
+                    android:layout_marginTop="@dimen/height_90"
+                    android:layout_marginBottom="@dimen/height_84"
+                    android:src="@drawable/btn_sns_event_03_share" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/image_sns_event_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_60"
+        android:layout_marginTop="@dimen/height_60"
+        android:src="@drawable/ic_navbar_back" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_contact_section"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_138"
+    android:background="@drawable/bg_ffffff_radius_top_87"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/width_60"
+    android:paddingEnd="@dimen/width_60">
+
+    <TextView
+        android:id="@+id/text_contact_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize_39pt" />
+
+    <TextView
+        android:id="@+id/text_contact_section_exist_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_66"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_eef2f6_radius_riadus_tlr_bl_15"
+        android:paddingStart="@dimen/width_18"
+        android:paddingTop="@dimen/height_12"
+        android:paddingEnd="@dimen/width_12"
+        android:text="@string/msg_contact_section_desc"
+        android:textColor="@color/color_373c42"
+        android:textSize="@dimen/textSize_36pt"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/width_54"
+        android:paddingTop="@dimen/height_60"
+        android:paddingEnd="@dimen/width_54"
+        android:paddingBottom="@dimen/height_40">
+
+        <com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout
+            android:layout_width="@dimen/height_270"
+            android:layout_height="@dimen/height_270"
+            android:layout_marginEnd="@dimen/width_40"
+            app:mask="@drawable/img_page_profile_mask"
+            app:porterduffxfermode="DST_IN">
+
+            <ImageView
+                android:id="@+id/image_buy_shipping_history_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_page_profile_default" />
+
+        </com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_40"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_buy_shipping_history_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_42pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_buy_shipping_history_page_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_34pt" />
+
+            <TextView
+                android:id="@+id/text_buy_shipping_history_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_34pt" />
+
+            <TextView
+                android:id="@+id/text_buy_shipping_history_review"
+                android:layout_width="wrap_content"
+                android:minWidth="@dimen/height_230"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_10"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_28pt"
+                android:background="@drawable/btn_buy_list_blue_s"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_buy_list_arrow" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_buy_shipping_history_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_34pt"
+            android:textColor="@color/color_737373"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_buy_shipping_history_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_34pt"
+            android:textColor="@color/color_737373"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginTop="@dimen/height_60"
+        android:layout_marginEnd="@dimen/width_54"
+        android:background="@color/color_f0f0f0" />
+
+</LinearLayout>

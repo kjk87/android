@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_event_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            app:elevation="0dp"
+            app:expanded="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/white"
+                app:expandedTitleTextAppearance="@style/TransparentText"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_640">
+
+                    <ImageView
+                        android:id="@+id/image_event_buy_gift"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/text_event_buy_gift_url"
+                        android:layout_width="@dimen/width_288"
+                        android:layout_height="@dimen/height_84"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:layout_marginBottom="@dimen/height_30"
+                        android:background="@drawable/bg_fc5c57_radius_66"
+                        android:gravity="center"
+                        android:text="@string/word_detail_view2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll_event_buy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_500">
+
+                <TextView
+                    android:id="@+id/text_event_buy_gift_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:textColor="@color/color_232323"
+                    android:visibility="gone"
+                    android:textSize="@dimen/textSize_51pt" />
+
+                <TextView
+                    android:id="@+id/text_event_buy_gift_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:visibility="gone"
+                    android:textColor="@color/color_b7b7b7"
+                    android:textSize="@dimen/textSize_51pt" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_buy_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_165"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:visibility="visible"
+                    android:background="@drawable/bg_border_e8e8e8_radius_27">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_60"
+                        android:layout_marginEnd="@dimen/width_60"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/word_join_count"
+                                android:textColor="@color/color_232323"
+                                android:textSize="@dimen/textSize_45pt" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/height_96"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/border_color_e8e8e8_3px"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/layout_event_buy_count_minus"
+                                    android:layout_width="@dimen/width_96"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_point_minus" />
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="@dimen/width_3"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/color_e8e8e8" />
+
+                                <TextView
+                                    android:id="@+id/text_event_buy_count"
+                                    android:layout_width="@dimen/width_144"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textColor="@color/color_232323"
+                                    android:textSize="@dimen/textSize_45pt"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="@dimen/width_3"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/color_e8e8e8" />
+
+                                <RelativeLayout
+                                    android:id="@+id/layout_event_buy_count_plus"
+                                    android:layout_width="@dimen/width_96"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_point_plus" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_165"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:background="@drawable/bg_border_e8e8e8_radius_27">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_60"
+                        android:text="@string/word_join_price"
+                        android:textColor="@color/color_ff4646"
+                        android:textSize="@dimen/textSize_45pt"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/text_event_buy_join_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/width_60"
+                        android:textColor="@color/color_ff4646"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textSize_45pt" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:background="@drawable/bg_border_e8e8e8_radius_27"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/width_60"
+                                android:text="@string/word_back_bol"
+                                android:textColor="@color/color_fc5c57"
+                                android:textSize="@dimen/textSize_45pt"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/text_event_buy_join_point"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/width_60"
+                                android:textColor="@color/color_fc5c57"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize_45pt" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_3"
+                            android:layout_marginStart="@dimen/width_30"
+                            android:layout_marginTop="@dimen/height_57"
+                            android:layout_marginEnd="@dimen/width_30"
+                            android:background="@color/color_19000000" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/width_60"
+                            android:layout_marginTop="@dimen/height_48"
+                            android:layout_marginEnd="@dimen/width_60"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="@dimen/height_60"
+                                android:layout_height="@dimen/height_60"
+                                android:layout_marginTop="@dimen/height_21"
+                                android:layout_marginEnd="@dimen/width_24"
+                                android:background="@drawable/bg_border_808080_6px_circle"
+                                android:gravity="center"
+                                android:text="!"
+                                android:textColor="@color/color_808080"
+                                android:textSize="@dimen/textSize_39pt"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/text_event_buy_point_desc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color_808080"
+                                    android:textSize="@dimen/textSize_42pt" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:background="@drawable/bg_border_e8e8e8_radius_27"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_60"
+                        android:layout_marginEnd="@dimen/width_60"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/word_bol_use"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_45pt"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_60">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/word_retention"
+                                android:textColor="@color/color_808080"
+                                android:textSize="@dimen/textSize_45pt"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_event_buy_retention_bol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/color_232323"
+                                android:textSize="@dimen/textSize_45pt"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_36">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/word_use"
+                                android:textColor="@color/color_808080"
+                                android:textSize="@dimen/textSize_45pt"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/height_96"
+                                android:layout_alignParentEnd="true"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edit_event_buy_use_bol"
+                                    android:layout_width="@dimen/width_423"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/border_color_e8e8e8_3px"
+                                    android:gravity="end|center_vertical"
+                                    android:inputType="number"
+                                    android:paddingEnd="@dimen/width_30"
+                                    android:textColor="@color/color_fc5c57"
+                                    android:textSize="@dimen/textSize_45pt"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_event_buy_total_use_bol"
+                                    android:layout_width="@dimen/width_183"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/color_ff4646"
+                                    android:gravity="center"
+                                    android:text="@string/word_total_use"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/textSize_39pt"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_48"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="@dimen/height_60"
+                                android:layout_height="@dimen/height_60"
+                                android:layout_marginEnd="@dimen/width_24"
+                                android:background="@drawable/bg_border_808080_6px_circle"
+                                android:gravity="center"
+                                android:text="!"
+                                android:textColor="@color/color_808080"
+                                android:textEditSideNoPasteWindowLayout="@dimen/textSize_45pt"
+                                android:textSize="@dimen/textSize_39pt"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/msg_bol_use_desc"
+                                android:textColor="@color/color_ff4646"
+                                android:textSize="@dimen/textSize_33pt" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_buy_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_318"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:background="@drawable/bg_border_e8e8e8_radius_27">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_60"
+                        android:layout_marginEnd="@dimen/width_60"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/word_pay_method"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_45pt" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_105"
+                            android:layout_marginTop="@dimen/height_30"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_event_buy_card"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/width_12"
+                                android:layout_weight="1"
+                                android:background="@drawable/color_e8e8e8_ff4646"
+                                android:gravity="center"
+                                android:text="@string/word_credit_card"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize_36pt" />
+
+                            <TextView
+                                android:id="@+id/text_event_buy_easy_pay"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/color_e8e8e8_ff4646"
+                                android:gravity="center"
+                                android:text="@string/word_easy_pay"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize_36pt" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_buy_easy_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:background="@drawable/bg_border_e8e8e8_radius_27"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_60"
+                        android:layout_marginEnd="@dimen/width_60"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_pay_card"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_45pt" />
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_event_buy_easy_pay_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_60" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_event_buy_installment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_60"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_100"
+                                android:background="@color/color_f8f8f8">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/width_54"
+                                    android:text="@string/word_installment_period"
+                                    android:textColor="@color/color_737373"
+                                    android:textSize="@dimen/textSize_32pt"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/text_event_buy_installment"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_140"
+                                android:layout_marginTop="@dimen/height_40"
+                                android:background="@drawable/border_color_dcdcdc_4px"
+                                android:drawableEnd="@drawable/ic_dropdown_arrow"
+                                android:gravity="center_vertical"
+                                android:hint="@string/hint_installment_period"
+                                android:paddingStart="@dimen/width_40"
+                                android:paddingEnd="@dimen/width_40"
+                                android:textColor="@color/color_232323"
+                                android:textColorHint="@color/color_bbbbbb"
+                                android:textSize="@dimen/textSize_46pt" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_54">
+
+                    <LinearLayout
+                        android:id="@+id/layout_event_buy_caution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_83"
+                        android:background="@color/color_f8f8f8"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/height_144"
+                        android:paddingBottom="@dimen/height_60"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_event_buy_caution1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/width_60"
+                            android:layout_marginEnd="@dimen/width_60"
+                            android:text="@string/msg_point_buy_caution_desc1"
+                            android:textColor="@color/color_808080"
+                            android:textSize="@dimen/textSize_33pt" />
+
+                        <TextView
+                            android:id="@+id/text_event_buy_caution2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/width_60"
+                            android:layout_marginTop="@dimen/height_36"
+                            android:layout_marginEnd="@dimen/width_60"
+                            android:text="@string/msg_point_buy_caution_desc2"
+                            android:textColor="@color/color_808080"
+                            android:textSize="@dimen/textSize_33pt" />
+
+                        <TextView
+                            android:id="@+id/text_event_buy_caution3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/width_60"
+                            android:layout_marginTop="@dimen/height_36"
+                            android:layout_marginEnd="@dimen/width_60"
+                            android:text="@string/msg_point_buy_caution_desc3"
+                            android:textColor="@color/color_808080"
+                            android:textSize="@dimen/textSize_33pt" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_event_buy_caution_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_165"
+                        android:background="@drawable/bg_border_e8e8e8_radius_24">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/width_60"
+                            android:text="@string/word_caution"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_45pt" />
+
+                        <ImageView
+                            android:id="@+id/image_event_buy_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/width_60"
+                            android:src="@drawable/ic_arrow_down" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginEnd="@dimen/width_54" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_132"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_total_buy_price"
+                        android:textColor="@color/color_808080"
+                        android:textSize="@dimen/textSize_51pt" />
+
+                    <TextView
+                        android:id="@+id/text_event_buy_pay_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_ff4646"
+                        android:textSize="@dimen/textSize_51pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <ImageView
+        android:id="@+id/image_event_buy_point_popup"
+        android:layout_width="@dimen/width_513"
+        android:layout_height="@dimen/height_234"
+        android:src="@drawable/ic_save_point_popup"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_e8e8e8"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_150"
+            android:layout_marginStart="@dimen/width_54"
+            android:layout_marginEnd="@dimen/width_54"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/word_back_bol"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_45pt" />
+
+            <TextView
+                android:id="@+id/text_event_buy_save_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_fc5c57"
+                android:textSize="@dimen/textSize_42pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_150"
+            android:background="@color/color_e8e8e8"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/width_54"
+                android:text="@string/word_total_pay_price2"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_57pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_event_buy_total_pay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/width_54"
+                android:textColor="@color/color_ff4646"
+                android:layout_marginEnd="@dimen/width_54"
+                android:textSize="@dimen/textSize_57pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_event_buy_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_150"
+            android:background="@color/color_ff4646"
+            android:gravity="center"
+            android:text="@string/msg_pay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_45pt"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>

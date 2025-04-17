@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/height_30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_terms_agree"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_54"
+            android:layout_weight="1"
+            android:button="@drawable/ic_check_all"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/width_20"
+            android:paddingStart="@dimen/width_20"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_39pt"/>
+
+        <TextView
+            android:id="@+id/image_terms_story"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underbar_fc5c57_ffffff"
+            android:text="@string/word_contents"
+            android:textColor="@color/color_fc5c57"
+            android:textSize="@dimen/textSize_39pt"/>
+
+    </LinearLayout>
+
+</LinearLayout>

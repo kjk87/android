@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/width_54"
+            android:paddingRight="@dimen/width_54">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_90"
+                android:text="@string/msg_question_forget_id"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_84pt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_30"
+                android:text="@string/msg_forget_id_description"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_39pt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_verification_mobile_number"
+                android:textColor="@color/color_232323"
+                android:layout_marginTop="@dimen/height_240"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_find_id_mobileNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_80"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="@dimen/width_52"
+                    android:layout_weight="1"
+                    android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                    android:gravity="center_vertical"
+                    android:hint="@string/msg_input_mobile_number"
+                    android:inputType="phone"
+                    android:maxLength="20"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_48pt" />
+
+                <TextView
+                    android:id="@+id/text_find_id_auth"
+                    android:layout_width="@dimen/width_210"
+                    android:layout_height="@dimen/height_120"
+                    android:layout_gravity="top"
+                    android:background="@drawable/btn_login_white"
+                    android:gravity="center"
+                    android:text="@string/word_req_auth"
+                    android:textColor="@color/color_fc5c57"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_verification_number"
+                android:layout_marginTop="@dimen/height_110"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edit_find_id_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_18"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_verification_number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:id="@+id/text_find_id_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginTop="@dimen/height_150"
+                android:background="@drawable/bg_fc5c57_radius_66"
+                android:gravity="center"
+                android:text="@string/word_verification_confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

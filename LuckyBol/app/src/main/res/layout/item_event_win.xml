@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"
+        android:layout_marginTop="@dimen/height_60"
+        android:orientation="horizontal">
+
+        <com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout
+            android:layout_width="@dimen/width_400"
+            android:layout_height="@dimen/height_300"
+            android:layout_marginEnd="@dimen/width_40"
+            app:mask="@drawable/bg_online_post_mask"
+            app:porterduffxfermode="DST_IN">
+
+            <ImageView
+                android:id="@+id/image_event_win"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/luckybol_default_img" />
+
+
+        </com.pplus.luckybol.apps.common.ui.custom.MaskableFrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/width_40">
+
+            <TextView
+                android:id="@+id/text_event_win_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text_event_win_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_39pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_event_win_reply_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_fc5c57"
+                android:textSize="@dimen/textSize_32pt"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_fc5c57_ffffff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.pplus.luckybol.apps.common.component.ExpandableTextView
+        android:id="@+id/text_event_win_impression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_40"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"
+        android:textColor="@color/color_737373"
+        android:textSize="@dimen/textSize_34pt"
+        app:maxCollapsedLines="2"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_event_win_friend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_130"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/height_30"
+        android:background="@drawable/bg_comment_winner">
+
+        <TextView
+            android:id="@+id/text_event_win_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_32pt"
+            android:textColor="@color/color_232323"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/width_30"
+            android:drawableStart="@drawable/ic_comment_winner_profile"
+            android:drawablePadding="@dimen/width_15"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_3"
+        android:layout_marginTop="@dimen/height_60"
+        android:background="@color/color_d8d8d8"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_27"
+        android:background="@color/color_f0f0f0"/>
+</LinearLayout>

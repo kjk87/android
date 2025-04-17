@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_90">
+
+            <TextView
+                android:id="@+id/text_inquiry_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fafafa"
+                android:paddingBottom="@dimen/height_40"
+                android:paddingEnd="@dimen/width_54"
+                android:paddingStart="@dimen/width_54"
+                android:paddingTop="@dimen/height_40"
+                android:textColor="@color/color_808080"
+                android:textSize="@dimen/textSize_33pt"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/width_54"
+                android:paddingStart="@dimen/width_54">
+
+                <TextView
+                    android:id="@+id/text_inquiry_type_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:text="@string/word_type"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_45pt"/>
+
+                <TextView
+                    android:id="@+id/text_inquiry_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_170"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:background="@drawable/bg_box_shadow"
+                    android:drawableRight="@drawable/ic_profile_dropdown"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/width_40"
+                    android:paddingStart="@dimen/width_40"
+                    android:text="@string/msg_inquiry"
+                    android:textColor="@color/color_808080"
+                    android:textColorHint="@color/color_d0d0d0"
+                    android:textSize="@dimen/textSize_39pt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_90"
+                    android:text="@string/word_subject"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_45pt"/>
+
+                <EditText
+                    android:id="@+id/edit_inquiry_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_170"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:background="@drawable/bg_box_shadow"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_input_subject"
+                    android:paddingEnd="@dimen/width_40"
+                    android:paddingStart="@dimen/width_40"
+                    android:textColor="@color/color_808080"
+                    android:textColorHint="@color/color_d0d0d0"
+                    android:textSize="@dimen/textSize_39pt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_90"
+                    android:text="@string/word_contents"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_45pt"/>
+
+                <EditText
+                    android:id="@+id/edit_inquiry_contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_396"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:background="@drawable/bg_box_shadow"
+                    android:gravity="top"
+                    android:hint="@string/hint_input_inquiry_contents"
+                    android:padding="@dimen/width_40"
+                    android:textColor="@color/color_808080"
+                    android:textColorHint="@color/color_d0d0d0"
+                    android:textSize="@dimen/textSize_39pt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_90"
+                    android:text="@string/word_email"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_45pt"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_inquiry_selectMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_inquiry_mailId"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_170"
+                        android:layout_marginEnd="@dimen/width_40"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_box_shadow"
+                        android:gravity="center_vertical"
+                        android:hint="@string/msg_input_not_alpha"
+                        android:paddingLeft="@dimen/width_40"
+                        android:paddingRight="@dimen/width_40"
+                        android:textColor="@color/color_808080"
+                        android:textColorHint="@color/color_d0d0d0"
+                        android:textSize="@dimen/textSize_39pt"/>
+
+                    <TextView
+                        android:id="@+id/text_inquiry_selection"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_170"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_box_shadow"
+                        android:drawableRight="@drawable/ic_dropbox_down"
+                        android:gravity="center_vertical"
+                        android:hint="@string/word_select"
+                        android:paddingLeft="@dimen/width_40"
+                        android:paddingRight="@dimen/width_40"
+                        android:textColor="@color/color_808080"
+                        android:textColorHint="@color/color_d0d0d0"
+                        android:textSize="@dimen/textSize_39pt"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_inquiry_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_170"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:background="@drawable/bg_box_shadow"
+                    android:gravity="center_vertical"
+                    android:hint="@string/msg_input_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingEnd="@dimen/width_40"
+                    android:paddingStart="@dimen/width_40"
+                    android:textColor="@color/color_808080"
+                    android:textColorHint="@color/color_d0d0d0"
+                    android:textSize="@dimen/textSize_39pt"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

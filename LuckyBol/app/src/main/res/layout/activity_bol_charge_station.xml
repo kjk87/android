@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f4f6f8"
+    tools:context=".apps.my.ui.BolChargeStationActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/height_100"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_bol_charge_station1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_300"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_60"
+                android:paddingStart="@dimen/width_60"
+                android:paddingEnd="@dimen/width_60"
+                android:background="@drawable/bg_ffffff_radius_27">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/width_36"
+                        android:src="@drawable/ic_charge"/>
+
+                    <TextView
+                        android:id="@+id/text_bol_charge_station1_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_48pt"
+                        android:textColor="@color/color_373c42"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_373c42"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_36"
+                android:orientation="vertical"
+                android:background="@drawable/bg_ffffff_radius_27">
+
+                <RelativeLayout
+                    android:id="@+id/layout_bol_charge_adpopcorn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_186"
+                    android:paddingStart="@dimen/width_60"
+                    android:paddingEnd="@dimen/width_60">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color_373c42"
+                        android:textStyle="bold"
+                        android:text="@string/word_ad_popcorn"
+                        android:textSize="@dimen/textSize_48pt"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_373c42"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:background="@color/color_e8ecf0"/>
+
+                <RelativeLayout
+                    android:id="@+id/layout_bol_charge_ad_sync"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_186"
+                    android:paddingStart="@dimen/width_60"
+                    android:paddingEnd="@dimen/width_60">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color_373c42"
+                        android:textStyle="bold"
+                        android:text="@string/word_ad_sync"
+                        android:textSize="@dimen/textSize_48pt"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_373c42"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:background="@color/color_e8ecf0"/>
+
+                <RelativeLayout
+                    android:id="@+id/layout_bol_charge_flex"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_186"
+                    android:paddingStart="@dimen/width_60"
+                    android:paddingEnd="@dimen/width_60">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color_373c42"
+                        android:textStyle="bold"
+                        android:text="@string/word_ad_flex"
+                        android:textSize="@dimen/textSize_48pt"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_373c42"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:background="@color/color_e8ecf0"/>
+
+                <RelativeLayout
+                    android:id="@+id/layout_bol_charge_tnk"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_186"
+                    android:paddingStart="@dimen/width_60"
+                    android:paddingEnd="@dimen/width_60">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color_373c42"
+                        android:textStyle="bold"
+                        android:text="@string/word_ad_tnk"
+                        android:textSize="@dimen/textSize_48pt"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_373c42"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:background="@color/color_e8ecf0"/>
+
+                <RelativeLayout
+                    android:id="@+id/layout_bol_charge_pincrux"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_186"
+                    android:paddingStart="@dimen/width_60"
+                    android:paddingEnd="@dimen/width_60">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color_373c42"
+                        android:textStyle="bold"
+                        android:text="@string/word_ad_pincrux"
+                        android:textSize="@dimen/textSize_48pt"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_373c42"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/color_373c42"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/height_96"
+                android:layout_marginStart="@dimen/width_60"
+                android:text="@string/word_inquiry_info"
+                android:textSize="@dimen/textSize_48pt"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_36"
+                android:layout_marginEnd="@dimen/width_60"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_dot"
+                    android:layout_marginEnd="@dimen/width_24"
+                    android:textColor="@color/color_525961"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_6e7780"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:text="@string/msg_bol_charge_station_desc1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_30"
+                android:layout_marginEnd="@dimen/width_60"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_dot"
+                    android:layout_marginEnd="@dimen/width_24"
+                    android:textColor="@color/color_525961"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_6e7780"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:text="@string/msg_bol_charge_station_desc2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_30"
+                android:layout_marginEnd="@dimen/width_60"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_dot"
+                    android:layout_marginEnd="@dimen/width_24"
+                    android:textColor="@color/color_525961"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_6e7780"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:text="@string/msg_bol_charge_station_desc3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/layout_event"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_750"
+        android:layout_marginStart="@dimen/width_40"
+        android:layout_marginEnd="@dimen/width_40"
+        android:elevation="@dimen/width_10"
+        app:shape_roundRect_bottomLeftRadius="@dimen/width_27"
+        app:shape_roundRect_bottomRightRadius="@dimen/width_27"
+        app:shape_roundRect_topLeftRadius="@dimen/width_27"
+        app:shape_roundRect_topRightRadius="@dimen/width_27">
+
+        <ImageView
+            android:id="@+id/image_event"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/text_event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_80"
+            android:fontFamily="@font/trebucbd"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_75pt"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/image_event_win_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:gravity="center"
+            android:src="@drawable/img_banner_event_result"/>
+
+        <TextView
+            android:id="@+id/text_event_proceeding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_banner_event_mark"
+            android:textSize="@dimen/textSize_32pt"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/width_34"
+            android:layout_marginStart="@dimen/width_34"
+            android:textStyle="bold"
+            android:text="@string/word_proceeding"/>
+
+        <LinearLayout
+            android:id="@+id/layout_event_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_event_time_counting_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:src="@drawable/ic_event_banner_character"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_12"
+                android:text="@string/msg_win_remain_time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_event_win_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_78"
+                android:fontFamily="@font/trebucbd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_100pt"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+</RelativeLayout>

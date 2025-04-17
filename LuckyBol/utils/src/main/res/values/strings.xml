@@ -1,0 +1,6 @@
+<resources>
+    <string name="just_before">방금 전</string>
+    <string name="minutes_ago">분 전</string>
+    <string name="hours_ago">시간 전</string>
+    <string name="month_day">MM월 dd일</string>
+</resources>

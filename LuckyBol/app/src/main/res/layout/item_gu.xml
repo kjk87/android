@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_gu"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_120">
+
+        <TextView
+            android:id="@+id/text_gu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_120"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/width_60"
+            android:textColor="@color/color_b7b7b7_fc5c57"
+            android:textSize="@dimen/textSize_40pt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/width_41"
+            android:layout_height="@dimen/height_23"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/width_20"
+            android:src="@drawable/ic_arrow" />
+
+        <View
+            android:id="@+id/view_gu_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_d8d8d8" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_gu_dong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

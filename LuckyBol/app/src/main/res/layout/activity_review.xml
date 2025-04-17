@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_140"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/layout_goods_like_shipping_tab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_goods_like_shipping_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/word_shipping_goods"
+                    android:textColor="@color/color_737373_232323"
+                    android:textSize="@dimen/textSize_42pt" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_10"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/color_transparent_232323" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_goods_like_offline_tab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_goods_like_offline_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/word_visit_goods_tab"
+                    android:textColor="@color/color_737373_232323"
+                    android:textSize="@dimen/textSize_42pt" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_10"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/color_transparent_232323" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/review_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

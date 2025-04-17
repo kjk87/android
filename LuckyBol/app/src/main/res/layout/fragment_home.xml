@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.main.ui.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_home_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1290">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/pager_home_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/text_home_banner_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_60"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/width_48"
+                    android:background="@drawable/bg_4d000000_radius_300"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/width_30"
+                    android:paddingEnd="@dimen/width_30"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_126"
+                android:text="@string/word_event"
+                android:textColor="@color/color_212529"
+                android:textSize="@dimen/textSize_66pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_30"
+                android:text="@string/msg_event_desc"
+                android:textColor="@color/color_6e7780"
+                android:textSize="@dimen/textSize_36pt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_home_event1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_24"
+                android:layout_marginEnd="@dimen/width_60"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/height_60"
+                android:paddingBottom="@dimen/height_60">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_252"
+                    android:layout_height="@dimen/width_252"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@drawable/bg_circle_eef2f6">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_156"
+                        android:layout_height="@dimen/width_156"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_home_daily12" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_12time_event"
+                        android:textColor="@color/color_212529"
+                        android:textSize="@dimen/textSize_45pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_6"
+                        android:text="@string/msg_daily_event_desc"
+                        android:textColor="@color/color_6e7780"
+                        android:textSize="@dimen/textSize_36pt" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60"
+                android:background="@color/color_d8dee4" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_home_event2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_24"
+                android:layout_marginEnd="@dimen/width_60"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/height_60"
+                android:paddingBottom="@dimen/height_60">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_252"
+                    android:layout_height="@dimen/width_252"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@drawable/bg_circle_eef2f6">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_156"
+                        android:layout_height="@dimen/width_156"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_home_sponsor_event" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_sponsor_event"
+                        android:textColor="@color/color_212529"
+                        android:textSize="@dimen/textSize_45pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_6"
+                        android:text="@string/msg_sponsor_event_desc"
+                        android:textColor="@color/color_6e7780"
+                        android:textSize="@dimen/textSize_36pt" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60"
+                android:background="@color/color_d8dee4" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_home_play_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_24"
+                android:layout_marginEnd="@dimen/width_60"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/height_60"
+                android:paddingBottom="@dimen/height_60">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_252"
+                    android:layout_height="@dimen/width_252"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@drawable/bg_circle_eef2f6">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_156"
+                        android:layout_height="@dimen/width_156"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_home_play_a" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_play_a"
+                        android:textColor="@color/color_212529"
+                        android:textSize="@dimen/textSize_45pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_6"
+                        android:text="@string/msg_play_a_desc"
+                        android:textColor="@color/color_6e7780"
+                        android:textSize="@dimen/textSize_36pt" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60"
+                android:background="@color/color_d8dee4" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_home_winner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_24"
+                android:layout_marginEnd="@dimen/width_60"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/height_60"
+                android:paddingBottom="@dimen/height_60">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_252"
+                    android:layout_height="@dimen/width_252"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@drawable/bg_circle_eef2f6">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_156"
+                        android:layout_height="@dimen/width_156"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_home_winner" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_real_time_winner"
+                        android:textColor="@color/color_212529"
+                        android:textSize="@dimen/textSize_45pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_6"
+                        android:text="@string/msg_real_time_winner_desc"
+                        android:textColor="@color/color_6e7780"
+                        android:textSize="@dimen/textSize_36pt" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_84"
+                android:background="@color/color_f7fafc"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_84">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginTop="@dimen/height_126">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_home_cash_save_title"
+                        android:textColor="@color/color_212529"
+                        android:textSize="@dimen/textSize_66pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_home_retention_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_72"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/width_24"
+                        android:layout_marginEnd="@dimen/width_24"
+                        android:background="@drawable/bg_fc5c57_radius_27"
+                        android:drawableEnd="@drawable/ic_arrow_ffffff"
+                        android:drawablePadding="@dimen/width_6"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:text="@string/msg__home_cash_save_desc"
+                    android:textColor="@color/color_6e7780"
+                    android:textSize="@dimen/textSize_36pt" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_home_number_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/height_24"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_252"
+                        android:layout_height="@dimen/width_252"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:background="@drawable/bg_circle_eef2f6">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_156"
+                            android:layout_height="@dimen/width_156"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_number_event" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_number_event_save"
+                            android:textColor="@color/color_212529"
+                            android:textSize="@dimen/textSize_45pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_6"
+                            android:text="@string/msg_number_event_save_desc"
+                            android:textColor="@color/color_6e7780"
+                            android:textSize="@dimen/textSize_36pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:background="@color/color_d8dee4" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_home_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_252"
+                        android:layout_height="@dimen/width_252"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:background="@drawable/bg_circle_eef2f6">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_156"
+                            android:layout_height="@dimen/width_156"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_invite" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_invite_save"
+                            android:textColor="@color/color_212529"
+                            android:textSize="@dimen/textSize_45pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_home_invite_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_6"
+                            android:text="@string/format_msg_invite_desc"
+                            android:textColor="@color/color_6e7780"
+                            android:textSize="@dimen/textSize_36pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:background="@color/color_d8dee4" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_home_attendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_252"
+                        android:layout_height="@dimen/width_252"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:background="@drawable/bg_circle_eef2f6">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_156"
+                            android:layout_height="@dimen/width_156"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_attendance" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_attendance_save"
+                            android:textColor="@color/color_212529"
+                            android:textSize="@dimen/textSize_45pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_6"
+                            android:text="@string/msg_attendance_save_desc"
+                            android:textColor="@color/color_6e7780"
+                            android:textSize="@dimen/textSize_36pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:background="@color/color_d8dee4" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_home_random_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_252"
+                        android:layout_height="@dimen/width_252"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:background="@drawable/bg_circle_eef2f6">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_156"
+                            android:layout_height="@dimen/width_156"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_randomplay" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_random_play"
+                            android:textColor="@color/color_212529"
+                            android:textSize="@dimen/textSize_45pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_6"
+                            android:text="@string/msg_random_play_desc2"
+                            android:textColor="@color/color_6e7780"
+                            android:textSize="@dimen/textSize_36pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:background="@color/color_d8dee4" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_home_buzvil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginTop="@dimen/height_24"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_252"
+                        android:layout_height="@dimen/width_252"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:background="@drawable/bg_circle_eef2f6">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_156"
+                            android:layout_height="@dimen/width_156"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_buzvil" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_fast_save"
+                            android:textColor="@color/color_212529"
+                            android:textSize="@dimen/textSize_45pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_6"
+                            android:text="@string/msg_fast_save_desc"
+                            android:textColor="@color/color_6e7780"
+                            android:textSize="@dimen/textSize_36pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:background="@color/color_d8dee4" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_home_charge_station"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_252"
+                        android:layout_height="@dimen/width_252"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:background="@drawable/bg_circle_eef2f6">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_156"
+                            android:layout_height="@dimen/width_156"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_charge_station" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_charge_station"
+                            android:textColor="@color/color_212529"
+                            android:textSize="@dimen/textSize_45pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_6"
+                            android:text="@string/msg_charge_station_desc"
+                            android:textColor="@color/color_6e7780"
+                            android:textSize="@dimen/textSize_36pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:background="@color/color_d8dee4" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_home_referral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_252"
+                        android:layout_height="@dimen/width_252"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:background="@drawable/bg_circle_eef2f6">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_156"
+                            android:layout_height="@dimen/width_156"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_referral" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_referral_save"
+                            android:textColor="@color/color_212529"
+                            android:textSize="@dimen/textSize_45pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_6"
+                            android:text="@string/msg_referral_save_desc"
+                            android:textColor="@color/color_6e7780"
+                            android:textSize="@dimen/textSize_36pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_126"
+                android:text="@string/msg_home_use_cash_title"
+                android:textColor="@color/color_212529"
+                android:textSize="@dimen/textSize_66pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_30"
+                android:text="@string/msg_home_use_cash_desc"
+                android:textColor="@color/color_6e7780"
+                android:textSize="@dimen/textSize_36pt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_home_giftishow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/height_60"
+                android:paddingBottom="@dimen/height_60">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_252"
+                    android:layout_height="@dimen/width_252"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@drawable/bg_circle_eef2f6">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_156"
+                        android:layout_height="@dimen/width_156"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_home_giftishow" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_gifitshow_exchange"
+                        android:textColor="@color/color_212529"
+                        android:textSize="@dimen/textSize_45pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_6"
+                        android:text="@string/msg_gifitshow_exchange"
+                        android:textColor="@color/color_6e7780"
+                        android:textSize="@dimen/textSize_36pt" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60"
+                android:background="@color/color_d8dee4" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_home_cash_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/height_60"
+                android:paddingBottom="@dimen/height_60">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_252"
+                    android:layout_height="@dimen/width_252"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@drawable/bg_circle_eef2f6">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_156"
+                        android:layout_height="@dimen/width_156"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_home_cash_exchange" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_cash_exchange"
+                        android:textColor="@color/color_212529"
+                        android:textSize="@dimen/textSize_45pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_6"
+                        android:text="@string/msg_home_cash_exchange_desc"
+                        android:textColor="@color/color_6e7780"
+                        android:textSize="@dimen/textSize_36pt" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_84"
+                android:background="@color/color_f7fafc"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_84">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginTop="@dimen/height_126">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_news"
+                        android:textColor="@color/color_212529"
+                        android:textSize="@dimen/textSize_66pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:text="@string/msg_home_news_desc"
+                    android:textColor="@color/color_6e7780"
+                    android:textSize="@dimen/textSize_36pt" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_home_telegram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginTop="@dimen/height_24"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_252"
+                        android:layout_height="@dimen/width_252"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:background="@drawable/bg_circle_eef2f6">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_156"
+                            android:layout_height="@dimen/width_156"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_telegram" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_telegram"
+                            android:textColor="@color/color_212529"
+                            android:textSize="@dimen/textSize_45pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_6"
+                            android:text="@string/msg_telegram_desc"
+                            android:textColor="@color/color_6e7780"
+                            android:textSize="@dimen/textSize_36pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:background="@color/color_d8dee4" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_home_kakao_channel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/height_60"
+                    android:paddingBottom="@dimen/height_60">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_252"
+                        android:layout_height="@dimen/width_252"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:background="@drawable/bg_circle_eef2f6">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_156"
+                            android:layout_height="@dimen/width_156"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_cs" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_contact_customer"
+                            android:textColor="@color/color_212529"
+                            android:textSize="@dimen/textSize_45pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_6"
+                            android:text="@string/msg_contact_customer_desc"
+                            android:textColor="@color/color_6e7780"
+                            android:textSize="@dimen/textSize_36pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

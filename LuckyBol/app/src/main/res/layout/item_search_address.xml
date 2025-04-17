@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/height_60"
+        android:paddingLeft="@dimen/width_72"
+        android:paddingRight="@dimen/width_72">
+
+        <TextView
+            android:id="@+id/text_search_zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_ff4646"
+            android:textSize="@dimen/textSize_46pt"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_18"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/width_170"
+                android:layout_height="wrap_content"
+                android:text="@string/word_road_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_40pt"
+                android:layout_gravity="top"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/text_search_roadAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_40pt"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_18"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/width_170"
+                android:layout_height="wrap_content"
+                android:text="@string/word_jibun"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_40pt"
+                android:layout_gravity="top"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/text_search_jibunAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_40pt"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

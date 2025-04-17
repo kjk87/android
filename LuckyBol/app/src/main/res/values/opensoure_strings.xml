@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_source_title1">com.twitter.sdk.android:twitter:2.0.0@aar</string>
+    <string name="open_source_desc1">설명: Twitter SDK</string>
+    <string name="open_source_url1">URL: https://developer.twitter.com/en.html</string>
+    <string name="open_source_license1">License: https://developer.twitter.com/en/developer-terms/agreement-and-policy.html</string>
+
+    <string name="open_source_title2">com.crashlytics.sdk.android:crashlytics:2.6.5@aar</string>
+    <string name="open_source_desc2">설명: 실시간 오류 보고 도구</string>
+    <string name="open_source_url2">URL: https://firebase.google.com/docs/crashlytics</string>
+    <string name="open_source_license2">License: Apache 2.0</string>
+
+    <string name="open_source_title3">com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.9.3@aar</string>
+    <string name="open_source_desc3">설명: RecyclerView extension library which provides advanced features</string>
+    <string name="open_source_url3">URL: https://github.com/h6ah4i/android-advancedrecyclerview</string>
+    <string name="open_source_license3">License: Apache 2.0</string>
+
+    <string name="open_source_title4">com.facebook.android:facebook-login:4.36.0</string>
+    <string name="open_source_desc4">설명: Android용 Facebook SDK</string>
+    <string name="open_source_url4">URL: https://developers.facebook.com/docs/facebook-login/android/</string>
+    <string name="open_source_license4">License: https://github.com/facebook/facebook-android-sdk/blob/master/LICENSE.txt</string>
+
+    <string name="open_source_title5">group: project.KAKAO_SDK_GROUP</string>
+    <string name="open_source_desc5">설명: Android용 KAKAO SDK</string>
+    <string name="open_source_url5">URL: https://developers.kakao.com/docs/sdk</string>
+    <string name="open_source_license5">License: Apache 2.0</string>
+
+    <string name="open_source_title6">org.greenrobot:greendao:2.2.1</string>
+    <string name="open_source_desc6">설명: Android ORM for your SQLite database</string>
+    <string name="open_source_url6">URL: http://greenrobot.org/greendao/</string>
+    <string name="open_source_license6">License: Apache 2.0</string>
+
+    <string name="open_source_title7">com.github.bumptech.glide:glide:4.8.0</string>
+    <string name="open_source_desc7">설명: An image loading and caching library</string>
+    <string name="open_source_url7">URL: https://github.com/bumptech/glide</string>
+    <string name="open_source_license7">License: https://github.com/bumptech/glide/blob/master/LICENSE</string>
+
+    <string name="open_source_title8">com.github.bumptech.glide:compiler:4.8.0</string>
+    <string name="open_source_desc8">설명: An image loading and caching library</string>
+    <string name="open_source_url8">URL: https://github.com/bumptech/glide</string>
+    <string name="open_source_license8">License: https://github.com/bumptech/glide/blob/master/LICENSE</string>
+
+    <string name="open_source_title9">it.sephiroth.android.library.imagezoom:imagezoom:1.0.5</string>
+    <string name="open_source_desc9">설명: ImageView widget with zoom and pan capabilities</string>
+    <string name="open_source_url9">URL: https://github.com/sephiroth74/ImageViewZoom</string>
+    <string name="open_source_license9">License: MIT</string>
+
+    <string name="open_source_title10">com.github.yalantis:ucrop:2.2.1</string>
+    <string name="open_source_desc10">설명: Image Cropping Library</string>
+    <string name="open_source_url10">URL: https://github.com/Yalantis/uCrop</string>
+    <string name="open_source_license10">License: Apache 2.0</string>
+
+    <string name="open_source_title11">jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1</string>
+    <string name="open_source_desc11">설명: Android filters based on OpenGL</string>
+    <string name="open_source_url11">URL: https://github.com/cats-oss/android-gpuimage</string>
+    <string name="open_source_license11">License: Apache 2.0</string>
+
+    <string name="open_source_title12">com.shawnlin:number-picker:2.4.6</string>
+    <string name="open_source_desc12">설명: library that provides a simple and customizable NumberPicker</string>
+    <string name="open_source_url12">URL: https://github.com/ShawnLin013/NumberPicker</string>
+    <string name="open_source_license12">License: MIT</string>
+
+    <string name="open_source_title13">com.squareup:otto:1.3.8</string>
+    <string name="open_source_desc13">설명: An enhanced Guava-based event bus with emphasis on Android support</string>
+    <string name="open_source_url13">URL: https://github.com/square/otto</string>
+    <string name="open_source_license13">License: Apache 2.0</string>
+
+    <string name="open_source_title14">com.squareup.retrofit2:retrofit:2.4.0</string>
+    <string name="open_source_desc14">설명: A type-safe HTTP client for Android</string>
+    <string name="open_source_url14">URL: https://square.github.io/retrofit/</string>
+    <string name="open_source_license14">License: Apache 2.0</string>
+
+    <string name="open_source_title15">com.squareup.retrofit2:converter-gson:2.4.0</string>
+    <string name="open_source_desc15">설명: A Converter which uses Gson for serialization to and from JSON</string>
+    <string name="open_source_url15">URL: https://github.com/square/retrofit/tree/master/retrofit-converters/gson</string>
+    <string name="open_source_license15">License: Apache 2.0</string>
+
+    <string name="open_source_title16">com.airbnb.android:lottie:2.7.0</string>
+    <string name="open_source_desc16">설명: Lottie is a mobile library for Android</string>
+    <string name="open_source_url16">URL: https://github.com/airbnb/lottie/</string>
+    <string name="open_source_license16">License: MIT</string>
+
+    <string name="open_source_title17">com.github.bootpay:client_android_java:2.0.19</string>
+    <string name="open_source_desc17">설명: 부트페이 결제연동을 위한 안드로이드 client java 버전</string>
+    <string name="open_source_url17">URL: https://github.com/bootpay/client_android_java</string>
+    <string name="open_source_license17">License: MIT</string>
+
+    <string name="open_source_title18">com.nightonke:boommenu:2.1.1</string>
+    <string name="open_source_desc18">설명: Animated menu framework</string>
+    <string name="open_source_url18">URL: https://github.com/Nightonke/BoomMenu</string>
+    <string name="open_source_license18">License: Apache 2.0</string>
+
+    <string name="open_source_title19">com.journeyapps:zxing-android-embedded:4.1.0</string>
+    <string name="open_source_desc19">설명: Barcode scanning library for Android</string>
+    <string name="open_source_url19">URL: https://github.com/journeyapps/zxing-android-embedded</string>
+    <string name="open_source_license19">License: Apache 2.0</string>
+</resources>

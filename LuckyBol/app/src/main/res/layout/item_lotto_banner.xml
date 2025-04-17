@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_600"
+        android:layout_marginStart="@dimen/width_60"
+        android:layout_marginEnd="@dimen/width_60"
+        android:layout_marginBottom="@dimen/height_60"
+        android:background="@color/white"
+        android:elevation="@dimen/width_30"
+        app:shape_roundRect_bottomLeftRadius="@dimen/width_27"
+        app:shape_roundRect_bottomRightRadius="@dimen/width_27"
+        app:shape_roundRect_topLeftRadius="@dimen/width_27"
+        app:shape_roundRect_topRightRadius="@dimen/width_27">
+
+        <ImageView
+            android:id="@+id/image_lotto_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_14000000" />
+
+        <ImageView
+            android:layout_width="@dimen/width_219"
+            android:layout_height="@dimen/height_75"
+            android:layout_margin="@dimen/width_30"
+            android:src="@drawable/ic_lucky_lotto_live" />
+
+        <TextView
+            android:id="@+id/text_lotto_banner_status"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_75"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/width_30"
+            android:background="@drawable/bg_fc5c57_radius_15"
+            android:gravity="center"
+            android:paddingStart="@dimen/width_24"
+            android:paddingEnd="@dimen/width_24"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_39pt"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/layout_lotto_banner_winner_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_80000000"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_winner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_60pt" />
+
+                <TextView
+                    android:id="@+id/text_lotto_banner_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_144pt"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+</RelativeLayout>

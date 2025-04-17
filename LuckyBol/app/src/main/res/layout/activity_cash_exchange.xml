@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.bol.ui.CashExchangeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/width_54"
+            android:paddingEnd="@dimen/width_54">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_360">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_cash_exchange_retention_bol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_fc5c57"
+                        android:textSize="@dimen/textSize_84pt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_6"
+                        android:text="@string/word_retention_cash"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_39pt" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_change_cash_amount"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edit_cash_exchange_amount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_input_change_cash_amount"
+                android:inputType="number"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:id="@+id/etxt_cash_exchange_real_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_32pt"
+                android:textColor="@color/color_fc5c57"
+                android:layout_marginTop="@dimen/height_10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_account_name"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edit_cash_exchange_account_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_input_account_name"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_bank_name"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text_cash_exchange_bank"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:drawableEnd="@drawable/ic_dropdown_arrow"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_select_bank"
+                android:paddingEnd="@dimen/width_40"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_account_number"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_cash_exchange_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_input_account_number"
+                android:inputType="number"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_cash_exchange_desc2"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_34pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_cash_exchange_request"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginTop="@dimen/height_60"
+                android:layout_marginBottom="@dimen/height_100"
+                android:background="@drawable/bg_fc5c57_radius_66"
+                android:gravity="center"
+                android:text="@string/msg_req_cash_exchange"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

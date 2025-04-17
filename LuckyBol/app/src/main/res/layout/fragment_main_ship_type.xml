@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            app:expanded="true"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_main_ship_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:contentScrim="@color/white"
+                app:expandedTitleTextAppearance="@style/TransparentText"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_ship_type_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_570"
+                    android:layout_marginTop="@dimen/height_168">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/pager_main_ship_type_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/text_main_ship_type_banner_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_60"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="@dimen/width_48"
+                        android:background="@drawable/bg_4d000000_radius_300"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/width_30"
+                        android:paddingEnd="@dimen/width_30"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_33pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_168"
+                    app:layout_collapseMode="pin"
+                    app:contentInsetStart="0dp"
+                    app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_168"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/text_main_ship_type_like_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/width_40"
+                            android:drawableStart="@drawable/ic_top_favorite_sel"
+                            android:drawablePadding="@dimen/width_15"
+                            android:gravity="center"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_44pt" />
+
+                        <ImageView
+                            android:id="@+id/image_main_ship_type_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_navbar_back"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/width_40"/>
+
+                        <LinearLayout
+                            android:id="@+id/layout_main_ship_type_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_100"
+                            android:background="@drawable/bg_main_search"
+                            android:layout_marginStart="@dimen/width_54"
+                            android:layout_marginEnd="@dimen/width_40"
+                            android:layout_alignParentStart="true"
+                            android:layout_toLeftOf="@id/text_main_ship_type_like_count"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <EditText
+                                android:id="@+id/edit_main_ship_type_search"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/textSize_39pt"
+                                android:textColor="@color/color_232323"
+                                android:textColorHint="@color/color_b7b7b7"
+                                android:hint="@string/msg_input_search_word"
+                                android:gravity="center_vertical"
+                                android:background="@android:color/transparent"
+                                android:imeOptions="actionSearch"
+                                android:paddingStart="@dimen/width_40"
+                                android:paddingEnd="@dimen/width_40"/>
+
+                            <ImageView
+                                android:id="@+id/image_main_ship_type_search2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_search"
+                                android:layout_marginEnd="@dimen/width_40"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <com.pplus.luckybol.apps.common.ui.custom.SlidingTabLayout
+                    android:id="@+id/tabLayout_ship_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_110"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:background="@color/white"
+                    android:paddingStart="@dimen/width_54" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager_ship_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

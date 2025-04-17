@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.event.ui.AttendanceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/color_fc5c57">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_72pt"
+                android:textColor="@color/color_fffd38"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_96"
+                android:text="@string/word_buff_attendance"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_attendance_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_42pt"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_18" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_72"
+                android:layout_marginStart="@dimen/width_15"
+                android:layout_marginEnd="@dimen/width_15"
+                android:layout_marginBottom="@dimen/height_144"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/color_373c42"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/height_96"
+            android:layout_marginStart="@dimen/width_60"
+            android:text="@string/word_caution"
+            android:textSize="@dimen/textSize_48pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginTop="@dimen/height_36"
+            android:layout_marginEnd="@dimen/width_60"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_dot"
+                android:layout_marginEnd="@dimen/width_24"
+                android:textColor="@color/color_525961"
+                android:textSize="@dimen/textSize_39pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_6e7780"
+                android:textSize="@dimen/textSize_39pt"
+                android:text="@string/msg_attendance_caution1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginTop="@dimen/height_30"
+            android:layout_marginEnd="@dimen/width_60"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_dot"
+                android:layout_marginEnd="@dimen/width_24"
+                android:textColor="@color/color_525961"
+                android:textSize="@dimen/textSize_39pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_attendance_caution2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_6e7780"
+                android:textSize="@dimen/textSize_39pt"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

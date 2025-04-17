@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_contents_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true">
+
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="@dimen/height_50"-->
+    <!--android:layout_centerInParent="true"-->
+
+    <LinearLayout
+        android:id="@+id/layout_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/bg_popup_top"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_ffffff_radius_24">
+
+            <TextView
+                android:id="@+id/text_alertTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:textColor="@color/color_fc5c57"
+                android:paddingTop="@dimen/height_120"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/text_alertContents_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_alertTitle"
+                android:clickable="true"
+                android:paddingStart="@dimen/width_54"
+                android:paddingTop="@dimen/height_24"
+                android:paddingEnd="@dimen/width_54"
+                android:paddingBottom="@dimen/height_96">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_alert_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_alertContents_layout"
+                android:background="@drawable/bg_fc5c57_radius_bottom_24"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_alertLeftBtn"
+                    style="?attr/metaButtonBarStyle"
+                    android:layout_width="@dimen/width_0"
+                    android:layout_height="@dimen/height_171"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/text_alertLine"
+                    android:layout_width="@dimen/width_2"
+                    android:layout_height="@dimen/height_45"
+                    android:background="@color/white"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/text_alertRightBtn"
+                    style="?attr/metaButtonBarStyle"
+                    android:layout_width="@dimen/width_0"
+                    android:layout_height="@dimen/height_171"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_39pt" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/bg_popup_bottom"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

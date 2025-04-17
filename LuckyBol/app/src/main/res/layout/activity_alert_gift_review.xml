@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_232323"
+            android:layout_marginTop="@dimen/height_180"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_50pt"
+            android:text="@string/msg_use_complete"/>
+
+
+        <TextView
+            android:id="@+id/text_alert_gift_review_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_fc5c57"
+            android:layout_marginTop="@dimen/height_100"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_46pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_737373"
+            android:text="@string/msg_alert_gift_review_desc"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/height_10"
+            android:textSize="@dimen/textSize_37pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:background="@color/color_fc5c57"
+            android:layout_marginTop="@dimen/height_90"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_alert_gift_review_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/color_565656"
+                android:gravity="center"
+                android:text="@string/word_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_alert_gift_review_review_write"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/color_fc5c57"
+                android:gravity="center"
+                android:text="@string/word_review_write"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

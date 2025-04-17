@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.event.ui.EventAlertActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/width_90"
+        android:layout_marginStart="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_alert_bol_save"
+                android:layout_width="@dimen/width_144"
+                android:layout_height="@dimen/width_144"
+                android:layout_marginTop="@dimen/height_96"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_popup_bol"/>
+
+            <TextView
+                android:id="@+id/text_alert_bol_save_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_48pt"
+                android:textColor="@color/color_373c42"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/height_78"
+                android:layout_marginStart="@dimen/width_9"
+                android:layout_toRightOf="@id/image_alert_bol_save"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/text_alert_bol_save_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_48"
+            android:gravity="center"
+            android:textColor="@color/color_373c42"
+            android:textSize="@dimen/textSize_48pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_alert_bol_save_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_54"
+            android:layout_marginStart="@dimen/width_54"
+            android:layout_marginTop="@dimen/height_24"
+            android:gravity="center"
+            android:textColor="@color/color_6e7780"
+            android:textSize="@dimen/textSize_39pt"/>
+
+        <TextView
+            android:id="@+id/text_alert_bol_save_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:layout_marginTop="@dimen/height_96"
+            android:background="@color/color_fc5c57"
+            android:gravity="center"
+            android:text="@string/word_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_42pt"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

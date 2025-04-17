@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/height_20"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_event_review_reg_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_729"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:layout_marginTop="@dimen/height_40"
+                android:background="@drawable/img_write_photo"
+                android:visibility="gone">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager_event_review_reg_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <com.pplus.luckybol.apps.common.ui.custom.DirectionIndicator
+                    android:id="@+id/indicator_event_review_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/height_40"/>
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edit_event_review_reg_contents"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_450"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginTop="@dimen/height_40"
+                android:layout_marginEnd="@dimen/width_54"
+                android:background="@android:color/transparent"
+                android:gravity="top"
+                android:hint="@string/hint_event_review_write"
+                android:maxLength="500"
+                android:textColor="@color/color_565656"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_46pt"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:background="@color/color_f0f0f0"/>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_event_review_reg_reg_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_150">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableStart="@drawable/ic_review_camera"
+                    android:drawablePadding="@dimen/width_20"
+                    android:gravity="center"
+                    android:text="@string/msg_click_for_reg_photo"
+                    android:textColor="@color/color_737373"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize_34pt"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:background="@color/color_f0f0f0"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:background="@color/color_f0f0f0">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:text="@string/word_reg_review_caution"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_32pt"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginTop="@dimen/height_60"
+                android:text="@string/msg_reg_review_caution1"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_32pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:text="@string/msg_reg_review_caution2"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_32pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:text="@string/msg_reg_event_review_caution3"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_32pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:layout_marginBottom="@dimen/height_100"
+                android:text="@string/msg_reg_event_review_caution4"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_32pt"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
