@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical">
+
+    <com.pplus.prnumberuser.apps.common.ui.custom.SafeSwitchCompat
+        android:id="@+id/switch_top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:thumb="@drawable/btn_alarm_btn"
+        android:layout_marginEnd="@dimen/width_54"
+        app:switchMinWidth="@dimen/width_159"
+        app:track="@drawable/switch_setting"/>
+
+</RelativeLayout>

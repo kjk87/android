@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/height_351"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_main_prepayment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_348"
+        android:background="@drawable/bg_ffffff_radius_30"
+        android:layout_marginStart="@dimen/width_3"
+        android:layout_margin="@dimen/width_3"
+        android:layout_marginBottom="@dimen/width_3"
+        android:layout_marginEnd="@dimen/width_3"
+        android:elevation="@dimen/width_3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/width_48"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/width_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_main_prepayment_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_525961"
+                    android:layout_marginTop="@dimen/height_48"
+                    android:textSize="@dimen/textSize_39pt"/>
+
+                <TextView
+                    android:id="@+id/text_main_prepayment_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_ff4026"
+                    android:textSize="@dimen/textSize_48pt"
+                    android:layout_marginTop="@dimen/height_9"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_189"
+                    android:layout_height="@dimen/height_72"
+                    android:textColor="@color/color_4694fb"
+                    android:layout_marginTop="@dimen/height_12"
+                    android:background="@drawable/bg_f7fafc_radius_9"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/height_48"
+                    android:text="@string/word_remain_money_manage_type"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_main_prepayment_end"
+            android:layout_width="@dimen/width_240"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_4694fb_right_radius_30">
+
+
+            <TextView
+                android:id="@+id/text_main_prepayment_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_45pt"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

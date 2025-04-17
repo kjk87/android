@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_location_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_location_pageMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_204"
+        android:background="@drawable/shadow_map_search_top"/>
+
+    <ImageView
+        android:id="@+id/image_location_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginTop="@dimen/width_54"
+        android:src="@drawable/ic_map_location"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/height_50"
+        android:layout_marginStart="@dimen/width_72"
+        android:layout_marginEnd="@dimen/width_72"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_location_find_road"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_234"
+            android:layout_weight="1"
+            android:background="@drawable/bg_mypage_menu">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_prpage_map_location"
+                android:gravity="center"
+                android:text="@string/word_find_road"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_30pt"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_location_call_taxi"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_234"
+            android:layout_weight="1"
+            android:background="@drawable/bg_mypage_menu">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_prpage_map_taxi"
+                android:gravity="center"
+                android:text="@string/word_call_taxi"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_30pt"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_location_navigation"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_234"
+            android:layout_weight="1"
+            android:background="@drawable/bg_mypage_menu">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_prpage_map_navi"
+                android:gravity="center"
+                android:text="@string/word_navigation"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_30pt"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_location_copy_address"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_234"
+            android:layout_weight="1"
+            android:background="@drawable/bg_mypage_menu">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_prpage_map_link"
+                android:gravity="center"
+                android:text="@string/word_copy_address"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_30pt"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

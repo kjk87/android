@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.main.ui.MainPageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_100"
+            android:background="@color/color_f8f8f8">
+
+            <TextView
+                android:id="@+id/text_online_page_total_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/width_54"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_32pt"/>
+
+            <TextView
+                android:id="@+id/text_online_page_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_54"
+                android:drawablePadding="@dimen/width_15"
+                android:text="@string/word_sort_recent"
+                android:background="@drawable/underbar_579ffb_transparent"
+                android:textColor="@color/color_579ffb"
+                android:textSize="@dimen/textSize_32pt" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_online_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/layout_online_page_not_exist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_300"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/ic_search_none"
+                    android:text="@string/msg_not_exist_online_store"
+                    android:textColor="@color/color_b7b7b7"
+                    android:textSize="@dimen/textSize_32pt"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_online_page_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_300"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="@dimen/width_120"
+            android:layout_height="@dimen/width_120"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/width_40"
+            android:indeterminateDrawable="@drawable/rotate_data_loading"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/height_30"
+            android:gravity="center"
+            android:textColor="@color/color_b7b7b7"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_32pt"
+            android:text="@string/msg_data_loading"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

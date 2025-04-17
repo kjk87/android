@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edit_event_detail_type2_contents"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_384"
+        android:background="@drawable/border_color_707070_181818_2px"
+        android:paddingStart="@dimen/width_48"
+        android:paddingEnd="@dimen/width_48"
+        android:paddingTop="@dimen/height_24"
+        android:paddingBottom="@dimen/height_24"
+        android:textSize="@dimen/textSize_42pt"
+        android:textColorHint="@color/color_707070"
+        android:textColor="@color/color_efefef"
+        android:gravity="top"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

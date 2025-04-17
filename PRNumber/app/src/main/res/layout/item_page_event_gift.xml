@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height_96"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_page_event_detail_gift_name"
+            android:layout_width="@dimen/width_500"
+            android:layout_height="match_parent"
+            android:background="@color/color_6e579ffb"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_37pt"
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/width_15"/>
+
+        <TextView
+            android:id="@+id/text_page_event_detail_gift_count"
+            android:layout_width="@dimen/width_182"
+            android:layout_height="match_parent"
+            android:background="@color/color_6e579ffb"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_37pt"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.card.ui.InputPriceActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_input_price_page_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_48pt"
+                    android:textColor="@color/color_232323"/>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_936"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/underbar_d8d8d8_ffffff_5px"
+                    android:layout_marginTop="@dimen/height_80"
+                    android:paddingBottom="@dimen/height_15">
+
+                    <EditText
+                        android:id="@+id/edit_input_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/color_ff4646"
+                        android:textColorHint="@color/color_bbbbbb"
+                        android:maxLength="9"
+                        android:inputType="number"
+                        android:textSize="@dimen/textSize_85pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_input_price_money_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/edit_input_price"
+                        android:textColor="@color/color_232323"
+                        android:text="@string/word_money_unit"
+                        android:textSize="@dimen/textSize_85pt"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/text_input_price_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/hint_input_pay_price"
+                        android:textColor="@color/color_bbbbbb"
+                        android:textSize="@dimen/textSize_85pt" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <com.pplus.prnumberuser.apps.common.component.DialPadView
+            android:id="@+id/dial_nfcpay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_720" />
+
+        <TextView
+            android:id="@+id/text_input_price_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_b7b7b7"
+            android:gravity="center"
+            android:text="@string/msg_pay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_44pt" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.goods.ui.AlertCancelCompleteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/word_notice_alert"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_64pt"
+            android:layout_marginTop="@dimen/height_90"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/height_80"
+            android:textSize="@dimen/textSize_44pt"
+            android:textColor="@color/color_737373"
+            android:text="@string/msg_plus_event_terms_desc1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_38pt"
+            android:textColor="@color/color_579ffb"
+            android:layout_marginTop="@dimen/height_40"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/msg_plus_event_terms_desc2" />
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/width_54"-->
+<!--            android:layout_marginTop="@dimen/height_80"-->
+<!--            android:layout_marginEnd="@dimen/width_54">-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/check_plus_event_terms"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:button="@drawable/ic_check_all"-->
+<!--                android:gravity="left|center_vertical"-->
+<!--                android:paddingStart="@dimen/width_15"-->
+<!--                android:textColor="@color/color_232323"-->
+<!--                android:textSize="@dimen/textSize_36pt" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text_plus_event_terms_view"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:background="@drawable/underbar_579ffb_ffffff"-->
+<!--                android:text="@string/msg_view"-->
+<!--                android:textColor="@color/color_579ffb"-->
+<!--                android:textSize="@dimen/textSize_36pt" />-->
+
+<!--        </RelativeLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:layout_marginTop="@dimen/height_90"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_page_plus_terms_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/color_565656"
+                android:gravity="center"
+                android:text="@string/word_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt" />
+
+            <TextView
+                android:id="@+id/text_page_plus_terms_agree_join"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@color/color_579ffb"
+                android:gravity="center"
+                android:text="@string/msg_agree_join"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

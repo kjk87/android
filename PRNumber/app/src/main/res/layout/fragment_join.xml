@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scroll_join"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/width_54"
+            android:paddingRight="@dimen/width_54">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_32"
+                android:text="@string/word_signUp"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_86pt" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_join_id_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_join_id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_150"
+                    android:text="@string/html_id"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edit_join_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_80"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_input_id"
+                    android:maxLength="20"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_48pt" />
+
+                <TextView
+                    android:id="@+id/text_join_id_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:drawablePadding="@dimen/width_5"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_join_password_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_110"
+                    android:text="@string/html_password"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edit_join_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_80"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                    android:hint="@string/hint_input_password"
+                    android:inputType="textPassword"
+                    android:maxLength="12"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_48pt" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_recommend_code"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_join_recommend_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:hint="@string/hint_recommend_code"
+                android:maxLength="12"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+
+            <CheckBox
+                android:id="@+id/check_join_total_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_check_all"
+                android:gravity="left|center_vertical"
+                android:paddingStart="@dimen/width_20"
+                android:layout_marginTop="@dimen/height_60"
+                android:text="@string/word_total_agree"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_39pt" />
+
+            <LinearLayout
+                android:id="@+id/layout_join_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/text_join_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginTop="@dimen/height_150"
+                android:layout_marginBottom="@dimen/height_100"
+                android:background="@drawable/btn_blue"
+                android:gravity="center"
+                android:text="@string/word_complete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

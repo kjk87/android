@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layout_main_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/width_60"
+        android:layout_marginBottom="@dimen/width_20"
+        android:background="@drawable/bg_ffffff_radius_30"
+        android:elevation="@dimen/width_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_378"
+                app:mask="@drawable/bg_offline_post_mask"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/image_main_ticket_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prnumber_default_img" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_26000000"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_main_ticket_remain_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:text="@string/word_first_come"/>
+                    <TextView
+                        android:id="@+id/text_main_ticket_remain_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textSize_84pt" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:id="@+id/text_main_ticket_type"
+                    android:layout_width="@dimen/width_225"
+                    android:layout_height="@dimen/height_74"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:layout_marginStart="@dimen/width_18"
+                    android:layout_marginTop="@dimen/width_18"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_ff4646_radius_15" />
+
+                <TextView
+                    android:id="@+id/text_main_remain_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_48pt"
+                    android:textColor="@color/white"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/width_18"
+                    android:layout_marginTop="@dimen/width_18"
+                    android:textStyle="bold" />
+
+
+            </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="@dimen/width_40"
+                android:paddingEnd="@dimen/width_40"
+                android:paddingTop="@dimen/height_12"
+                android:paddingBottom="@dimen/height_24"
+                android:background="@drawable/bg_ffffff_radius_bottom_30"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/text_main_ticket_use_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_33pt"
+                        android:textColor="@color/color_737373"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_main_ticket_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_33pt" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_main_ticket_discount_ratio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_ff4646"
+                        android:layout_marginEnd="@dimen/width_5"
+                        android:textSize="@dimen/textSize_48pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_main_ticket_sale_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_232323"
+                        android:layout_marginEnd="@dimen/width_20"
+                        android:textSize="@dimen/textSize_48pt" />
+
+                    <TextView
+                        android:id="@+id/text_main_ticket_origin_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_30pt" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/text_main_ticket_save_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/width_12"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textColor="@color/color_579ffb"
+                        android:background="@drawable/bg_border_579ffb_radius_15"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_main_ticket_sold_out_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_99000000_radius_30"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_main_ticket_sold_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_84pt"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/word_sold_out_en"/>
+                <TextView
+                    android:id="@+id/text_main_ticket_purchase_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/height_48"/>
+
+                <TextView
+                    android:id="@+id/text_main_ticket_use_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/height_12"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

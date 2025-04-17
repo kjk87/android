@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_main_plus_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="@dimen/width_120"
+            android:layout_height="@dimen/width_120"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/width_40"
+            android:indeterminateDrawable="@drawable/rotate_data_loading"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/height_30"
+            android:gravity="center"
+            android:textColor="@color/color_b7b7b7"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_32pt"
+            android:text="@string/msg_data_loading"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_main_plus_exist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168"
+            android:background="@color/white">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:text="@string/word_news2"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_70pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_main_plus_plus_page"
+                android:layout_width="@dimen/width_234"
+                android:layout_height="@dimen/height_91"
+                android:background="@drawable/bg_579ffb_radius_18"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/width_54"
+                android:textSize="@dimen/textSize_33pt"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/word_plus_page"/>
+
+
+        </RelativeLayout>
+
+        <com.pplus.prnumberuser.apps.common.component.OrientationAwareRecyclerView
+            android:id="@+id/recycler_main_plus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_40" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_main_plus_not_exist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_main_plus_title"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_50pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_20"
+            android:gravity="center"
+            android:text="@string/msg_main_plus_desc"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_40pt" />
+
+        <TextView
+            android:id="@+id/text_main_plus_find"
+            android:layout_width="@dimen/width_760"
+            android:layout_height="@dimen/height_140"
+            android:layout_marginTop="@dimen/height_60"
+            android:gravity="center"
+            android:background="@drawable/btn_blue"
+            android:text="@string/msg_find_plus"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_39pt" />
+
+
+    </LinearLayout>
+</RelativeLayout>

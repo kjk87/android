@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.goods.ui.GoodsReviewActivity">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp"
+            app:expanded="true">
+
+            <!--<android.support.design.widget.CollapsingToolbarLayout-->
+                <!--android:id="@+id/collapsing_page"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:fitsSystemWindows="true"-->
+                <!--app:contentScrim="@color/color_579ffb"-->
+                <!--app:expandedTitleTextAppearance="@android:color/transparent"-->
+                <!--app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:paddingTop="@dimen/height_60"-->
+                    <!--android:paddingBottom="@dimen/height_60">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text_goods_review_grade"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/color_232323"-->
+                        <!--android:textSize="@dimen/textSize_100pt"/>-->
+
+                    <!--<com.pplus.prnumberuser.apps.common.ui.custom.GradeBar-->
+                        <!--android:id="@+id/grade_bar_goods_review_total"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--app:grade_g="@drawable/img_commerce_average_star_nor"-->
+                        <!--app:grade_h="@drawable/img_commerce_average_star_sel_half"-->
+                        <!--app:grade_margin="@dimen/width_6"-->
+                        <!--app:grade_y="@drawable/img_commerce_average_star_sel"/>-->
+                <!--</LinearLayout>-->
+
+
+            <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:background="@color/color_f8f8f8"
+                android:orientation="horizontal"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <TextView
+                    android:id="@+id/text_goods_review_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_54"
+                    android:text="@string/word_review"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_32pt"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_goods_review"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/layout_goods_review_not_exist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/msg_not_exist_goods_review"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_40pt"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

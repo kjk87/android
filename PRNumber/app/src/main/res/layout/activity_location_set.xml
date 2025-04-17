@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_location_set_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_117"
+            android:layout_marginEnd="@dimen/width_54"
+            android:layout_marginStart="@dimen/width_54"
+            android:background="@drawable/underbar_d8d8d8_ffffff_5px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp">
+
+            <EditText
+                android:id="@+id/edit_location_set_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_search_location"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_42pt"/>
+
+            <ImageView
+                android:id="@+id/image_location_set_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_gift_search"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_20">
+
+            <RelativeLayout
+                android:id="@+id/layout_locationSet_mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/image_location_set_centerIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_map_pin"/>
+
+                    <TextView
+                        android:id="@+id/text_location_set_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/image_location_set_centerIcon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/height_15"
+                        android:background="@drawable/bg_map_address"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="@dimen/width_45"
+                        android:paddingStart="@dimen/width_45"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_36pt"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_location_set_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginTop="@dimen/width_54"
+                android:src="@drawable/ic_map_location"/>
+
+            <TextView
+                android:id="@+id/text_location_setLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/height_60"
+                android:layout_marginEnd="@dimen/width_54"
+                android:layout_marginStart="@dimen/width_54"
+                android:background="@drawable/btn_blue"
+                android:gravity="center"
+                android:text="@string/msg_set_location"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt"/>
+
+
+            <LinearLayout
+                android:id="@+id/layout_location_set_searchResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_dropbox"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_location_set_searchResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/height_20"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

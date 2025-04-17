@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="mail_address">
+        <item>naver.com</item>
+        <item>hanmail.net</item>
+        <item>daum.net</item>
+        <item>nate.com</item>
+        <item>gmail.com</item>
+        <item>hotmail.com</item>
+        <item>직접입력</item>
+    </string-array>
+
+    <string-array name="setting">
+        <item>계정</item>
+<!--        <item>결제</item>-->
+        <item>정보관리</item>
+        <item>고객센터</item>
+        <item>알림</item>
+    </string-array>
+
+    <string-array name="setting_account">
+        <item>프로필 관리</item>
+        <item>계정 관리</item>
+        <!--<item>언어</item>-->
+    </string-array>
+
+    <string-array name="setting_config_info">
+        <!--<item>서비스 소개</item>-->
+        <item>약관</item>
+        <item>버전정보</item>
+        <item>오픈소스 라이센스</item>
+    </string-array>
+
+    <string-array name="setting_cs">
+        <item>문의 및 건의하기</item>
+<!--        <item>광고 제휴 문의</item>-->
+        <item>공지사항</item>
+        <item>FAQ</item>
+    </string-array>
+
+    <string-array name="setting_alarm">
+        <!--<item>알림설정</item>-->
+        <item>알림함</item>
+    </string-array>
+
+
+    <!--<string-array name="menu_push">-->
+        <!--<item>푸시보내기</item>-->
+        <!--<item>푸시발송결과</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="menu_sms">-->
+        <!--<item>문자보내기</item>-->
+        <!--<item>문자발송결과</item>-->
+    <!--</string-array>-->
+
+    <string-array name="dial_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>*</item>
+        <item>0</item>
+        <item>#</item>
+    </string-array>
+
+    <string-array name="dial_price_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>00</item>
+        <item>0</item>
+        <item>del</item>
+    </string-array>
+
+
+    <string-array name="bank">
+        <item>NH농협</item>
+        <item>KB국민</item>
+        <item>신한</item>
+        <item>우리</item>
+        <item>하나</item>
+        <item>IBK기업</item>
+        <item>외환</item>
+        <item>SC</item>
+        <item>씨티</item>
+        <item>KDB산업</item>
+        <item>새마을</item>
+        <item>대구</item>
+        <item>광주</item>
+        <item>우체국</item>
+        <item>신협</item>
+        <item>전북</item>
+        <item>강남</item>
+        <item>부산</item>
+        <item>수협</item>
+        <item>제주</item>
+    </string-array>
+
+    <string-array name="delivery_memo">
+        <item>배송 전에 미리 연락 바랍니다.</item>
+        <item>부재시 경비실에 맡겨 주세요.</item>
+        <item>부재시 전화 주시거나 문자 남겨주세요.</item>
+        <item>택배함에 넣어주세요.</item>
+        <item>파손위험이 있는 상품이니 조심히 다뤄주세요.</item>
+        <item>직접입력</item>
+    </string-array>
+
+
+    <!--<string-array name="tutorial_list">-->
+    <!--<item>당신의 번호,\n당신의 브랜드가 됩니다</item>-->
+    <!--<item>명함 그 이상의 가치,\n당신의 페이지</item>-->
+    <!--<item>주변에 OOO가\n어디 있지</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="tutorial_detail_list">-->
+    <!--<item>간편하게 당신의 번호만 말하세요.\n<b>당신의 번호 + # </b>만 누르면\n당신의 페이지가 열립니다.</item>-->
+    <!--<item>명함에는 넣을 수 없던 홈페이지,\nSNS 주소 이제 당신의 페이지에서\n모두 알릴 수 있습니다.</item>-->
+    <!--<item>P+ 하나면 당신 주변에 원하는\n가게의 위치를 찾을 수 있습니다.</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="talk_receive_bound_start_end">-->
+    <!--<item>시작</item>-->
+    <!--<item>마감</item>-->
+    <!--</string-array>-->
+
+    <string-array name="report_installment_period">
+        <item>일시불</item>
+        <item>2개월</item>
+        <item>3개월</item>
+        <item>4개월</item>
+        <item>5개월</item>
+        <item>6개월</item>
+        <item>7개월</item>
+        <item>8개월</item>
+        <item>9개월</item>
+        <item>10개월</item>
+        <item>11개월</item>
+        <item>12개월</item>
+    </string-array>
+
+    <string-array name="report_radio">
+        <item>스팸 / 사기 신고</item>
+        <item>위험 / 혐오 신고</item>
+        <item>저작권 침해 신고</item>
+        <item>폭력 / 선정적 신고</item>
+    </string-array>
+
+    <string-array name="day_of_week">
+        <item>일</item>
+        <item>월</item>
+        <item>화</item>
+        <item>수</item>
+        <item>목</item>
+        <item>금</item>
+        <item>토</item>
+    </string-array>
+
+
+</resources>

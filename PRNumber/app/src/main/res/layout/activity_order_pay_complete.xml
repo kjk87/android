@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_192"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_order_pay_complete_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/word_delivery_order_complete"
+            android:textColor="@color/color_579ffb"
+            android:textSize="@dimen/textSize_72pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_order_pay_complete_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/msg_delivery_order_complete_desc"
+            android:textColor="@color/color_579ffb"
+            android:textSize="@dimen/textSize_72pt"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/image_order_pay_complete"
+        android:layout_width="@dimen/width_444"
+        android:layout_height="@dimen/width_444"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/img_delivery_pay_complete"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_111"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/msg_delivery_order_complete_desc2"
+            android:textColor="@color/color_373c42"
+            android:textSize="@dimen/textSize_54pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/msg_delivery_order_complete_desc3"
+            android:gravity="center"
+            android:textColor="@color/color_6e7780"
+            android:layout_marginTop="@dimen/height_12"
+            android:textSize="@dimen/textSize_42pt"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_order_pay_complete_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_140"
+        android:layout_marginTop="@dimen/height_180"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"
+        android:background="@drawable/bg_579ffb_radius_12"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_39pt"
+        android:text="@string/msg_view_order_history"/>
+
+    <TextView
+        android:id="@+id/text_order_pay_complete_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_140"
+        android:layout_marginBottom="@dimen/height_100"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"
+        android:background="@drawable/bg_border_d8dee4_radius_12"
+        android:layout_marginTop="@dimen/height_24"
+        android:gravity="center"
+        android:textColor="@color/color_525961"
+        android:textSize="@dimen/textSize_39pt"
+        android:text="@string/msg_go_home"/>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp"
+                app:expanded="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll|enterAlways">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_54"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:layout_marginEnd="@dimen/width_54"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/layout_search"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height_117"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/width_40"
+                            android:layout_weight="1"
+                            android:background="@drawable/underbar_d8d8d8_ffffff_5px"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edit_search_word"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:gravity="center_vertical"
+                                android:hint="@string/hint_main_search"
+                                android:paddingStart="@dimen/width_40"
+                                android:textColor="@color/color_232323"
+                                android:textColorHint="@color/color_bbbbbb"
+                                android:textSize="@dimen/textSize_42pt" />
+
+                            <ImageView
+                                android:id="@+id/image_search"
+                                android:layout_width="@dimen/width_52"
+                                android:layout_height="@dimen/width_52"
+                                android:src="@drawable/ic_search" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <FrameLayout
+                    android:id="@+id/search_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

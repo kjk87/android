@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/height_393"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_prepayment_publish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_390"
+        android:background="@drawable/bg_4694fb_radius_30"
+        android:layout_marginStart="@dimen/width_3"
+        android:layout_margin="@dimen/width_3"
+        android:layout_marginBottom="@dimen/width_3"
+        android:layout_marginEnd="@dimen/width_3"
+        android:elevation="@dimen/width_3"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_54"
+            android:layout_marginEnd="@dimen/width_54"
+            android:layout_marginTop="@dimen/height_48">
+
+            <TextView
+                android:id="@+id/text_prepayment_publish_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_prepayment_publish_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_33212529_radius_6"
+                android:textSize="@dimen/textSize_33pt"
+                android:paddingStart="@dimen/width_12"
+                android:paddingEnd="@dimen/width_12"
+                android:paddingTop="@dimen/height_6"
+                android:paddingBottom="@dimen/height_6"
+                android:gravity="center" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_108"
+            android:layout_marginStart="@dimen/width_51"
+            android:layout_marginEnd="@dimen/width_51"
+            android:layout_marginTop="@dimen/height_48"
+            android:background="@drawable/bg_ffffff_radius_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_525961"
+                android:textSize="@dimen/textSize_36pt"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/width_36"
+                android:text="@string/word_remain_money"/>
+
+            <TextView
+                android:id="@+id/text_prepayment_publish_have_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_4694fb"
+                android:textSize="@dimen/textSize_48pt"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_36"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/text_prepayment_expire_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_99ffffff"
+            android:textSize="@dimen/textSize_33pt"
+            android:layout_marginStart="@dimen/width_54"
+            android:layout_marginTop="@dimen/height_45"
+            android:gravity="center"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

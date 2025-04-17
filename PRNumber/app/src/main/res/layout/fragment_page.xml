@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_page_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/image_page_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/prnumber_default_img"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_4d000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_168">
+
+        <ImageView
+            android:id="@+id/image_page_back"
+            android:layout_width="@dimen/width_90"
+            android:layout_height="@dimen/height_69"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/width_40"
+            android:src="@drawable/ic_navbar_back_light" />
+
+        <ImageView
+            android:id="@+id/image_page_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/width_40"
+            android:src="@drawable/ic_prpage_share" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_200"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_page_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_106pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_page_catchphrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_30"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_50pt" />
+
+        <TextView
+            android:id="@+id/text_page_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_50pt" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_100"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_page_naver"
+                android:layout_width="@dimen/width_120"
+                android:layout_height="@dimen/width_120"
+                android:layout_marginStart="@dimen/width_8"
+                android:layout_marginEnd="@dimen/width_8"
+                android:visibility="gone"
+                android:src="@drawable/ic_prpage_naver" />
+
+            <ImageView
+                android:id="@+id/image_page_kakaochannel"
+                android:layout_width="@dimen/width_120"
+                android:layout_height="@dimen/width_120"
+                android:layout_marginStart="@dimen/width_8"
+                android:layout_marginEnd="@dimen/width_8"
+                android:visibility="gone"
+                android:src="@drawable/ic_prpage_kakaochannel" />
+
+            <ImageView
+                android:id="@+id/image_page_twitter"
+                android:layout_width="@dimen/width_120"
+                android:layout_height="@dimen/width_120"
+                android:layout_marginStart="@dimen/width_8"
+                android:layout_marginEnd="@dimen/width_8"
+                android:visibility="gone"
+                android:src="@drawable/ic_prpage_twitter" />
+
+
+            <ImageView
+                android:id="@+id/image_page_youtube"
+                android:layout_width="@dimen/width_120"
+                android:layout_height="@dimen/width_120"
+                android:layout_marginStart="@dimen/width_8"
+                android:layout_marginEnd="@dimen/width_8"
+                android:visibility="gone"
+                android:src="@drawable/ic_prpage_youtube" />
+
+            <ImageView
+                android:id="@+id/image_page_instagram"
+                android:layout_width="@dimen/width_120"
+                android:layout_height="@dimen/width_120"
+                android:layout_marginStart="@dimen/width_8"
+                android:layout_marginEnd="@dimen/width_8"
+                android:visibility="gone"
+                android:src="@drawable/ic_prpage_instagram" />
+
+            <ImageView
+                android:id="@+id/image_page_facebook"
+                android:layout_width="@dimen/width_120"
+                android:layout_height="@dimen/width_120"
+                android:layout_marginStart="@dimen/width_8"
+                android:layout_marginEnd="@dimen/width_8"
+                android:visibility="gone"
+                android:src="@drawable/ic_prpage_facebook" />
+
+
+            <ImageView
+                android:id="@+id/image_page_homepage"
+                android:layout_width="@dimen/width_120"
+                android:layout_height="@dimen/width_120"
+                android:layout_marginStart="@dimen/width_8"
+                android:layout_marginEnd="@dimen/width_8"
+                android:visibility="gone"
+                android:src="@drawable/ic_prpage_homepage" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_78">
+
+            <ImageView
+                android:id="@+id/image_page_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:src="@drawable/btn_prpage_plus"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_page_main_product"
+                android:layout_width="@dimen/width_336"
+                android:layout_height="@dimen/height_254"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/image_page_main_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prnumber_default_img"/>
+
+                <TextView
+                    android:id="@+id/text_page_main_product_discount"
+                    android:layout_width="@dimen/width_161"
+                    android:layout_height="@dimen/height_65"
+                    android:background="@drawable/bg_ffffff_radius_23"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/height_22"
+                    android:layout_marginEnd="@dimen/width_13"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSize_32pt"
+                    android:textColor="@color/color_ff0000"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_132">
+
+            <RelativeLayout
+                android:id="@+id/layout_page_active_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:background="@drawable/bg_page_active_event">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_50pt"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/width_80"
+                    android:layout_centerInParent="true"
+                    android:text="@string/msg_event_join"
+                    android:drawableEnd="@drawable/ic_page_active_event_arrow"/>
+
+            </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_page_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:background="@drawable/img_page_event"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_840"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/img_prpage_photo_bottom_cover" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_100"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginEnd="@dimen/width_72"
+            android:background="@color/color_80ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_100"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_page_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableTop="@drawable/ic_prpage_call"
+                    android:drawablePadding="@dimen/height_20"
+                    android:gravity="center"
+                    android:text="@string/word_call"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_40pt" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_page_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_page_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableTop="@drawable/ic_prpage_info"
+                    android:drawablePadding="@dimen/height_20"
+                    android:gravity="center"
+                    android:text="@string/word_info"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_40pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_page_news"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_page_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableTop="@drawable/ic_prpage_news"
+                    android:drawablePadding="@dimen/height_20"
+                    android:gravity="center"
+                    android:text="@string/word_news"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_40pt" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_page_product"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_page_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableTop="@drawable/ic_prpage_goods"
+                    android:drawablePadding="@dimen/height_20"
+                    android:gravity="center"
+                    android:text="@string/word_goods"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_40pt" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_page_review"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_page_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableTop="@drawable/ic_prpage_review"
+                    android:drawablePadding="@dimen/height_20"
+                    android:gravity="center"
+                    android:text="@string/word_review"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_40pt" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

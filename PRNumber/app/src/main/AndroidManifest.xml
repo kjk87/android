@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pplus.prnumberuser">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+    <!-- 계정 관리 싱크 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SOCIAL_STREAM" />
+    <uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".PRNumberApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name2"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label,android:allowBackup">
+        <activity android:name=".apps.prepayment.ui.PrepaymentPublishDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name=".apps.prepayment.ui.MyPrepaymentPublishActivity" />
+        <activity android:name=".apps.prepayment.ui.PrepaymentPublishActivity" />
+        <activity android:name=".apps.menu.ui.OrderPurchaseHistoryDetailActivity" />
+        <activity android:name=".apps.menu.ui.TicketPurchaseHistoryDetailActivity"/>
+        <activity android:name=".apps.menu.ui.OrderPurchaseHistoryActivity" />
+        <activity android:name=".apps.menu.ui.MenuCartActivity" />
+        <activity android:name=".apps.menu.ui.TicketUseActivity"/>
+        <activity
+            android:name=".apps.menu.ui.AlertSelectOrderTypeActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.menu.ui.AlertOrderPayActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.menu.ui.AlertCancelOrderActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.menu.ui.AlertVisitOrderActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.menu.ui.AlertTicketOptionActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.menu.ui.VisitTimePickerActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.menu.ui.OrderMenuDetailActivity" />
+        <activity android:name=".apps.menu.ui.TicketDetailActivity"/>
+        <activity android:name=".apps.page.ui.PageInfoActivity" />
+        <activity android:name=".apps.page.ui.PageDeliveryMenuActivity" />
+        <activity android:name=".apps.page.ui.PageVisitMenuActivity" />
+        <activity android:name=".apps.delivery.ui.DeliveryAddressDetailSetActivity" />
+        <activity android:name=".apps.delivery.ui.DeliveryAddressSetActivity" />
+        <activity
+            android:name=".apps.delivery.ui.DeliveryAddressFindMapActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.subscription.ui.MoneyProductUseLogActivity" />
+        <activity android:name=".apps.stamp.ui.StampActivity" />
+        <activity android:name=".apps.stamp.ui.StampSubscriptionActivity" />
+        <activity android:name=".apps.stamp.ui.StampMoneyProductUseActivity" />
+        <activity android:name=".apps.subscription.ui.SubscriptionDownloadDetailActivity" />
+        <activity
+            android:name=".apps.subscription.ui.MoneyProductDownloadDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.subscription.ui.MySubscriptionActivity" />
+        <activity android:name=".apps.subscription.ui.SubscriptionDetailActivity" />
+        <activity android:name=".apps.page.ui.PageAttendanceActivity" />
+        <activity android:name=".apps.page.ui.PageSnsCashBackActivity" />
+        <activity android:name=".apps.page.ui.PageFirstBenefitActivity" />
+        <activity android:name=".apps.event.ui.EventDetailPersonalTermsActivity" />
+        <activity android:name=".apps.plus.ui.PlusInfoActivity" />
+        <activity android:name=".apps.page.ui.PageEventWinDetailActivity" />
+        <activity android:name=".apps.page.ui.PageEventDetailActivity" />
+        <activity android:name=".apps.page.ui.PageEventActivity" />
+        <activity android:name=".apps.page.ui.PageEventAnnounceActivity" />
+        <activity android:name=".apps.my.ui.MemberAddressSaveActivity" />
+        <activity android:name=".apps.main.ui.NBookActivity" />
+        <activity android:name=".apps.product.ui.MyReviewActivity" />
+        <activity android:name=".apps.event.ui.EventWinDetailActivity" />
+        <activity android:name=".apps.event.ui.LottoWinHistoryActivity" />
+        <activity android:name=".apps.my.ui.SelectActiveAreaActivity" />
+        <activity
+            android:name=".apps.shippingsite.ui.ShippingSiteRegActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.shippingsite.ui.ShippingSiteConfigActivity" />
+        <activity android:name=".apps.card.ui.CardConfigActivity" />
+        <activity android:name=".apps.card.ui.PayPasswordSetActivity" />
+        <activity android:name=".apps.card.ui.PayPasswordCheckActivity" />
+        <activity android:name=".apps.card.ui.QRPayActivity" />
+        <activity
+            android:name=".apps.card.ui.CardRegActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.product.ui.CheckAuthCodeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.my.ui.CheckSavePointAuthCodeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.subscription.ui.CheckBuySubscriptionAuthCodeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.subscription.ui.CheckUseSubscriptionAuthCodeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.setting.ui.OpenLicenseActivity" />
+        <activity android:name=".apps.main.ui.BizIntroduceActivity" /> <!-- <activity android:name=".apps.page.ui.EventGoodsActivity" /> -->
+        <activity android:name=".apps.my.ui.MyFavoriteActivity" />
+        <activity
+            android:name=".apps.goods.ui.AlertCancelCompleteActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.card.ui.AlertQRPayCompleteActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.alert.AlertInputPriceActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.alert.AlertGiftReviewActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.my.ui.AlertSaveQrActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.page.ui.AlertFirstBenefitQrActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.page.ui.AlertPageAttendanceQrActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.subscription.ui.AlertBuySubscriptionQrActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.subscription.ui.AlertSubscriptionUseQrActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.product.ui.AlertProductNoShowActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.page.ui.AlertPageCashBackCompleteActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.menu.ui.AlertLackOrderPriceActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.page.ui.AlertFirstBenefitCompleteActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.bol.ui.CashExchangeActivity" />
+        <activity android:name=".apps.main.ui.AppMainActivity" />
+        <activity android:name=".apps.event.ui.MyLottoJoinListActivity" />
+        <activity android:name=".apps.event.ui.LottoEventDetailActivity" />
+        <activity android:name=".apps.main.ui.SharePRNumberActivity" />
+        <activity android:name=".apps.main.ui.ChangeSnsAccountActivity" />
+        <activity android:name=".apps.shippingsite.ui.SearchAddressActivity" />
+        <activity android:name=".apps.bol.ui.TicketConfigActivity" />
+        <activity
+            android:name=".apps.mobilegift.ui.SelectContactActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="@string/file_provider_authority"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider> <!-- [START firebase_service] -->
+        <service android:name=".push.firebase.PRNumberUserMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- 구글 -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBsISHdriqChxAOO9oj18eytMAIDRxgrN0" /> <!-- 트위터 -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e8437159ad1e99968a5fad3a07eb0c4069ed811c" /> <!-- 카카오 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+        <meta-data
+            android:name="com.kakao.sdk.kakaonavi.useWebView"
+            android:value="false" />
+
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth“ -->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao5039570c66427df3e5687f2bb6e7420f" />
+            </intent-filter>
+        </activity> <!-- 페이스북 -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_id" /> <!-- 애드팝콘 -->
+        <meta-data
+            android:name="igaworks_app_key"
+            android:value="@string/igaworks_app_key" />
+        <meta-data
+            android:name="igaworks_hash_key"
+            android:value="@string/igaworks_hash_key" />
+        <meta-data
+            android:name="igaworks_reward_server_type"
+            android:value="server" />
+        <meta-data
+            android:name="AdBrixRmAppKey"
+            android:value="@string/adbrix_app_key" />
+        <meta-data
+            android:name="AdBrixRmSecretKey"
+            android:value="@string/adbrix_secret_key" /> <!-- <receiver -->
+        <!-- android:name=".core.outgoing.OutGoingReceiver" -->
+        <!-- android:enabled="true"> -->
+        <!-- <intent-filter android:priority="2147483647"> -->
+        <!-- <action android:name="android.intent.action.NEW_OUTGOING_CALL" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <receiver
+            android:name=".apps.common.receiver.InstallReferrerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity android:name=".apps.LauncherScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="prnumber" />
+            </intent-filter>
+        </activity> <!-- <activity android:name=".core.outgoing.OutGoingActivity" /> -->
+        <activity android:name=".apps.GrantPermissionActivity" />
+        <activity
+            android:name=".apps.common.ui.common.AlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.goods.ui.AlertGoodsLikeCompleteActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name="com.pplus.utils.part.apps.permission.PermissionActivity"
+            android:theme="@style/Theme.Permission" />
+        <activity android:name=".apps.setting.ui.AppSettingActivity" />
+        <activity
+            android:name=".apps.signup.ui.JoinActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.search.ui.SearchActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.search.ui.SearchDeliveryActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.signin.ui.AddInfoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.setting.ui.AccountConfigActivity" />
+        <activity android:name=".apps.setting.ui.ProfileConfigActivity" />
+        <activity android:name=".apps.main.ui.OneGalleryActivity" />
+        <activity android:name=".apps.post.ui.PostImageEditActivity" />
+        <activity android:name=".apps.post.ui.PostGalleryActivity" />
+        <activity android:name=".apps.post.ui.ImageDeleteActivity" />
+        <activity android:name=".apps.post.ui.ImageFilterActivity" />
+        <activity android:name=".apps.page.ui.IntroduceImageDetailActivity" />
+        <activity android:name=".apps.setting.ui.AlarmContainerActivity" />
+        <activity android:name=".apps.setting.ui.FAQActivity" />
+        <activity
+            android:name=".apps.setting.ui.InquiryActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.setting.ui.NoticeActivity" />
+        <activity android:name=".apps.setting.ui.NoticeDetailActivity" />
+        <activity android:name=".apps.setting.ui.ServiceVersionActivity" />
+        <activity android:name=".apps.setting.ui.SecessionActivity" />
+        <activity
+            android:name=".apps.signup.ui.VerificationMeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.setting.ui.VerificationActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.common.ui.common.WebViewActivity" />
+        <activity android:name=".apps.signin.ui.FindIdActivity" />
+        <activity android:name=".apps.signin.ui.FindPWActivity" />
+        <activity android:name=".apps.signin.ui.ChangePWActivity" /> <!-- <activity android:name=".apps.main.ui.AppMainActivity2" /> -->
+        <activity
+            android:name=".apps.location.ui.LocationSetActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.signin.ui.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".apps.signin.ui.SnsLoginActivity" />
+        <activity
+            android:name=".apps.page.ui.PageActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.page.ui.LocationPageActivity" />
+        <activity
+            android:name=".apps.event.ui.EventResultActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.event.ui.EventWinImpressionActivity" />
+        <activity android:name=".apps.event.ui.EventDetailActivity" />
+        <activity android:name=".apps.event.ui.EventMoveDetailActivity" />
+        <activity
+            android:name=".apps.main.ui.LocationSelectActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.event.ui.EventImpressionActivity" />
+        <activity android:name=".apps.event.ui.LottoEventImpressionActivity" />
+        <activity android:name=".apps.recommend.ui.RecommendActivity" />
+        <activity android:name=".apps.my.ui.MyWinHistoryActivity" />
+        <activity android:name=".apps.common.ui.ChromeActionActivity" />
+        <activity android:name=".apps.setting.ui.SecessionCompleteActivity" />
+        <activity
+            android:name=".apps.common.ui.common.DatePickerActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.event.ui.EventAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.event.ui.EventGuideAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.event.ui.PlayAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.common.ui.BolChargeAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.alert.LottoTicketChargeAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.recommend.ui.RecommendHistoryActivity" />
+        <activity android:name=".apps.common.ui.GuideWebActivity" />
+        <activity android:name=".apps.search.ui.LocationAroundPageActivity" />
+        <activity android:name=".apps.search.ui.LocationAroundNumberGroupPageActivity" />
+        <activity android:name=".apps.my.ui.MyPlusActivity" />
+        <activity android:name=".apps.event.ui.EventActivity" />
+        <activity android:name=".apps.main.ui.PadActivity" />
+        <activity android:name=".apps.goods.ui.GoodsReviewWriteActivity" />
+        <activity android:name=".apps.card.ui.CardRegTermsActivity" />
+        <activity android:name=".apps.event.ui.PlayActivity" />
+
+        <service android:name=".core.chrome.customtab.BottomBarManager2" />
+
+        <activity
+            android:name=".core.chrome.customtab.PlusAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.event.ui.LottoActivity" />
+        <activity
+            android:name=".apps.bol.ui.CashChangeLackAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.bol.ui.CashExchangeAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.page.ui.AlertPlusEventTermsActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.page.ui.Alert3rdPartyInfoTermsActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.card.ui.InputPriceActivity" />
+        <activity android:name=".apps.card.ui.InstallmentActivity" />
+        <activity
+            android:name=".apps.product.ui.ProductShipDetailActivity"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".apps.product.ui.ProductReviewActivity" />
+        <activity android:name=".apps.product.ui.ProductReviewRegActivity" />
+        <activity
+            android:name=".apps.product.ui.AlertProductOptionActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.alert.AlertGoogleReviewActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.product.ui.ProductLikeActivity" />
+        <activity android:name=".apps.product.ui.PurchaseProductShipPgActivity" />
+        <activity android:name=".apps.product.ui.PurchaseProductTicketPgActivity" />
+        <activity android:name=".apps.product.ui.PurchaseProductShippingHistoryDetailActivity" />
+        <activity android:name=".apps.product.ui.PurchaseProductTicketHistoryDetailActivity" />
+        <activity
+            android:name=".apps.product.ui.PurchaseCancelInfoActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.product.ui.PurchaseHistoryActivity" />
+        <activity android:name=".apps.product.ui.ProductShipSearchResultActivity" />
+        <activity android:name=".apps.product.ui.ProductDetailViewerActivity" />
+        <activity android:name=".apps.product.ui.ProductWarningActivity" />
+        <activity android:name=".apps.product.ui.ProductRefundExchangeInfoActivity" />
+        <activity android:name=".apps.product.ui.ProductSellerInfoActivity" />
+        <activity android:name=".apps.product.ui.ProductNoticeActivity" />
+        <activity android:name=".apps.product.ui.ProductOriginActivity" />
+        <activity android:name=".apps.product.ui.PurchaseAddInfoActivity" />
+        <activity android:name=".apps.bol.ui.BolConfigActivity" />
+        <activity android:name=".apps.bol.ui.BolHistoryDetailActivity" />
+        <activity android:name=".apps.product.ui.ShipTypePayCompleteActivity" />
+        <activity android:name=".apps.product.ui.TicketPayCompleteActivity" />
+        <activity android:name=".apps.menu.ui.TicketPayCompleteActivity"/>
+        <activity android:name=".apps.mobilegift.ui.GiftishowActivity" />
+        <activity android:name=".apps.mobilegift.ui.GiftishowDetailActivity" />
+        <activity android:name=".apps.mobilegift.ui.GiftishowBuyActivity" />
+        <activity android:name=".apps.mobilegift.ui.GiftishowHistoryActivity" />
+        <activity android:name=".apps.event.ui.TuneEventActivity" />
+        <activity android:name=".apps.product.ui.ProductActivity" />
+        <activity android:name=".apps.event.ui.Event12Activity" />
+        <activity android:name=".apps.page.ui.StoreInfoActivity" />
+        <activity android:name=".apps.page.ui.StoreProductActivity" />
+        <activity android:name=".apps.page.ui.StoreSubscriptionProductActivity" />
+        <activity android:name=".apps.page.ui.StoreProductReviewActivity" />
+        <activity android:name=".apps.recommend.ui.InviteActivity" />
+        <activity android:name=".apps.product.ui.MainProductActivity" />
+        <activity android:name=".apps.page.ui.PageEventAddressSaveActivity" />
+        <activity android:name=".apps.mobilegift.ui.GiftishowHistoryDetailActivity" />
+        <activity android:name=".apps.page.ui.OnlinePageActivity" />
+        <activity android:name=".apps.page.ui.NumberGroupPageActivity" />
+        <activity android:name=".apps.product.ui.NumberGroupProductActivity" />
+        <activity android:name=".apps.menu.ui.OrderPurchasePgActivity" />
+        <activity android:name=".apps.menu.ui.TicketPurchasePgActivity"/>
+        <activity android:name=".apps.menu.ui.OrderPayCompleteActivity" />
+        <activity android:name=".apps.menu.ui.OrderMenuReviewRegActivity" />
+        <activity android:name=".apps.menu.ui.PageMenuReviewActivity" />
+        <activity android:name=".apps.prepayment.ui.PrepaymentDetailActivity" />
+        <activity android:name=".apps.prepayment.ui.PrepaymentUseActivity"/>
+        <activity android:name=".apps.page.ui.PageFirstBenefitReceiveActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.subscription.ui.SubscriptionDownloadDetailActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_100">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_216"
+                android:layout_marginStart="@dimen/width_72"
+                android:layout_marginEnd="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_144">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+                        android:layout_width="@dimen/width_216"
+                        android:layout_height="@dimen/width_216"
+                        android:layout_gravity="center_horizontal"
+                        app:mask="@drawable/img_shop_profile_mask"
+                        android:layout_marginEnd="@dimen/width_48"
+                        app:porterduffxfermode="DST_IN">
+
+                        <ImageView
+                            android:id="@+id/image_page_attendance_thumbnail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/prnumber_default_img" />
+
+
+                    </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_page_attendance_page_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_1d1d1f"
+                            android:textSize="@dimen/textSize_48pt"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/text_page_attendance_catchphrase"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/color_6e7780"
+                            android:textSize="@dimen/textSize_39pt"
+                            android:layout_marginTop="@dimen/height_24"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:id="@+id/text_page_attendance_go_page"
+                    android:layout_width="@dimen/width_270"
+                    android:layout_height="@dimen/height_72"
+                    android:background="@drawable/bg_579ffb_radius_15"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:text="@string/msg_view_store"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_page_attendance_stamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_3"
+                        android:background="@color/color_ececec"
+                        android:layout_marginStart="@dimen/width_72"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:layout_marginTop="@dimen/height_72"/>
+
+                    <TextView
+                        android:id="@+id/text_page_attendance_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_72"
+                        android:layout_marginTop="@dimen/height_48"
+                        android:textColor="@color/color_151522"
+                        android:textSize="@dimen/textSize_48pt"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_24"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:background="@drawable/bg_border_ececec_radius_30"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_page_attendance_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_96"
+                            android:drawableStart="@drawable/ic_cash_blue"
+                            android:drawablePadding="@dimen/width_12"
+                            android:textColor="@color/color_151522"
+                            android:textSize="@dimen/textSize_72pt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_69"
+                            android:text="@string/msg_visit_save_desc"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/textSize_36pt" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_3"
+                            android:layout_marginTop="@dimen/height_48"
+                            android:layout_marginStart="@dimen/width_24"
+                            android:layout_marginEnd="@dimen/width_24"
+                            android:background="@color/color_ececec" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_500"
+                            android:layout_marginStart="@dimen/width_48"
+                            android:layout_marginTop="@dimen/height_48"
+                            android:layout_marginEnd="@dimen/width_48"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/text_page_attendance_stamp_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:drawableTop="@drawable/ic_stamp"
+                                android:drawablePadding="@dimen/height_48"
+                                android:text="@string/msg_stamp_desc"
+                                android:textColor="@color/color_999999"
+                                android:textSize="@dimen/textSize_48pt" />
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_24"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:drawableStart="@drawable/ic_exclamation_mark"
+                        android:drawablePadding="@dimen/width_24"
+                        android:text="@string/msg_stamp_caution"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_30pt" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_page_attendance_log"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_72"
+                        android:layout_marginEnd="@dimen/width_48" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_3"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_42"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:background="@color/color_ececec" />
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.goods.ui.AlertCancelCompleteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/width_148"
+            android:layout_height="@dimen/width_148"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_90"
+            android:src="@drawable/img_hotdeal_popup_favorite" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_40"
+            android:text="@string/msg_complete_goods_like"
+            android:textColor="@color/color_579ffb"
+            android:textSize="@dimen/textSize_64pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_10"
+            android:gravity="center"
+            android:text="@string/msg_complete_goods_like_desc"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_40pt" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:layout_marginTop="@dimen/height_90"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/image_alert_goods_like_complete_go"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_565656"
+                android:gravity="center"
+                android:text="@string/msg_move_goods_like"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt" />
+
+            <TextView
+                android:id="@+id/image_alert_goods_like_complete_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_579ffb"
+                android:gravity="center"
+                android:text="@string/word_confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

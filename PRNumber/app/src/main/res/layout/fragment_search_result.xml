@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_address"
+            layout="@layout/layout_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_87"
+            android:layout_marginTop="@dimen/height_20"
+            android:paddingStart="@dimen/width_54"
+            android:paddingEnd="@dimen/width_54"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_search_result_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_32pt"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/text_search_result_sort_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_32pt"
+                    android:textColor="@color/color_b7b7b7_579ffb"
+                    android:layout_marginEnd="@dimen/width_54"
+                    android:text="@string/word_sort_location"/>
+
+                <TextView
+                    android:id="@+id/text_search_result_sort_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_32pt"
+                    android:textColor="@color/color_b7b7b7_579ffb"
+                    android:text="@string/word_sort_plus"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:background="@color/color_d8d8d8"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_search_result_not_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_600"
+        android:drawableTop="@drawable/ic_search_none"
+        android:gravity="center"
+        android:textColor="@color/color_b7b7b7"
+        android:textSize="@dimen/textSize_32pt"
+        android:visibility="gone"/>
+
+
+</FrameLayout>

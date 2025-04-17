@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_420"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_45pt"
+                    android:textColor="@color/color_232323"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:text="@string/word_buyer_avg_eval"/>
+
+                <TextView
+                    android:id="@+id/text_header_review_avg_eval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_102pt"
+                    android:layout_marginTop="@dimen/height_44"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_232323"/>
+
+                <com.pplus.prnumberuser.apps.common.ui.custom.GradeBar
+                    android:id="@+id/grade_bar_header_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_33"
+                    app:grade_g="@drawable/ic_star_nor"
+                    app:grade_h="@drawable/ic_star_half"
+                    app:grade_margin="@dimen/width_1"
+                    app:grade_y="@drawable/ic_star_sel" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_45pt"
+                    android:textColor="@color/color_232323"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:text="@string/word_rate_eval"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_header_review_eval_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_15"
+                    android:orientation="horizontal"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_30"
+        android:background="@color/color_f8f8f8"/>
+
+    <TextView
+        android:id="@+id/txt_header_review_total_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize_51pt"
+        android:textColor="@color/color_232323"
+        android:layout_marginTop="@dimen/height_60"
+        android:layout_marginStart="@dimen/width_54" />
+
+
+</LinearLayout>

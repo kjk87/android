@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_220"
+                android:drawableTop="@drawable/ic_login_logo"
+                android:text="@string/word_pplus"
+                android:gravity="center"
+                android:textColor="@color/color_4881ba"
+                android:textSize="@dimen/height_48" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginTop="@dimen/height_100"
+                android:layout_marginEnd="@dimen/width_54"
+                android:text="@string/word_sns_login"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/layout_sns_login_google"
+                android:layout_width="@dimen/width_700"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginTop="@dimen/height_200"
+                android:background="@drawable/btn_sns_login_google">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_40"
+                    android:src="@drawable/ic_sns_login_google" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/word_google_login"
+                    android:textColor="@color/color_9a9a9a"
+                    android:textSize="@dimen/textSize_37pt" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_sns_login_kakao"
+                android:layout_width="@dimen/width_700"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/btn_sns_login_kakao">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_40"
+                    android:src="@drawable/ic_sns_login_kakao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/word_kakao_login"
+                    android:textColor="@color/color_391d26"
+                    android:textSize="@dimen/textSize_37pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_sns_login_naver"
+                android:layout_width="@dimen/width_700"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/btn_sns_login_naver">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_40"
+                    android:src="@drawable/ic_sns_login_naver" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/word_naver_login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_37pt" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_sns_login_pplus"
+                android:layout_width="@dimen/width_700"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/btn_blue">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/word_pplus_login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_37pt" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_90"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_34pt"
+                    android:textColor="@color/color_737373"
+                    android:layout_marginEnd="@dimen/width_20"
+                    android:text="@string/msg_pplus_join"/>
+
+                <TextView
+                    android:id="@+id/text_sns_login_join"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/underbar_579ffb_ffffff"
+                    android:gravity="center"
+                    android:text="@string/word_signUp"
+                    android:textColor="@color/color_579ffb"
+                    android:textSize="@dimen/textSize_34pt" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

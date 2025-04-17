@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_main_plus_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/width_54"
+        android:orientation="horizontal">
+
+        <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+            android:layout_width="@dimen/width_70"
+            android:layout_height="@dimen/width_70"
+            android:layout_marginEnd="@dimen/width_15"
+            app:mask="@drawable/img_commerce_user_profile_mask"
+            app:porterduffxfermode="DST_IN">
+
+            <ImageView
+                android:id="@+id/image_main_plus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_commerce_user_profile_default" />
+
+        </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+        <TextView
+            android:id="@+id/text_main_plus_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_36pt" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/text_main_plus_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_63"
+            android:textSize="@dimen/textSize_40pt"
+            android:text="@string/word_more"
+            android:textColor="@color/color_4e4e4e"/>
+
+
+    </LinearLayout>
+
+    <com.pplus.prnumberuser.apps.common.component.OrientationAwareRecyclerView
+        android:id="@+id/recycler_main_plus_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_20"
+        android:layout_marginTop="@dimen/height_20"/>
+
+
+</LinearLayout>

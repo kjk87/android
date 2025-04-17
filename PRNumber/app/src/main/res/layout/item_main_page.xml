@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_40"
+        android:layout_marginTop="@dimen/height_40"
+        android:layout_marginEnd="@dimen/width_40"
+        android:background="@drawable/bg_hotdeal_post"
+        android:orientation="vertical">
+
+        <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_440"
+            app:mask="@drawable/bg_shop_post_img_mask"
+            app:porterduffxfermode="DST_IN">
+
+            <ImageView
+                android:id="@+id/image_main_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_shop_profile_default" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/width_220"
+                android:layout_height="@dimen/height_70"
+                android:layout_gravity="end|bottom"
+                android:background="@color/color_579ffb">
+
+                <TextView
+                    android:id="@+id/text_main_page_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableStart="@drawable/img_commerce_list_location_white"
+                    android:drawablePadding="@dimen/width_10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_34pt" />
+
+            </RelativeLayout>
+
+        </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/width_40">
+
+                <TextView
+                    android:id="@+id/text_main_page_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_46pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_main_page_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_36pt" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/width_2"
+                android:layout_height="@dimen/height_60"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_d8d8d8"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/width_220"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_main_page_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/color_ff4646"
+                        android:textSize="@dimen/textSize_52pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_cash_back"
+                        android:textColor="@color/color_ff4646"
+                        android:textSize="@dimen/textSize_30pt" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

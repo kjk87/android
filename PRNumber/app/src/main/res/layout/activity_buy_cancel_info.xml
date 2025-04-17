@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.goods.ui.BuyCancelInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180">
+
+            <ImageView
+                android:id="@+id/image_buy_cancel_info_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_top_close"
+                android:layout_marginTop="@dimen/height_20"
+                android:layout_marginEnd="@dimen/width_20"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_64pt"
+            android:textColor="@color/color_232323"
+            android:textStyle="bold"
+            android:text="@string/word_pay_cancel_info"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_44pt"
+            android:textColor="@color/color_579ffb"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/height_80"
+            android:text="@string/msg_pay_cancel_desc1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_33pt"
+            android:textColor="@color/color_ff4646"
+            android:visibility="gone"
+            android:text="@string/msg_pay_cancel_desc2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:layout_marginTop="@dimen/height_180"
+            android:background="@color/color_579ffb">
+
+            <TextView
+                android:id="@+id/text_buy_not_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/msg_pay_not_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt" />
+
+            <View
+                android:layout_width="@dimen/width_2"
+                android:layout_height="@dimen/height_45"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_8bbbf8" />
+
+            <TextView
+                android:id="@+id/text_buy_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/msg_pay_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

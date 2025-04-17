@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@drawable/bg_ffffff_radius_30"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_alert_select_order_type_close"
+            android:layout_width="@dimen/width_72"
+            android:layout_height="@dimen/width_72"
+            android:src="@drawable/ic_popup_close"
+            android:layout_marginTop="@dimen/height_39"
+            android:layout_marginEnd="@dimen/width_42"
+            android:layout_gravity="end"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_373c42"
+            android:layout_marginTop="@dimen/height_12"
+            android:text="@string/msg_select_order_type_title"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_60pt" />
+
+        <RelativeLayout
+            android:id="@+id/layout_alert_select_order_type_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_216"
+            android:background="@drawable/bg_delivery_type"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginEnd="@dimen/width_60"
+            android:layout_marginTop="@dimen/height_78">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/width_48">
+
+                <ImageView
+                    android:layout_width="@dimen/width_108"
+                    android:layout_height="@dimen/width_108"
+                    android:src="@drawable/ic_delivery_type"
+                    android:layout_marginEnd="@dimen/width_48"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_48pt"
+                        android:textColor="@color/color_373c42"
+                        android:textStyle="bold"
+                        android:text="@string/word_delivery"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textColor="@color/color_6e7780"
+                        android:layout_marginTop="@dimen/height_3"
+                        android:text="@string/msg_delivery_desc"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_alert_select_order_type_package"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_216"
+            android:background="@drawable/bg_delivery_type"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginEnd="@dimen/width_60"
+            android:layout_marginTop="@dimen/height_24">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/width_48">
+
+                <ImageView
+                    android:layout_width="@dimen/width_108"
+                    android:layout_height="@dimen/width_108"
+                    android:src="@drawable/ic_package_type"
+                    android:layout_marginEnd="@dimen/width_48"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_48pt"
+                        android:textColor="@color/color_373c42"
+                        android:textStyle="bold"
+                        android:text="@string/word_package"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textColor="@color/color_6e7780"
+                        android:layout_marginTop="@dimen/height_3"
+                        android:text="@string/msg_package_desc"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_alert_select_order_type_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:gravity="center"
+            android:background="@drawable/bg_579ffb_radius_bottom_30"
+            android:text="@string/msg_order"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/height_84"
+            android:textSize="@dimen/textSize_48pt"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.main.ui.BizIntroduceActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/height_300"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1100"
+                android:src="@drawable/img_pplus_biz_info_1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1377"
+                android:src="@drawable/img_pplus_biz_info_2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1304"
+                android:src="@drawable/img_pplus_biz_info_3" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1364"
+                android:src="@drawable/img_pplus_biz_info_4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1894"
+                android:src="@drawable/img_pplus_biz_info_5" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1350"
+                android:src="@drawable/img_pplus_biz_info_6" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1304"
+                android:src="@drawable/img_pplus_biz_info_7" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_biz_introduce_go_biz"
+        android:layout_width="@dimen/width_900"
+        android:layout_height="@dimen/height_190"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_62"
+        android:background="@drawable/bg_579ffb_radius_500">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableEnd="@drawable/ic_arrow_ffffff"
+            android:drawablePadding="@dimen/width_20"
+            android:gravity="center"
+            android:text="@string/msg_make_biz2"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_44pt" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

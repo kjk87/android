@@ -1,0 +1,14 @@
+package com.pplus.prnumberuser.core.network.model.dto
+
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+/**
+ * Created by imac on 2018. 1. 2..
+ */
+@Parcelize
+class OrderMenuOption(var seqNo: Long? = null,
+                      var menuSeqNo: Long? = null,
+                      var menuOptionSeqNo: Long? = null,
+                      var menuOption: MenuOption? = null) : Parcelable {
+}

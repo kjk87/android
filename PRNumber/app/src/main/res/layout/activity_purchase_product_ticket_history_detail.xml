@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_100">
+
+            <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+                android:layout_width="@dimen/width_200"
+                android:layout_height="@dimen/width_200"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_60"
+                app:mask="@drawable/img_page_profile_circle_mask"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/image_purchase_product_ticket_history_detail_page_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_page_profile_circle_default" />
+
+            </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+            <TextView
+                android:id="@+id/text_purchase_product_ticket_history_detail_page_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_40"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_38pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_purchase_product_ticket_history_detail_use_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/format_use_date2"
+                android:textSize="@dimen/textSize_42pt"
+                android:textColor="@color/color_b7b7b7"/>
+
+            <TextView
+                android:id="@+id/text_purchase_product_ticket_history_detail_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_10"
+                android:textColor="@color/color_ff4646"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/textSize_42pt" />
+
+            <TextView
+                android:id="@+id/text_purchase_product_ticket_history_detail_use"
+                android:layout_width="@dimen/width_430"
+                android:layout_height="@dimen/height_110"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/btn_buy_list_blue"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/msg_use"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_32pt"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:background="@color/color_f0f0f0"
+                android:layout_marginTop="@dimen/height_60"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_purchase_product_ticket_history_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginTop="@dimen/height_60"
+                android:text="@string/word_buy_history"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_8"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginTop="@dimen/height_20"
+                android:layout_marginEnd="@dimen/width_54"
+                android:background="@color/color_232323" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_90"
+                android:layout_marginTop="@dimen/height_40"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_54"
+                android:paddingEnd="@dimen/width_54"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_count"
+                    android:textColor="@color/color_a4a4a4"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:id="@+id/text_purchase_product_ticket_history_detail_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_54"
+                android:paddingEnd="@dimen/width_54">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_pay_date"
+                    android:textColor="@color/color_a4a4a4"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:id="@+id/text_purchase_product_ticket_history_detail_pay_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_ff4646"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_54"
+                android:paddingEnd="@dimen/width_54">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_pay_method"
+                    android:textColor="@color/color_a4a4a4"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:id="@+id/text_purchase_product_ticket_history_detail_pay_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_54"
+                android:paddingEnd="@dimen/width_54">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_total_buy_price"
+                    android:textColor="@color/color_a4a4a4"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:id="@+id/text_purchase_product_ticket_history_detail_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_ff4646"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_buyer_info"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_8"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginTop="@dimen/height_20"
+                android:layout_marginEnd="@dimen/width_54"
+                android:background="@color/color_232323" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_90"
+                android:layout_marginTop="@dimen/height_40"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_54"
+                android:paddingEnd="@dimen/width_54">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_buyer"
+                    android:textColor="@color/color_a4a4a4"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:id="@+id/text_purchase_product_ticket_history_detail_buyer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_54"
+                android:paddingEnd="@dimen/width_54">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_contact"
+                    android:textColor="@color/color_a4a4a4"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:id="@+id/text_purchase_product_ticket_history_detail_buyer_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_purchase_product_ticket_history_detail_buy_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/height_80"
+                android:layout_marginEnd="@dimen/width_54"
+                android:background="@drawable/underbar_b7b7b7_ffffff"
+                android:text="@string/word_buy_cancel"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_42pt" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

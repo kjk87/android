@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/height_100"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_setting_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_72"
+                android:background="@color/color_f6f6f6"/>
+
+            <TextView
+                android:id="@+id/text_sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_174"
+                android:gravity="center"
+                android:text="@string/word_signOut"
+                android:textColor="@color/color_579ffb"
+                android:textSize="@dimen/textSize_39pt"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:background="@color/color_19000000"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.main.ui.ChangeSnsAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/width_54"
+        android:paddingEnd="@dimen/width_54">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_220"
+            android:text="@string/word_input_pplus_account"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_84pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_240"
+            android:text="@string/word_id"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_36pt"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_change_account_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_80"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/height_30"
+            android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_input_id"
+            android:maxLength="20"
+            android:textColor="@color/color_232323"
+            android:textColorHint="@color/color_bbbbbb"
+            android:textSize="@dimen/textSize_48pt" />
+
+        <TextView
+            android:id="@+id/text_change_account_id_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_20"
+            android:drawablePadding="@dimen/width_5"
+            android:textSize="@dimen/textSize_36pt"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_93"
+            android:text="@string/word_password"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_36pt"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edit_change_account_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_80"
+            android:layout_marginTop="@dimen/height_30"
+            android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+            android:hint="@string/hint_input_password"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColor="@color/color_232323"
+            android:textColorHint="@color/color_bbbbbb"
+            android:textSize="@dimen/textSize_48pt" />
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/text_change_account_close"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/textSize_48pt"-->
+        <!--android:textColor="@color/color_232323"-->
+        <!--android:text="@string/word_close"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginTop="@dimen/height_60"-->
+        <!--android:layout_marginEnd="@dimen/width_54"/>-->
+
+    <TextView
+        android:id="@+id/text_change_account_complete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_140"
+        android:textSize="@dimen/textSize_39pt"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"
+        android:background="@drawable/btn_blue"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/word_complete"
+        android:layout_marginBottom="@dimen/height_100"/>
+
+</RelativeLayout>

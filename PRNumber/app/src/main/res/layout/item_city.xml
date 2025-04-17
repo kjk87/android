@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_120"
+    android:background="@color/color_f8f8f8">
+
+    <View
+        android:layout_width="@dimen/width_2"
+        android:layout_height="match_parent"
+        android:background="@color/color_d8d8d8"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/text_city_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_120"
+        android:textSize="@dimen/textSize_40pt"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/color_b7b7b7_579ffb"
+        android:background="@drawable/color_transparent_white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_d8d8d8"/>
+
+</RelativeLayout>

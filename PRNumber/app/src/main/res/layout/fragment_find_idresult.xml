@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/width_54"
+        android:paddingRight="@dimen/width_54">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_32"
+            android:text="@string/msg_confirm_id"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_86pt" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_150"
+            android:text="@string/word_id"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_36pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_result_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_80"
+            android:layout_marginTop="@dimen/height_30"
+            android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_48pt" />
+
+        <TextView
+            android:id="@+id/text_result_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_140"
+            android:layout_marginTop="@dimen/height_150"
+            android:background="@drawable/btn_blue"
+            android:gravity="center"
+            android:text="@string/word_signIn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_39pt" />
+
+    </LinearLayout>
+
+</FrameLayout>

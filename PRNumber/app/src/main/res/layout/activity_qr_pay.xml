@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apps.card.ui.QRPayActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:id="@+id/qr_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:zxing_scanner_layout="@layout/layout_qrcode_scanner"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_qr_pay_range"
+            android:layout_width="@dimen/width_680"
+            android:layout_height="@dimen/height_680"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/width_40"
+                android:src="@drawable/ic_qr_scan_top_left"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/width_40"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_qr_scan_top_right"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/width_40"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_qr_scan_bottom_left"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/width_40"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_qr_scan_bottom_right"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layout_qr_pay_range"
+            android:layout_marginBottom="@dimen/height_60"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textSize_40pt"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/msg_qr_scan"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_540"
+        android:background="@color/color_f0f0f0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_34pt"
+            android:textColor="@color/color_737373"
+            android:layout_marginTop="@dimen/height_50"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/msg_select_pay_card"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_qr_pay"
+            android:layout_marginTop="@dimen/height_50"
+            android:paddingStart="@dimen/width_100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

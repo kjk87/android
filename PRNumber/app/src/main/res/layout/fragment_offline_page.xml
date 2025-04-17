@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/text_offline_page_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/width_40"
+                android:src="@drawable/ic_navbar_back" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_52pt"
+                android:text="@string/word_shop_en"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar_offline_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:elevation="0dp"
+                app:expanded="true">
+
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_offline_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="@color/white"
+                    app:expandedTitleTextAppearance="@android:color/transparent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_810">
+
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/pager_offline_page_introduce_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+                            <com.pplus.prnumberuser.apps.common.ui.custom.DirectionIndicator
+                                android:id="@+id/indicator_offline_page_introduce_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="@dimen/height_30" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scroll_store_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/height_100">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/width_54"
+                        android:paddingEnd="@dimen/width_54">
+
+                        <TextView
+                            android:id="@+id/text_offline_page_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_60pt"
+                            android:layout_marginTop="@dimen/height_72"
+                            android:textStyle="bold" />
+
+
+                        <com.pplus.prnumberuser.apps.common.component.ExpandableTextView
+                            android:id="@+id/text_offline_page_introduction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_24"
+                            android:lineSpacingExtra="@dimen/height_12"
+                            android:textColor="@color/color_737373"
+                            android:textSize="@dimen/textSize_36pt"
+                            app:maxCollapsedLines="5" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_6"
+                            android:background="@color/color_579ffb"
+                            android:layout_marginTop="@dimen/height_93"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_store_info2"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt"
+                            android:layout_marginTop="@dimen/height_72"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_offline_page_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_100"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/word_address"
+                                android:textColor="@color/color_232323"
+                                android:textSize="@dimen/textSize_42pt"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_offline_page_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_10"
+                                android:text="@string/word_address"
+                                android:textColor="@color/color_737373"
+                                android:drawableEnd="@drawable/ic_top_map"
+                                android:background="@drawable/underbar_737373_ffffff"
+                                android:textSize="@dimen/textSize_42pt" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_offline_page_map_option"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_30"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/layout_offline_page_find_road"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:drawableStart="@drawable/ic_offline_page_location"
+                                    android:gravity="center"
+                                    android:drawablePadding="@dimen/width_12"
+                                    android:text="@string/word_find_road"
+                                    android:textColor="@color/color_737373"
+                                    android:textSize="@dimen/textSize_30pt" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/layout_offline_page_call_taxi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:drawableStart="@drawable/ic_offline_page_taxi"
+                                    android:gravity="center"
+                                    android:drawablePadding="@dimen/width_12"
+                                    android:text="@string/word_call_taxi"
+                                    android:textColor="@color/color_737373"
+                                    android:textSize="@dimen/textSize_30pt" />
+
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/layout_offline_page_navigation"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:drawableStart="@drawable/ic_offline_page_navi"
+                                    android:gravity="center"
+                                    android:drawablePadding="@dimen/width_12"
+                                    android:text="@string/word_navigation"
+                                    android:textColor="@color/color_737373"
+                                    android:textSize="@dimen/textSize_30pt" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/layout_offline_page_copy_address"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:drawableStart="@drawable/ic_offline_page_copy"
+                                    android:gravity="center"
+                                    android:drawablePadding="@dimen/width_12"
+                                    android:text="@string/word_copy_address"
+                                    android:textColor="@color/color_737373"
+                                    android:textSize="@dimen/textSize_30pt" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_offline_page_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_48"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/word_call"
+                                android:textColor="@color/color_232323"
+                                android:textSize="@dimen/textSize_42pt"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_offline_page_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_24"
+                                android:drawableEnd="@drawable/ic_page_call"
+                                android:textColor="@color/color_737373"
+                                android:background="@drawable/underbar_737373_ffffff"
+                                android:textSize="@dimen/textSize_42pt" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_offline_page_open_hours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_48"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/word_opening_hours"
+                                android:textColor="@color/color_232323"
+                                android:textSize="@dimen/textSize_42pt"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_offline_page_opening_hours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_24"
+                                android:textColor="@color/color_737373"
+                                android:textSize="@dimen/textSize_42pt" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_offline_page_holiday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_48"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/word_holiday"
+                                android:textColor="@color/color_232323"
+                                android:textSize="@dimen/textSize_42pt"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_offline_page_holiday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_24"
+                                android:textColor="@color/color_737373"
+                                android:textSize="@dimen/textSize_42pt" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_offline_page_sns"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_48"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/word_sns"
+                                android:textColor="@color/color_232323"
+                                android:textSize="@dimen/textSize_42pt"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_24"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/image_offline_page_naver"
+                                    android:layout_width="@dimen/width_120"
+                                    android:layout_height="@dimen/width_120"
+                                    android:layout_marginStart="@dimen/width_12"
+                                    android:layout_marginEnd="@dimen/width_12"
+                                    android:visibility="gone"
+                                    android:src="@drawable/ic_prpage_naver" />
+
+                                <ImageView
+                                    android:id="@+id/image_offline_page_kakaochannel"
+                                    android:layout_width="@dimen/width_120"
+                                    android:layout_height="@dimen/width_120"
+                                    android:layout_marginEnd="@dimen/width_12"
+                                    android:visibility="gone"
+                                    android:src="@drawable/ic_prpage_kakaochannel" />
+
+                                <ImageView
+                                    android:id="@+id/image_offline_page_twitter"
+                                    android:layout_width="@dimen/width_120"
+                                    android:layout_height="@dimen/width_120"
+                                    android:layout_marginEnd="@dimen/width_12"
+                                    android:visibility="gone"
+                                    android:src="@drawable/ic_prpage_twitter" />
+
+
+                                <ImageView
+                                    android:id="@+id/image_offline_page_youtube"
+                                    android:layout_width="@dimen/width_120"
+                                    android:layout_height="@dimen/width_120"
+                                    android:layout_marginEnd="@dimen/width_12"
+                                    android:visibility="gone"
+                                    android:src="@drawable/ic_prpage_youtube" />
+
+                                <ImageView
+                                    android:id="@+id/image_offline_page_instagram"
+                                    android:layout_width="@dimen/width_120"
+                                    android:layout_height="@dimen/width_120"
+                                    android:layout_marginEnd="@dimen/width_12"
+                                    android:visibility="gone"
+                                    android:src="@drawable/ic_prpage_instagram" />
+
+                                <ImageView
+                                    android:id="@+id/image_offline_page_facebook"
+                                    android:layout_width="@dimen/width_120"
+                                    android:layout_height="@dimen/width_120"
+                                    android:layout_marginEnd="@dimen/width_12"
+                                    android:visibility="gone"
+                                    android:src="@drawable/ic_prpage_facebook" />
+
+
+                                <ImageView
+                                    android:id="@+id/image_offline_page_homepage"
+                                    android:layout_width="@dimen/width_120"
+                                    android:layout_height="@dimen/width_120"
+                                    android:layout_marginEnd="@dimen/width_12"
+                                    android:visibility="gone"
+                                    android:src="@drawable/ic_prpage_homepage" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_6"
+                            android:background="@color/color_579ffb"
+                            android:layout_marginTop="@dimen/height_72"/>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layout_offline_page_subscription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_72"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_subscription"
+                                    android:textColor="@color/color_232323"
+                                    android:layout_centerVertical="true"
+                                    android:textSize="@dimen/textSize_48pt"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_offline_page_subscription_more"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_more"
+                                    android:textColor="@color/color_ff4646"
+                                    android:background="@drawable/underbar_ff4646_ffffff"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:drawableEnd="@drawable/ic_arrow_ff4646"
+                                    android:textSize="@dimen/textSize_42pt"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <include
+                                android:id="@+id/item_offline_page_subscription"
+                                layout="@layout/item_main_subscription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_24"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_6"
+                                android:background="@color/color_579ffb"
+                                android:layout_marginTop="@dimen/height_72"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layout_offline_page_money_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_72"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_money_product"
+                                    android:textColor="@color/color_232323"
+                                    android:layout_centerVertical="true"
+                                    android:textSize="@dimen/textSize_48pt"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_offline_page_money_product_more"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_more"
+                                    android:textColor="@color/color_ff4646"
+                                    android:background="@drawable/underbar_ff4646_ffffff"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:drawableEnd="@drawable/ic_arrow_ff4646"
+                                    android:textSize="@dimen/textSize_42pt"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <include
+                                android:id="@+id/item_offline_page_money_product"
+                                layout="@layout/item_main_subscription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_24"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_6"
+                                android:background="@color/color_579ffb"
+                                android:layout_marginTop="@dimen/height_72"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layout_offline_page_main_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_72"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_discount_pre_pay"
+                                    android:textColor="@color/color_232323"
+                                    android:layout_centerVertical="true"
+                                    android:textSize="@dimen/textSize_48pt"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_offline_page_product_more"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_more"
+                                    android:textColor="@color/color_ff4646"
+                                    android:background="@drawable/underbar_ff4646_ffffff"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:drawableEnd="@drawable/ic_arrow_ff4646"
+                                    android:textSize="@dimen/textSize_42pt"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+                            <include
+                                android:id="@+id/item_main_ticket"
+                                layout="@layout/item_main_ticket"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_24"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_6"
+                                android:background="@color/color_579ffb"
+                                android:layout_marginTop="@dimen/height_72"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layout_offline_page_avg_eval"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_72"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_review"
+                                    android:textColor="@color/color_232323"
+                                    android:layout_centerVertical="true"
+                                    android:textSize="@dimen/textSize_48pt"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_offline_page_review_more"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_more"
+                                    android:textColor="@color/color_ff4646"
+                                    android:background="@drawable/underbar_ff4646_ffffff"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:drawableEnd="@drawable/ic_arrow_ff4646"
+                                    android:textSize="@dimen/textSize_42pt"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_420"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:layout_centerHorizontal="true"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/textSize_45pt"
+                                            android:textColor="@color/color_232323"
+                                            android:layout_marginTop="@dimen/height_60"
+                                            android:text="@string/word_buyer_avg_eval"/>
+
+                                        <TextView
+                                            android:id="@+id/text_offline_page_avg_eval"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/textSize_102pt"
+                                            android:layout_marginTop="@dimen/height_44"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/color_232323"/>
+
+                                        <com.pplus.prnumberuser.apps.common.ui.custom.GradeBar
+                                            android:id="@+id/grade_bar_offline_page_avg_eval"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/height_33"
+                                            app:grade_g="@drawable/ic_star_nor"
+                                            app:grade_h="@drawable/ic_star_half"
+                                            app:grade_margin="@dimen/width_1"
+                                            app:grade_y="@drawable/ic_star_sel" />
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:layout_centerHorizontal="true"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/textSize_45pt"
+                                            android:textColor="@color/color_232323"
+                                            android:layout_marginTop="@dimen/height_60"
+                                            android:text="@string/word_rate_eval"/>
+
+                                        <LinearLayout
+                                            android:id="@+id/layout_offline_page_avg_eval_bar"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/height_15"
+                                            android:orientation="horizontal"/>
+
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_6"
+                                android:background="@color/color_579ffb"
+                                android:layout_marginTop="@dimen/height_72"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layout_offline_page_review"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <include
+                                layout="@layout/item_goods_review"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_6"
+                                android:background="@color/color_579ffb"
+                                android:layout_marginTop="@dimen/height_72"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/word_company_info"
+                                android:textColor="@color/color_232323"
+                                android:textSize="@dimen/textSize_48pt"
+                                android:layout_marginTop="@dimen/height_72"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_48">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_company_name"
+                                    android:textColor="@color/color_232323"
+                                    android:textSize="@dimen/textSize_42pt"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_offline_page_company_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:textColor="@color/color_b7b7b7"
+                                    android:textSize="@dimen/textSize_42pt" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_48">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_ceo"
+                                    android:textColor="@color/color_232323"
+                                    android:textSize="@dimen/textSize_42pt"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_offline_page_ceo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:textColor="@color/color_b7b7b7"
+                                    android:textSize="@dimen/textSize_42pt" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_48">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_company_number"
+                                    android:textColor="@color/color_232323"
+                                    android:textSize="@dimen/textSize_42pt"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_offline_page_company_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:textColor="@color/color_b7b7b7"
+                                    android:textSize="@dimen/textSize_42pt" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_48">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_company_address"
+                                    android:textColor="@color/color_232323"
+                                    android:textSize="@dimen/textSize_42pt"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_offline_page_company_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:textColor="@color/color_b7b7b7"
+                                    android:textSize="@dimen/textSize_42pt" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/layout_offline_page_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/height_48">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/word_email"
+                                    android:textColor="@color/color_232323"
+                                    android:textSize="@dimen/textSize_42pt"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/text_offline_page_email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:textColor="@color/color_b7b7b7"
+                                    android:textSize="@dimen/textSize_42pt" />
+
+
+                            </RelativeLayout>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/height_60"
+                        android:paddingBottom="@dimen/height_60"
+                        android:paddingStart="@dimen/width_54"
+                        android:paddingEnd="@dimen/width_54"
+                        android:layout_marginTop="@dimen/height_48"
+                        android:visibility="gone"
+                        android:background="@color/color_f0f0f0">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_28pt"
+                            android:textColor="@color/color_737373"
+                            android:textStyle="bold"
+                            android:text="@string/word_legal_notice"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_28pt"
+                            android:textColor="@color/color_b7b7b7"
+                            android:text="@string/msg_legal_notice_desc"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

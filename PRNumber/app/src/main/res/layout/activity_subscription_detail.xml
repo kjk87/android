@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_100">
+
+            <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+                android:layout_width="@dimen/width_300"
+                android:layout_height="@dimen/width_300"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_58"
+                app:mask="@drawable/ic_mypage_profile_mask"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/image_subscription_detail_thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prnumber_default_img" />
+
+
+            </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+            <TextView
+                android:id="@+id/text_subscription_detail_page_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_24"
+                android:textColor="@color/color_151522"
+                android:textSize="@dimen/textSize_54pt" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_subscription_detail_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_cash_back_store" />
+
+                <ImageView
+                    android:id="@+id/image_subscription_detail_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_cash_back_place" />
+
+                <ImageView
+                    android:id="@+id/image_subscription_detail_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_cash_back_phone" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/text_subscription_detail_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_48"
+                android:text="@string/word_subscription"
+                android:textColor="@color/color_151522"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/item_main_subscription"
+                layout="@layout/item_main_subscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_24"
+                android:layout_marginEnd="@dimen/width_48" />
+
+            <RelativeLayout
+                android:id="@+id/layout_subscription_detail_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_48"
+                android:layout_marginEnd="@dimen/width_48"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_use_count"
+                    android:textColor="@color/color_151522"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_subscription_detail_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_ff647c"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_subscription_detail_use_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_48"
+                android:layout_marginEnd="@dimen/width_48"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_use_price"
+                    android:textColor="@color/color_151522"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_subscription_detail_origin_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_ff647c"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_48"
+                android:layout_marginEnd="@dimen/width_48">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_expire_date2"
+                    android:textColor="@color/color_151522"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_subscription_detail_remain_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/textSize_42pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_48"
+                android:layout_marginEnd="@dimen/width_48">
+
+                <TextView
+                    android:id="@+id/text_subscription_detail_contents_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_151522"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_subscription_detail_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/text_subscription_detail_contents_title"
+                    android:textColor="@color/color_999999"
+                    android:gravity="end"
+                    android:textSize="@dimen/textSize_42pt" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_72"
+                android:layout_marginEnd="@dimen/width_48"
+                android:background="@color/color_ececec" />
+
+            <TextView
+                android:id="@+id/text_subscription_detail_method_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_48"
+                android:text="@string/word_subscription_download_method"
+                android:textColor="@color/color_151522"
+                android:textSize="@dimen/textSize_48pt" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_384"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_12"
+                android:layout_marginEnd="@dimen/width_48"
+                android:background="@drawable/bg_border_e8e8e8_radius_15">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_subscription_detail_method1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/img_subscription_method1"
+                        android:drawablePadding="@dimen/height_24"
+                        android:gravity="center"
+                        android:text="@string/msg_subscription_publish_method_desc1"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/textSize_30pt" />
+
+                    <ImageView
+                        android:layout_width="@dimen/width_30"
+                        android:layout_height="@dimen/height_48"
+                        android:src="@drawable/ic_subscription_method_arrow"/>
+
+                    <TextView
+                        android:id="@+id/text_subscription_detail_method2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/img_subscription_method2"
+                        android:drawablePadding="@dimen/height_24"
+                        android:gravity="center"
+                        android:text="@string/msg_subscription_publish_method_desc2"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/textSize_30pt" />
+                    <ImageView
+                        android:layout_width="@dimen/width_30"
+                        android:layout_height="@dimen/height_48"
+                        android:src="@drawable/ic_subscription_method_arrow"/>
+
+                    <TextView
+                        android:id="@+id/text_subscription_detail_method3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/img_subscription_method3"
+                        android:drawablePadding="@dimen/height_24"
+                        android:gravity="center"
+                        android:text="@string/msg_subscription_publish_method_desc3"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/textSize_30pt" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_subscription_detail_buy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_150"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_72"
+                android:layout_marginEnd="@dimen/width_48"
+                android:background="@drawable/bg_579ffb_radius_15"
+                android:gravity="center"
+                android:text="@string/msg_buy_subscription"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_48pt" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_20">
+
+            <RelativeLayout
+                android:id="@+id/layout_map_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/image_center_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_map_pin"/>
+
+                    <TextView
+                        android:id="@+id/text_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/image_center_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/height_15"
+                        android:background="@drawable/bg_map_address"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="@dimen/width_45"
+                        android:paddingStart="@dimen/width_45"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_36pt"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_my_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginTop="@dimen/width_54"
+                android:src="@drawable/ic_map_location"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/text_delivery_address_find_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_48pt"
+            android:textColor="@color/color_525961"
+            android:layout_marginTop="@dimen/height_72"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginEnd="@dimen/width_60"/>
+
+        <EditText
+            android:id="@+id/edit_delivery_address_find_address_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_156"
+            android:layout_marginTop="@dimen/height_72"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginEnd="@dimen/width_60"
+            android:textColorHint="@color/color_a9b0b7"
+            android:paddingStart="@dimen/width_42"
+            android:paddingEnd="@dimen/width_42"
+            android:textColor="@color/color_525961"
+            android:textSize="@dimen/textSize_48pt"
+            android:hint="@string/hint_input_address_detail"
+            android:background="@drawable/bg_border_eef2f6_radius_12"/>
+        
+        <TextView
+            android:id="@+id/text_delivery_address_find_set"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168"
+            android:background="@color/color_579ffb"
+            android:layout_marginTop="@dimen/height_72"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/word_setting_select_location"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_48pt"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

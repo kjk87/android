@@ -1,0 +1,57 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+ext {
+    // 개발 버전 관리
+    compileSdkVersion = 30
+    minSdkVersion = 23
+    targetSdkVersion = 30
+    retrofitVersion = "2.9.0"
+    okhttpVersion = "4.9.2"
+}
+
+buildscript {
+    ext.kotlin_version = '1.5.30'
+
+    repositories {
+        jcenter()
+        mavenLocal()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0'
+//        classpath 'com.novoda:bintray-release:0.5.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/' }
+        mavenLocal()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        mavenCentral()
+
+        maven { url "https://repo.multiappcross.kr/repository/maven/" }
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

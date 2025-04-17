@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.subscription.ui.SubscriptionDownloadDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginEnd="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_72">
+                <include
+                    android:id="@+id/item_main_subscription"
+                    layout="@layout/item_main_subscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/text_money_product_download_detail_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_b2000000_radius_30"
+                    android:textSize="@dimen/textSize_72pt"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginEnd="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_48">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_151522"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold"
+                    android:text="@string/word_retention_price"/>
+
+                <TextView
+                    android:id="@+id/text_money_product_download_detail_remain_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_151522"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_money_product_download_detail_use_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_150"
+                android:layout_marginTop="@dimen/height_72"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginEnd="@dimen/width_48"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_border_e8e8e8_radius_15"
+                android:paddingStart="@dimen/width_48"
+                android:paddingEnd="@dimen/width_48"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_money_product_download_detail_use_price"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/color_1d1d1f"
+                    android:textColorHint="@color/color_d2d2d2"
+                    android:background="@android:color/transparent"
+                    android:maxLength="7"
+                    android:inputType="number"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:hint="@string/hint_money_product_use_price"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textColor="@color/color_1d1d1f"
+                    android:text="@string/word_money_unit"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/text_money_product_download_detail_remain_price_after_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/width_48"
+                android:textSize="@dimen/textSize_36pt"
+                android:textColor="@color/color_999999"
+                android:layout_marginTop="@dimen/height_12"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:background="@color/color_ececec"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginEnd="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_42"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginEnd="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_48">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_151522"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold"
+                    android:text="@string/word_store_name2"/>
+
+                <TextView
+                    android:id="@+id/text_money_product_download_detail_page_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_579ffb"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginEnd="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_48">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_151522"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold"
+                    android:text="@string/word_expire_date2"/>
+
+                <TextView
+                    android:id="@+id/text_money_product_download_detail_expire_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginEnd="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_48">
+
+                <TextView
+                    android:id="@+id/text_money_product_download_detail_contents_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_151522"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold"
+                    android:text="@string/word_use_condition"/>
+
+                <TextView
+                    android:id="@+id/text_money_product_download_detail_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:gravity="end"
+                    android:layout_toEndOf="@id/text_money_product_download_detail_contents_title"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_money_product_download_detail_use"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_150"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginEnd="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_72"
+                android:background="@drawable/bg_ffcf5c_radius_15"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_48pt"
+                android:textColor="@color/color_4a3606"
+                android:visibility="gone"
+                android:text="@string/msg_use_money_product"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_money_product_download_detail_complete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_150"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginEnd="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_72"
+                android:background="@drawable/bg_border_ffcf5c_radius_15"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_48pt"
+                        android:textColor="@color/color_4a3606"
+                        android:text="@string/word_use_complete_date"/>
+                    <TextView
+                        android:id="@+id/text_money_product_download_detail_complete_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textColor="@color/color_999999"
+                        android:layout_marginTop="@dimen/height_12"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_money_product_download_detail_log_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_151522"
+                android:textSize="@dimen/textSize_42pt"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/width_48"
+                android:text="@string/word_use_history"
+                android:layout_marginTop="@dimen/height_60"
+                android:visibility="gone"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_money_product_download_detail_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_24"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

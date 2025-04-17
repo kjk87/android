@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.plus.ui.PlusInfoActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/height_300"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_plus_info_page_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_50pt"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/height_80"
+                android:textStyle="bold"/>
+
+            <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+                android:layout_width="@dimen/width_430"
+                android:layout_height="@dimen/width_430"
+                app:mask="@drawable/img_shop_profile_mask"
+                android:layout_marginTop="@dimen/height_60"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/image_plus_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_shop_profile_default" />
+
+            </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+            <TextView
+                android:id="@+id/text_plus_info"
+                android:layout_width="@dimen/width_430"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_43pt"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/height_60"/>
+
+            <LinearLayout
+                android:id="@+id/layout_plus_info_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_100"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_address"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_43pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_plus_info_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_38pt" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_plus_info_map"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_560"
+                android:layout_marginTop="@dimen/height_30"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54">
+
+                <ImageView
+                    android:id="@+id/image_plus_info_map_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/width_30"
+                    android:layout_marginEnd="@dimen/width_30"
+                    android:src="@drawable/ic_map_full" />
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/map_plus_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:liteMode="true"
+                    app:mapType="normal" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_plus_info_map_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_30"
+                android:layout_marginStart="@dimen/width_54"
+                android:layout_marginEnd="@dimen/width_54"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layout_plus_info_find_road"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_234"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_mypage_menu">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/ic_prpage_map_location"
+                        android:gravity="center"
+                        android:text="@string/word_find_road"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_30pt" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_plus_info_call_taxi"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_234"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_mypage_menu">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/ic_prpage_map_taxi"
+                        android:gravity="center"
+                        android:text="@string/word_call_taxi"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_30pt" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_plus_info_navigation"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_234"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_mypage_menu">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/ic_prpage_map_navi"
+                        android:gravity="center"
+                        android:text="@string/word_navigation"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_30pt" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_plus_info_copy_address"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_234"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_mypage_menu">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/ic_prpage_map_link"
+                        android:gravity="center"
+                        android:text="@string/word_copy_address"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_30pt" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/text_plus_info_plus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_171"
+        android:background="@color/color_579ffb"
+        android:gravity="center"
+        android:text="@string/msg_plus"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_39pt"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold" />
+
+</RelativeLayout>

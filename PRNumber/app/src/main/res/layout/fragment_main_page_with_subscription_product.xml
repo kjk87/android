@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp"
+                app:expanded="true">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:contentScrim="@color/white"
+                    app:expandedTitleTextAppearance="@android:color/transparent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:titleEnabled="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_675"
+                            android:src="@drawable/img_main_subscription_banner"
+                            android:scaleType="fitXY"/>
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:actionBarSize"
+                        android:gravity="top"
+                        app:contentInsetStart="0dp"
+                        app:layout_collapseMode="pin">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_168"
+                            android:background="@color/white">
+
+                            <TextView
+                                android:id="@+id/text_main_page_with_subscription_product_point"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/width_45"
+                                android:drawableStart="@drawable/ic_cash_blue"
+                                android:drawablePadding="@dimen/width_12"
+                                android:gravity="center"
+                                android:textColor="@color/color_151522"
+                                android:textSize="@dimen/textSize_60pt"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_main_page_with_subscription_product_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/width_54"
+                                android:gravity="center"
+                                android:background="@drawable/underbar_232323_transparent"
+                                android:textColor="@color/color_232323"
+                                android:text="@string/word_login_join2"
+                                android:drawableEnd="@drawable/ic_home_point_arrow"
+                                android:drawablePadding="@dimen/width_15"
+                                android:textSize="@dimen/textSize_40pt"
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:id="@+id/text_main_page_with_subscription_product_retention"
+                                android:layout_width="@dimen/width_234"
+                                android:layout_height="@dimen/height_91"
+                                android:background="@drawable/bg_579ffb_radius_18"
+                                android:gravity="center"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="@dimen/width_54"
+                                android:textSize="@dimen/textSize_33pt"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:text="@string/word_retention_prepayment_voucher"/>
+
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.Toolbar>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_144">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/text_page_with_subscription_product_search"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_page_with_subscription_product_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/width_54"
+                                android:drawableStart="@drawable/ic_top_location"
+                                android:drawablePadding="@dimen/width_15"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:maxWidth="@dimen/width_600"
+                                android:textColor="@color/color_3c3c43"
+                                android:textSize="@dimen/textSize_36pt" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/text_page_with_subscription_product_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/width_40"
+                            android:layout_marginEnd="@dimen/width_54"
+                            android:drawableStart="@drawable/ic_location_search"
+                            android:drawablePadding="@dimen/width_12"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_setting_current_location"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_36pt"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_18"
+                        android:background="@color/color_f8f8f8" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_3"
+                        android:background="@color/color_ececec" />
+
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <com.pplus.prnumberuser.apps.common.component.OrientationAwareRecyclerView
+                    android:id="@+id/recycler_main_page_with_subscription_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/height_40" />
+
+                <LinearLayout
+                    android:id="@+id/layout_main_page_with_subscription_product_not_exist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/height_300"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_page_with_subscription_product_not_exist"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_50pt"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_main_page_with_subscription_product_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="@dimen/width_120"
+            android:layout_height="@dimen/width_120"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/width_40"
+            android:indeterminateDrawable="@drawable/rotate_data_loading"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/height_30"
+            android:gravity="center"
+            android:textColor="@color/color_b7b7b7"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_32pt"
+            android:text="@string/msg_data_loading"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

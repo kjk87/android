@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/width_54"
+    android:paddingEnd="@dimen/width_54">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_60"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+                android:layout_width="@dimen/width_216"
+                android:layout_height="@dimen/width_216"
+                android:layout_marginEnd="@dimen/width_24"
+                app:mask="@drawable/img_page_profile_mask"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/image_list_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_shop_profile_default" />
+
+            </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_list_page_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_46pt"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_list_page_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:drawableStart="@drawable/img_commerce_list_location"
+                        android:drawablePadding="@dimen/width_10"
+                        android:textColor="@color/color_579ffb"
+                        android:textSize="@dimen/textSize_34pt" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/text_list_page_visit_point"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/width_40"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_list_page_introduce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:textColor="@color/color_737373"
+                            android:textSize="@dimen/textSize_40pt" />
+
+                        <TextView
+                            android:id="@+id/text_list_page_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_list_pr"
+                            android:drawablePadding="@dimen/width_10"
+                            android:textColor="@color/color_737373"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/textSize_36pt"
+                            android:visibility="gone"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_list_page_benefit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:paddingStart="@dimen/width_24"
+                                android:paddingEnd="@dimen/width_24"
+                                android:paddingTop="@dimen/height_9"
+                                android:paddingBottom="@dimen/height_9"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:text="@string/word_first_benefit"
+                                android:textColor="@color/white"
+                                android:layout_marginEnd="@dimen/width_22"
+                                android:background="@drawable/bg_ff4646_radius_15"
+                                android:textSize="@dimen/textSize_36pt" />
+
+                            <TextView
+                                android:id="@+id/text_list_page_sns_point"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:paddingStart="@dimen/width_24"
+                                android:paddingEnd="@dimen/width_24"
+                                android:paddingTop="@dimen/height_9"
+                                android:paddingBottom="@dimen/height_9"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:text="@string/word_sns_share_save"
+                                android:textColor="@color/color_1d1d1f"
+                                android:layout_marginEnd="@dimen/width_22"
+                                android:background="@drawable/bg_ffcf5c_radius_15"
+                                android:textSize="@dimen/textSize_36pt" />
+
+                        </LinearLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:id="@+id/text_list_page_visit_point"
+                        android:layout_width="@dimen/width_156"
+                        android:layout_height="@dimen/width_156"
+                        android:background="@drawable/bg_border_579ffb_radius_15"
+                        android:textColor="@color/color_579ffb"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:clickable="true"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_marginTop="@dimen/height_60"
+        android:background="@color/color_f0f0f0" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="@dimen/width_27"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_96"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/layout_search_word_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_80">
+
+            <TextView
+                android:id="@+id/text_search_word_recent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/width_30"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="20"
+                android:textColor="@color/color_808080"
+                android:textSize="@dimen/textSize_46pt"/>
+
+            <ImageView
+                android:id="@+id/image_search_word_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_search_word_recent"
+                android:src="@drawable/btn_search_delete"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_search_word_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_80"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="15"
+            android:textColor="@color/color_808080"
+            android:textSize="@dimen/textSize_46pt"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_category_location_around"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_underbar_transparent_232323_10px"
+        android:gravity="center"
+        android:paddingStart="@dimen/width_20"
+        android:paddingEnd="@dimen/width_20"
+        android:textColor="@color/color_737373_232323"
+        android:textSize="@dimen/textSize_42pt"
+        android:textStyle="bold" />
+
+</RelativeLayout>

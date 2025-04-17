@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apps.card.ui.InstallmentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_140"
+        android:background="@color/color_f0f0f0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textSize_36pt"
+            android:textColor="@color/color_232323"
+            android:text="@string/msg_select_installment"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_installment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/text_installment_request"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_180"
+        android:background="@color/color_579ffb"
+        android:gravity="center"
+        android:text="@string/msg_pay"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_44pt" />
+
+
+</LinearLayout>

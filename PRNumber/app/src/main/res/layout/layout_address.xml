@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100"
+        android:background="@color/color_f8f8f8">
+
+        <TextView
+            android:id="@+id/text_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/width_54"
+            android:drawablePadding="@dimen/width_15"
+            android:drawableStart="@drawable/ic_search_location"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/text_address_view_map"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_32pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_address_view_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/width_54"
+            android:layout_marginStart="@dimen/width_40"
+            android:background="@drawable/underbar_579ffb_transparent"
+            android:text="@string/msg_view_map"
+            android:visibility="gone"
+            android:textColor="@color/color_579ffb"
+            android:textSize="@dimen/textSize_32pt"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

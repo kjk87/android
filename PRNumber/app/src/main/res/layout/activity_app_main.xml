@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.main.ui.AppMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:background="@color/color_efefef" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_visit_page_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:drawableTop="@drawable/gnb_main_location"
+                        android:drawablePadding="@dimen/height_9"
+                        android:gravity="center"
+                        android:text="@string/word_store_visit"
+                        android:textColor="@color/color_bbbbbb_579ffb"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_delivery_page_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:drawableTop="@drawable/gnb_main_delivery"
+                        android:drawablePadding="@dimen/height_9"
+                        android:gravity="center"
+                        android:text="@string/word_delivery_pick"
+                        android:textColor="@color/color_bbbbbb_579ffb"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_first_come_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:drawableTop="@drawable/gnb_main_discount"
+                        android:drawablePadding="@dimen/height_2"
+                        android:gravity="center"
+                        android:text="@string/word_discount"
+                        android:textColor="@color/color_bbbbbb_579ffb"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_prepayment_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:drawableTop="@drawable/gnb_main_prepayment"
+                        android:drawablePadding="@dimen/height_9"
+                        android:gravity="center"
+                        android:text="@string/word_prepayment_voucher"
+                        android:textColor="@color/color_bbbbbb_579ffb"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_shopping_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:drawableTop="@drawable/gnb_main_shopping"
+                        android:drawablePadding="@dimen/height_2"
+                        android:gravity="center"
+                        android:text="@string/word_shopping"
+                        android:textColor="@color/color_bbbbbb_579ffb"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_event_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:drawableTop="@drawable/gnb_main_cash"
+                        android:drawablePadding="@dimen/height_9"
+                        android:gravity="center"
+                        android:text="@string/word_cash"
+                        android:textColor="@color/color_bbbbbb_579ffb"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:drawableTop="@drawable/gnb_main_my"
+                        android:drawablePadding="@dimen/height_9"
+                        android:gravity="center"
+                        android:text="@string/word_my"
+                        android:textColor="@color/color_bbbbbb_579ffb"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

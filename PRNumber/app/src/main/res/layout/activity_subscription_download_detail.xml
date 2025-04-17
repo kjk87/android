@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.subscription.ui.SubscriptionDownloadDetailActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_100">
+
+            <RelativeLayout
+                android:id="@+id/layout_subscription_download_stamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_72">
+                        <include
+                            android:id="@+id/item_main_subscription"
+                            layout="@layout/item_main_subscription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/text_subscription_download_detail_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:background="@drawable/bg_b2000000_radius_30"
+                            android:textSize="@dimen/textSize_72pt"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </FrameLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layout_subscription_download_stamp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_500"
+                            android:layout_marginStart="@dimen/width_48"
+                            android:layout_marginTop="@dimen/height_72"
+                            android:layout_marginEnd="@dimen/width_48"
+                            android:background="@drawable/bg_border_ececec_radius_30"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/text_subscription_download_stamp_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableTop="@drawable/ic_stamp"
+                                android:layout_centerInParent="true"
+                                android:drawablePadding="@dimen/height_48"
+                                android:textSize="@dimen/textSize_48pt"
+                                android:textColor="@color/color_999999"
+                                android:text="@string/msg_stamp_desc"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_24"
+                            android:layout_marginStart="@dimen/width_48"
+                            android:layout_marginEnd="@dimen/width_48"
+                            android:drawablePadding="@dimen/width_24"
+                            android:textColor="@color/color_737373"
+                            android:drawableStart="@drawable/ic_exclamation_mark"
+                            android:text="@string/msg_stamp_caution"
+                            android:textSize="@dimen/textSize_30pt"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_subscription_download_log"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_72"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_3"
+                        android:background="@color/color_ececec"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_42"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_48">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_151522"
+                            android:textSize="@dimen/textSize_42pt"
+                            android:textStyle="bold"
+                            android:text="@string/word_store_name2"/>
+
+                        <TextView
+                            android:id="@+id/text_subscription_download_detail_page_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_42pt"
+                            android:layout_alignParentEnd="true"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_48">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_151522"
+                            android:textSize="@dimen/textSize_42pt"
+                            android:textStyle="bold"
+                            android:text="@string/word_use_count"/>
+
+                        <TextView
+                            android:id="@+id/text_subscription_download_detail_times"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/textSize_42pt"
+                            android:layout_alignParentEnd="true"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_48">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_151522"
+                            android:textSize="@dimen/textSize_42pt"
+                            android:textStyle="bold"
+                            android:text="@string/word_expire_date2"/>
+
+                        <TextView
+                            android:id="@+id/text_subscription_download_detail_expire_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/textSize_42pt"
+                            android:layout_alignParentEnd="true"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_48">
+
+                        <TextView
+                            android:id="@+id/text_subscription_download_detail_contents_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_151522"
+                            android:textSize="@dimen/textSize_42pt"
+                            android:textStyle="bold"
+                            android:text="@string/word_use_condition"/>
+
+                        <TextView
+                            android:id="@+id/text_subscription_download_detail_contents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/textSize_42pt"
+                            android:layout_marginStart="@dimen/width_72"
+                            android:gravity="end"
+                            android:layout_toEndOf="@id/text_subscription_download_detail_contents_title"
+                            android:layout_alignParentEnd="true"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_subscription_download_detail_use"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_150"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_72"
+                        android:background="@drawable/bg_579ffb_radius_15"
+                        android:gravity="center"
+                        android:textSize="@dimen/textSize_48pt"
+                        android:textColor="@color/white"
+                        android:text="@string/msg_use_subscription"/>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_subscription_download_detail_complete"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_150"
+                        android:layout_marginStart="@dimen/width_48"
+                        android:layout_marginEnd="@dimen/width_48"
+                        android:layout_marginTop="@dimen/height_72"
+                        android:background="@drawable/bg_border_579ffb_radius_15"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/textSize_48pt"
+                                android:textColor="@color/color_579ffb"
+                                android:text="@string/word_use_complete_date"/>
+                            <TextView
+                                android:id="@+id/text_subscription_download_detail_complete_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/textSize_30pt"
+                                android:textColor="@color/color_999999"
+                                android:layout_marginTop="@dimen/height_12"/>
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

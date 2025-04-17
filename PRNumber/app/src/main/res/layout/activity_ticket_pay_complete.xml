@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_192"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/word_ticket_pay_complete"
+            android:textColor="@color/color_579ffb"
+            android:textSize="@dimen/textSize_72pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/msg_ticket_pay_complete_desc"
+            android:textColor="@color/color_579ffb"
+            android:textSize="@dimen/textSize_72pt"/>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="@dimen/width_486"
+        android:layout_height="@dimen/width_486"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_12"
+        android:src="@drawable/img_ticket_pay_complete"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f7fafc"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/width_390"
+            android:layout_height="@dimen/height_90"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_60"
+            android:background="@drawable/bg_525961_radius_150"
+            android:gravity="center"
+            android:text="@string/word_use_method_ticket"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_39pt"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/height_54"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_198"
+                    android:layout_height="@dimen/width_198"
+                    android:background="@drawable/bg_ffffff_circle">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_116"
+                        android:layout_height="@dimen/width_116"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/img_ticket_method1" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/msg_ticket_method_desc1"
+                    android:textColor="@color/color_373c42"
+                    android:textSize="@dimen/textSize_36pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/width_10"
+                android:layout_marginEnd="@dimen/width_10"
+                android:src="@drawable/ic_arrow_8c969f" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_198"
+                    android:layout_height="@dimen/width_198"
+                    android:background="@drawable/bg_ffffff_circle">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_116"
+                        android:layout_height="@dimen/width_116"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/img_ticket_method2" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/msg_ticket_method_desc2"
+                    android:textColor="@color/color_373c42"
+                    android:textSize="@dimen/textSize_36pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/width_10"
+                android:layout_marginEnd="@dimen/width_10"
+                android:src="@drawable/ic_arrow_8c969f" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_198"
+                    android:layout_height="@dimen/width_198"
+                    android:background="@drawable/bg_ffffff_circle">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_116"
+                        android:layout_height="@dimen/width_116"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/img_ticket_method3" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/msg_ticket_method_desc3"
+                    android:textColor="@color/color_373c42"
+                    android:textSize="@dimen/textSize_36pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <TextView
+            android:id="@+id/text_ticket_pay_complete_history"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_140"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginTop="@dimen/height_102"
+            android:layout_marginEnd="@dimen/width_60"
+            android:background="@drawable/bg_4694fb_radius_12"
+            android:gravity="center"
+            android:text="@string/msg_view_pay_ticket"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_39pt" />
+
+        <TextView
+            android:id="@+id/text_ticket_pay_complete_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_140"
+            android:layout_marginStart="@dimen/width_60"
+            android:layout_marginTop="@dimen/height_24"
+            android:layout_marginEnd="@dimen/width_60"
+            android:layout_marginBottom="@dimen/height_42"
+            android:background="@drawable/bg_border_d8dee4_radius_12"
+            android:gravity="center"
+            android:text="@string/msg_go_home"
+            android:textColor="@color/color_525961"
+            android:textSize="@dimen/textSize_39pt" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

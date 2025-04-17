@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_180"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_main_number_tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/gnb_main_number"
+                android:drawablePadding="@dimen/height_2"
+                android:gravity="center"
+                android:text="@string/word_number"
+                android:textColor="@color/color_bbbbbb_579ffb"
+                android:textSize="@dimen/textSize_30pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/width_2"
+            android:layout_height="@dimen/height_142"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_999999"/>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_main_number_tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/gnb_main_search"
+                android:drawablePadding="@dimen/height_2"
+                android:gravity="center"
+                android:text="@string/word_search"
+                android:textColor="@color/color_bbbbbb_579ffb"
+                android:textSize="@dimen/textSize_30pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/width_2"
+            android:layout_height="@dimen/height_142"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_999999"/>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_main_number_tab3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/gnb_main_plus"
+                android:drawablePadding="@dimen/height_2"
+                android:gravity="center"
+                android:text="@string/word_save2"
+                android:textColor="@color/color_bbbbbb_579ffb"
+                android:textSize="@dimen/textSize_30pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:background="@color/color_999999"/>
+
+    <FrameLayout
+        android:id="@+id/main_number_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

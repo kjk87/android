@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_60"
+        android:layout_marginTop="@dimen/height_60"
+        android:layout_marginEnd="@dimen/width_60"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/text_ticket_purchase_history_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_525961"
+            android:textSize="@dimen/textSize_36pt" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/text_ticket_purchase_history_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_373c42"
+            android:textSize="@dimen/textSize_39pt"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_3"
+        android:layout_marginStart="@dimen/width_60"
+        android:layout_marginTop="@dimen/height_36"
+        android:background="@color/color_eef2f6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_60"
+        android:layout_marginTop="@dimen/height_36"
+        android:layout_marginEnd="@dimen/width_60"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+            android:layout_width="@dimen/height_276"
+            android:layout_height="@dimen/height_258"
+            android:layout_marginEnd="@dimen/width_40"
+            app:mask="@drawable/bg_000000_radius_6"
+            app:porterduffxfermode="DST_IN">
+
+            <ImageView
+                android:id="@+id/image_ticket_purchase_history_page_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_f1f2f4_radius_6" />
+
+        </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_40"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_ticket_purchase_history_page_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_373c42"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_ticket_purchase_history_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/color_373c42"
+                android:textSize="@dimen/textSize_39pt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_ticket_purchase_history_cancel"
+                    android:layout_width="@dimen/width_171"
+                    android:layout_height="@dimen/height_75"
+                    android:layout_marginEnd="@dimen/width_18"
+                    android:background="@drawable/bg_border_d8dee4_radius_6"
+                    android:gravity="center"
+                    android:text="@string/word_order_cancel"
+                    android:textColor="@color/color_525961"
+                    android:textSize="@dimen/textSize_36pt" />
+
+
+                <TextView
+                    android:id="@+id/text_ticket_purchase_history_re_order"
+                    android:layout_width="@dimen/width_171"
+                    android:layout_height="@dimen/height_75"
+                    android:layout_marginEnd="@dimen/width_18"
+                    android:background="@drawable/bg_border_d8dee4_radius_6"
+                    android:gravity="center"
+                    android:text="@string/word_re_order"
+                    android:textColor="@color/color_525961"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/text_ticket_purchase_history_review"
+                    android:layout_width="@dimen/width_171"
+                    android:layout_height="@dimen/height_75"
+                    android:background="@drawable/bg_border_d8dee4_radius_6"
+                    android:gravity="center"
+                    android:text="@string/word_review_write"
+                    android:textColor="@color/color_525961"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:visibility="gone"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/width_60"
+            android:layout_height="@dimen/width_60"
+            android:src="@drawable/ic_arrow_a9b0b7" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginTop="@dimen/height_60"
+        android:layout_marginEnd="@dimen/width_54"
+        android:background="@color/color_f0f0f0" />
+
+</LinearLayout>

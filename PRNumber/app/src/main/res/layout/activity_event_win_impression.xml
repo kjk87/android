@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_242"
+            android:background="@color/color_fafafa"
+            android:paddingLeft="@dimen/width_54"
+            android:paddingRight="@dimen/width_54">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_232323"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:text="@string/msg_event_win_impression_description1"/>
+
+                <TextView
+                    android:id="@+id/text_event_win_impression_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_808080"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:text="@string/msg_event_win_impression_description1"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_event_win_impression_contents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="@string/hint_win_impression"
+            android:maxLength="50"
+            android:paddingLeft="@dimen/width_54"
+            android:paddingRight="@dimen/width_54"
+            android:paddingTop="@dimen/height_60"
+            android:textColor="@color/color_232323"
+            android:textColorHint="@color/color_d0d0d0"
+            android:textSize="@dimen/textSize_57pt"/>
+
+        <TextView
+            android:id="@+id/text_event_win_impression_write"
+            android:layout_width="@dimen/width_300"
+            android:layout_height="@dimen/height_145"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/height_90"
+            android:layout_marginEnd="@dimen/width_54"
+            android:background="@drawable/btn_gray"
+            android:gravity="center"
+            android:text="@string/word_write"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_39pt"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

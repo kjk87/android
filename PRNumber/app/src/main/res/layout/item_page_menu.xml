@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/width_60"
+        android:paddingEnd="@dimen/width_60"
+        android:layout_marginTop="@dimen/height_48"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/height_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_page_menu_delegate"
+                    android:layout_width="@dimen/width_75"
+                    android:layout_height="@dimen/height_45"
+                    android:background="@drawable/bg_579ffb_radius_6"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_30pt"
+                    android:text="@string/word_represent"
+                    android:layout_marginEnd="@dimen/width_18"
+                    android:visibility="gone"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/text_page_menu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textColor="@color/color_373c42"
+                    android:textStyle="bold"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/text_page_menu_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_24"
+                android:textSize="@dimen/textSize_39pt"
+                android:textColor="@color/color_8c969f" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_page_menu_origin_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_page_menu_origin_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textColor="@color/color_6e7780"
+                    android:layout_marginEnd="@dimen/width_12"/>
+
+                <TextView
+                    android:id="@+id/text_page_menu_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textColor="@color/color_4694fb" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/text_page_menu_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_42pt"
+                android:textColor="@color/color_373c42" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+            android:id="@+id/layout_page_menu_image"
+            android:layout_width="@dimen/width_384"
+            android:layout_height="@dimen/height_294"
+            app:mask="@drawable/bg_000000_radius_6"
+            app:porterduffxfermode="DST_IN">
+
+            <ImageView
+                android:id="@+id/image_page_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@color/color_f1f2f4"/>
+
+
+        </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_3"
+        android:layout_marginTop="@dimen/height_48"
+        android:background="@color/color_eef2f6"/>
+
+</LinearLayout>

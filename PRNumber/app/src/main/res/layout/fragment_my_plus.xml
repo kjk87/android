@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168">
+
+            <ImageView
+                android:id="@+id/image_my_plus_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/width_54"
+                android:paddingEnd="@dimen/width_54"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_top_prev"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/word_plus_page"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_52pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp"
+                app:expanded="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_100"
+                    android:background="@color/color_f8f8f8"
+                    app:layout_scrollFlags="scroll|enterAlways">
+
+                    <TextView
+                        android:id="@+id/text_plus_total_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/width_54"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_32pt"/>
+
+                    <TextView
+                        android:id="@+id/text_my_plus_alarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_48pt"
+                        android:textColor="@color/color_579ffb"
+                        android:text="@string/word_alarm_setting"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/width_54"/>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_my_plus_total_alarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/width_54"
+                        android:layout_marginTop="@dimen/height_35"
+                        android:layout_marginBottom="@dimen/height_35"
+                        android:layout_marginEnd="@dimen/width_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_48pt"
+                            android:textColor="@color/color_737373"
+                            android:textStyle="bold"
+                            android:text="@string/word_total_alarm_setting"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_35pt"
+                            android:textColor="@color/color_737373"
+                            android:layout_marginTop="@dimen/height_23"
+                            android:text="@string/msg_total_alarm_setting_desc"/>
+
+                    </LinearLayout>
+
+                    <com.pplus.prnumberuser.apps.common.ui.custom.SafeSwitchCompat
+                        android:id="@+id/switch_my_plus_total_alarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/width_54"
+                        android:thumb="@drawable/btn_alarm_btn"
+                        app:switchMinWidth="@dimen/width_159"
+                        app:track="@drawable/switch_setting"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_my_plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <RelativeLayout
+                    android:id="@+id/layout_my_plus_not_exist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/width_72"
+                    android:layout_marginRight="@dimen/width_72"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:drawableTop="@drawable/ic_store_none"
+                        android:text="@string/msg_not_exist_store"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_36pt"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_plus_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_400"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:layout_width="@dimen/width_120"
+                        android:layout_height="@dimen/width_120"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/width_40"
+                        android:indeterminateDrawable="@drawable/rotate_data_loading"
+                        android:indeterminateOnly="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/height_30"
+                        android:gravity="center"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textSize_32pt"
+                        android:text="@string/msg_data_loading"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.prepayment.ui.PrepaymentPublishActivity">
+
+    <TextView
+        android:id="@+id/text_prepayment_publish_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_66pt"
+        android:textColor="@color/color_373c42"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/height_372"
+        android:drawablePadding="@dimen/height_30"
+        android:drawableTop="@drawable/img_prepayment_publish"
+        android:text="@string/msg_checking_owner"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_prepayment_publish_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_prepayment_publish_title"
+        android:layout_marginTop="@dimen/height_12"
+        android:textColor="@color/color_6e7780"
+        android:gravity="center"
+        android:text="@string/msg_prepayment_publish_desc"
+        android:textSize="@dimen/textSize_48pt"/>
+
+    <TextView
+        android:id="@+id/text_prepayment_publish_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144"
+        android:background="@drawable/bg_4694fb_radius_12"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_72"
+        android:layout_marginStart="@dimen/width_60"
+        android:layout_marginEnd="@dimen/width_60"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize_48pt"
+        android:text="@string/word_confirm"/>
+
+</RelativeLayout>

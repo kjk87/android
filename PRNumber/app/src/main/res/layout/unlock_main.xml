@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_196">
+
+    <ImageView
+        android:id="@+id/image_unlock_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/btn_number_event" />
+
+
+    <ImageView
+        android:id="@+id/image_unlock_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/btn_number_store" />
+
+    <ImageView
+        android:id="@+id/image_left_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/width_10"
+        android:layout_toStartOf="@+id/imageCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/btn_number_event_arrow" />
+
+    <ImageView
+        android:id="@+id/imageCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/btn_floating_number" />
+
+    <ImageView
+        android:id="@+id/image_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/width_10"
+        android:layout_toEndOf="@+id/imageCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/btn_number_store_arrow" />
+
+    <ImageView
+        android:id="@+id/img_thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/btn_floating_number_line" />
+
+
+</RelativeLayout>

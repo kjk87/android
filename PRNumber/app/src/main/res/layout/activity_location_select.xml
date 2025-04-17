@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    tools:context="com.pplus.prnumberuser.apps.main.ui.LocationSelectActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_location_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180">
+
+            <ImageView
+                android:id="@+id/image_location_select_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/width_20"
+                android:src="@drawable/ic_top_close" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_180"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/width_54"
+            android:paddingEnd="@dimen/width_54">
+
+            <RelativeLayout
+                android:id="@+id/layout_location_select_current"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/btn_locationpopup_location"
+                    android:drawablePadding="@dimen/height_15"
+                    android:gravity="center"
+                    android:text="@string/word_search_location_current"
+                    android:textColor="@color/color_808080"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_location_select_map"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/btn_locationpopup_map"
+                    android:drawablePadding="@dimen/height_15"
+                    android:gravity="center"
+                    android:text="@string/word_search_location_map"
+                    android:textColor="@color/color_808080"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

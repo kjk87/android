@@ -1,0 +1,181 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168"
+            android:layout_marginTop="@dimen/height_72"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/width_267"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/width_30"
+                    android:src="@drawable/ic_login_web_logo"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_caution_user_withdrawal"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_57pt"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_secession_caution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_54"
+            android:layout_marginStart="@dimen/width_267"
+            android:layout_marginTop="@dimen/height_51"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_39pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_54"
+            android:layout_marginStart="@dimen/width_267"
+            android:layout_marginTop="@dimen/height_114"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_retention_cash"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_39pt"/>
+
+                <TextView
+                    android:id="@+id/text_secession_retention_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_6"
+                    android:textColor="@color/color_579ffb"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_marginStart="@dimen/width_267"
+            android:layout_marginTop="@dimen/height_87"
+            android:background="@color/color_19000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_267"
+            android:layout_marginTop="@dimen/height_69"
+            android:text="@string/msg_user_withdrawal_step"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_51pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_267"
+            android:layout_marginTop="@dimen/height_69"
+            android:text="@string/word_step1"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_39pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_secession_step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_54"
+            android:layout_marginStart="@dimen/width_267"
+            android:layout_marginTop="@dimen/height_3"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_33pt"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_marginStart="@dimen/width_267"
+            android:layout_marginTop="@dimen/height_69"
+            android:background="@color/color_19000000"/>
+
+
+        <TextView
+            android:id="@+id/text_secession_step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_267"
+            android:layout_marginTop="@dimen/height_69"
+            android:text="@string/word_step2"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_39pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_54"
+            android:layout_marginStart="@dimen/width_267"
+            android:layout_marginTop="@dimen/height_3"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_33pt"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_marginStart="@dimen/width_267"
+            android:layout_marginTop="@dimen/height_69"
+            android:background="@color/color_19000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_54"
+            android:layout_marginStart="@dimen/width_267"
+            android:layout_marginTop="@dimen/height_63"
+            android:text="@string/msg_leave_pre_caution"
+            android:textColor="@color/color_808080"
+            android:textSize="@dimen/textSize_30pt"/>
+
+
+        <TextView
+            android:id="@+id/text_secession"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_174"
+            android:layout_marginTop="@dimen/height_117"
+            android:background="@color/color_3c3c3c"
+            android:gravity="center"
+            android:text="@string/msg_secession"
+            android:textColor="@color/color_ffffff_a3a3a3"
+            android:textSize="@dimen/textSize_40pt"/>
+
+    </LinearLayout>
+
+</ScrollView>

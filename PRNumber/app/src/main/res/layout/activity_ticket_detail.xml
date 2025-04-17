@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.menu.ui.OrderMenuDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_ticket_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_500">
+
+            <View
+                android:id="@+id/view_ticket_detail_none_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_168"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/layout_ticket_detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_660"
+                android:visibility="gone">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/pager_order_menu_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_87000000" />
+
+                <com.pplus.prnumberuser.apps.common.ui.custom.DirectionIndicator
+                    android:id="@+id/indicator_ticket_detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/height_30" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_60"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/text_ticket_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="@dimen/width_630"
+                    android:textColor="@color/color_212529"
+                    android:textSize="@dimen/textSize_66pt"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_ticket_detail_delegate"
+                    android:layout_width="@dimen/width_93"
+                    android:layout_height="@dimen/height_60"
+                    android:layout_marginStart="@dimen/width_24"
+                    android:background="@drawable/bg_579ffb_radius_6"
+                    android:gravity="center"
+                    android:text="@string/word_represent"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:layout_marginTop="@dimen/height_60"
+                android:background="@color/color_eef2f6" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_48"
+                android:paddingStart="@dimen/width_60"
+                android:paddingEnd="@dimen/width_60">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_price"
+                    android:textColor="@color/color_373c42"
+                    android:textSize="@dimen/textSize_48pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_ticket_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_373c42"
+                    android:textSize="@dimen/textSize_48pt"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_ticket_detail_origin_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_ticket_detail_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_48pt"
+                    android:textColor="@color/color_4694fb"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="@dimen/width_12"/>
+
+                <TextView
+                    android:id="@+id/text_ticket_detail_origin_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_48pt"
+                    android:textColor="@color/color_8c969f" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_ticket_detail_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/width_42"
+                    android:layout_height="@dimen/width_42"
+                    android:background="@drawable/bg_4694fb_circle"
+                    android:textSize="@dimen/textSize_24pt"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="C"
+                    android:layout_marginEnd="@dimen/width_6"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/text_ticket_detail_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textColor="@color/color_4694fb"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:layout_marginTop="@dimen/height_60"
+                android:background="@color/color_eef2f6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/word_product_info"
+                android:layout_marginTop="@dimen/width_60"
+                android:layout_marginStart="@dimen/width_60"
+                android:textColor="@color/color_373c42"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_45"
+                android:layout_marginEnd="@dimen/width_60">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_expire_date2"
+                    android:textColor="@color/color_8c969f"
+                    android:textSize="@dimen/textSize_42pt" />
+
+                <TextView
+                    android:id="@+id/text_prepayment_detail_expire_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_373c42"
+                    android:textSize="@dimen/textSize_42pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_45"
+                android:layout_marginEnd="@dimen/width_60">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_use_method2"
+                    android:textColor="@color/color_8c969f"
+                    android:textSize="@dimen/textSize_42pt" />
+
+                <TextView
+                    android:id="@+id/text_prepayment_detail_use_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_ff4026"
+                    android:text="@string/msg_ticket_use_method_desc"
+                    android:textSize="@dimen/textSize_42pt" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:layout_marginTop="@dimen/height_60"
+                android:background="@color/color_eef2f6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/word_product_description"
+                android:layout_marginTop="@dimen/width_60"
+                android:layout_marginStart="@dimen/width_60"
+                android:textColor="@color/color_373c42"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text_ticket_detail_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_45"
+                android:textColor="@color/color_373c42"
+                android:textSize="@dimen/textSize_42pt" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_168">
+
+        <ImageView
+            android:id="@+id/text_ticket_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/width_40"
+            android:src="@drawable/ic_navbar_back_light" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_ticket_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_168"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/text_ticket_detail_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/width_40"
+            android:src="@drawable/ic_navbar_back" />
+
+
+        <TextView
+            android:id="@+id/text_ticket_detail_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/color_232323"
+            android:ellipsize="end"
+            android:textSize="@dimen/textSize_52pt"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_ticket_detail_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_ticket_detail_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_579ffb"
+                android:gravity="center"
+                android:text="@string/msg_buy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_80"
+        android:layout_marginEnd="@dimen/width_80"
+        android:layout_marginTop="@dimen/height_70">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_50"
+            android:minHeight="@dimen/height_365"
+            android:paddingTop="@dimen/height_50"
+            android:paddingBottom="@dimen/height_50"
+            android:background="@drawable/bg_border_4694fb_radius_90"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_page_event_announce_gift_win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/id_page_event_announce_gift_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_17"
+                android:textSize="@dimen/textSize_30pt"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/word_more"
+                android:background="@drawable/bg_page_event_announce_more" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_page_event_announce_gift_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_100"
+            android:minWidth="@dimen/width_500"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@drawable/bg_4694fb_radius_500"
+            android:textSize="@dimen/textSize_40pt"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_check" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_40"
+                android:text="@string/msg_pay_complete"
+                android:textColor="@color/color_579ffb"
+                android:textSize="@dimen/textSize_62pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_20"
+                android:text="@string/msg_pay_complete_desc"
+                android:textColor="@color/color_737373"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_40pt" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_4"
+        android:background="@color/color_f0f0f0"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_46pt"
+        android:textColor="@color/color_232323"
+        android:layout_marginTop="@dimen/height_100"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/msg_pay_complete_desc2"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="@dimen/width_984"
+        android:layout_height="@dimen/height_384"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_52"
+        android:src="@drawable/img_ticket_pay_complete"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_25pt"
+        android:textColor="@color/color_232323"
+        android:drawableStart="@drawable/ic_pay_complete_info"
+        android:drawablePadding="@dimen/width_15"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/msg_pay_complete_desc3"/>
+
+
+    <TextView
+        android:id="@+id/text_pay_complete_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_140"
+        android:layout_marginTop="@dimen/height_180"
+        android:layout_marginBottom="@dimen/height_100"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"
+        android:background="@drawable/btn_blue"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_39pt"
+        android:text="@string/word_confirm"/>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.main.ui.SharePRNumberActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_200">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_984"
+                android:src="@drawable/img_share_prnumber_1"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1427"
+                android:src="@drawable/img_share_prnumber_2"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_395"
+                android:src="@drawable/img_share_prnumber_3"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/text_share_prnumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_185"
+        android:background="@color/color_579ffb"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize_42pt"
+        android:text="@string/msg_share_prnumber"/>
+
+</RelativeLayout>

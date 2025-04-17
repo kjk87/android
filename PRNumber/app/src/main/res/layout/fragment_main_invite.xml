@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_54"
+                android:paddingEnd="@dimen/width_54">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/height_69"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/width_15"
+                        android:text="@string/word_recommend_code"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_39pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_main_invite_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/width_20"
+                        android:textColor="@color/color_579ffb"
+                        android:textSize="@dimen/textSize_56pt"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image_main_invite_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_invite_copy" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_main_invite_history"
+                    android:layout_width="@dimen/height_340"
+                    android:layout_height="@dimen/height_104"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:text="@string/word_recommend_history"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSize_32pt"
+                    android:textColor="@color/color_737373"
+                    android:background="@drawable/btn_white_shadow"/>
+
+                <TextView
+                    android:id="@+id/text_main_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_171"
+                    android:layout_marginTop="@dimen/height_140"
+                    android:background="@drawable/btn_blue"
+                    android:gravity="center"
+                    android:text="@string/msg_invite"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_144"
+                    android:gravity="center"
+                    android:text="@string/msg_recommend_description"
+                    android:textColor="@color/color_b7b7b7"
+                    android:textSize="@dimen/textSize_30pt" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/width_419"
+                android:layout_height="@dimen/height_368"
+                android:src="@drawable/img_invite_point"
+                android:layout_marginTop="@dimen/height_144"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/text_main_invite_desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_232323"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/textSize_47pt"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_100"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/height_60"
+                    android:layout_height="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_24"
+                    android:background="@drawable/bg_border_808080_6px_circle"
+                    android:gravity="center"
+                    android:text="!"
+                    android:textColor="@color/color_808080"
+                    android:textEditSideNoPasteWindowLayout="@dimen/textSize_45pt"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_invite_caution"
+                    android:textColor="@color/color_808080"
+                    android:textSize="@dimen/textSize_33pt" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

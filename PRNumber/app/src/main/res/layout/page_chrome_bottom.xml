@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_page_chrome_find_road"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_web_location"
+                android:text="@string/word_find_road"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_33pt" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/view_page_chrome_bar1"
+            android:layout_width="@dimen/width_2"
+            android:layout_height="@dimen/height_50"
+            android:background="@color/color_f0f0f0" />
+
+        <RelativeLayout
+            android:id="@+id/layout_page_chrome_call"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_web_tel"
+                android:text="@string/word_call"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_33pt" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/view_page_chrome_bar2"
+            android:layout_width="@dimen/width_2"
+            android:layout_height="@dimen/height_50"
+            android:background="@color/color_f0f0f0" />
+
+        <RelativeLayout
+            android:id="@+id/layout_page_chrome_blog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_web_blog"
+                android:text="@string/word_blog"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_33pt" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/view_page_chrome_bar3"
+            android:layout_width="@dimen/width_2"
+            android:layout_height="@dimen/height_50"
+            android:background="@color/color_f0f0f0" />
+
+
+        <RelativeLayout
+            android:id="@+id/layout_page_chrome_plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_page_chrome_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_web_plus"
+                android:text="@string/word_plus3"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_33pt" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_232323"
+            android:layout_marginTop="@dimen/height_90"
+            android:text="@string/word_notice_alert"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_64pt" />
+
+        <TextView
+            android:id="@+id/text_alert_input_price_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_60"
+            android:textColor="@color/color_ff4646"
+            android:textSize="@dimen/textSize_60pt" />
+
+        <TextView
+            android:id="@+id/text_alert_input_price_installment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_ff4646"
+            android:textSize="@dimen/textSize_40pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_737373"
+            android:layout_marginTop="@dimen/height_40"
+            android:text="@string/msg_question_pay"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_42pt" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:background="@color/color_579ffb"
+            android:layout_marginTop="@dimen/height_90"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_alert_input_price_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/color_579ffb"
+                android:gravity="center"
+                android:text="@string/word_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_alert_input_price_confirm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/color_579ffb"
+                android:gravity="center"
+                android:text="@string/word_confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

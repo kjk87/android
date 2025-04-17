@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.prepayment.ui.PrepaymentPublishDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/height_200"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginTop="@dimen/height_40"
+                android:layout_marginEnd="@dimen/width_60">
+
+                <include
+                    android:id="@+id/item_main_prepayment"
+                    layout="@layout/item_main_prepayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_prepayment_publish_detail_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_b3212529_radius_30"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_repayment_publish_detail_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_60pt"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/text_repayment_publish_detail_status_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_48pt"
+                            android:layout_marginTop="@dimen/height_12"
+                            android:textColor="@color/white" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </RelativeLayout>
+            </FrameLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_prepayment_publish_detail_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_24"
+                    android:background="@color/color_f7fafc"
+                    android:layout_marginTop="@dimen/height_60"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_72"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_42pt"
+                        android:textColor="@color/color_373c42"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_retention_price"/>
+
+                    <TextView
+                        android:id="@+id/text_prepayment_publish_detail_have_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_54pt"
+                        android:textColor="@color/color_4694fb"
+                        android:textStyle="bold"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textColor="@color/color_373c42"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:text="@string/word_will_use_price"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_132"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/height_24"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:paddingStart="@dimen/width_48"
+                    android:paddingEnd="@dimen/width_48"
+                    android:background="@drawable/bg_border_eef2f6_radius_12">
+
+                    <EditText
+                        android:id="@+id/edit_prepayment_publish_detail_use_price"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/color_a9b0b7"
+                        android:textColor="@color/color_212529"
+                        android:textSize="@dimen/textSize_42pt"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"
+                        android:hint="@string/msg_input_use_price"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_42pt"
+                        android:textColor="@color/color_373c42"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_money_unit"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_24"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="@dimen/width_60"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textColor="@color/color_525961"
+                        android:layout_marginEnd="@dimen/width_18"
+                        android:text="@string/word_remain_price_after_use"/>
+
+                    <TextView
+                        android:id="@+id/text_prepayment_publish_detail_remain_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textColor="@color/color_4694fb"
+                        android:textStyle="bold"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_prepayment_publish_detail_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_24"
+                    android:background="@color/color_f7fafc"
+                    android:layout_marginTop="@dimen/height_60"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_72"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_42pt"
+                        android:textColor="@color/color_373c42"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_use_price"/>
+
+                    <TextView
+                        android:id="@+id/text_prepayment_publish_detail_use_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_54pt"
+                        android:textColor="@color/color_4694fb"
+                        android:textStyle="bold"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_63"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:layout_marginEnd="@dimen/width_60">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_42pt"
+                        android:textColor="@color/color_373c42"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_un_use_price"/>
+
+                    <TextView
+                        android:id="@+id/text_prepayment_publish_detail_un_use_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_54pt"
+                        android:textColor="@color/color_4694fb"
+                        android:textStyle="bold"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_24"
+                android:background="@color/color_f7fafc"
+                android:layout_marginTop="@dimen/height_72"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_72"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textColor="@color/color_8c969f"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_store_name2"/>
+
+                <TextView
+                    android:id="@+id/text_prepayment_publish_detail_page_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textColor="@color/color_8c969f"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_24"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textColor="@color/color_8c969f"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_expire_date2"/>
+
+                <TextView
+                    android:id="@+id/text_prepayment_publish_detail_expire_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textColor="@color/color_8c969f"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_24"
+                android:layout_marginStart="@dimen/width_60"
+                android:layout_marginEnd="@dimen/width_60">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textColor="@color/color_8c969f"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_use_note2"/>
+
+                <TextView
+                    android:id="@+id/text_prepayment_publish_detail_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textColor="@color/color_8c969f"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_prepayment_publish_detail_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_24"
+                    android:background="@color/color_f7fafc"
+                    android:layout_marginTop="@dimen/height_72"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_prepayment_publish_detail_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/text_prepayment_publish_detail_use"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_168"
+        android:background="@color/color_4694fb"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_48pt"
+        android:text="@string/msg_use_prepayment"/>
+
+</RelativeLayout>

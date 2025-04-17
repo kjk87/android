@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.shippingsite.ui.ShippingSiteRegActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/width_54"
+            android:paddingEnd="@dimen/width_54"
+            android:paddingBottom="@dimen/height_200"
+            android:paddingTop="@dimen/height_60"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_receiver"
+                android:layout_marginTop="@dimen/height_110"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edit_shipping_site_reg_receiver_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_input_shipping_site_receiver_name"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_contact"
+                android:textColor="@color/color_232323"
+                android:layout_marginTop="@dimen/height_110"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edit_shipping_site_reg_receiver_tel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_input_shipping_site_receiver_tel"
+                android:textColor="@color/color_232323"
+                android:inputType="phone"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_post_code"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text_shipping_site_reg_post_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:drawableEnd="@drawable/ic_search"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_search_post_code"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_address"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text_shipping_site_reg_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <EditText
+                android:id="@+id/edit_shipping_site_reg_address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginTop="@dimen/height_60"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_input_address_detail"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/text_shipping_site_reg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_171"
+        android:background="@color/color_579ffb"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:text="@string/msg_add_shipping_site"/>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pplus.prnumberuser.apps.event.ui.EventDetailActivity">
+
+    <WebView
+        android:id="@+id/webview_event_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_event_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/color_202020">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/height_100"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_event_detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+                <TextView
+                    android:id="@+id/text_event_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_48pt"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/height_100"
+                    android:paddingStart="@dimen/width_48"
+                    android:paddingEnd="@dimen/width_48"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/text_event_detail_explain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:paddingStart="@dimen/width_48"
+                    android:paddingEnd="@dimen/width_48"
+                    android:textColor="@color/color_efefef"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_gravity="center"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_event_detail_contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_100"
+                    android:paddingStart="@dimen/width_48"
+                    android:paddingEnd="@dimen/width_48"
+                    android:orientation="vertical"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_event_detail_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal">
+
+                    <CheckBox
+                        android:id="@+id/check_event_detail_terms_agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/btn_event_terms_check"
+                        android:gravity="left|center_vertical"
+                        android:paddingStart="@dimen/width_51"
+                        android:text="@string/msg_agree_personal_info_terms"
+                        android:textColor="@color/color_efefef"
+                        android:layout_marginEnd="@dimen/width_60"
+                        android:textSize="@dimen/textSize_42pt" />
+
+                    <TextView
+                        android:id="@+id/text_event_detail_terms_view"
+                        android:layout_width="@dimen/width_240"
+                        android:layout_height="@dimen/height_98"
+                        android:textColor="@color/color_efefef"
+                        android:gravity="center"
+                        android:textSize="@dimen/textSize_42pt"
+                        android:background="@drawable/bg_444444_radius_15"
+                        android:text="@string/word_detail"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/text_event_detail_join"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180"
+            android:background="@color/color_579ffb"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_42pt"
+            android:text="@string/msg_event_join"
+            android:gravity="center"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

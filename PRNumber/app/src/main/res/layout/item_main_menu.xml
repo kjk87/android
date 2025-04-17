@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+        android:layout_width="@dimen/width_384"
+        android:layout_height="@dimen/height_294"
+        app:mask="@drawable/bg_000000_radius_6"
+        android:layout_marginEnd="@dimen/width_36"
+        app:porterduffxfermode="DST_IN">
+
+        <ImageView
+            android:id="@+id/image_main_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/color_f1f2f4"/>
+
+        <TextView
+            android:id="@+id/text_main_menu_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_579ffb_right_top_left_bottom_radius_6"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_33pt"
+            android:paddingStart="@dimen/width_15"
+            android:paddingEnd="@dimen/width_15"
+            android:paddingTop="@dimen/height_6"
+            android:paddingBottom="@dimen/height_6"
+            android:visibility="gone"/>
+
+    </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+    <TextView
+        android:id="@+id/text_main_menu_name"
+        android:layout_width="@dimen/width_384"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_30"
+        android:textSize="@dimen/textSize_42pt"
+        android:ellipsize="end"
+        android:textColor="@color/color_373c42"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_main_menu_price"
+        android:layout_width="@dimen/width_384"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_3"
+        android:textSize="@dimen/textSize_42pt"
+        android:textColor="@color/color_373c42" />
+
+    <TextView
+        android:id="@+id/text_main_menu__origin_price"
+        android:layout_width="@dimen/width_384"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_3"
+        android:textSize="@dimen/textSize_30pt"
+        android:textColor="@color/color_6e7780"
+        android:visibility="gone"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

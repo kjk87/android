@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.product.ui.CheckAuthCodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_110"
+            android:text="@string/msg_request_auth_code2"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_54pt"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_40"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_check_buy_subscription_auth_code1"
+                android:layout_width="@dimen/width_180"
+                android:layout_height="@dimen/width_180"
+                android:layout_marginEnd="@dimen/width_20"
+                android:background="@drawable/bg_buy_list_number"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/edit_check_buy_subscription_auth_code2"
+                android:layout_width="@dimen/width_180"
+                android:layout_height="@dimen/width_180"
+                android:layout_marginEnd="@dimen/width_20"
+                android:background="@drawable/bg_buy_list_number"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/edit_check_buy_subscription_auth_code3"
+                android:layout_width="@dimen/width_180"
+                android:layout_height="@dimen/width_180"
+                android:layout_marginEnd="@dimen/width_20"
+                android:background="@drawable/bg_buy_list_number"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/edit_check_buy_subscription_auth_code4"
+                android:layout_width="@dimen/width_180"
+                android:layout_height="@dimen/width_180"
+                android:background="@drawable/bg_buy_list_number"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_check_auth_buy_subscription_code_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_60"
+            android:text="@string/msg_check_auth_code_desc3"
+            android:layout_marginBottom="@dimen/height_100"
+            android:textColor="@color/color_579ffb"
+            android:textSize="@dimen/textSize_36pt" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_check_buy_subscription_auth_code_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_72"
+                android:text="@string/word_subscription_download"
+                android:textColor="@color/color_151522"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_48"
+                android:layout_marginTop="@dimen/height_24"
+                android:layout_marginEnd="@dimen/width_48"
+                android:background="@drawable/bg_border_ececec_radius_30"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_check_buy_subscription_auth_code_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_48"
+                    android:layout_marginBottom="@dimen/height_48"
+                    android:textColor="@color/color_151522"
+                    android:textSize="@dimen/textSize_54pt" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:layout_marginTop="@dimen/height_48"
+                    android:layout_marginStart="@dimen/width_24"
+                    android:layout_marginEnd="@dimen/width_24"
+                    android:background="@color/color_ececec" />
+
+                <TextView
+                    android:id="@+id/text_check_buy_subscription_auth_code_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_48"
+                    android:layout_marginBottom="@dimen/height_48"
+                    android:gravity="center"
+                    android:textColor="@color/color_151522"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_check_buy_subscription_auth_code_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_171"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_579ffb"
+        android:gravity="center"
+        android:text="@string/word_confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_39pt"
+        android:textStyle="bold" />
+
+</RelativeLayout>

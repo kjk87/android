@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_main_subscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border_ececec_radius_30"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_my_subscription_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_216"
+            android:background="@drawable/bg_579ffb_radius_top_30">
+
+            <com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout
+                android:layout_width="@dimen/width_120"
+                android:layout_height="@dimen/width_120"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/width_72"
+                app:mask="@drawable/ic_mypage_profile_mask"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/image_my_subscription_page_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prnumber_default_img" />
+
+            </com.pplus.prnumberuser.apps.common.ui.custom.MaskableFrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_72"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_my_subscription_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_48pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/text_my_subscription_page_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/height_12"
+                    android:textSize="@dimen/textSize_36pt" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_6"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/width_3"
+                android:background="@drawable/vertical_dot_line"
+                android:layerType="software" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180"
+            android:paddingStart="@dimen/width_72"
+            android:paddingEnd="@dimen/width_72">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_my_subscription_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_579ffb"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:layout_marginBottom="@dimen/height_12"/>
+
+                <TextView
+                    android:id="@+id/text_my_subscription_status"
+                    android:layout_width="@dimen/width_159"
+                    android:layout_height="@dimen/height_60"
+                    android:textColor="@color/color_579ffb"
+                    android:gravity="center"
+                    android:background="@drawable/bg_border_579ffb_radius_15"
+                    android:textSize="@dimen/textSize_36pt" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_my_subscription_remain_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_579ffb"
+                    android:textSize="@dimen/textSize_36pt" />
+
+                <TextView
+                    android:id="@+id/text_my_subscription_remain_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_579ffb"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:layout_marginTop="@dimen/height_12"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

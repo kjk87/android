@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.page.ui.PageEventDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_450">
+
+            <ImageView
+                android:id="@+id/image_page_event_detail_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_810"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_80"
+                android:layout_marginTop="@dimen/height_70"
+                android:layout_marginEnd="@dimen/width_80">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_50"
+                    android:background="@drawable/bg_border_4694fb_radius_90"
+                    android:minHeight="@dimen/height_365"
+                    android:paddingTop="@dimen/height_150"
+                    android:paddingBottom="@dimen/height_100">
+
+                    <TextView
+                        android:id="@+id/text_page_event_detail_contents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/width_119"
+                        android:layout_marginEnd="@dimen/width_119"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_43pt" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_500"
+                    android:layout_height="@dimen/height_100"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_4694fb_radius_500"
+                    android:gravity="center"
+                    android:text="@string/word_event_contents"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_40pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_page_event_detail_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_80"
+                android:layout_marginTop="@dimen/height_70"
+                android:layout_marginEnd="@dimen/width_80">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_50"
+                    android:background="@drawable/bg_border_4694fb_radius_90"
+                    android:minHeight="@dimen/height_365"
+                    android:paddingTop="@dimen/height_150"
+                    android:paddingBottom="@dimen/height_100">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="@dimen/width_500"
+                                android:layout_height="@dimen/height_96"
+                                android:layout_marginEnd="@dimen/width_15"
+                                android:background="@color/color_303030"
+                                android:gravity="center"
+                                android:text="@string/word_gift_name"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize_37pt"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="@dimen/width_182"
+                                android:layout_height="@dimen/height_96"
+                                android:background="@color/color_303030"
+                                android:gravity="center"
+                                android:text="@string/word_winner"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize_37pt"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_page_event_detail_gift_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_500"
+                    android:layout_height="@dimen/height_100"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_4694fb_radius_500"
+                    android:gravity="center"
+                    android:text="@string/word_gift"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_40pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_80"
+                android:layout_marginTop="@dimen/height_70"
+                android:layout_marginEnd="@dimen/width_80">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_50"
+                    android:background="@drawable/bg_border_4694fb_radius_90"
+                    android:minHeight="@dimen/height_365"
+                    android:paddingTop="@dimen/height_150"
+                    android:paddingBottom="@dimen/height_100">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_page_event_detail_term"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_43pt" />
+
+                        <TextView
+                            android:id="@+id/text_page_event_detail_win_announce_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_43pt" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_500"
+                    android:layout_height="@dimen/height_100"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_4694fb_radius_500"
+                    android:gravity="center"
+                    android:text="@string/word_event_term"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_40pt" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_e6e6e6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/width_70"
+                android:layout_marginTop="@dimen/height_30"
+                android:layout_marginEnd="@dimen/width_70"
+                android:layout_marginBottom="@dimen/height_30"
+                android:text="@string/word_page_event_detail_desc"
+                android:textColor="@color/color_606060" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_page_event_detail_join"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:background="@color/color_579ffb"
+            android:gravity="center"
+            android:text="@string/msg_agree_join"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_39pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f8f8f8"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/width_54"
+    android:paddingEnd="@dimen/width_54"
+    android:paddingBottom="@dimen/height_200">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_100"
+        android:text="@string/msg_pplus_desc"
+        android:textColor="@color/color_b7b7b7"
+        android:textSize="@dimen/textSize_31pt" />
+
+
+    <RelativeLayout
+        android:id="@+id/layout_pplus_info_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_90"
+        android:layout_marginTop="@dimen/height_90"
+        android:background="@drawable/border_color_b7b7b7_3px">
+
+        <TextView
+            android:id="@+id/text_pplus_info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableEnd="@drawable/ic_footer_arrow_down"
+            android:drawablePadding="@dimen/width_15"
+            android:gravity="center"
+            android:text="@string/word_pplus_company_info"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_31pt" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_pplus_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_30"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_pplus_company"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/word_pplus_ceo"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_address"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/word_pplus_address"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_company_number"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/word_pplus_company_number"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_online_sale_number"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/word_pplus_online_sale_number"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_email"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/word_pplus_email"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_cs_center"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="end"
+                android:text="@string/word_pplus_cs"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_28pt" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

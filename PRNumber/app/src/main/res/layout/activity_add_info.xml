@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pplus.prnumberuser.apps.signin.ui.AddInfoActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_add_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_54"
+            android:layout_marginRight="@dimen/width_54"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_90"
+                android:text="@string/msg_input_add_info"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_84pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_240"
+                android:text="@string/word_mobileNumber"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_39pt" />
+
+
+            <TextView
+                android:id="@+id/text_add_info_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_57"
+                android:textColor="@color/color_579ffb"
+                android:textSize="@dimen/textSize_45pt" />
+
+
+            <TextView
+                android:id="@+id/text_add_info_nickname_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_135"
+                android:text="@string/hint_input_nickname"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_39pt" />
+
+            <LinearLayout
+                android:id="@+id/layout_add_info_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_18"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_add_info_nickname"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_120"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_reg_nickname"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_d0d0d0"
+                    android:textSize="@dimen/textSize_45pt" />
+
+                <TextView
+                    android:id="@+id/text_add_info_nickname_double_check"
+                    android:layout_width="@dimen/width_210"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_login_blue"
+                    android:gravity="center"
+                    android:text="@string/word_double_check"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_39pt" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_60"
+                android:layout_marginBottom="@dimen/height_60"
+                android:background="@color/color_d8d8d8" />
+
+            <CheckBox
+                android:id="@+id/check_add_info_total_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_check_all"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/width_20"
+                android:text="@string/word_total_agree"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_39pt" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_add_info_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"
+                android:layout_marginBottom="@dimen/height_110"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/text_add_info_complete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140"
+                android:background="@drawable/btn_blue"
+                android:gravity="center"
+                android:text="@string/word_complete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

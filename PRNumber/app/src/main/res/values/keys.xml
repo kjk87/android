@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--google-->
+    <!--<string name="google_client_id">935141842480-kjbb8jbiadr0tke9lf8qb8go1p6ir8um.apps.googleusercontent.com</string>-->
+
+    <!-- Your Facebook App ID from your app settings on https://developers.facebook.com/ -->
+    <!-- More details here: https://www.firebase.com/docs/android/guide/user/facebook.html -->
+    <string name="facebook_app_id">2347062361986726</string>
+
+    <!-- Your Twitter consumer key and secret from your app settings on https://apps.twitter.com/ -->
+    <!-- More details here: https://www.firebase.com/docs/android/guide/user/twitter.html -->
+
+    <!--kakao-->
+    <string name="kakao_app_key">5039570c66427df3e5687f2bb6e7420f</string>
+    <string name="kakao_rest_key">899b424c1e6b0591a057d4e4c8da1ee6</string>
+
+
+    <!--naver-->
+    <string name="naver_client_id">EZAmD3TWMxaCtfYsTZuK</string>
+    <string name="naver_client_secret">shWe9JPwYU</string>
+
+
+    <string name="admob_id">ca-app-pub-6932639067773475~3249177850</string>
+
+    <!-- adpapcorn -->
+    <string name="igaworks_app_key">586262571</string>
+    <string name="igaworks_hash_key">a1ba494ea4cb40c3</string>
+
+    <!--boot pay id-->
+    <string name="boot_pay_cash_id">5c36dafeb6d49c67f6bf706f</string>
+    <string name="boot_pay_id_stage">5c00fb0fb6d49c08cce3cc2a</string>
+
+
+    <string name="adbrix_app_key">awLts3xrmkmUyagJqFnqxw</string>
+    <string name="adbrix_secret_key">iNu18NvZ00CmcPbWq5FXdw</string>
+
+</resources>

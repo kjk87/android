@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar_main_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp"
+                app:expanded="true">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_main_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:contentScrim="@color/white"
+                    app:expandedTitleTextAppearance="@android:color/transparent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:titleEnabled="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_859">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_774"
+                                android:src="@drawable/img_main_cash_back"
+                                android:scaleType="fitXY"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_144">
+
+                                <RelativeLayout
+                                    android:id="@+id/layout_main_location_search2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/height_120"
+                                    android:background="@drawable/bg_0f000000_radius_30"
+                                    android:layout_marginStart="@dimen/width_48"
+                                    android:layout_marginEnd="@dimen/width_48"
+                                    android:paddingStart="@dimen/width_24"
+                                    android:paddingEnd="@dimen/width_24"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:layout_toLeftOf="@id/image_main_location_view_map"
+                                    android:layout_alignParentBottom="true">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:drawableStart="@drawable/ic_main_cash_back_search"
+                                        android:drawablePadding="@dimen/width_24"
+                                        android:textSize="@dimen/textSize_48pt"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/msg_search_favorite_store"
+                                        android:textColor="@color/color_8c8c8f"/>
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:id="@+id/image_main_location_view_map"
+                                    android:layout_width="@dimen/width_90"
+                                    android:layout_height="@dimen/width_90"
+                                    android:src="@drawable/ic_main_top_map"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginEnd="@dimen/width_48"
+                                    android:layout_marginBottom="@dimen/height_15"/>
+                            </RelativeLayout>
+
+
+
+                            <RelativeLayout
+                                android:id="@+id/layout_main_location_cash"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_168"
+                                android:background="@drawable/bg_border_6979f8_radius_30"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="@dimen/width_72"
+                                android:layout_marginEnd="@dimen/width_72"
+                                android:paddingStart="@dimen/width_60"
+                                android:paddingEnd="@dimen/width_60">
+
+                                <TextView
+                                    android:id="@+id/text_main_location_login2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_48pt"
+                                    android:textColor="@color/color_151522"
+                                    android:textStyle="bold"
+                                    android:text="@string/word_login_join2"
+                                    android:visibility="gone"
+                                    android:layout_centerVertical="true"/>
+
+
+                                <TextView
+                                    android:id="@+id/text_main_location_point2_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_48pt"
+                                    android:textColor="@color/color_151522"
+                                    android:textStyle="bold"
+                                    android:drawableStart="@drawable/ic_cash_blue"
+                                    android:text="@string/word_my_retention_cash"
+                                    android:drawablePadding="@dimen/width_12"
+                                    android:layout_centerVertical="true"/>
+
+                                <TextView
+                                    android:id="@+id/text_main_location_point2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center"
+                                    android:textColor="@color/color_579ffb"
+                                    android:textSize="@dimen/textSize_72pt"
+                                    android:layout_alignParentEnd="true"
+                                    android:drawablePadding="@dimen/width_60"
+                                    android:drawableEnd="@drawable/ic_main_cash_arrow"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar_main_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:actionBarSize"
+                        android:gravity="top"
+                        app:contentInsetStart="0dp"
+                        app:layout_collapseMode="pin"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_168">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingStart="@dimen/width_48"
+                                android:paddingEnd="@dimen/width_48">
+
+                                <TextView
+                                    android:id="@+id/text_main_location_point"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/width_45"
+                                    android:drawableStart="@drawable/ic_cash_blue"
+                                    android:drawablePadding="@dimen/width_12"
+                                    android:gravity="center"
+                                    android:textColor="@color/color_151522"
+                                    android:textSize="@dimen/textSize_60pt"
+                                    android:textStyle="bold" />
+
+
+                                <ImageView
+                                    android:id="@+id/image_main_location_search"
+                                    android:layout_width="@dimen/width_72"
+                                    android:layout_height="@dimen/width_72"
+                                    android:src="@drawable/ic_main_cash_back_search"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"/>
+
+                                <ImageView
+                                    android:id="@+id/image_main_location_view_map2"
+                                    android:layout_width="@dimen/width_72"
+                                    android:layout_height="@dimen/width_72"
+                                    android:src="@drawable/ic_main_location_map"
+                                    android:layout_marginEnd="@dimen/width_48"
+                                    android:layout_toLeftOf="@id/image_main_location_search"
+                                    android:layout_centerVertical="true"/>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/height_3"
+                                    android:background="@color/color_bbbbbb"/>
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:id="@+id/text_main_location_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/width_54"
+                                android:gravity="center"
+                                android:background="@drawable/underbar_232323_transparent"
+                                android:textColor="@color/color_232323"
+                                android:text="@string/word_login_join2"
+                                android:drawableEnd="@drawable/ic_home_point_arrow"
+                                android:drawablePadding="@dimen/width_15"
+                                android:textSize="@dimen/textSize_40pt"
+                                android:visibility="gone"/>
+
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.Toolbar>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_168">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/text_main_location_search"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_main_location_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/width_54"
+                                android:drawableStart="@drawable/ic_top_location"
+                                android:drawablePadding="@dimen/width_15"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:maxWidth="@dimen/width_600"
+                                android:textColor="@color/color_3c3c43"
+                                android:textSize="@dimen/textSize_36pt" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/text_main_location_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/width_40"
+                            android:layout_marginEnd="@dimen/width_54"
+                            android:drawableStart="@drawable/ic_location_search"
+                            android:drawablePadding="@dimen/width_12"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_setting_current_location"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_36pt"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_24"
+                        android:background="@color/color_f7fafc" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+
+                    <com.pplus.prnumberuser.apps.common.ui.custom.SlidingTabLayout2
+                        android:id="@+id/tab_layout_main_location_category"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/height_110"
+                        android:layout_marginTop="@dimen/height_30"
+                        android:background="@color/white"
+                        android:paddingStart="@dimen/width_54" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_3"
+                        android:layout_height="@dimen/height_110"
+                        android:layout_marginTop="@dimen/height_30">
+
+                        <View
+                            android:layout_width="@dimen/width_3"
+                            android:layout_height="@dimen/height_39"
+                            android:layout_centerVertical="true"
+                            android:background="@color/color_4694fb"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_main_location_service_tab"
+                        android:layout_width="@dimen/width_132"
+                        android:layout_height="@dimen/height_110"
+                        android:layout_marginTop="@dimen/height_30"
+                        android:layout_marginStart="@dimen/width_30"
+                        android:layout_marginEnd="@dimen/width_60">
+
+                        <TextView
+                            android:id="@+id/text_main_location_service_tab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_36pt"
+                            android:textColor="@color/color_b7b7b7_4694fb"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/word_service_store"/>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_6"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/color_transparent_4694fb"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_3"
+                    android:background="@color/color_eef2f6"/>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/pager_main_location_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:id="@+id/service_page_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

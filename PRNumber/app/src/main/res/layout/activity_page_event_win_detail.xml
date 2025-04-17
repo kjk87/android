@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.page.ui.PageEventWinDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_80"
+        android:layout_marginEnd="@dimen/width_80"
+        android:layout_marginTop="@dimen/height_70">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_50"
+            android:minHeight="@dimen/height_365"
+            android:paddingTop="@dimen/height_50"
+            android:paddingBottom="@dimen/height_50"
+            android:background="@drawable/bg_border_4694fb_radius_90"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_page_event_win_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_page_event_win_detail_gift_name"
+            android:layout_width="@dimen/width_500"
+            android:layout_height="@dimen/height_100"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@drawable/bg_4694fb_radius_500"
+            android:textSize="@dimen/textSize_40pt"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

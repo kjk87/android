@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_f7fafc">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp"
+                app:expanded="true">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:contentScrim="@color/white"
+                    app:expandedTitleTextAppearance="@android:color/transparent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:titleEnabled="false">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_690"
+                        android:background="@color/color_4694fb">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_384"
+                            android:layout_height="@dimen/height_504"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_prepayment_banner"/>
+
+                        <ImageView
+                            android:id="@+id/image_main_page_with_prepayment_txt"
+                            android:layout_width="@dimen/width_468"
+                            android:layout_height="@dimen/height_191"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/height_174"
+                            android:layout_marginStart="@dimen/width_66"
+                            android:src="@drawable/txt_prepayment_banner"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/width_519"
+                            android:layout_height="@dimen/height_80"
+                            android:layout_centerVertical="true"
+                            android:layout_below="@id/image_main_page_with_prepayment_txt"
+                            android:layout_marginTop="@dimen/height_30"
+                            android:layout_marginStart="@dimen/width_66"
+                            android:src="@drawable/txt_prepayment_banner2"/>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_144">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/text_main_page_with_prepayment_search"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_main_page_with_prepayment_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/width_54"
+                                android:drawableStart="@drawable/ic_top_location"
+                                android:drawablePadding="@dimen/width_15"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:maxWidth="@dimen/width_600"
+                                android:textColor="@color/color_3c3c43"
+                                android:textSize="@dimen/textSize_36pt" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/text_main_page_with_prepayment_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/width_40"
+                            android:layout_marginEnd="@dimen/width_54"
+                            android:drawableStart="@drawable/ic_location_search"
+                            android:drawablePadding="@dimen/width_12"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_setting_current_location"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_36pt"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/width_60"
+                        android:paddingTop="@dimen/height_60"
+                        android:background="@color/color_f7fafc"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_main_page_with_prepayment_tab_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_39pt"
+                            android:paddingStart="@dimen/width_42"
+                            android:paddingEnd="@dimen/width_42"
+                            android:paddingTop="@dimen/height_12"
+                            android:paddingBottom="@dimen/height_12"
+                            android:text="@string/word_total"
+                            android:textColor="@color/color_6e7780_ffffff"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="@dimen/width_12"
+                            android:background="@drawable/btn_main_prepayment_tab"/>
+
+                        <TextView
+                            android:id="@+id/text_main_page_with_prepayment_tab_visit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_39pt"
+                            android:paddingStart="@dimen/width_42"
+                            android:paddingEnd="@dimen/width_42"
+                            android:paddingTop="@dimen/height_12"
+                            android:paddingBottom="@dimen/height_12"
+                            android:text="@string/word_visit_store"
+                            android:textColor="@color/color_6e7780_ffffff"
+                            android:textStyle="bold"
+                            android:background="@drawable/btn_main_prepayment_tab"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <com.pplus.prnumberuser.apps.common.component.OrientationAwareRecyclerView
+                    android:id="@+id/recyclermain_page_with_prepayment_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/layout_main_page_with_prepayment_not_exist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/height_300"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_prepayment_not_exist"
+                        android:textColor="@color/color_6e7780"
+                        android:textSize="@dimen/textSize_50pt" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_main_page_with_prepayment_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="@dimen/width_120"
+            android:layout_height="@dimen/width_120"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/width_40"
+            android:indeterminateDrawable="@drawable/rotate_data_loading"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/height_30"
+            android:gravity="center"
+            android:textColor="@color/color_b7b7b7"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_32pt"
+            android:text="@string/msg_data_loading"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_main_page_with_prepayment_retention_count"
+        android:layout_width="@dimen/width_180"
+        android:layout_height="@dimen/width_180"
+        android:background="@drawable/bg_ffc839_circle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/width_42"
+        android:layout_marginBottom="@dimen/width_42"
+        android:visibility="gone"
+        android:elevation="@dimen/width_3">
+
+        <TextView
+            android:layout_width="@dimen/width_60"
+            android:layout_height="@dimen/height_42"
+            android:background="@drawable/bg_ffffff_radius_5"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="%"
+            android:textStyle="bold"
+            android:textColor="@color/color_212529"
+            android:textSize="@dimen/textSize_33pt"
+            android:layout_marginTop="@dimen/height_45"/>
+
+        <TextView
+            android:id="@+id/text_main_page_with_prepayment_retention_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_33pt"
+            android:textColor="@color/color_212529"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/height_33"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
