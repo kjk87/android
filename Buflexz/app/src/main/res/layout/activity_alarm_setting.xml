@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.terms.ui.AlarmSettingActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginTop="@dimen/height_55"
+        android:layout_marginEnd="@dimen/width_44"
+        android:paddingStart="@dimen/width_50"
+        android:paddingEnd="@dimen/width_50"
+        android:layout_marginBottom="@dimen/height_102"
+        android:background="@drawable/bg_232323_radius_55"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/height_66"
+        android:paddingBottom="@dimen/height_66">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_44pt"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:text="@string/word_service_alarm"/>
+
+            <com.root37.buflexz.apps.common.ui.custom.SafeSwitchCompat
+                android:id="@+id/switch_alarm_setting_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_switch_setting"
+                android:layout_alignParentEnd="true"
+                android:thumb="@drawable/ic_switch_thumb"
+                android:layout_centerVertical="true"
+                android:paddingStart="@dimen/width_5"
+                android:paddingEnd="@dimen/width_5"
+                android:layout_marginEnd="@dimen/width_40"
+                app:switchMinWidth="@dimen/width_150"
+                app:track="@drawable/track_switch_setting" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_38pt"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/height_22"
+            android:text="@string/msg_service_alarm_desc"/>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/layout_alarm_setting_marketing_agree"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/height_85">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="@dimen/textSize_44pt"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:text="@string/word_marketing_receiving_agree"/>-->
+
+<!--            <com.root37.buflexz.apps.common.ui.custom.SafeSwitchCompat-->
+<!--                android:id="@+id/switch_alarm_setting_marketing"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/bg_switch_setting"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:thumb="@drawable/ic_switch_thumb"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:paddingStart="@dimen/width_5"-->
+<!--                android:paddingEnd="@dimen/width_5"-->
+<!--                android:layout_marginEnd="@dimen/width_40"-->
+<!--                app:switchMinWidth="@dimen/width_150"-->
+<!--                app:track="@drawable/track_switch_setting" />-->
+
+<!--        </RelativeLayout>-->
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

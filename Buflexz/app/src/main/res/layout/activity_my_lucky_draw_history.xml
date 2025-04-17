@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apps.luckydraw.ui.MyLuckyDrawHistoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_132"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginTop="@dimen/height_30"
+        android:layout_marginEnd="@dimen/width_44"
+        android:background="@drawable/bg_232323_radius_138">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_my_lucky_draw_history_purchase_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_3e4843_radius_138">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableStart="@drawable/ic_lucky_draw_purchase_tab_sel"
+                    android:drawablePadding="@dimen/width_22"
+                    android:gravity="center"
+                    android:text="@string/word_join_history"
+                    android:textColor="@color/color_77f5ae"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/image_my_lucky_draw_history_win"
+                android:layout_width="@dimen/width_188"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_lucky_draw_win_tab_nor" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_my_lucky_draw_history_win_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_my_lucky_draw_history_purchase"
+                android:layout_width="@dimen/width_188"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_lucky_draw_purchase_tab_nor" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_3e4843_radius_138">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableStart="@drawable/ic_lucky_draw_win_tab_sel"
+                    android:drawablePadding="@dimen/width_22"
+                    android:gravity="center"
+                    android:text="@string/word_winning_history"
+                    android:textColor="@color/color_77f5ae"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/my_lucky_draw_history_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

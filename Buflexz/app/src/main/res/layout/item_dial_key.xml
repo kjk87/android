@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_48b778"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_dial_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_84pt"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/image_dial_del"
+        android:layout_width="@dimen/width_91"
+        android:layout_height="@dimen/width_91"
+        android:src="@drawable/ic_secu_number_del"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

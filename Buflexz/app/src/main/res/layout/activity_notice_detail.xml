@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/width_44"
+    android:paddingEnd="@dimen/width_44"
+    tools:context=".apps.terms.ui.TermsActivity">
+
+    <TextView
+        android:id="@+id/text_notice_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_50pt"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_notice_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_878787"
+        android:textSize="@dimen/textSize_33pt"
+        android:layout_marginTop="@dimen/height_33"/>
+
+    <WebView
+        android:id="@+id/webview_notice_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_33"
+        android:background="@color/color_1b1b1b"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize">
+
+            <TextView
+                android:id="@+id/text_gallery_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_cancel"
+                android:textColor="@color/color_dcdcdc"
+                android:textSize="@dimen/textSize_52pt"/>
+
+            <TextView
+                android:id="@+id/text_gallery_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/width_72"
+                android:text="@string/word_complete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_52pt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/word_select_photo"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_52pt"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:background="@color/color_ebebeb"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_gallery_crop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_810">
+
+            <TextView
+                android:id="@+id/text_post_gallery_descripction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_260"
+                android:text="@string/msg_gallery_description1"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_40pt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_gallery_description3"
+                android:layout_toStartOf="@id/image_gallery_camera"
+                android:textColor="@color/color_48b778"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/width_16"
+                android:layout_marginBottom="@dimen/height_86"
+                android:textSize="@dimen/textSize_36pt"/>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_crop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:id="@+id/view_crop_blocking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/image_gallery_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_48"
+                android:src="@drawable/ic_camera"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/text_post_gallery_descripction"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:background="@color/color_ebebeb"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_select_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

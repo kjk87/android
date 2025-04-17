@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.root37.buflexz.apps.common.component.autofit.AutofitTextView
+        android:id="@+id/tv_autofit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_152"
+        android:textSize="@dimen/textSize_42pt"
+        app:minTextSize="@dimen/textSize_20pt"
+        app:sizeToFit="true"/>
+
+    <View
+        android:id="@+id/view_alert_text_layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:background="@color/color_b0b0b0"/>
+
+</LinearLayout>

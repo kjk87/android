@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.inquire.ui.InquireActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/width_44"
+            android:paddingEnd="@dimen/width_44"
+            android:layout_marginTop="@dimen/height_69"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_inquire_type_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_69"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <TextView
+                android:id="@+id/text_inquire_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_select_inquire_type"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_b0b0b0"
+                android:drawableEnd="@drawable/ic_join_arrow_down"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:id="@+id/text_inquire_title_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_69"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <EditText
+                android:id="@+id/edit_inquire_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_title"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_b0b0b0"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:id="@+id/text_inquire_contents_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <EditText
+                android:id="@+id/edit_inquire_contents"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_332"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="top"
+                android:hint="@string/msg_input_inquire_contents"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:paddingTop="@dimen/height_33"
+                android:paddingBottom="@dimen/height_33"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_b0b0b0"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:textColor="@color/white"
+                android:text="@string/word_attach_image"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_307"
+                android:layout_marginTop="@dimen/height_33"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_inquire_attach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                
+                <ImageView
+                    android:id="@+id/image_inquire_attach"
+                    android:layout_width="@dimen/height_307"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_inquire_attach"
+                    android:scaleType="center"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/text_inquire_complete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_135"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginBottom="@dimen/height_65"
+        android:layout_marginTop="@dimen/height_65"
+        android:background="@drawable/bg_48b778_radius_27"
+        android:gravity="center"
+        android:text="@string/word_complete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

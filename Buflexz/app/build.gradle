@@ -1,0 +1,150 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.root37.buflexz'
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.root37.buflexz"
+        minSdk rootProject.ext.minSdkVersion
+        targetSdk rootProject.ext.targetSdkVersion
+        versionCode 7
+        versionName "1.0.2"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../signature/luckybol-keystore.jks")
+            storePassword "fjrzlqhf"
+            keyAlias "upload"
+            keyPassword "fjrzlqhf"
+        }
+
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('../signature/debug.keystore')
+            storePassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            debuggable false // debugging 허용 안함
+//            zipAlign true  // apk 최적화
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-release.pro'
+        }
+
+        debug {
+            signingConfig signingConfigs.debug
+            debuggable true // debugging 허용 안함
+            minifyEnabled false
+            shrinkResources false
+            testCoverageEnabled = false
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-release.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.3'
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.ext.kotlin_version"
+    implementation "androidx.core:core-ktx:$rootProject.ext.kotlin_version"
+    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.0')
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation 'androidx.activity:activity-compose:1.8.2'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.ui:ui-graphics'
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    implementation 'androidx.compose.material3:material3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+    debugImplementation 'androidx.compose.ui:ui-tooling'
+    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+
+    implementation 'com.google.android.play:core-ktx:1.8.1'
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    implementation 'com.google.android.gms:play-services-ads:22.6.0'
+    implementation 'com.google.ads.mediation:facebook:6.16.0.0'
+    implementation 'com.google.ads.mediation:pangle:5.7.0.2.0'
+    implementation 'com.google.ads.mediation:applovin:12.1.0.0'
+    implementation 'com.google.ads.mediation:fyber:8.2.5.0'
+    implementation 'com.google.ads.mediation:vungle:7.1.0.0'
+    implementation 'com.google.android.ump:user-messaging-platform:2.1.0'
+
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-auth:22.3.1'
+    implementation 'com.google.firebase:firebase-messaging:23.4.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.6.1'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+    implementation 'com.airbnb.android:lottie:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+    implementation 'it.sephiroth.android.library.imagezoom:imagezoom:1.0.5'
+    implementation 'io.github.ShawnLin013:number-picker:2.4.13'
+    implementation 'io.github.florent37:shapeofview:1.4.7'
+    implementation 'com.github.yalantis:ucrop:2.2.8'
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+    implementation "com.github.YvesCheung.RollingText:RollingText:1.2.11"
+
+    implementation(platform("com.google.firebase:firebase-bom:32.4.0"))
+    implementation("com.google.firebase:firebase-analytics-ktx")
+
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttpVersion"
+
+    implementation project(':networks')
+    implementation project(':utils')
+}

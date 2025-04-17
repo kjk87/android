@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.join.JoinCompleteActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_join_complete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_49pt"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:drawablePadding="@dimen/height_77"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_540"
+        android:drawableTop="@drawable/ic_join_complete"/>
+
+    <TextView
+        android:id="@+id/text_join_complete_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_135"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginBottom="@dimen/height_62"
+        android:background="@drawable/bg_48b778_radius_27"
+        android:gravity="center"
+        android:text="@string/msg_start"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.root37.buflexz.apps.common.component.autofit.AutofitTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                              app:sizeToFit="true"
+                                                              app:minTextSize="@dimen/textSize_20pt"
+                                                              android:textSize="@dimen/textSize_42pt"
+                                                              android:layout_width="match_parent"
+                                                              android:layout_height="@dimen/height_152">
+
+</com.root37.buflexz.apps.common.component.autofit.AutofitTextView>

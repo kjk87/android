@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/width_44"
+        android:paddingEnd="@dimen/width_44"
+        android:paddingTop="@dimen/height_38"
+        android:paddingBottom="@dimen/height_38"
+        android:layout_marginBottom="@dimen/height_22"
+        android:background="@color/color_232323">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/width_116"
+                android:layout_height="@dimen/width_110"
+                android:layout_marginEnd="@dimen/width_10">
+
+                <io.github.florent37.shapeofview.shapes.CircleView
+                    android:layout_width="@dimen/width_110"
+                    android:layout_height="@dimen/width_110">
+
+
+                    <ImageView
+                        android:id="@+id/image_child_profit_partner_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_profile_default" />
+
+                </io.github.florent37.shapeofview.shapes.CircleView>
+
+                <io.github.florent37.shapeofview.shapes.CircleView
+                    android:layout_width="@dimen/width_44"
+                    android:layout_height="@dimen/width_44"
+                    android:layout_gravity="end|bottom">
+
+                    <ImageView
+                        android:id="@+id/image_child_profit_partner_flag"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"/>
+
+                </io.github.florent37.shapeofview.shapes.CircleView>
+
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_child_profit_partner_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/text_child_profit_partner_nation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textColor="@color/white"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_44">
+
+            <TextView
+                android:id="@+id/text_child_profit_partner_profit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_38pt"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/text_child_profit_partner_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_44pt"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

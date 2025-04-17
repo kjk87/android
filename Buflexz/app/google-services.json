@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "286317628131",
+    "project_id": "buflexz",
+    "storage_bucket": "buflexz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286317628131:android:df527933e6e9e1e3cd53d6",
+        "android_client_info": {
+          "package_name": "com.root37.buflexz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286317628131-sd3k68vkjbnb4e9gnhi4n148ibqi019s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.root37.buflexz",
+            "certificate_hash": "daf5edcec5e68b5b50c275ee88345b9a5308a1a7"
+          }
+        },
+        {
+          "client_id": "286317628131-uiuv4lqrbr8muu5p3d0l22is9g91s8nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.root37.buflexz",
+            "certificate_hash": "5342e92c36a552e17775daa491783184837212ef"
+          }
+        },
+        {
+          "client_id": "286317628131-29b8e9nf3mbqidjb4qjhefrf7r7jt6b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk8lBlTW1HJhJ6oO67GdAScdocG6UYJAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286317628131-29b8e9nf3mbqidjb4qjhefrf7r7jt6b6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.my.ui.ProfileConfigActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/width_44"
+            android:paddingEnd="@dimen/width_44"
+            android:paddingBottom="@dimen/height_300">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_74"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/layout_profile_config_profile"
+                    android:layout_width="@dimen/width_243"
+                    android:layout_height="@dimen/width_243"
+                    android:layout_marginEnd="@dimen/width_99">
+
+                    <io.github.florent37.shapeofview.shapes.CircleView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/width_13">
+
+
+                        <ImageView
+                            android:id="@+id/image_profile_config_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_profile_config_default" />
+
+                    </io.github.florent37.shapeofview.shapes.CircleView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:src="@drawable/ic_profile_edit" />
+
+                </FrameLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_profile_config_platform_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_222222_radius_25"
+                        android:minHeight="@dimen/height_99"
+                        android:paddingStart="@dimen/width_22"
+                        android:paddingEnd="@dimen/width_22"
+                        android:textColor="@color/color_dcdcdc"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/textSize_38pt" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_33"
+                        android:background="@drawable/bg_222222_radius_25"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/width_22"
+                        android:paddingTop="@dimen/height_16"
+                        android:paddingEnd="@dimen/width_22"
+                        android:paddingBottom="@dimen/height_16">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_id_en"
+                            android:textColor="@color/color_b0b0b0"
+                            android:textSize="@dimen/textSize_33pt" />
+
+                        <TextView
+                            android:id="@+id/text_profile_config_user_key"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_dcdcdc"
+                            android:textSize="@dimen/textSize_38pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_33"
+                        android:background="@drawable/bg_222222_radius_25"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/width_22"
+                        android:paddingTop="@dimen/height_16"
+                        android:paddingEnd="@dimen/width_22"
+                        android:paddingBottom="@dimen/height_16">
+
+                        <io.github.florent37.shapeofview.shapes.CircleView
+                            android:layout_width="@dimen/width_44"
+                            android:layout_height="@dimen/width_44"
+                            android:layout_marginEnd="@dimen/width_10">
+
+                            <ImageView
+                                android:id="@+id/image_profile_config_flag"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="center"/>
+
+                        </io.github.florent37.shapeofview.shapes.CircleView>
+
+                        <TextView
+                            android:id="@+id/text_profile_config_nation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_dcdcdc"
+                            android:textSize="@dimen/textSize_33pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_210"
+                android:text="@string/word_nickname"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_profile_config_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30">
+
+                <EditText
+                    android:id="@+id/edit_profile_config_nickname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/msg_input_nickname"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/color_878787"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:id="@+id/text_profile_config_nickname_check"
+                    android:layout_width="@dimen/width_150"
+                    android:layout_height="@dimen/height_83"
+                    android:background="@drawable/bg_474747_radius_10"
+                    android:gravity="center"
+                    android:text="@string/word_duple_check"
+                    android:textColor="@color/color_48b778"
+                    android:textSize="@dimen/textSize_33pt" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/text_profile_config_nickname_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/height_12"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:text="@string/word_gender"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_profile_config_male"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/width_27"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_border_3px_48b778_radius_33"
+                    android:gravity="center"
+                    android:text="@string/word_male"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_profile_config_female"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_border_3px_48b778_radius_33"
+                    android:gravity="center"
+                    android:text="@string/word_female"
+                    android:textColor="@color/color_dcdcdc"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:text="@string/word_birthday"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <TextView
+                android:id="@+id/text_profile_config_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/width_44"
+                android:paddingEnd="@dimen/width_44"
+                android:text="@string/msg_select_birthday"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_dcdcdc"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:text="@string/word_email"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <EditText
+                android:id="@+id/edit_profile_config_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_email"
+                android:inputType="textEmailAddress"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/color_878787"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/text_profile_config_complete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_135"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginBottom="@dimen/height_65"
+        android:layout_marginTop="@dimen/height_65"
+        android:background="@drawable/bg_48b778_radius_27"
+        android:gravity="center"
+        android:text="@string/word_complete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

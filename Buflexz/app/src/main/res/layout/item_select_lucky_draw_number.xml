@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_132"
+        android:layout_marginEnd="@dimen/width_33"
+        android:background="@drawable/bg_373737_radius_20"
+        android:orientation="horizontal"
+        android:padding="@dimen/width_16">
+
+        <TextView
+            android:id="@+id/text_select_lucky_draw_number_first"
+            android:layout_width="@dimen/width_99"
+            android:layout_height="@dimen/width_99"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/width_8"
+            android:background="@drawable/bg_circle_ffc046"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_43pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_select_lucky_draw_number_second"
+            android:layout_width="@dimen/width_99"
+            android:layout_height="@dimen/width_99"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/width_8"
+            android:background="@drawable/bg_circle_3278ff"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_43pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_select_lucky_draw_number_third"
+            android:layout_width="@dimen/width_99"
+            android:layout_height="@dimen/width_99"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/width_8"
+            android:background="@drawable/bg_circle_ff5e5e"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_43pt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_select_lucky_draw_number_delete"
+            android:layout_width="@dimen/width_99"
+            android:layout_height="@dimen/width_99"
+            android:scaleType="center"
+            android:src="@drawable/ic_lucky_draw_number_delete" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>

@@ -1,0 +1,119 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_1b1b1b"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="@dimen/height_0">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_1b1b1b"
+            app:contentScrim="@color/color_1b1b1b"
+            app:expandedTitleTextAppearance="@style/TransparentText"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_72"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/bg_232323_radius_55"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/height_66"
+                android:paddingBottom="@dimen/height_66">
+
+                <TextView
+                    android:id="@+id/text_my_lottery_win_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="@dimen/width_15"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_55pt"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/ic_lottery_arrow_down" />
+
+                <LinearLayout
+                    android:id="@+id/layout_y_lottery_win_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/width_49"
+                    android:layout_marginTop="@dimen/height_55"
+                    android:layout_marginEnd="@dimen/width_49"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginTop="@dimen/height_72"
+            android:layout_marginEnd="@dimen/width_44"
+            android:background="@drawable/bg_232323_top_radius_55"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/height_66"
+            android:paddingBottom="@dimen/height_66">
+
+            <TextView
+                android:id="@+id/text_lottery_win_total_receive"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_135"
+                android:layout_marginTop="@dimen/height_55"
+                android:background="@drawable/bg_ff5e5e_radius_26"
+                android:gravity="center"
+                android:text="@string/msg_total_receive_lotto_ticket"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_lottery_win_total_receive_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_33pt"
+                android:textColor="@color/color_ff5e5e"
+                android:layout_marginTop="@dimen/height_15"
+                android:text="@string/msg_total_receive_lotto_ticket_desc"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/width_44"
+        android:paddingEnd="@dimen/width_44"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_my_lottery_win"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/height_55"
+            android:background="@drawable/bg_232323_bottom_radius_55"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

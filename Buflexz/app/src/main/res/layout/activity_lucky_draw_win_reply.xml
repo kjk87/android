@@ -1,0 +1,100 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_49"
+        android:background="@color/color_d6000000"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <TextView
+            android:id="@+id/text_lucky_draw_win_reply_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/width_44"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_33pt"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_lucky_draw_win_reply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/layout_lucky_draw_win_reply_not_exist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginTop="@dimen/height_47"
+            android:layout_marginEnd="@dimen/width_44"
+            android:background="@drawable/bg_232323_radius_38"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/height_55"
+            android:paddingBottom="@dimen/height_55"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/msg_not_exist_reply"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_49pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_3"
+        android:background="@color/color_373737"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_135"
+        android:layout_marginTop="@dimen/height_24"
+        android:layout_marginBottom="@dimen/height_102"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_lucky_draw_win_reply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/width_27"
+            android:textSize="@dimen/textSize_38pt"
+            android:textColor="@color/white"
+            android:textColorHint="@color/color_b0b0b0"
+            android:hint="@string/msg_input_reply"
+            android:paddingStart="@dimen/width_44"
+            android:paddingEnd="@dimen/width_44"
+            android:background="@drawable/bg_border_3px_77f5ae_232323_radius_27"/>
+        
+        <ImageView
+            android:id="@+id/text_lucky_draw_win_reply_reg"
+            android:layout_width="@dimen/width_166"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_send"
+            android:scaleType="center"
+            android:background="@drawable/bg_48b778_radius_36"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/width_44"
+    android:paddingEnd="@dimen/width_44"
+    tools:context=".apps.product.ui.ProductListFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_product_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_33"/>
+
+    <TextView
+        android:id="@+id/text_product_list_not_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_not_exist_product"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_500"
+        android:textSize="@dimen/textSize_49pt"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+
+</FrameLayout>

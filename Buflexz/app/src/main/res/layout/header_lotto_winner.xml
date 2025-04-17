@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_lotto_winner_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_232323_radius_55"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/width_49"
+        android:paddingTop="@dimen/height_55"
+        android:paddingEnd="@dimen/width_49"
+        android:paddingBottom="@dimen/height_55"
+        android:layout_marginTop="@dimen/height_66">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/word_my_win_result"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_main_my_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/height_55"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/width_116"
+                android:layout_height="@dimen/width_110"
+                android:layout_marginEnd="@dimen/width_10">
+
+                <io.github.florent37.shapeofview.shapes.CircleView
+                    android:layout_width="@dimen/width_110"
+                    android:layout_height="@dimen/width_110">
+
+
+                    <ImageView
+                        android:id="@+id/image_lotto_winner_my_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_profile_default" />
+
+                </io.github.florent37.shapeofview.shapes.CircleView>
+
+                <io.github.florent37.shapeofview.shapes.CircleView
+                    android:layout_width="@dimen/width_44"
+                    android:layout_height="@dimen/width_44"
+                    android:layout_gravity="end|bottom">
+
+                    <ImageView
+                        android:id="@+id/image_lotto_winner_my_flag"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"/>
+
+                </io.github.florent37.shapeofview.shapes.CircleView>
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_lotto_winner_my_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/text_lotto_winner_my_nation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textColor="@color/white"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/text_lotto_winner_my_result"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_135"
+            android:layout_marginTop="@dimen/height_55"
+            android:layout_marginBottom="@dimen/height_55"
+            android:background="@drawable/bg_48b778_radius_27"
+            android:gravity="center"
+            android:text="@string/msg_confirm_result"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_232323_radius_55"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/height_66"
+        android:paddingStart="@dimen/width_49"
+        android:paddingTop="@dimen/height_55"
+        android:paddingEnd="@dimen/width_49"
+        android:paddingBottom="@dimen/height_55">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/word_win_status2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_55"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:text="@string/word_grade"
+                android:textColor="@color/color_dcdcdc"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.27"
+                android:gravity="center"
+                android:text="@string/word_winner_count"
+                android:textColor="@color/color_dcdcdc"
+                android:textSize="@dimen/textSize_38pt" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="@string/word_total_win_prize"
+                android:textColor="@color/color_dcdcdc"
+                android:textSize="@dimen/textSize_38pt" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.28"
+                android:gravity="center"
+                android:text="@string/word_win_prize_per_person"
+                android:textColor="@color/color_dcdcdc"
+                android:textSize="@dimen/textSize_38pt" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_header_lotto_winner_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_55"
+            android:orientation="vertical" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_232323_top_radius_55"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/width_49"
+        android:paddingTop="@dimen/height_55"
+        android:paddingEnd="@dimen/width_49"
+        android:layout_marginTop="@dimen/height_66">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/word_winner"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

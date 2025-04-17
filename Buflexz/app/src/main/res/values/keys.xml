@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="admob_id" translatable="false">ca-app-pub-6932639067773475~5132980593</string>
+    <string name="admob_interstitial_id" translatable="false">ca-app-pub-6932639067773475/8426972749</string>
+
+    <string name="web_client_id" translatable="false">286317628131-29b8e9nf3mbqidjb4qjhefrf7r7jt6b6.apps.googleusercontent.com</string>
+</resources>

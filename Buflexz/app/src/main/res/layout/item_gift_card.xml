@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_476"
+        app:shape_roundRect_bottomLeftRadius="@dimen/width_13"
+        app:shape_roundRect_bottomRightRadius="@dimen/width_13"
+        app:shape_roundRect_topLeftRadius="@dimen/width_13"
+        app:shape_roundRect_topRightRadius="@dimen/width_13">
+
+        <ImageView
+            android:id="@+id/image_gift_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/color_2b2b2b"/>
+
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <TextView
+        android:id="@+id/text_gift_card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_38pt"
+        android:layout_marginTop="@dimen/height_41"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/word_dollar_unit"
+            android:textSize="@dimen/textSize_38pt"
+            android:layout_marginEnd="@dimen/width_10"/>
+
+        <TextView
+            android:id="@+id/text_gift_card_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_44pt"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

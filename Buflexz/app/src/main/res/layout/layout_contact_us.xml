@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/word_contact_us_en"
+        android:textColor="@color/color_ff5e5e"
+        android:textSize="@dimen/textSize_33pt" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_130"
+        android:layout_marginTop="@dimen/height_33"
+        android:background="@drawable/bg_d6000000_radius_33"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/width_44"
+        android:paddingEnd="@dimen/width_44">
+
+        <TextView
+            android:id="@+id/text_contact_us_email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/width_27"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_38pt"
+            android:text="@string/cs_email"/>
+
+        <ImageView
+            android:id="@+id/text_contact_us_email_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/ic_copy" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

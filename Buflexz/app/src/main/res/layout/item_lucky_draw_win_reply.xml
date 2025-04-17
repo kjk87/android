@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginTop="@dimen/height_55"
+        android:layout_marginEnd="@dimen/width_44"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/width_116"
+            android:layout_height="@dimen/width_110"
+            android:layout_marginEnd="@dimen/width_10">
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="@dimen/width_110"
+                android:layout_height="@dimen/width_110"
+                android:layout_marginEnd="@dimen/width_11">
+
+                <ImageView
+                    android:id="@+id/image_lucky_draw_win_reply_flag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center" />
+
+
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="@dimen/width_44"
+                android:layout_height="@dimen/width_44"
+                android:layout_gravity="end|bottom">
+
+                <ImageView
+                    android:id="@+id/image_lucky_draw_win_reply_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_profile_default" />
+
+
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_lucky_draw_win_reply_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_me"
+                android:textColor="@color/color_878787"
+                android:textSize="@dimen/textSize_33pt"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_lucky_draw_win_reply_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/text_lucky_draw_win_reply_reg_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/height_22"
+            android:textColor="@color/color_b0b0b0"
+            android:layout_marginEnd="@dimen/width_22"
+            android:textSize="@dimen/textSize_33pt" />
+
+        <ImageView
+            android:id="@+id/image_lucky_draw_win_reply_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_reply_report"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/text_lucky_draw_win_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginTop="@dimen/height_41"
+        android:layout_marginEnd="@dimen/width_44"
+        android:background="@drawable/bg_d6000000_radius_30"
+        android:paddingStart="@dimen/width_33"
+        android:paddingTop="@dimen/height_27"
+        android:paddingEnd="@dimen/width_33"
+        android:paddingBottom="@dimen/height_27"
+        android:textColor="@color/color_dcdcdc"
+        android:textSize="@dimen/textSize_38pt" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_3"
+        android:layout_marginTop="@dimen/height_55"
+        android:background="@color/color_373737" />
+</androidx.appcompat.widget.LinearLayoutCompat>

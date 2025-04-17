@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.giftcard.ui.GiftCardPurchaseActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/width_66"
+            android:paddingEnd="@dimen/width_66"
+            android:paddingBottom="@dimen/height_300">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_72"
+                android:background="@drawable/bg_232323_bottom_radius_55"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_50"
+                android:paddingTop="@dimen/height_55"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingBottom="@dimen/height_55">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/width_116"
+                        android:layout_height="@dimen/width_110"
+                        android:layout_marginEnd="@dimen/width_10">
+
+                        <io.github.florent37.shapeofview.shapes.CircleView
+                            android:layout_width="@dimen/width_110"
+                            android:layout_height="@dimen/width_110"
+                            android:layout_marginEnd="@dimen/width_11">
+
+
+                            <ImageView
+                                android:id="@+id/image_gift_card_purchase_profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_profile_default" />
+
+                        </io.github.florent37.shapeofview.shapes.CircleView>
+
+                        <io.github.florent37.shapeofview.shapes.CircleView
+                            android:layout_width="@dimen/width_44"
+                            android:layout_height="@dimen/width_44"
+                            android:layout_gravity="end|bottom">
+
+                            <ImageView
+                                android:id="@+id/image_gift_card_purchase_flag"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="center"/>
+
+                        </io.github.florent37.shapeofview.shapes.CircleView>
+
+                    </FrameLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_gift_card_purchase_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_38pt" />
+
+                        <TextView
+                            android:id="@+id/text_gift_card_purchase_nation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_33pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_55">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_retention_point"
+                        android:textColor="@color/color_77f5ae"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_gift_card_purchase_retention_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_47"
+                android:background="@drawable/bg_232323_bottom_radius_55"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_50"
+                android:paddingTop="@dimen/height_55"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingBottom="@dimen/height_55">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_gift_card_purchase_1usd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/width_10"
+                        android:layout_marginEnd="@dimen/width_10"
+                        android:src="@drawable/ic_equal" />
+
+                    <TextView
+                        android:id="@+id/text_gift_card_purchase_1000point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_77">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_purchase_price"
+                        android:textColor="@color/color_878787"
+                        android:textSize="@dimen/textSize_38pt" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/width_8"
+                            android:text="@string/word_dollar_unit"
+                            android:textColor="@color/color_dcdcdc"
+                            android:textSize="@dimen/textSize_44pt" />
+
+                        <TextView
+                            android:id="@+id/text_gift_card_purchase_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_60pt"
+                            android:textStyle="bold" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_27">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_discount_point"
+                        android:textColor="@color/color_878787"
+                        android:textSize="@dimen/textSize_38pt" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/text_gift_card_purchase_use_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/width_8"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_60pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_point_unit"
+                            android:textColor="@color/color_dcdcdc"
+                            android:textSize="@dimen/textSize_44pt" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_307"
+                android:text="@string/word_email"
+                android:textColor="@color/color_878787"
+                android:textSize="@dimen/textSize_33pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_gift_card_purchase_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_33"
+                android:layout_weight="1"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_email"
+                android:paddingStart="@dimen/width_44"
+                android:paddingEnd="@dimen/width_44"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_83"
+                android:background="@drawable/bg_232323_bottom_radius_55"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_50"
+                android:paddingTop="@dimen/height_55"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingBottom="@dimen/height_55">
+
+                <CheckBox
+                    android:id="@+id/check_gift_card_purchase_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/ic_check"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/width_16"
+                    android:text="@string/msg_gift_card_purchase_terms"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_52"
+                    android:text="@string/msg_gift_card_purchase_terms_desc"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/text_gift_card_purchase"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_135"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginBottom="@dimen/height_105"
+        android:background="@drawable/bg_48b778_radius_27"
+        android:gravity="center"
+        android:text="@string/msg_purchase"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

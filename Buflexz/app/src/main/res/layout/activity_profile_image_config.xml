@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.my.ui.ProfileImageConfigActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_127"
+        android:paddingStart="@dimen/width_44"
+        android:paddingEnd="@dimen/width_44"
+        android:paddingBottom="@dimen/height_304"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/layout_profile_config_profile"
+            android:layout_width="@dimen/width_246"
+            android:layout_height="@dimen/width_246"
+            android:layout_gravity="center_horizontal">
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/width_12">
+
+
+                <ImageView
+                    android:id="@+id/image_profile_image_config_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_profile_image_default" />
+
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:src="@drawable/ic_profile_edit" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_profile_image_config_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_100"
+            android:layout_marginTop="@dimen/height_49"
+            android:background="@drawable/bg_222222_radius_25"
+            android:drawableStart="@drawable/ic_profile_image_my"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="@dimen/width_27"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/width_66"
+            android:paddingEnd="@dimen/width_66"
+            android:text="@string/word_my_image"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word_default_image"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_55pt"
+            android:layout_marginTop="@dimen/height_191"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_profile_image_config"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_77"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/text_profile_image_config_complete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_138"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginTop="@dimen/height_65"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginBottom="@dimen/height_65"
+        android:background="@drawable/bg_48b778_radius_30"
+        android:gravity="center"
+        android:text="@string/word_complete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

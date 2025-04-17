@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.partner.ui.PartnerReqActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_116"
+                android:text="@string/word_partner_earn_process"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_63"
+                android:layout_marginEnd="@dimen/width_44"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/width_47"
+                    android:src="@drawable/ic_partner_process1" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_partner_earn_process1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_partner_earn_process1_desc"
+                        android:textColor="@color/color_dcdcdc"
+                        android:textSize="@dimen/textSize_38pt" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_63"
+                android:layout_marginEnd="@dimen/width_44"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/width_47"
+                    android:src="@drawable/ic_partner_process2" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_partner_earn_process2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_partner_earn_process2_desc"
+                        android:textColor="@color/color_dcdcdc"
+                        android:textSize="@dimen/textSize_38pt" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_63"
+                android:layout_marginEnd="@dimen/width_44"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/width_47"
+                    android:src="@drawable/ic_partner_process3" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_partner_earn_process3"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_partner_req_process3_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_dcdcdc"
+                        android:textSize="@dimen/textSize_38pt" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_116"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/bg_232323_radius_55"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_50"
+                android:paddingTop="@dimen/height_44"
+                android:paddingEnd="@dimen/width_50"
+                android:paddingBottom="@dimen/height_44">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/word_expect_earn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_60pt"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_72"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_partner_req_earn_desc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_38pt"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            app:drawableStartCompat="@drawable/ic_partner_earn1" />
+
+                        <TextView
+                            android:id="@+id/text_partner_req_earn_desc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_27"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_38pt"
+                            android:textStyle="bold"
+                            app:drawableStartCompat="@drawable/ic_partner_earn2" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_373737_radius_27"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/height_19"
+                        android:paddingBottom="@dimen/height_19">
+
+                        <TextView
+                            android:layout_width="@dimen/width_257"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_48b778_radius_157"
+                            android:paddingStart="@dimen/width_19"
+                            android:paddingTop="@dimen/height_13"
+                            android:paddingEnd="@dimen/width_19"
+                            android:paddingBottom="@dimen/height_13"
+                            android:text="@string/word_30day"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_44pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_expect_earn_30day"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="@dimen/height_16"
+                            android:textSize="@dimen/textSize_33pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_partner_req_earn_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_13"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_60pt"
+                            android:textStyle="bold" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_27"
+                    android:text="@string/msg_expect_earn_caution"
+                    android:textColor="@color/color_ff5e5e"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_16"
+                android:layout_marginTop="@dimen/height_72"
+                android:background="@color/color_2b2b2b" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_partner_req_pending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_99"
+                android:layout_marginEnd="@dimen/width_44"
+                android:background="@drawable/bg_d6000000_radius_72"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/height_27"
+                android:paddingBottom="@dimen/height_27">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/height_27"
+                    android:textColor="@color/color_ff5454"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:text="@string/msg_partner_req_pending_title"
+                    android:textStyle="bold"
+                    app:drawableTopCompat="@drawable/ic_partner_pending" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_ff5454"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:layout_marginTop="@dimen/height_27"
+                    android:gravity="center"
+                    android:text="@string/msg_partner_req_pending_desc" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_partner_req_none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginTop="@dimen/height_99"
+                    android:text="@string/word_partner_earn_process1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_partner_req_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginTop="@dimen/height_55"
+                    android:text="@string/html_partner_name_title"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+                <EditText
+                    android:id="@+id/edit_partner_req_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_130"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginTop="@dimen/height_32"
+                    android:layout_marginEnd="@dimen/width_44"
+                    android:background="@drawable/bg_232323_radius_33"
+                    android:gravity="center_vertical"
+                    android:hint="@string/msg_input_partner_name"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/width_30"
+                    android:paddingEnd="@dimen/width_30"
+                    android:textColor="@color/color_878787"
+                    android:textColorHint="@color/color_878787"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginTop="@dimen/height_55"
+                    android:text="@string/word_running_channel"
+                    android:textColor="@color/color_b0b0b0"
+                    android:textSize="@dimen/textSize_33pt" />
+
+                <EditText
+                    android:id="@+id/edit_partner_req_instar_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_130"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginTop="@dimen/height_32"
+                    android:layout_marginEnd="@dimen/width_44"
+                    android:background="@drawable/bg_232323_radius_33"
+                    app:drawableStartCompat="@drawable/ic_partner_instar"
+                    android:drawablePadding="@dimen/width_27"
+                    android:gravity="center_vertical"
+                    android:hint="@string/msg_input_url"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/width_30"
+                    android:paddingEnd="@dimen/width_30"
+                    android:textColor="@color/color_878787"
+                    android:textColorHint="@color/color_878787"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <EditText
+                    android:id="@+id/edit_partner_req_youtube_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_130"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:layout_marginEnd="@dimen/width_44"
+                    android:background="@drawable/bg_232323_radius_33"
+                    app:drawableStartCompat="@drawable/ic_partner_youtube"
+                    android:drawablePadding="@dimen/width_27"
+                    android:gravity="center_vertical"
+                    android:hint="@string/msg_input_url"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/width_30"
+                    android:paddingEnd="@dimen/width_30"
+                    android:textColor="@color/color_878787"
+                    android:textColorHint="@color/color_878787"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <EditText
+                    android:id="@+id/edit_partner_req_x_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_130"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginTop="@dimen/height_22"
+                    android:layout_marginEnd="@dimen/width_44"
+                    android:background="@drawable/bg_232323_radius_33"
+                    app:drawableStartCompat="@drawable/ic_partner_x"
+                    android:drawablePadding="@dimen/width_27"
+                    android:gravity="center_vertical"
+                    android:hint="@string/msg_input_url"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/width_30"
+                    android:paddingEnd="@dimen/width_30"
+                    android:textColor="@color/color_878787"
+                    android:textColorHint="@color/color_878787"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:id="@+id/text_partner_req_email_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginTop="@dimen/height_55"
+                    android:text="@string/html_join_email_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_33pt" />
+
+                <EditText
+                    android:id="@+id/edit_partner_req_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_130"
+                    android:layout_marginStart="@dimen/width_44"
+                    android:layout_marginTop="@dimen/height_32"
+                    android:layout_marginEnd="@dimen/width_44"
+                    android:background="@drawable/bg_232323_radius_33"
+                    android:gravity="center_vertical"
+                    android:hint="@string/msg_input_email"
+                    android:inputType="textEmailAddress"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/width_30"
+                    android:paddingEnd="@dimen/width_30"
+                    android:textColor="@color/color_878787"
+                    android:textColorHint="@color/color_878787"
+                    android:textSize="@dimen/textSize_38pt" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_83"
+                    android:background="@drawable/bg_232323_bottom_radius_55"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/width_50"
+                    android:paddingTop="@dimen/height_55"
+                    android:paddingEnd="@dimen/width_50"
+                    android:paddingBottom="@dimen/height_55">
+
+                    <CheckBox
+                        android:id="@+id/check_partner_req_agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/ic_check"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/width_16"
+                        android:text="@string/msg_partner_req_agree"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_52"
+                        android:text="@string/msg_partner_req_agree_desc"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_38pt" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/text_partner_req"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_135"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/width_44"
+                android:layout_marginEnd="@dimen/width_44"
+                android:layout_marginBottom="@dimen/height_105"
+                android:layout_marginTop="@dimen/height_60"
+                android:background="@drawable/bg_48b778_radius_27"
+                android:gravity="center"
+                android:text="@string/word_req_partner"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

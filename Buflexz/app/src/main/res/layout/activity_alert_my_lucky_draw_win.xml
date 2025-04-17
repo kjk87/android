@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_bf000000">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_above="@id/layout_alert_my_lucky_draw_win"
+        app:lottie_rawRes="@raw/celebration"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_alert_my_lucky_draw_win"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_232323_top_radius_55"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_60pt"
+            android:text="@string/msg_cong"
+            android:layout_marginTop="@dimen/height_66"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_my_lucky_draw_win_gift_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_38pt"
+            android:text="@string/msg_lucky_draw_win_desc"
+            android:layout_marginTop="@dimen/height_27" />
+
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="@dimen/width_515"
+            android:layout_height="@dimen/width_515"
+            android:layout_marginTop="@dimen/height_44"
+            android:layout_marginStart="@dimen/width_92"
+            android:layout_marginEnd="@dimen/width_92"
+            app:shape_roundRect_bottomLeftRadius="@dimen/width_33"
+            app:shape_roundRect_bottomRightRadius="@dimen/width_33"
+            app:shape_roundRect_topLeftRadius="@dimen/width_33"
+            app:shape_roundRect_topRightRadius="@dimen/width_33">
+
+            <ImageView
+                android:id="@+id/image_my_lucky_draw_win_gift"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center" />
+
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+
+        <TextView
+            android:id="@+id/text_alert_my_lucky_draw_win_impression"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_135"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginTop="@dimen/height_88"
+            android:layout_marginEnd="@dimen/width_44"
+            android:layout_marginBottom="@dimen/height_66"
+            android:background="@drawable/bg_48b778_radius_30"
+            android:gravity="center"
+            android:text="@string/msg_write_win_impression"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

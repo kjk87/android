@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+
+    <TextView
+        android:id="@+id/text_top_right_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/width_16"
+        android:paddingEnd="@dimen/width_16"
+        android:paddingTop="@dimen/height_13"
+        android:paddingBottom="@dimen/height_13"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:drawablePadding="@dimen/width_10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_lucky_draw_ball" />
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/celebration"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_55"
+        android:layout_marginEnd="@dimen/width_55"
+        android:background="@drawable/bg_232323_radius_55"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_alert_lottery_win_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_fc5c57"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/height_65"/>
+
+            <TextView
+                android:id="@+id/text_alert_lottery_win_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_ff5e5e"
+                android:textSize="@dimen/textSize_55pt"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/height_65"/>
+
+            <ImageView
+                android:id="@+id/image_lotto_result_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_lotto_join_popup"
+                android:layout_marginTop="@dimen/height_44"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_30pt"
+                android:layout_marginTop="@dimen/height_50"
+                android:text="@string/word_win_number"/>
+
+            <LinearLayout
+                android:id="@+id/layout_alert_lottery_win_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/height_22"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/text_alert_lottery_win_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_135"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginEnd="@dimen/width_44"
+            android:layout_marginBottom="@dimen/height_65"
+            android:layout_marginTop="@dimen/height_65"
+            android:background="@drawable/bg_48b778_radius_27"
+            android:gravity="center"
+            android:text="@string/word_save_complete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

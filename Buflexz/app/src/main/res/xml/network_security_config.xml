@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+<!--    <domain-config cleartextTrafficPermitted="true">-->
+<!--        <domain includeSubdomains="true">trk.analytics.wisetracker.co.kr</domain>-->
+<!--    </domain-config>-->
+    <!--<domain-config cleartextTrafficPermitted="true">-->
+        <!--<domain includeSubdomains="true">stage.prnumber.com</domain>-->
+    <!--</domain-config>-->
+    <!--<domain-config cleartextTrafficPermitted="true">-->
+        <!--<domain includeSubdomains="true">mediacategory.com</domain>-->
+    <!--</domain-config>-->
+</network-security-config>

@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.main.ui.MainMyFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/width_44"
+            android:paddingEnd="@dimen/width_44"
+            android:paddingBottom="@dimen/height_200">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_135">
+
+                <TextView
+                    android:id="@+id/text_main_my_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/width_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/word_login_join"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:visibility="gone"
+                    app:drawableEndCompat="@drawable/ic_my_arrow"
+                    app:drawableStartCompat="@drawable/ic_profile_default" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_main_my_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/width_116"
+                        android:layout_height="@dimen/width_110"
+                        android:layout_marginEnd="@dimen/width_10">
+
+                        <io.github.florent37.shapeofview.shapes.CircleView
+                            android:layout_width="@dimen/width_110"
+                            android:layout_height="@dimen/width_110"
+                            android:layout_marginEnd="@dimen/width_11">
+
+
+                            <ImageView
+                                android:id="@+id/image_main_my_profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_profile_default" />
+
+                        </io.github.florent37.shapeofview.shapes.CircleView>
+
+                        <io.github.florent37.shapeofview.shapes.CircleView
+                            android:layout_width="@dimen/width_44"
+                            android:layout_height="@dimen/width_44"
+                            android:layout_gravity="end|bottom">
+
+                            <ImageView
+                                android:id="@+id/image_main_my_flag"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="center" />
+
+                        </io.github.florent37.shapeofview.shapes.CircleView>
+
+                    </FrameLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_main_my_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_38pt" />
+
+                        <TextView
+                            android:id="@+id/text_main_my_nation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_33pt" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <ImageView
+                    android:id="@+id/image_main_my_notification_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/height_47"
+                    android:src="@drawable/ic_main_my_alarm" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_main_my_partner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_66"
+                android:background="@drawable/bg_232323_radius_55"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_36"
+                android:paddingEnd="@dimen/width_36"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_49"
+                    android:text="@string/msg_you_are_partner"
+                    android:textColor="@color/color_77f5ae"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_77">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_total_commission"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/width_8"
+                            android:text="@string/word_dollar_unit"
+                            android:textColor="@color/color_dcdcdc"
+                            android:textSize="@dimen/textSize_50pt" />
+
+                        <TextView
+                            android:id="@+id/text_main_my_partner_total_commission"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_60pt"
+                            android:textStyle="bold" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_36">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_this_month_commission"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/width_8"
+                            android:text="@string/word_dollar_unit"
+                            android:textColor="@color/color_dcdcdc"
+                            android:textSize="@dimen/textSize_50pt" />
+
+                        <TextView
+                            android:id="@+id/text_main_my_partner_this_month_commission"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_60pt"
+                            android:textStyle="bold" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_partner_req_pending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_66"
+                    android:layout_marginBottom="@dimen/height_55"
+                    android:background="@drawable/bg_d6000000_radius_72"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="@dimen/width_50"
+                    android:paddingStart="@dimen/width_50"
+                    android:paddingTop="@dimen/height_38"
+                    android:paddingEnd="@dimen/width_50"
+                    android:paddingBottom="@dimen/height_38">
+
+                    <TextView
+                        android:id="@+id/text_main_partner_commission_config"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_my_arrow"
+                        android:text="@string/word_partner_commission_config"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt" />
+
+                    <TextView
+                        android:id="@+id/text_main_partner_calculate_config"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_66"
+                        android:drawableEnd="@drawable/ic_my_arrow"
+                        android:text="@string/word_commission_calculate_config"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_main_my_buff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_66"
+                android:background="@drawable/bg_232323_radius_55"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_36"
+                android:paddingEnd="@dimen/width_36"
+                android:paddingBottom="@dimen/height_36"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/text_main_my_buff_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_49"
+                    android:text="@string/word_buff_en"
+                    android:textColor="@color/color_46d7d2"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/ic_buff_question" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_not_exist_buff_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_149"
+                    android:layout_marginTop="@dimen/height_44"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="@dimen/width_33"
+                        android:gravity="center_vertical"
+                        android:text="@string/msg_make_buff_wallet"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        app:drawableStartCompat="@drawable/ic_buff" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_my_arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_exist_buff_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_149"
+                    android:layout_marginTop="@dimen/height_44"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="@dimen/width_33"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_buff_upper_en"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        app:drawableStartCompat="@drawable/ic_buff" />
+
+
+                    <TextView
+                        android:id="@+id/text_main_my_buff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:drawableEnd="@drawable/ic_my_arrow"
+                        android:drawablePadding="@dimen/width_10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_49pt"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_66"
+                android:background="@drawable/bg_232323_radius_55"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_49"
+                android:paddingLeft="@dimen/width_55"
+                android:paddingTop="@dimen/width_55"
+                android:paddingEnd="@dimen/width_49">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_91"
+                    android:layout_marginBottom="@dimen/height_26">
+
+                    <TextView
+                        android:id="@+id/text_main_my_point_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_point"
+                        android:textColor="@color/color_77f5ae"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/ic_point_question" />
+
+                    <TextView
+                        android:id="@+id/text_main_my_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/ic_my_arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_gift_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_gift_shop"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_my_gift_shop" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_292929" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_goods_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_luxury_shop"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_my_goods_shop" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_292929" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_candy_exchange"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_exchange_candy"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_my_candy" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_buff_coin_exchange"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_exchange_buff_coin"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_my_buff_s" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_luckyball_exchange"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_exchange_luckyball"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_my_luckyball" />
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_66"
+                android:background="@drawable/bg_232323_radius_55"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_49"
+                android:paddingLeft="@dimen/width_55"
+                android:paddingTop="@dimen/width_55"
+                android:paddingEnd="@dimen/width_49">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_91"
+                    android:layout_marginBottom="@dimen/height_26">
+
+                    <TextView
+                        android:id="@+id/text_main_my_luckyball_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_luckyball"
+                        android:textColor="@color/color_ff8383"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/ic_luckyball_question" />
+
+                    <TextView
+                        android:id="@+id/text_main_my_luckyball"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/ic_my_arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_lucky_draw_join_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableStart="@drawable/ic_my_lucky_draw_join_history"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_join_history"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_66"
+                android:background="@drawable/bg_232323_radius_55"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_49"
+                android:paddingLeft="@dimen/width_55"
+                android:paddingTop="@dimen/width_55"
+                android:paddingEnd="@dimen/width_49">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_91"
+                    android:layout_marginBottom="@dimen/height_26">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_lotto_en"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_my_lotto" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_lottery_join_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_1" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_join_history"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_292929" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_lottery_win_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_2" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_winning_history"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_292929" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_lottery_use_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_use_method"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_66"
+                android:background="@drawable/bg_232323_radius_55"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_49"
+                android:paddingLeft="@dimen/width_55"
+                android:paddingTop="@dimen/width_55"
+                android:paddingEnd="@dimen/width_49">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_91"
+                    android:layout_marginBottom="@dimen/height_26">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="@dimen/width_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_lucky_draw_en"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_my_lucky_draw" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_lucky_draw_join"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/msg_join"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_292929" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_lucky_draw_join_history2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_2" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_join_history"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_66"
+                android:background="@drawable/bg_232323_radius_55"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_49"
+                android:paddingLeft="@dimen/width_55"
+                android:paddingTop="@dimen/width_55"
+                android:paddingEnd="@dimen/width_49">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_91"
+                    android:layout_marginBottom="@dimen/height_26">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_etc"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_60pt"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_gift_shop_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_gift_shop_history"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_292929" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_goods_shop_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_goods_shop_history"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_292929" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_invite_friend"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_292929" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_faq"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_4" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_faq_en"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_292929" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_inquiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_5" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/msg_inquiry"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_292929" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_6" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_notice"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_292929" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_my_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_135">
+
+                    <View
+                        android:layout_width="@dimen/width_13"
+                        android:layout_height="@dimen/height_88"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu_bar_7" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_57"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_setting"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RelativeLayout
+                android:id="@+id/layout_main_my_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_690"
+                android:layout_marginTop="@dimen/height_66">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/pager_main_my_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/text_main_my_banner_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_83"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/width_44"
+                    android:background="@drawable/bg_4d000000_radius_300"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/width_30"
+                    android:paddingEnd="@dimen/width_30"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_33pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_main_my_banner_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/width_44"
+                    android:background="@drawable/bg_4d000000_radius_300"
+                    android:drawableEnd="@drawable/ic_lucky_draw_gift_arrow"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/width_20"
+                    android:paddingTop="@dimen/height_10"
+                    android:paddingEnd="@dimen/width_20"
+                    android:paddingBottom="@dimen/height_10"
+                    android:text="@string/msg_total_view"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

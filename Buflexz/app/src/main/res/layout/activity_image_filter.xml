@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <jp.co.cyberagent.android.gpuimage.GPUImageView
+            android:id="@+id/gpuimage_image_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_810"
+            android:layout_gravity="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:background="@color/color_878787" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_160"
+            android:orientation="vertical">
+
+            <com.root37.buflexz.apps.common.ui.custom.StartPointSeekBar
+                android:id="@+id/seekBar_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_8"
+                android:layout_marginRight="@dimen/width_44"
+                app:defaultBackgroundColor="@color/color_bbbbbb"
+                app:defaultBackgroundRangeColor="@color/black"
+                app:maxValue="100"
+                app:minValue="-100" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_44"
+                android:layout_marginTop="@dimen/height_160"
+                android:layout_marginRight="@dimen/width_44"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_filter_brightness"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/width_27"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_border_3px_48b778_radius_33"
+                    android:drawablePadding="@dimen/height_8"
+                    android:gravity="center"
+                    android:text="@string/word_brightness"
+                    android:textColor="@color/color_dcdcdc"
+                    android:paddingTop="@dimen/height_33"
+                    android:paddingBottom="@dimen/height_33"
+                    app:drawableTopCompat="@drawable/btn_write_brightness" />
+
+                <TextView
+                    android:id="@+id/text_filter_contrast"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/width_27"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_border_3px_48b778_radius_33"
+                    android:drawablePadding="@dimen/height_8"
+                    android:gravity="center"
+                    android:text="@string/word_contrast"
+                    android:textColor="@color/color_dcdcdc"
+                    android:paddingTop="@dimen/height_33"
+                    android:paddingBottom="@dimen/height_33"
+                    app:drawableTopCompat="@drawable/btn_write_contrast" />
+
+
+                <TextView
+                    android:id="@+id/text_filter_saturation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_border_3px_48b778_radius_33"
+                    android:drawablePadding="@dimen/height_8"
+                    android:gravity="center"
+                    android:text="@string/word_saturation"
+                    android:textColor="@color/color_dcdcdc"
+                    android:paddingTop="@dimen/height_33"
+                    android:paddingBottom="@dimen/height_33"
+                    app:drawableTopCompat="@drawable/btn_write_saturation" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

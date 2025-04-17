@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.join.JoinActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_44"
+            android:layout_marginEnd="@dimen/width_44"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_200">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_34"
+                android:text="@string/word_join"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_65pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_join_nation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_73"
+                android:text="@string/html_join_nation_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_join_nation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30">
+
+                <TextView
+                    android:id="@+id/text_join_nation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <ImageView
+                    android:id="@+id/image_join_nation_arrow"
+                    android:layout_width="@dimen/width_36"
+                    android:layout_height="@dimen/width_36"
+                    android:src="@drawable/ic_join_arrow_down" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/text_join_nickname_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:text="@string/html_join_nickname_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_join_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30">
+
+                <EditText
+                    android:id="@+id/edit_join_nickname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/msg_input_nickname"
+                    android:maxLength="12"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/color_878787"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:id="@+id/text_join_nickname_check"
+                    android:layout_width="@dimen/width_150"
+                    android:layout_height="@dimen/height_83"
+                    android:background="@drawable/bg_474747_radius_10"
+                    android:gravity="center"
+                    android:text="@string/word_duple_check"
+                    android:textColor="@color/color_48b778"
+                    android:textSize="@dimen/textSize_33pt" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/text_join_nickname_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_12"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+
+            <TextView
+                android:id="@+id/text_join_email_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:text="@string/html_join_email_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <EditText
+                android:id="@+id/edit_join_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_email"
+                android:inputType="textEmailAddress"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_16"
+                android:drawableStart="@drawable/ic_join_email_exclamation_mark"
+                android:drawablePadding="@dimen/width_16"
+                android:gravity="center"
+                android:text="@string/word_warning"
+                android:textColor="@color/color_ff5e5e"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_11"
+                android:text="@string/msg_join_email_desc"
+                android:textColor="@color/color_ff5e5e"
+                android:textSize="@dimen/textSize_33pt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:text="@string/word_recommend_key"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <EditText
+                android:id="@+id/edit_join_recommend_key"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_130"
+                android:layout_marginTop="@dimen/height_32"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_recommend_key"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_30"
+                android:paddingEnd="@dimen/width_30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_878787"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <TextView
+                android:id="@+id/text_join_recommend_key_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_12"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_33pt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_55"
+                android:background="@drawable/bg_232323_radius_33"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_38"
+                android:paddingEnd="@dimen/width_38">
+
+                <CheckBox
+                    android:id="@+id/check_join_total_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_55"
+                    android:button="@drawable/ic_check"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/width_16"
+                    android:text="@string/word_total_agree"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_33pt" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:layout_marginTop="@dimen/height_26"
+                    android:background="@color/color_3d3d3d" />
+
+                <LinearLayout
+                    android:id="@+id/layout_join_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_38"
+                    android:orientation="vertical" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/text_join"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_135"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/width_44"
+        android:layout_marginEnd="@dimen/width_44"
+        android:layout_marginBottom="@dimen/height_62"
+        android:background="@drawable/bg_48b778_radius_27"
+        android:gravity="center"
+        android:text="@string/word_complete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

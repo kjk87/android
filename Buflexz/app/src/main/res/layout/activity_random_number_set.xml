@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_random_number_set"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_random_number_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_300"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_54pt" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_40"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_random_number_set_input"
+                android:layout_width="@dimen/width_230"
+                android:layout_height="@dimen/height_144"
+                android:background="@drawable/bg_border_3px_48b778_232323_radius_33"
+                android:gravity="center"
+                android:maxLength="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_42pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_random_number_set_invalid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_30"
+            android:text="@string/msg_invalid_number"
+            android:textColor="@color/color_ff5e5e"
+            android:textSize="@dimen/textSize_33pt"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <com.root37.buflexz.apps.common.component.RandomPadView2
+        android:id="@+id/random_number_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="@dimen/height_141"
+        android:paddingBottom="@dimen/height_141"/>
+
+</RelativeLayout>
