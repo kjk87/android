@@ -1,0 +1,69 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+ext {
+    // 개발 버전 관리
+    compileSdkVersion = 31
+    minSdkVersion = 23
+    targetSdkVersion = 31
+    retrofitVersion = "2.9.0"
+    okhttpVersion = "4.10.0"
+}
+
+buildscript {
+    ext.kotlin_version = '1.7.10'
+    repositories {
+        jcenter()
+        mavenLocal()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        google()
+
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+        mavenCentral()
+    }
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath 'com.google.gms:google-services:4.3.14'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0'
+//        classpath 'com.novoda:bintray-release:0.5.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.2'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/' }
+        mavenLocal()
+        mavenCentral()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven {
+            url 'https://s3.amazonaws.com/fabric-artifacts-private/internal-snapshots'
+        }
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+        maven { url "https://dl.buzzvil.com/public/maven" }
+//        maven {
+//            url 'https://dl.bintray.com/adbcsdk/Offerwall/'
+//        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
