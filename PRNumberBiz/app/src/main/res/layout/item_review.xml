@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout
+                android:layout_width="@dimen/width_70"
+                android:layout_height="@dimen/width_70"
+                android:layout_marginRight="@dimen/width_30"
+                app:mask="@drawable/img_post_profile_mask"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/image_review_profileImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_post_profile_default"/>
+
+            </com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout>
+
+            <TextView
+                android:id="@+id/text_review_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/height_40"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_review_regDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_a4a4a4"
+                android:textSize="@dimen/textSize_34pt"/>
+
+            <View
+                android:layout_width="@dimen/width_2"
+                android:layout_height="@dimen/height_19"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/width_30"
+                android:background="@color/color_e3e3e3"/>
+
+            <TextView
+                android:id="@+id/text_review_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_30"
+                android:gravity="center_vertical"
+                android:text="@string/word_reply"
+                android:textColor="@color/color_a4a4a4"
+                android:textSize="@dimen/textSize_34pt"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_review_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_40"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginEnd="@dimen/width_72"
+            android:ellipsize="end"
+            android:textColor="@color/color_565656"
+            android:textSize="@dimen/textSize_46pt"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_review_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_810"
+            android:layout_marginTop="@dimen/height_40">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager_review_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <com.pplus.prnumberbiz.apps.common.ui.custom.DirectionIndicator
+            android:id="@+id/indicator_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_30"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_120"
+            android:background="@color/color_d8d8d8"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_37"
+            android:background="@color/color_f0f0f0"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

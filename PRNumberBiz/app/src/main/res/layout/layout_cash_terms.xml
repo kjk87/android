@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_cash_terms_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_92"
+        android:drawableRight="@drawable/btn_dropbox"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_34pt"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:background="@color/color_ebebeb"/>
+
+    <TextView
+        android:id="@+id/text_cash_terms_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_40"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_34pt"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

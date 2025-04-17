@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".apps.main.ui.MainCustomerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_main_customer_plus_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_underbar_transparent_579ffb"
+                    android:drawablePadding="@dimen/width_20"
+                    android:drawableStart="@drawable/ic_contact_tab_plus"
+                    android:gravity="center"
+                    android:text="@string/word_plus_customer"
+                    android:textColor="@color/color_b7b7b7_579ffb"
+                    android:textSize="@dimen/textSize_45pt"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/width_2"
+                android:layout_height="@dimen/height_40"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_d4d4d4"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_main_customer_contact_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_underbar_transparent_579ffb"
+                    android:drawablePadding="@dimen/width_20"
+                    android:drawableStart="@drawable/ic_contact_tab_address"
+                    android:gravity="center"
+                    android:text="@string/word_my_contact"
+                    android:textColor="@color/color_b7b7b7_579ffb"
+                    android:textSize="@dimen/textSize_45pt"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/main_customer_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</FrameLayout>

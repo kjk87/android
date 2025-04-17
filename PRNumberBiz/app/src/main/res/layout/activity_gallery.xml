@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/layout_gallery_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144">
+
+        <ImageView
+            android:id="@+id/image_gallery_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_top_prev"/>
+
+        <TextView
+            android:id="@+id/text_gallery_folderName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/textSize_52pt"/>
+
+        <ImageView
+            android:id="@+id/image_gallery_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/width_45"
+            android:paddingRight="@dimen/width_45"
+            android:layout_toRightOf="@id/text_gallery_folderName"
+            android:src="@drawable/ic_dropbox_down"/>
+
+        <TextView
+            android:id="@+id/text_gallery_upload"
+            android:theme="@style/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_72"
+            android:gravity="center"
+            android:text="@string/word_upload"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/layout_gallery_titleBar">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_3"
+            android:background="@color/color_cccccc"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_gallery_dropBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_gallery_titleBar"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_gallery_dropBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_799"
+            android:background="@drawable/bg_dropbox"/>
+
+        <View
+            android:id="@+id/view_gallery_dropBoxBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</RelativeLayout>

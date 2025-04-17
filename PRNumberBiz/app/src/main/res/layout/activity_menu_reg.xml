@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.goods.ui.GoodsRegActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_579ffb"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168"
+            android:paddingStart="@dimen/width_40"
+            android:paddingEnd="@dimen/width_72">
+
+            <ImageView
+                android:id="@+id/image_menu_reg_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_top_prev_white" />
+
+            <TextView
+                android:id="@+id/text_menu_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/word_reg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_48pt" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_72"
+                android:paddingEnd="@dimen/width_72"
+                android:paddingBottom="@dimen/height_100">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_702"
+                    android:background="@color/color_f0f0f0">
+
+                    <ImageView
+                        android:id="@+id/image_menu_reg_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_menu_reg_add_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableTop="@drawable/btn_post_write_post"
+                            android:drawablePadding="@dimen/height_6"
+                            android:gravity="center"
+                            android:text="@string/msg_goods_image_reg_description"
+                            android:textColor="@color/color_b7b7b7"
+                            android:textSize="@dimen/textSize_42pt"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textColor="@color/color_579ffb"
+                        android:textStyle="bold"
+                        android:text="@string/word_category"
+                        android:layout_marginTop="@dimen/height_24"
+                        android:layout_marginStart="@dimen/width_40"/>
+
+                    <TextView
+                        android:id="@+id/text_menu_reg_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_140"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/textSize_48pt"
+                        android:textColorHint="@color/color_bbbbbb"
+                        android:textColor="@color/color_232323"
+                        android:drawableEnd="@drawable/ic_dropdown_arrow"
+                        android:hint="@string/hint_select_category"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_menu_reg_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_160"
+                    android:background="@color/white"
+                    android:hint="@string/hint_goods_name"
+                    android:paddingStart="@dimen/width_40"
+                    android:paddingEnd="@dimen/width_40"
+                    android:maxLength="30"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_47pt" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_2"
+                    android:background="@color/color_f0f0f0" />
+
+                <EditText
+                    android:id="@+id/edit_menu_reg_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_160"
+                    android:background="@color/white"
+                    android:hint="@string/hint_goods_origin_price"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/width_40"
+                    android:maxLength="7"
+                    android:paddingEnd="@dimen/width_40"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_47pt" />
+
+
+                <TextView
+                    android:id="@+id/text_menu_reg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_140"
+                    android:layout_marginTop="@dimen/height_80"
+                    android:background="@drawable/btn_white"
+                    android:gravity="center"
+                    android:text="@string/msg_reg_goods"
+                    android:textColor="@color/color_579ffb"
+                    android:textSize="@dimen/textSize_39pt" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.keyword.ui.HashTagSearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginEnd="@dimen/width_72"
+            android:background="@drawable/underbar_d8d8d8_ffffff_5px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_hash_tag_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text_hash_tag_reg"
+                android:layout_width="@dimen/width_180"
+                android:layout_height="@dimen/height_120"
+                android:background="@drawable/btn_keyword_tag_sel"
+                android:gravity="center"
+                android:text="@string/word_reg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_36pt" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_hash_tag_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

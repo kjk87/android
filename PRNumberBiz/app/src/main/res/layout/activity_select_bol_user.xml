@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pplus.prnumberbiz.apps.customer.ui.SelectBolUserActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_my_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            app:expanded="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_150"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_select_bol_user_tab1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_cfcfcf_000000"
+                            android:textSize="@dimen/textSize_48pt"
+                            android:layout_centerInParent="true"
+                            android:textStyle="bold"
+                            android:text="@string/word_contact_customer"
+                            android:background="@drawable/btn_underbar_transparent_000000"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/width_2"
+                        android:layout_height="@dimen/height_30"
+                        android:background="@color/color_cccccc"
+                        android:layout_gravity="center_vertical"/>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_select_bol_user_tab2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_cfcfcf_000000"
+                            android:textSize="@dimen/textSize_48pt"
+                            android:layout_centerInParent="true"
+                            android:textStyle="bold"
+                            android:text="@string/word_plus"
+                            android:background="@drawable/btn_underbar_transparent_000000"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_2"
+                    android:background="@color/color_d8d8d8"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_18"
+                    android:background="@color/color_f0f0f0"/>
+
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/select_bol_user_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

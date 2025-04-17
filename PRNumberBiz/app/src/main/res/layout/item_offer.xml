@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:paddingTop="@dimen/height_80">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_offer_profile"
+                android:layout_width="@dimen/width_70"
+                android:layout_height="@dimen/width_70"
+                android:layout_marginRight="@dimen/width_30"
+                android:src="@drawable/img_post_profile_default"/>
+
+            <TextView
+                android:id="@+id/text_offer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/width_20"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_40pt"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_offer_new"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_offer_look_knows"
+                    android:layout_width="@dimen/width_210"
+                    android:layout_height="@dimen/height_70"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/border_color_a0a0a0_2px"
+                    android:gravity="center"
+                    android:text="@string/word_look_knows"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_30pt"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_40"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_offer"
+                android:layout_width="@dimen/width_272"
+                android:layout_height="@dimen/height_204"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_offer_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제목"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_46pt"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/text_offer_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_16"
+                    android:maxLines="2"
+                    android:text="내용"
+                    android:textColor="@color/color_565656"
+                    android:textSize="@dimen/textSize_38pt"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_offer_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/width_30"
+                android:textColor="@color/color_7f7f7f"
+                android:textSize="@dimen/textSize_31pt"/>
+
+            <TextView
+                android:id="@+id/text_offer_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/width_14"
+                android:textColor="@color/color_7f7f7f"
+                android:textSize="@dimen/textSize_31pt"/>
+
+            <TextView
+                android:id="@+id/text_offer_reply_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N"
+                android:textColor="@color/color_ff0000"
+                android:textSize="@dimen/textSize_31pt"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_40"
+            android:background="@color/color_ebebeb"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_offer_closed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_color_777777_d9f1f1f1_1px"
+        android:textSize="@dimen/textSize_45pt"
+        android:textColor="@color/color_ff4646"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/msg_closed_offer"/>
+
+</FrameLayout>

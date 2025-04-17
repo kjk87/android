@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_120"
+                android:layout_marginTop="@dimen/height_20"
+                android:layout_marginBottom="@dimen/height_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/width_72"
+                android:paddingEnd="@dimen/width_72">
+
+                <TextView
+                    android:id="@+id/text_sale_history_start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                    android:drawableEnd="@drawable/ic_dropdown_calendar"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/width_20"
+                    android:paddingEnd="@dimen/width_20"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:layout_width="@dimen/width_40"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="~"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:id="@+id/text_sale_history_end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/width_40"
+                    android:layout_weight="1"
+                    android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                    android:drawableEnd="@drawable/ic_dropdown_calendar"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/width_20"
+                    android:paddingEnd="@dimen/width_20"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:id="@+id/text_sale_history_search"
+                    android:layout_width="@dimen/width_200"
+                    android:layout_height="@dimen/height_120"
+                    android:background="@drawable/btn_search"
+                    android:gravity="center"
+                    android:text="@string/word_search"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_480"
+                android:background="@color/color_2d313d">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_sale_history_total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_86pt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_total_sale_price"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_44pt" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_sale_history_not_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_sale_history_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_250">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_72"
+                        android:drawableStart="@drawable/ic_goods_basic"
+                        android:drawablePadding="@dimen/width_15"
+                        android:text="@string/word_normal_goods"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_52pt" />
+
+                    <TextView
+                        android:id="@+id/text_Sale_history_normal_goods_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:drawableEnd="@drawable/ic_menu_arrow"
+                        android:drawablePadding="@dimen/width_30"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_52pt" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_f0f0f0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_sale_history_hotdeal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_250">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_72"
+                        android:drawableStart="@drawable/ic_goods_hotdeal"
+                        android:drawablePadding="@dimen/width_15"
+                        android:text="@string/word_hotdeal_goods"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_52pt" />
+
+                    <TextView
+                        android:id="@+id/text_sale_history_normal_hotdeal_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:drawableEnd="@drawable/ic_menu_arrow"
+                        android:drawablePadding="@dimen/width_30"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_52pt" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_f0f0f0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_sale_history_plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_250">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_72"
+                        android:drawableStart="@drawable/ic_goods_plus"
+                        android:drawablePadding="@dimen/width_15"
+                        android:text="@string/word_plus_goods"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_52pt" />
+
+                    <TextView
+                        android:id="@+id/text_sale_history_normal_plus_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/width_72"
+                        android:drawableEnd="@drawable/ic_menu_arrow"
+                        android:drawablePadding="@dimen/width_30"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_52pt" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_f0f0f0" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sale_history_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

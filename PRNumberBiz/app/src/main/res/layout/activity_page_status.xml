@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".apps.signin.ui.PageStatusActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout_page_status_reject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_340"
+            android:layout_marginEnd="@dimen/width_72"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/width_150"
+                android:layout_height="@dimen/width_150"
+                android:src="@drawable/ic_apply_reject" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"
+                android:gravity="center"
+                android:text="@string/msg_reject_seller_desc"
+                android:textColor="@color/color_ff4646"
+                android:textSize="@dimen/textSize_60pt" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_4"
+                android:layout_marginTop="@dimen/height_60"
+                android:background="@color/color_f0f0f0" />
+
+            <TextView
+                android:id="@+id/text_page_status_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"
+                android:gravity="center"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_40pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_page_status_pending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_340"
+            android:layout_marginEnd="@dimen/width_72"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/width_150"
+                android:layout_height="@dimen/width_150"
+                android:src="@drawable/ic_apply_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"
+                android:gravity="center"
+                android:text="@string/msg_pending_seller_desc1"
+                android:textColor="@color/color_579ffb"
+                android:textSize="@dimen/textSize_60pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_40"
+                android:gravity="center"
+                android:text="@string/msg_pending_seller_desc2"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_40pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"
+                android:gravity="center"
+                android:text="@string/msg_pending_seller_desc3"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_40pt" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_page_status_log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginBottom="@dimen/height_100"
+            android:background="@drawable/underbar_737373_ffffff"
+            android:text="@string/word_log_out"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_40pt"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_page_status_re_apply"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_180"
+        android:background="@color/color_579ffb"
+        android:gravity="center"
+        android:text="@string/msg_re_apply"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@id/expandable_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@id/expand_collapse"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_120"
+        android:background="@drawable/border_color_d8d8d8_2px"
+        android:textSize="@dimen/textSize_32pt"
+        android:layout_marginTop="@dimen/height_30"
+        android:textColor="@color/color_808080"
+        android:gravity="center"/>
+</merge>

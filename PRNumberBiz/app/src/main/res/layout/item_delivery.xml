@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_270">
+
+        <ImageView
+            android:id="@+id/image_delivery"
+            android:layout_width="@dimen/width_150"
+            android:layout_height="@dimen/width_150"
+            android:src="@drawable/ic_selling_app_prnumber"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image_delivery"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/width_30"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_delivery_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_38pt"
+                android:textColor="@color/color_b7b7b7"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_delivery_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_52pt"
+                android:textColor="@color/color_232323"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/width_72"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_f0f0f0" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

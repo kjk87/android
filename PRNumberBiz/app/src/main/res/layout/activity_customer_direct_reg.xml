@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/width_72"
+        android:paddingRight="@dimen/width_72">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_56"
+            android:text="@string/msg_directly_reg_description1"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_34pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_directly_reg_description2"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_34pt"
+            android:visibility="gone"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_marginTop="@dimen/height_20"
+            android:background="@color/color_ebebeb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_60"
+            android:text="@string/word_customer_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_36pt"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_132"
+            android:layout_marginTop="@dimen/height_20"
+            android:layout_marginBottom="@dimen/height_54"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_customer_direct_reg_customer_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_color_a0a0a0_2px"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_customer_name"
+                android:maxLength="20"
+                android:paddingLeft="@dimen/width_40"
+                android:paddingRight="@dimen/width_40"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_40pt"/>
+
+            <TextView
+                android:id="@+id/text_customer_direct_reg_load_contact"
+                android:layout_width="@dimen/width_264"
+                android:layout_height="match_parent"
+                android:background="@color/color_4c4c4c"
+                android:gravity="center"
+                android:text="@string/word_contact"
+                android:textColor="@color/color_ffffff_a3a3a3"
+                android:textSize="@dimen/textSize_40pt"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_60"
+            android:text="@string/word_mobile_number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_36pt"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_132"
+            android:layout_marginTop="@dimen/height_20"
+            android:layout_marginBottom="@dimen/height_54"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_customer_direct_reg_mobile_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/width_40"
+                android:layout_weight="1"
+                android:background="@drawable/border_color_a0a0a0_2px"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_mobile_number"
+                android:inputType="number"
+                android:maxLength="12"
+                android:paddingLeft="@dimen/width_40"
+                android:paddingRight="@dimen/width_40"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_40pt"/>
+
+            <TextView
+                android:id="@+id/text_customer_direct_reg_duplicate"
+                android:layout_width="@dimen/width_264"
+                android:layout_height="match_parent"
+                android:background="@color/color_4c4c4c"
+                android:gravity="center"
+                android:text="@string/word_duplicate"
+                android:textColor="@color/color_ffffff_a3a3a3"
+                android:textSize="@dimen/textSize_40pt"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

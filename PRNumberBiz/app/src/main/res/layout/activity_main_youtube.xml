@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.pages.ui.MainYoutubeActivity">
+
+    <EditText
+        android:id="@+id/edit_main_youtube"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_140"
+        android:background="@drawable/border_color_dcdcdc_4px"
+        android:layout_marginTop="@dimen/height_60"
+        android:layout_marginStart="@dimen/width_72"
+        android:layout_marginEnd="@dimen/width_72"
+        android:paddingStart="@dimen/width_40"
+        android:paddingEnd="@dimen/width_40"
+        android:textColorHint="@color/color_bbbbbb"
+        android:textColor="@color/color_232323"
+        android:inputType="textUri"
+        android:hint="@string/hint_msg_input_youtube_url"/>
+
+</RelativeLayout>

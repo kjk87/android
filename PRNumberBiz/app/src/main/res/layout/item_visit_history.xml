@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_270">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/width_72"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_visit_history_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_58pt"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_visit_history_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_b7b7b7"
+                android:layout_marginEnd="@dimen/width_20"
+                android:textSize="@dimen/textSize_38pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_visit_history_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_38pt" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_visit_history_cancel"
+        android:layout_width="@dimen/width_230"
+        android:layout_height="@dimen/height_120"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/width_72"
+        android:textColor="@color/color_ff4646"
+        android:text="@string/word_pay_cancel"
+        android:gravity="center"
+        android:background="@drawable/btn_keyword_tag_nor"
+        android:textSize="@dimen/textSize_36pt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_f0f0f0" />
+</RelativeLayout>

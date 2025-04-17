@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text_pending_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_28"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_36pt"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_pending_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/height_16"
+        android:textSize="@dimen/textSize_40pt"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_marginTop="@dimen/height_28"
+        android:background="@color/color_ebebeb"/>
+
+</LinearLayout>

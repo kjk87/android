@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".apps.main.ui.ContactConfigFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/color_579ffb"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_60"
+            android:text="@string/word_real_time_marketing"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_76pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_2"
+            android:gravity="center"
+            android:text="@string/msg_real_time_marketing_description"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_marketing_kakao"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_396"
+            android:layout_marginStart="@dimen/width_30"
+            android:layout_marginEnd="@dimen/width_30"
+            android:background="@drawable/bg_main_menu"
+            android:paddingStart="@dimen/width_70"
+            android:paddingEnd="@dimen/width_70">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_marketing_kakao"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_57pt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_marketing_kakao_description"
+                    android:textColor="@color/color_b7b7b7"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_contact_kakao"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_marketing_sms"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_396"
+            android:layout_marginStart="@dimen/width_30"
+            android:layout_marginEnd="@dimen/width_30"
+            android:background="@drawable/bg_main_menu"
+            android:paddingStart="@dimen/width_70"
+            android:paddingEnd="@dimen/width_70">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_send_lms"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_57pt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_premium_sms_description"
+                    android:textColor="@color/color_b7b7b7"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_contact_sms"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_marketing_push"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_396"
+            android:layout_marginStart="@dimen/width_30"
+            android:layout_marginEnd="@dimen/width_30"
+            android:background="@drawable/bg_main_menu"
+            android:paddingStart="@dimen/width_70"
+            android:paddingEnd="@dimen/width_70">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_premium_push"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_57pt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_premium_push_description"
+                    android:textColor="@color/color_b7b7b7"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_contact_push"/>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

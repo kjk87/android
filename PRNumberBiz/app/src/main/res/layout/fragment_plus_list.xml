@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".apps.customer.ui.CustomerListFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_plus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_87"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_40">
+
+            <TextView
+                android:id="@+id/text_plus_total_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_579ffb"
+                android:textSize="@dimen/textSize_32pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_plus_group_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/underbar_579ffb_ffffff"
+                android:text="@string/word_config_group_title"
+                android:textColor="@color/color_579ffb"
+                android:textSize="@dimen/textSize_38pt"/>
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_plus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_plus_group_not_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/btn_post_write_post"
+        android:gravity="center"
+        android:text="@string/msg_customer_group_not_exist"
+        android:textColor="@color/color_b7b7b7"
+        android:textSize="@dimen/textSize_32pt"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/layout_plus_not_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/msg_not_exist_plus1"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_40pt"/>
+
+    </LinearLayout>
+
+</FrameLayout>

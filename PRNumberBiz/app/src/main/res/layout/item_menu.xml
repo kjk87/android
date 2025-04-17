@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_270"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout
+            android:id="@+id/layout_image_menu"
+            android:layout_width="@dimen/width_240"
+            android:layout_height="@dimen/height_180"
+            android:layout_marginEnd="@dimen/width_30"
+            app:mask="@drawable/img_goods_mask"
+            app:porterduffxfermode="DST_IN">
+
+            <ImageView
+                android:id="@+id/image_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_goods_default" />
+
+        </com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout>
+
+
+        <TextView
+            android:id="@+id/text_menu_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_40"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_48pt" />
+
+
+        <TextView
+            android:id="@+id/text_menu_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_ff4646"
+            android:textSize="@dimen/textSize_42pt"
+            android:layout_marginEnd="@dimen/width_30"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_menu_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_post_set_edit"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_goods_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_f0f0f0" />
+
+
+</RelativeLayout>

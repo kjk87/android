@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.sale.ui.SaleOrderProcessyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/width_72"
+            android:paddingEnd="@dimen/width_72">
+
+            <RelativeLayout
+                android:id="@+id/layout_sale_order_process_tab1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_sale_order_process_tab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/word_order_ready"
+                    android:textColor="@color/color_b7b7b7_232323"
+                    android:textSize="@dimen/textSize_46pt" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_10"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/color_transparent_232323" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_sale_order_process_tab2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_sale_order_process_tab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/word_order_ing"
+                    android:textColor="@color/color_b7b7b7_232323"
+                    android:textSize="@dimen/textSize_46pt" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_10"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/color_transparent_232323" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_sale_order_process_tab3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_sale_order_process_tab3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/word_sale_history"
+                    android:textColor="@color/color_b7b7b7_232323"
+                    android:textSize="@dimen/textSize_46pt" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_10"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/color_transparent_232323" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_3"
+            android:background="@color/color_d8d8d8"/>
+
+        <FrameLayout
+            android:id="@+id/sale_order_process_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

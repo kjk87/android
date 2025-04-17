@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/width_72"
+    android:paddingEnd="@dimen/width_72"
+    tools:context=".apps.marketing.ui.SnsUrlActivity">
+
+    <TextView
+        android:id="@+id/text_sns_url_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_74pt"
+        android:layout_marginTop="@dimen/height_60"
+        android:textColor="@color/color_232323"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edit_sns_url"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_140"
+        android:background="@drawable/border_color_dcdcdc_4px"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textSize_48pt"
+        android:inputType="textUri"
+        android:layout_marginTop="@dimen/height_30"
+        android:textColor="@color/color_232323"
+        android:paddingStart="@dimen/width_40"
+        android:hint="@string/hint_input_homepage_url"
+        android:textColorHint="@color/color_bbbbbb"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_20"
+        android:textColor="@color/color_ff4646"
+        android:textSize="@dimen/textSize_36pt"
+        android:text="@string/msg_sns_url_desc"/>
+
+</LinearLayout>

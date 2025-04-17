@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_579ffb"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.goods.ui.GoodsNoticeInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168">
+
+            <TextView
+                android:id="@+id/text_goods_notice_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/width_40"
+                android:drawableStart="@drawable/ic_top_prev_white"
+                android:gravity="center_vertical"
+                android:text="@string/word_goods_notice_info"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_52pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_goods_notice_info_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_72"
+                android:text="@string/word_save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_48pt" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_72"
+                android:paddingEnd="@dimen/width_72">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_80"
+                    android:text="@string/word_goods_item"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_goods_notice_info_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_160"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:background="@color/white"
+                    android:drawableEnd="@drawable/ic_dropdown_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_select_goods_item"
+                    android:paddingStart="@dimen/width_40"
+                    android:paddingEnd="@dimen/width_40"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_232323"
+                    android:textSize="@dimen/textSize_48pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_80"
+                    android:text="@string/word_notice_info"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:background="@color/white"
+                    android:minHeight="@dimen/height_1110">
+
+                    <TextView
+                        android:id="@+id/text_goods_notice_info_not_exist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/msg_not_exist_goods_notice_info"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_40pt" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_goods_notice_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_goods_notice_info_save2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_160"
+                    android:layout_marginTop="@dimen/height_80"
+                    android:layout_marginBottom="@dimen/height_100"
+                    android:background="@drawable/btn_white"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSize_40pt"
+                    android:textColor="@color/color_579ffb"
+                    android:textStyle="bold"
+                    android:text="@string/word_save"/>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

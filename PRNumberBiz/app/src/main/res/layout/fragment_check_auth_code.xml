@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_110"
+            android:gravity="center"
+            android:text="@string/msg_input_current_auth_code"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_54pt" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_40"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_check_auth_code1"
+                android:layout_width="@dimen/width_180"
+                android:layout_height="@dimen/width_180"
+                android:layout_marginEnd="@dimen/width_20"
+                android:background="@drawable/bg_number_input"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/edit_check_auth_code2"
+                android:layout_width="@dimen/width_180"
+                android:layout_height="@dimen/width_180"
+                android:layout_marginEnd="@dimen/width_20"
+                android:background="@drawable/bg_number_input"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/edit_check_auth_code3"
+                android:layout_width="@dimen/width_180"
+                android:layout_height="@dimen/width_180"
+                android:layout_marginEnd="@dimen/width_20"
+                android:background="@drawable/bg_number_input"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/edit_check_auth_code4"
+                android:layout_width="@dimen/width_180"
+                android:layout_height="@dimen/width_180"
+                android:background="@drawable/bg_number_input"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:background="@color/color_f3f3f3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_72"
+            android:text="@string/word_send_bol"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_36pt"/>
+
+        <TextView
+            android:id="@+id/text_bol_gift_detail_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_50"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_72"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_52pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/height_50"
+            android:background="@color/color_f3f3f3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_72"
+            android:textStyle="bold"
+            android:text="@string/word_gift_sender"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_36pt"/>
+
+        <TextView
+            android:id="@+id/text_bol_gift_detail_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_50"
+            android:paddingLeft="@dimen/width_72"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_40pt"/>
+
+        <TextView
+            android:id="@+id/text_bol_gift_detail_message_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/height_50"
+            android:background="@color/color_f3f3f3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_72"
+            android:textStyle="bold"
+            android:text="@string/word_send_msg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_36pt"/>
+
+        <TextView
+            android:id="@+id/text_bol_gift_detail_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_50"
+            android:paddingLeft="@dimen/width_72"
+            android:paddingRight="@dimen/width_72"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_40pt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/height_50"
+            android:background="@color/color_f3f3f3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_72"
+            android:text="@string/word_gift_send_date"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_36pt"/>
+
+        <TextView
+            android:id="@+id/text_bol_gift_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_50"
+            android:paddingLeft="@dimen/width_72"
+            android:paddingRight="@dimen/width_72"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_40pt"/>
+
+        <TextView
+            android:id="@+id/text_bol_gift_detail_receive_date_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/height_50"
+            android:background="@color/color_f3f3f3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_72"
+            android:text="@string/word_receive_date"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_36pt"/>
+
+        <TextView
+            android:id="@+id/text_bol_gift_detail_receive_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_50"
+            android:paddingLeft="@dimen/width_72"
+            android:paddingRight="@dimen/width_72"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_40pt"/>
+
+        <TextView
+            android:id="@+id/text_bol_gift_receive"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_136"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_100"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="@string/msg_receive_gift"
+            android:textColor="@color/color_ffffff_a3a3a3"
+            android:textSize="@dimen/textSize_40pt"/>
+
+        <TextView
+            android:id="@+id/text_bol_gift_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_100"
+            android:layout_marginTop="@dimen/height_40"
+            android:text="@string/msg_gift_bol_description4"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"
+            android:textColor="@color/color_bbbbbb"
+            android:textSize="@dimen/textSize_34pt"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

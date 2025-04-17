@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_579ffb">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            app:expanded="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_579ffb"
+                android:orientation="vertical">
+                <!--app:layout_scrollFlags="scroll|enterAlways">-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_168">
+
+                    <TextView
+                        android:id="@+id/text_sms_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_40"
+                        android:drawableStart="@drawable/ic_top_prev_white"
+                        android:gravity="center_vertical"
+                        android:text="@string/msg_send_sms"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_52pt"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/width_40"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_sms_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_send_result"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_990"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/width_40">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_web_send"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_47pt" />
+
+                    <TextView
+                        android:id="@+id/text_sms_send_ads"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_sms_ads2"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_47pt" />
+
+                    <EditText
+                        android:id="@+id/edit_sms_send_contents"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="top"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_47pt" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/text_sms_send_deny_reception"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/format_sms_free_deny_reception"
+                            android:textColor="@color/color_737373"
+                            android:textSize="@dimen/textSize_47pt" />
+
+                        <TextView
+                            android:id="@+id/text_sms_send_byte"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/format_sms_byte"
+                            android:textColor="@color/color_bbbbbb"
+                            android:textSize="@dimen/textSize_47pt" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_sms_send_select_contents"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_130"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:background="@drawable/border_color_dcdcdc_4px"
+                        android:gravity="center"
+                        android:text="@string/word_select_goods"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_39pt" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/word_send_type"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_47pt" />
+
+                        <TextView
+                            android:id="@+id/text_sms_send_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:drawableEnd="@drawable/ic_input_arrow_blue"
+                            android:drawablePadding="@dimen/width_20"
+                            android:gravity="center"
+                            android:text="@string/word_immediately_sent"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_47pt" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:background="@color/color_f0f0f0" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:id="@+id/text_sms_send_select_sender_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/word_outgoing_number"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_47pt" />
+
+                        <TextView
+                            android:id="@+id/text_sms_send_reg_send_number"
+                            android:layout_width="@dimen/width_120"
+                            android:layout_height="@dimen/height_76"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/width_20"
+                            android:layout_toRightOf="@id/text_sms_send_select_sender_title"
+                            android:background="@drawable/btn_input_bg_s"
+                            android:gravity="center"
+                            android:text="@string/word_reg"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_32pt" />
+
+
+                        <TextView
+                            android:id="@+id/text_sms_send_select_sender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:drawableEnd="@drawable/ic_input_arrow_blue"
+                            android:drawablePadding="@dimen/width_20"
+                            android:gravity="center"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_47pt" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_2"
+                        android:background="@color/color_f0f0f0" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/word_receive_customer"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_47pt" />
+
+                        <TextView
+                            android:id="@+id/text_sms_send_select_customer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:drawableEnd="@drawable/ic_input_arrow"
+                            android:drawablePadding="@dimen/width_20"
+                            android:gravity="center"
+                            android:hint="@string/word_select"
+                            android:textColor="@color/color_579ffb"
+                            android:textColorHint="@color/color_bbbbbb"
+                            android:textSize="@dimen/textSize_47pt" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_10"
+                        android:background="@color/color_f0f0f0" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:id="@+id/text_sms_send_pre_use_cas_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/word_decrease_cash"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_47pt" />
+
+                        <TextView
+                            android:id="@+id/text_sms_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/width_20"
+                            android:layout_toRightOf="@id/text_sms_send_pre_use_cas_title"
+                            android:background="@drawable/underbar_b7b7b7_ffffff"
+                            android:gravity="center"
+                            android:text="@string/word_detail"
+                            android:textColor="@color/color_b7b7b7"
+                            android:textSize="@dimen/textSize_36pt" />
+
+
+                        <TextView
+                            android:id="@+id/text_sms_send_pre_use_cash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/color_ff4646"
+                            android:textSize="@dimen/textSize_47pt"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_120"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/text_sms_send_save"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/word_save"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_36pt" />
+
+                    <TextView
+                        android:id="@+id/text_sms_send_locker"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/word_locker"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_36pt" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_sms_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_140"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_80"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@drawable/btn_white"
+                    android:gravity="center"
+                    android:text="@string/msg_send_sms"
+                    android:textColor="@color/color_579ffb"
+                    android:textSize="@dimen/textSize_39pt" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

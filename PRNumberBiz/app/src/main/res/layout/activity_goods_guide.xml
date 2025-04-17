@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180">
+
+            <ImageView
+                android:id="@+id/image_goods_guide_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/height_20"
+                android:layout_marginEnd="@dimen/height_20"
+                android:src="@drawable/ic_top_close" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_goods_guide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_74pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_goods_guide_desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_60"
+            android:layout_marginEnd="@dimen/width_72"
+            android:gravity="center"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_50pt" />
+
+
+        <TextView
+            android:id="@+id/text_goods_guide_desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_40"
+            android:layout_marginEnd="@dimen/width_72"
+            android:gravity="center"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_42pt" />
+
+        <TextView
+            android:id="@+id/text_goods_guide_reg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_180"
+            android:layout_marginEnd="@dimen/width_72"
+            android:background="@drawable/btn_blue"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_40pt"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/check_goods_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_40"
+            android:layout_marginBottom="@dimen/height_40"
+            android:button="@drawable/ic_check"
+            android:gravity="left|center_vertical"
+            android:paddingStart="@dimen/width_15"
+            android:text="@string/msg_do_not_look_again"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_40pt" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

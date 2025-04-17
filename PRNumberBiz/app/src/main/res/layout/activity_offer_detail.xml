@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/list_offer_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_160"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:background="@color/color_ebebeb"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/width_72"
+            android:paddingRight="@dimen/width_72">
+
+            <EditText
+                android:id="@+id/edit_offer_detail_answer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_offer_answer"
+                android:maxLength="500"
+                android:textColor="@color/color_565656"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_38pt"/>
+
+            <TextView
+                android:id="@+id/text_offer_detail_send"
+                android:layout_width="@dimen/width_222"
+                android:layout_height="@dimen/height_92"
+                android:background="@color/color_7f7f7f"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/textSize_32pt"
+                android:textColor="@color/white"
+                android:text="@string/word_send_answer"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

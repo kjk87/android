@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.pages.ui.PageLinkActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168"
+            android:background="@color/color_579ffb">
+
+            <TextView
+                android:id="@+id/text_page_link_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/width_40"
+                android:drawableStart="@drawable/ic_top_prev_white"
+                android:gravity="center_vertical"
+                android:text="@string/word_link_outlink"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_52pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_540">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager_page_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.pplus.prnumberbiz.apps.common.ui.custom.DirectionIndicator
+                        android:id="@+id/indicator_page_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/height_30" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/text_page_link_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_100"
+                    android:drawableStart="@drawable/btn_write_radio"
+                    android:drawablePadding="@dimen/width_20"
+                    android:text="@string/word_select_page"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_47pt" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_page_link_url"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableStart="@drawable/btn_write_radio"
+                        android:drawablePadding="@dimen/width_20"
+                        android:text="@string/word_select_link_url"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_47pt" />
+
+                    <TextView
+                        android:id="@+id/text_page_link_url_pre_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/underbar_579ffb_ffffff"
+                        android:gravity="center"
+                        android:text="@string/msg_view"
+                        android:textColor="@color/color_579ffb"
+                        android:textSize="@dimen/textSize_47pt" />
+
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/edit_page_link_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_140"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@drawable/border_color_dcdcdc_4px"
+                    android:hint="@string/hint_page_link_url"
+                    android:inputType="textUri"
+                    android:paddingStart="@dimen/width_40"
+                    android:paddingEnd="@dimen/width_40"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_47pt" />
+
+                <TextView
+                    android:id="@+id/text_page_link_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_140"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_300"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:layout_marginBottom="@dimen/height_100"
+                    android:background="@drawable/btn_blue"
+                    android:gravity="center"
+                    android:text="@string/msg_save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_39pt" />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

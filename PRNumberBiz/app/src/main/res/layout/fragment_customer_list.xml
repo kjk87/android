@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".apps.customer.ui.CustomerListFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_customer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_117"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_40"
+            android:background="@drawable/underbar_d8d8d8_ffffff_5px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_customer_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_search_customer"
+                android:maxLength="12"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/height_42"/>
+
+
+            <ImageView
+                android:id="@+id/image_customer_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_gift_search"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_87"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_40">
+
+            <TextView
+                android:id="@+id/text_customer_total_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_32pt"/>
+
+            <TextView
+                android:id="@+id/text_customer_group_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/underbar_579ffb_ffffff"
+                android:text="@string/word_config_group_title"
+                android:textColor="@color/color_579ffb"
+                android:textSize="@dimen/textSize_38pt"/>
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_customer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_customer_not_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/btn_post_write_post"
+        android:gravity="center"
+        android:text="@string/msg_customer_all_not_exist"
+        android:textColor="@color/color_b7b7b7"
+        android:textSize="@dimen/textSize_32pt"
+        android:textStyle="bold"/>
+
+</FrameLayout>

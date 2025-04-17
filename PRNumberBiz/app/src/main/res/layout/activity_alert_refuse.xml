@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180">
+
+            <ImageView
+                android:id="@+id/image_alert_refuse_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/width_20"
+                android:layout_marginEnd="@dimen/width_20"
+                android:src="@drawable/ic_top_close" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word_refuse_title"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_74pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_60"
+            android:gravity="center"
+            android:text="@string/msg_refuse_desc1"
+            android:textColor="@color/color_ff4646"
+            android:textSize="@dimen/textSize_38pt" />
+
+        <TextView
+            android:id="@+id/text_alert_refuse_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_40"
+            android:layout_marginEnd="@dimen/width_72"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_48pt" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_4"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_30"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginBottom="@dimen/height_30"
+            android:background="@color/color_f0f0f0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/msg_refuse_desc2"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_34pt" />
+
+        <TextView
+            android:id="@+id/text_alert_refuse_inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:layout_marginTop="@dimen/height_180"
+            android:background="@color/color_579ffb"
+            android:gravity="center"
+            android:text="@string/msg_inquiry"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

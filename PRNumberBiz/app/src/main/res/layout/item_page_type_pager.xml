@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layout_page_type_store"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_page_type_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_90pt"
+            android:textColor="@color/color_579ffb"
+            android:layout_marginTop="@dimen/height_260"
+            android:text="@string/msg_store_type_title1"/>
+
+        <TextView
+            android:id="@+id/text_page_type_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_70pt"
+            android:textColor="@color/color_232323"
+            android:text="@string/msg_store_type_title2"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_150"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_page_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_42pt"
+                android:textColor="@color/color_737373"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/img_login_delivery_01"
+                android:gravity="center"
+                android:drawablePadding="@dimen/height_10"
+                android:layout_marginEnd="@dimen/width_71"
+                android:text="@string/word_korean_food"/>
+
+            <TextView
+                android:id="@+id/text_page_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_42pt"
+                android:textColor="@color/color_737373"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/img_login_delivery_02"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/width_71"
+                android:drawablePadding="@dimen/height_10"
+                android:text="@string/word_pizza_store"/>
+
+
+            <TextView
+                android:id="@+id/text_page_type3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_42pt"
+                android:textColor="@color/color_737373"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/img_login_delivery_03"
+                android:gravity="center"
+                android:drawablePadding="@dimen/height_10"
+                android:text="@string/word_china_store"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_page_type4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_42pt"
+                android:textColor="@color/color_737373"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/img_login_delivery_04"
+                android:gravity="center"
+                android:drawablePadding="@dimen/height_10"
+                android:layout_marginEnd="@dimen/width_71"
+                android:text="@string/word_fast_food"/>
+
+            <TextView
+                android:id="@+id/text_page_type5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_42pt"
+                android:textColor="@color/color_737373"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/img_login_delivery_05"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/width_71"
+                android:drawablePadding="@dimen/height_10"
+                android:text="@string/word_chicken_store"/>
+
+
+            <TextView
+                android:id="@+id/text_page_type6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_42pt"
+                android:textColor="@color/color_737373"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/img_login_delivery_06"
+                android:gravity="center"
+                android:drawablePadding="@dimen/height_10"
+                android:text="@string/word_cafe"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_page_type_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_44pt"
+            android:textColor="@color/color_b7b7b7"
+            android:layout_marginTop="@dimen/height_60"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginEnd="@dimen/width_72"
+            android:text="@string/msg_store_type_description"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

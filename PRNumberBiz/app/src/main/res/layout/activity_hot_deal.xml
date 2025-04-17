@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.goods.ui.PlusGoodsDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_470"
+                android:background="@color/color_f8f8f8">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_140"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_hot_deal_desc1"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_44pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_10"
+                        android:text="@string/msg_hot_deal_desc2"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:src="@drawable/img_hotdeal_info" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:background="@color/color_d8d8d8" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_18"
+                android:background="@color/color_f0f0f0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:text="@string/word_my_around_ads"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_38pt"
+                    android:textStyle="bold" />
+
+                <include
+                    android:id="@+id/layout_hot_deal_more"
+                    layout="@layout/item_goods_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_2"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_f0f0f0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_hot_deal_not_exist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_320"
+                    android:text="@string/msg_hot_deal_not_exist"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_40pt" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_hot_deal_exist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"
+                android:paddingBottom="@dimen/height_100"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/width_72"
+                android:paddingEnd="@dimen/width_72"
+                android:visibility="gone">
+
+                <com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout
+                    android:id="@+id/layout_hot_deal_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_702"
+                    android:layout_marginTop="@dimen/height_30"
+                    app:mask="@drawable/img_goods_mask_2"
+                    app:porterduffxfermode="DST_IN">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager_hot_deal_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.pplus.prnumberbiz.apps.common.ui.custom.DirectionIndicator
+                        android:id="@+id/indicator_hot_deal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="@dimen/height_30" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_hot_deal_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_80737373">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text_hot_deal_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize_60pt"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_hot_deal_status_option"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize_40pt" />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout>
+
+                <TextView
+                    android:id="@+id/text_hot_deal_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_50pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_hot_deal_sale_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_78pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_hot_deal_sale_price_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/width_30"
+                        android:text="@string/word_money_unit"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_34pt" />
+
+                    <TextView
+                        android:id="@+id/text_hot_deal_origin_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_40pt" />
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/text_hot_deal_remain_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/color_579ffb"
+                        android:textSize="@dimen/textSize_40pt" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_hot_deal_reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:layout_marginBottom="@dimen/height_30"
+                    android:textColor="@color/color_ff4646"
+                    android:textSize="@dimen/textSize_42pt" />
+
+                <TextView
+                    android:id="@+id/text_hot_deal_use_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_b7b7b7"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_2"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:background="@color/color_f0f0f0" />
+
+                <TextView
+                    android:id="@+id/text_hot_deal_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_44pt" />
+
+                <TextView
+                    android:id="@+id/text_hot_deal_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_160"
+                    android:layout_marginTop="@dimen/height_80"
+                    android:layout_marginBottom="@dimen/height_100"
+                    android:background="@drawable/btn_gray_line"
+                    android:gravity="center"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_40pt"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/text_hot_deal_reg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_180"
+        android:background="@color/color_ff4646"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold"
+        android:text="@string/msg_reg_hotdeal"
+        android:visibility="gone"
+        android:textColor="@color/white"/>
+</RelativeLayout>

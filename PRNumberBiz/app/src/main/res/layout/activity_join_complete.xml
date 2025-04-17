@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.signup.ui.JoinCompleteActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_72"
+        android:layout_marginTop="@dimen/height_318"
+        android:layout_marginEnd="@dimen/width_72"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/msg_join_complete_description1"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_90pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/height_10"
+            android:gravity="center"
+            android:text="@string/msg_join_complete_description2"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_48pt" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_join_complete_make"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_160"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/width_72"
+        android:layout_marginTop="@dimen/height_70"
+        android:layout_marginEnd="@dimen/width_72"
+        android:layout_marginBottom="@dimen/height_100"
+        android:background="@drawable/btn_blue"
+        android:gravity="center"
+        android:text="@string/msg_apply_sale_permission"
+        android:textColor="@color/white"
+        android:textSize="@dimen/height_40"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

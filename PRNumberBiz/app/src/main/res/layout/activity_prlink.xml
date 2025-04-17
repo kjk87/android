@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.main.ui.PRLinkActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2356"
+                android:src="@drawable/img_prlink_guide_1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2334"
+                android:src="@drawable/img_prlink_guide_2" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_868"
+                android:src="@drawable/img_prlink_guide_3" />
+
+            <TextView
+                android:id="@+id/text_prlink_apply"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160"
+                android:layout_marginStart="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_140"
+                android:layout_marginEnd="@dimen/width_72"
+                android:layout_marginBottom="@dimen/height_100"
+                android:background="@drawable/btn_blue"
+                android:gravity="center"
+                android:text="@string/word_apply_pr_link"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_40pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

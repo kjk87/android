@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".apps.main.ui.ContactConfigFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_customer_config_contact"
+            android:layout_width="@dimen/width_540"
+            android:layout_height="@dimen/width_540"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/img_contact_count_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_customer_config_contact_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/color_579ffb"
+                        android:textSize="@dimen/textSize_130pt"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/text_customer_config_contact_count"
+                        android:layout_toRightOf="@id/text_customer_config_contact_count"
+                        android:text="@string/word_unit_human"
+                        android:textColor="@color/color_579ffb"
+                        android:textSize="@dimen/textSize_50pt"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/word_customer"
+                    android:textColor="@color/color_b7b7b7"
+                    android:textSize="@dimen/textSize_38pt"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/msg_contact_customer_description1"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_57pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/msg_contact_customer_description2"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_44pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_customer_config_add"
+            android:layout_width="@dimen/width_530"
+            android:layout_height="@dimen/height_135"
+            android:layout_marginTop="@dimen/height_40"
+            android:background="@drawable/btn_commerce_blue_bg"
+            android:textSize="@dimen/textSize_33pt"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/msg_add_customer"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_customer_config_group"
+            android:layout_width="@dimen/width_530"
+            android:layout_height="@dimen/height_135"
+            android:gravity="center"
+            android:background="@drawable/btn_commerce_white_bg"
+            android:textSize="@dimen/textSize_33pt"
+            android:textColor="@color/color_737373"
+            android:text="@string/msg_config_group"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_customer_config_sms"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_396"
+            android:layout_marginStart="@dimen/width_30"
+            android:layout_marginTop="@dimen/height_100"
+            android:layout_marginEnd="@dimen/width_30"
+            android:background="@drawable/bg_main_menu">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/width_70"
+                android:layout_marginEnd="@dimen/width_70">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/msg_send_sms"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_57pt"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_send_sms_description"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_contact_sms"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

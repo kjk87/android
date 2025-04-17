@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.goods.ui.PlusGoodsDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_60"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/width_72"
+            android:paddingEnd="@dimen/width_72"
+            android:visibility="visible">
+
+            <com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout
+                android:id="@+id/layout_plus_goods_detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_702"
+                android:layout_marginTop="@dimen/height_30"
+                app:mask="@drawable/img_goods_mask_2"
+                app:porterduffxfermode="DST_IN">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager_plus_goods_detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.pplus.prnumberbiz.apps.common.ui.custom.DirectionIndicator
+                    android:id="@+id/indicator_plus_goods_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/height_30" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_plus_goods_detail_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_80737373">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_plus_goods_detail_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_60pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_plus_goods_detail_status_option"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_40pt" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout>
+
+            <TextView
+                android:id="@+id/text_plus_goods_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_50pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_plus_goods_detail_sale_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_78pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_plus_goods_detail_sale_price_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/width_30"
+                    android:text="@string/word_money_unit"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_34pt" />
+
+                <TextView
+                    android:id="@+id/text_plus_goods_detail_origin_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_b7b7b7"
+                    android:textSize="@dimen/textSize_40pt" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/text_plus_goods_detail_remain_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_579ffb"
+                    android:textSize="@dimen/textSize_40pt" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_plus_goods_detail_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_30"
+                android:layout_marginBottom="@dimen/height_30"
+                android:textColor="@color/color_ff4646"
+                android:textSize="@dimen/textSize_42pt" />
+
+            <TextView
+                android:id="@+id/text_plus_goods_detail_use_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/textSize_36pt"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@color/color_f0f0f0" />
+
+            <TextView
+                android:id="@+id/text_plus_goods_detail_contents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_30"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_44pt" />
+
+            <TextView
+                android:id="@+id/text_plus_goods_detail_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160"
+                android:layout_marginTop="@dimen/height_80"
+                android:background="@drawable/btn_gray_line"
+                android:gravity="center"
+                android:textColor="@color/color_232323"
+                android:layout_marginBottom="@dimen/height_100"
+                android:textSize="@dimen/textSize_40pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

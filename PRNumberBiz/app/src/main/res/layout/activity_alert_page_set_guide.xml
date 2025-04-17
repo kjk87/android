@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180">
+
+            <ImageView
+                android:id="@+id/image_alert_page_set_guide_close"
+                android:layout_width="@dimen/width_122"
+                android:layout_height="@dimen/height_134"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/height_20"
+                android:layout_marginEnd="@dimen/height_20"
+                android:src="@drawable/ic_top_close" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_alert_page_set_guide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_64pt" />
+
+        <ImageView
+            android:layout_width="@dimen/width_756"
+            android:layout_height="@dimen/height_560"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/height_60"
+            android:src="@drawable/img_shop_guide" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_737373"
+            android:text="@string/msg_page_set_guide_desc1"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_38pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_579ffb"
+            android:layout_marginTop="@dimen/height_30"
+            android:text="@string/msg_page_set_guide_desc2"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_34pt" />
+
+        <TextView
+            android:id="@+id/text_alert_page_set_guide_reg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_579ffb"
+            android:gravity="center"
+            android:text="@string/msg_reg_my_shop"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_44pt"
+            android:layout_marginTop="@dimen/height_90"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

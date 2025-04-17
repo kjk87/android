@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_base_statistics"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_42pt"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_150"
+                android:layout_marginTop="@dimen/height_40"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layout_dash_board_daily"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/color_transparent_underbar_black"
+                        android:text="@string/word_daily_en"
+                        android:textColor="@color/color_cfcfcf_000000"
+                        android:textSize="@dimen/textSize_50pt"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/width_2"
+                    android:layout_height="@dimen/height_30"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color_ebebeb"/>
+
+                <RelativeLayout
+                    android:id="@+id/layout_dash_board_weekly"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/color_transparent_underbar_black"
+                        android:text="@string/word_weekly_en"
+                        android:textColor="@color/color_cfcfcf_000000"
+                        android:textSize="@dimen/textSize_50pt"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_92"
+                android:layout_marginTop="@dimen/height_30"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <TextView
+                    android:id="@+id/text_dash_board_visitor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/width_40"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_7f7f7f_ff4646"
+                    android:gravity="center"
+                    android:text="@string/word_visitor"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_34pt"/>
+
+                <TextView
+                    android:id="@+id/text_dash_board_plus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/width_40"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_7f7f7f_ff4646"
+                    android:gravity="center"
+                    android:text="@string/word_plus"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_34pt"/>
+
+                <TextView
+                    android:id="@+id/text_dash_board_share"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/width_40"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_7f7f7f_ff4646"
+                    android:gravity="center"
+                    android:text="@string/word_share"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_34pt"/>
+
+                <TextView
+                    android:id="@+id/text_dash_board_review"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_7f7f7f_ff4646"
+                    android:gravity="center"
+                    android:text="@string/word_review"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_34pt"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_400"
+                android:layout_marginTop="@dimen/height_90">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chart_dash_board_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_87"
+                android:layout_marginTop="@dimen/height_70"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_dash_board_daily_average"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/width_20"
+                            android:text="@string/format_daily_average"
+                            android:textColor="@color/color_585858"
+                            android:textSize="@dimen/textSize_34pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_daily_average_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_75pt"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_dash_board_weekly_average"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/width_20"
+                            android:text="@string/format_weekly_average"
+                            android:textColor="@color/color_585858"
+                            android:textSize="@dimen/textSize_34pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_weekly_average_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_75pt"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:layout_marginTop="@dimen/height_150"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_sales_status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_42pt"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_150"
+                android:layout_marginTop="@dimen/height_40"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layout_dash_board_sales_complete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/color_transparent_underbar_black"
+                        android:text="@string/word_sales_complete"
+                        android:textColor="@color/color_cfcfcf_000000"
+                        android:textSize="@dimen/textSize_50pt"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/width_2"
+                    android:layout_height="@dimen/height_30"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color_ebebeb"/>
+
+                <RelativeLayout
+                    android:id="@+id/layout_dash_board_order_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/color_transparent_underbar_black"
+                        android:text="@string/word_order_count"
+                        android:textColor="@color/color_cfcfcf_000000"
+                        android:textSize="@dimen/textSize_50pt"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_200"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_90"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_dash_board_yesterday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/format_yesterday"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_54"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/width_20"
+                            android:text="@string/word_number"
+                            android:textColor="@color/color_585858"
+                            android:textSize="@dimen/textSize_32pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_yesterday_sales_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_65pt"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/width_20"
+                            android:text="@string/word_price"
+                            android:textColor="@color/color_585858"
+                            android:textSize="@dimen/textSize_32pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_yesterday_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22,000"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_65pt"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/width_16"
+                    android:layout_height="@dimen/height_217"
+                    android:layout_marginTop="@dimen/height_115"
+                    android:background="@color/color_f3f3f3"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_90"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_dash_board_today"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/format_today"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_54"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/width_20"
+                            android:text="@string/word_number"
+                            android:textColor="@color/color_585858"
+                            android:textSize="@dimen/textSize_32pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_today_sales_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/width_20"
+                            android:text="22"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_65pt"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/word_price"
+                            android:textColor="@color/color_585858"
+                            android:textSize="@dimen/textSize_32pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_today_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22,000"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_65pt"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_20"
+                android:background="@color/color_f3f3f3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_126"
+                android:gravity="center"
+                android:text="@string/format_msg_recent_6days_statistics"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_38pt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_post_status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_42pt"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_150"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/height_14"
+                            android:drawableTop="@drawable/icon_chart_comment"
+                            android:gravity="center"
+                            android:text="@string/word_reply_top"
+                            android:layout_marginRight="@dimen/width_30"
+                            android:textColor="@color/color_585858"
+                            android:textSize="@dimen/textSize_30pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_reply_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/height_22"
+                            android:text="200"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_90pt"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/height_14"
+                            android:drawableTop="@drawable/icon_chart_share"
+                            android:gravity="center"
+                            android:text="@string/word_reply_top"
+                            android:layout_marginRight="@dimen/width_30"
+                            android:textColor="@color/color_585858"
+                            android:textSize="@dimen/textSize_30pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_share_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/height_22"
+                            android:text="200"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_90pt"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_dash_board_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_100"
+                    android:layout_marginTop="@dimen/height_150"
+                    android:background="@color/color_f3f3f3"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/width_72"
+                    android:text="@string/word_keyword_status"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_42pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/text_dash_board_keyword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_132"
+                    android:layout_marginLeft="@dimen/width_72"
+                    android:layout_marginRight="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_80"
+                    android:background="@drawable/border_color_a0a0a0_2px"
+                    android:drawableRight="@drawable/ic_dropbox_down"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/width_40"
+                    android:paddingRight="@dimen/width_40"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_40pt"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:layout_marginTop="@dimen/height_150"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_coupon_point_status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_42pt"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_300"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_90"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_coupon"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_54"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/width_20"
+                            android:text="@string/word_publish_coupon"
+                            android:textColor="@color/color_585858"
+                            android:textSize="@dimen/textSize_32pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_coupon_issued_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_65pt"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_dash_board_coupon_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/width_20"
+                            android:textColor="@color/color_585858"
+                            android:gravity="center"
+                            android:textSize="@dimen/textSize_32pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_coupon_back_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_65pt"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/width_16"
+                    android:layout_height="@dimen/height_217"
+                    android:layout_marginTop="@dimen/height_115"
+                    android:background="@color/color_f3f3f3"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_90"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_point"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_38pt"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_54"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/width_20"
+                            android:text="@string/word_reward_ponit"
+                            android:textColor="@color/color_585858"
+                            android:textSize="@dimen/textSize_32pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_reward_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_65pt"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_20"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/width_20"
+                            android:gravity="center"
+                            android:text="@string/word_back_ponit"
+                            android:textColor="@color/color_585858"
+                            android:textSize="@dimen/textSize_32pt"/>
+
+                        <TextView
+                            android:id="@+id/text_dash_board_back_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22,000"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_65pt"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

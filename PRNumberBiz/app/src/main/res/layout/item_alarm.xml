@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pplus.prnumberbiz.apps.common.ui.custom.swipeLayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_172"
+    android:orientation="vertical"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+    <LinearLayout
+        android:layout_width="@dimen/width_259"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_alarm_leave"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_170"
+            android:background="@drawable/btn_talk_delete"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/word_delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_47pt"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_e5e5e5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_170"
+            android:paddingLeft="@dimen/width_72"
+            android:paddingRight="@dimen/width_72">
+
+            <TextView
+                android:id="@+id/text_alarm_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/width_72"
+                android:layout_toLeftOf="@+id/text_alarm_date"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/color_585858"
+                android:textSize="@dimen/textSize_47pt"/>
+
+            <TextView
+                android:id="@+id/text_alarm_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/height_78"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_30pt"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:background="@color/color_e5e5e5"/>
+
+    </LinearLayout>
+
+
+</com.pplus.prnumberbiz.apps.common.ui.custom.swipeLayout.SwipeRevealLayout>

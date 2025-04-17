@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar_biz_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:elevation="0dp"
+                app:expanded="true">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_biz_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_810"
+                    android:background="@android:color/transparent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="@color/color_232323"
+                    app:expandedTitleTextAppearance="@android:color/transparent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+<!--                        <android.support.v4.view.ViewPager-->
+<!--                            android:id="@+id/pager_biz_main_introduce_image"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent" />-->
+
+                        <ImageView
+                            android:id="@+id/image_biz_main_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_4d000000" />
+
+
+<!--                        <com.pplus.prnumberbiz.apps.common.ui.custom.DirectionIndicator-->
+<!--                            android:id="@+id/indicator_biz_main_introduce_image"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:layout_marginBottom="@dimen/height_30" />-->
+
+                        <ImageView
+                            android:id="@+id/image_biz_main_camera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="@dimen/width_72"
+                            android:layout_marginBottom="@dimen/height_60"
+                            android:src="@drawable/ic_main_camera"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_biz_main_page_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_86pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_biz_main_plus_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_54pt"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_40"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/image_biz_main_facebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/width_15"
+                                android:src="@drawable/ic_main_facebook"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/image_biz_main_twitter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/width_15"
+                                android:src="@drawable/ic_main_twitter"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/image_biz_main_kakao"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/width_15"
+                                android:src="@drawable/ic_main_kakaostory"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/image_biz_main_instagram"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/width_15"
+                                android:src="@drawable/ic_main_instagram"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/image_biz_main_homepage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/width_15"
+                                android:src="@drawable/ic_main_homepage"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/image_biz_main_blog"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_main_blog"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar_biz_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:actionBarSize"
+                        android:gravity="top"
+                        app:contentInsetStart="0dp"
+                        app:layout_collapseMode="pin">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?android:actionBarSize">
+
+
+                            <ImageView
+                                android:id="@+id/image_biz_main_menu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/width_40"
+                                android:src="@drawable/ic_top_menu_white" />
+
+                            <ImageView
+                                android:id="@+id/image_biz_main_edit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/width_72"
+                                android:src="@drawable/ic_top_edit"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/image_biz_main_link"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/width_60"
+                                android:layout_toLeftOf="@id/image_biz_main_edit"
+                                android:src="@drawable/ic_top_link"
+                                android:visibility="gone" />
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/text_biz_main_page_name2"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="@dimen/textSize_52pt"-->
+<!--                                android:textStyle="bold"-->
+<!--                                android:visibility="gone" />-->
+
+                            <RelativeLayout
+                                android:id="@+id/layout_biz_main_reg_goods"
+                                android:layout_width="@dimen/width_270"
+                                android:layout_height="@dimen/height_100"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/width_72"
+                                android:background="@drawable/btn_home_event_goods_line_scroll"
+                                android:src="@drawable/ic_top_edit"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:drawableStart="@drawable/ic_home_event_goods_write"
+                                    android:drawablePadding="@dimen/width_10"
+                                    android:text="@string/word_reg_goods"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/textSize_28pt"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.Toolbar>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_biz_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <!--            <android.support.v4.widget.NestedScrollView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="@dimen/height_300"-->
+            <!--                        android:orientation="horizontal"-->
+            <!--                        android:paddingStart="@dimen/width_72"-->
+            <!--                        android:paddingEnd="@dimen/width_72">-->
+
+            <!--                        <LinearLayout-->
+            <!--                            android:id="@+id/layout_biz_main_plus"-->
+            <!--                            android:layout_width="0dp"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_gravity="center_vertical"-->
+            <!--                            android:layout_marginEnd="@dimen/width_30"-->
+            <!--                            android:layout_weight="1"-->
+            <!--                            android:gravity="center"-->
+            <!--                            android:orientation="vertical">-->
+
+            <!--                            <TextView-->
+            <!--                                android:id="@+id/text_biz_main_plus_count"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:textColor="@color/color_232323"-->
+            <!--                                android:textSize="@dimen/textSize_74pt"-->
+            <!--                                android:textStyle="bold" />-->
+
+            <!--                            <TextView-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:gravity="center"-->
+            <!--                                android:text="@string/word_plus"-->
+            <!--                                android:textColor="@color/color_737373"-->
+            <!--                                android:textSize="@dimen/textSize_38pt" />-->
+
+            <!--                        </LinearLayout>-->
+
+            <!--                        <LinearLayout-->
+            <!--                            android:id="@+id/layout_biz_main_sale_history"-->
+            <!--                            android:layout_width="0dp"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_gravity="center_vertical"-->
+            <!--                            android:layout_marginEnd="@dimen/width_30"-->
+            <!--                            android:layout_weight="1"-->
+            <!--                            android:gravity="center"-->
+            <!--                            android:orientation="vertical">-->
+
+            <!--                            <TextView-->
+            <!--                                android:id="@+id/text_biz_main_sale_count"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:textColor="@color/color_232323"-->
+            <!--                                android:textSize="@dimen/textSize_74pt"-->
+            <!--                                android:textStyle="bold" />-->
+
+            <!--                            <TextView-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:background="@drawable/underbar_737373_ffffff"-->
+            <!--                                android:drawableEnd="@drawable/ic_main_review_arrow"-->
+            <!--                                android:drawablePadding="@dimen/width_10"-->
+            <!--                                android:gravity="center"-->
+            <!--                                android:text="@string/word_sale_count"-->
+            <!--                                android:textColor="@color/color_737373"-->
+            <!--                                android:textSize="@dimen/textSize_38pt" />-->
+            <!--                        </LinearLayout>-->
+
+            <!--                        <LinearLayout-->
+            <!--                            android:id="@+id/layout_biz_main_review"-->
+            <!--                            android:layout_width="0dp"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_gravity="center_vertical"-->
+            <!--                            android:layout_weight="1"-->
+            <!--                            android:gravity="center"-->
+            <!--                            android:orientation="vertical">-->
+
+            <!--                            <TextView-->
+            <!--                                android:id="@+id/text_biz_main_review_count"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:textColor="@color/color_232323"-->
+            <!--                                android:textSize="@dimen/textSize_74pt"-->
+            <!--                                android:textStyle="bold" />-->
+
+            <!--                            <TextView-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:background="@drawable/underbar_737373_ffffff"-->
+            <!--                                android:drawableEnd="@drawable/ic_main_review_arrow"-->
+            <!--                                android:drawablePadding="@dimen/width_10"-->
+            <!--                                android:gravity="center"-->
+            <!--                                android:text="@string/word_review"-->
+            <!--                                android:textColor="@color/color_737373"-->
+            <!--                                android:textSize="@dimen/textSize_38pt" />-->
+
+
+            <!--                        </LinearLayout>-->
+
+            <!--                    </LinearLayout>-->
+
+            <!--                    <View-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="@dimen/height_37"-->
+            <!--                        android:background="@color/color_f0f0f0" />-->
+
+            <!--                    <View-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="@dimen/height_3"-->
+            <!--                        android:background="@color/color_d8d8d8" />-->
+
+
+            <!--                    <RelativeLayout-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content">-->
+
+            <!--                        <LinearLayout-->
+            <!--                            android:id="@+id/layout_biz_main_not_exist_hot_deal"-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_marginTop="@dimen/height_200"-->
+            <!--                            android:layout_marginBottom="@dimen/height_230"-->
+            <!--                            android:gravity="center_horizontal"-->
+            <!--                            android:orientation="vertical"-->
+            <!--                            android:visibility="visible">-->
+
+            <!--                            <android.support.v4.view.ViewPager-->
+            <!--                                android:id="@+id/pager_biz_main_hot_dea_desc"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="@dimen/height_610" />-->
+
+            <!--                            <com.pplus.prnumberbiz.apps.common.ui.custom.DirectionIndicator-->
+            <!--                                android:id="@+id/indicator_biz_main_hot_dea_desc"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_marginTop="@dimen/height_40" />-->
+
+
+            <!--                            <RelativeLayout-->
+            <!--                                android:id="@+id/layout_biz_main_reg_hot_deal"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="@dimen/height_160"-->
+            <!--                                android:layout_marginStart="@dimen/width_72"-->
+            <!--                                android:layout_marginTop="@dimen/height_140"-->
+            <!--                                android:layout_marginEnd="@dimen/width_72"-->
+            <!--                                android:background="@drawable/btn_red">-->
+
+            <!--                                <TextView-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_centerInParent="true"-->
+            <!--                                    android:gravity="center"-->
+            <!--                                    android:text="@string/msg_reg_hotdeal"-->
+            <!--                                    android:textColor="@color/white"-->
+            <!--                                    android:textSize="@dimen/textSize_40pt"-->
+            <!--                                    android:textStyle="bold" />-->
+
+            <!--                            </RelativeLayout>-->
+
+            <!--                        </LinearLayout>-->
+
+
+            <!--                        <LinearLayout-->
+            <!--                            android:id="@+id/layout_biz_main_hot_deal"-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_marginTop="@dimen/height_100"-->
+            <!--                            android:layout_marginBottom="@dimen/height_230"-->
+            <!--                            android:orientation="vertical"-->
+            <!--                            android:paddingStart="@dimen/width_72"-->
+            <!--                            android:paddingEnd="@dimen/width_72"-->
+            <!--                            android:visibility="visible">-->
+
+            <!--                            <RelativeLayout-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content">-->
+
+            <!--                                <TextView-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_centerVertical="true"-->
+            <!--                                    android:drawableStart="@drawable/ic_goods_hotdeal"-->
+            <!--                                    android:drawablePadding="@dimen/width_15"-->
+            <!--                                    android:text="@string/word_hot_deal_goods"-->
+            <!--                                    android:textColor="@color/color_232323"-->
+            <!--                                    android:textSize="@dimen/textSize_60pt"-->
+            <!--                                    android:textStyle="bold" />-->
+
+            <!--                                <include-->
+            <!--                                    layout="@layout/item_goods_more"-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_alignParentEnd="true"-->
+            <!--                                    android:layout_centerVertical="true" />-->
+            <!--                            </RelativeLayout>-->
+
+
+            <!--                            <com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout-->
+            <!--                                android:id="@+id/layout_biz_main_hot_deal_image"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="@dimen/height_702"-->
+            <!--                                android:layout_marginTop="@dimen/height_30"-->
+            <!--                                app:mask="@drawable/img_goods_mask_2"-->
+            <!--                                app:porterduffxfermode="DST_IN">-->
+
+
+            <!--                                <android.support.v4.view.ViewPager-->
+            <!--                                    android:id="@+id/pager_biz_main_hot_deal_image"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="match_parent" />-->
+
+            <!--                                <com.pplus.prnumberbiz.apps.common.ui.custom.DirectionIndicator-->
+            <!--                                    android:id="@+id/indicator_biz_main_hot_deal"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_gravity="bottom"-->
+            <!--                                    android:layout_marginBottom="@dimen/height_30" />-->
+
+            <!--                                <RelativeLayout-->
+            <!--                                    android:id="@+id/layout_biz_main_hot_deal_status"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="match_parent"-->
+            <!--                                    android:background="@color/color_80737373">-->
+
+            <!--                                    <LinearLayout-->
+            <!--                                        android:layout_width="wrap_content"-->
+            <!--                                        android:layout_height="wrap_content"-->
+            <!--                                        android:layout_centerInParent="true"-->
+            <!--                                        android:gravity="center"-->
+            <!--                                        android:orientation="vertical">-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:id="@+id/text_biz_main_hot_deal_status"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:textColor="@color/white"-->
+            <!--                                            android:textSize="@dimen/textSize_60pt"-->
+            <!--                                            android:textStyle="bold" />-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:id="@+id/text_biz_main_hot_deal_status_option"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:textColor="@color/white"-->
+            <!--                                            android:textSize="@dimen/textSize_40pt" />-->
+
+            <!--                                    </LinearLayout>-->
+
+            <!--                                </RelativeLayout>-->
+
+
+            <!--                            </com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout>-->
+
+            <!--                            <TextView-->
+            <!--                                android:id="@+id/text_biz_main_hot_deal_name"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_marginTop="@dimen/height_60"-->
+            <!--                                android:textColor="@color/color_232323"-->
+            <!--                                android:textSize="@dimen/textSize_50pt"-->
+            <!--                                android:textStyle="bold" />-->
+
+
+            <!--                            <LinearLayout-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:gravity="bottom"-->
+            <!--                                android:orientation="horizontal">-->
+
+            <!--                                <TextView-->
+            <!--                                    android:id="@+id/text_biz_main_hot_deal_sale_price"-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:textColor="@color/color_232323"-->
+            <!--                                    android:textSize="@dimen/textSize_78pt"-->
+            <!--                                    android:textStyle="bold" />-->
+
+            <!--                                <TextView-->
+            <!--                                    android:id="@+id/text_biz_main_hot_deal_sale_price_unit"-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_marginEnd="@dimen/width_30"-->
+            <!--                                    android:text="@string/word_money_unit"-->
+            <!--                                    android:textColor="@color/color_232323"-->
+            <!--                                    android:textSize="@dimen/textSize_34pt" />-->
+
+            <!--                                <TextView-->
+            <!--                                    android:id="@+id/text_biz_main_hot_deal_origin_price"-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:textColor="@color/color_b7b7b7"-->
+            <!--                                    android:textSize="@dimen/textSize_40pt" />-->
+
+
+            <!--                                <View-->
+            <!--                                    android:layout_width="0dp"-->
+            <!--                                    android:layout_height="0dp"-->
+            <!--                                    android:layout_weight="1" />-->
+
+            <!--                                <TextView-->
+            <!--                                    android:id="@+id/text_biz_main_hot_deal_remain_count"-->
+            <!--                                    android:layout_width="wrap_content"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_gravity="center_vertical"-->
+            <!--                                    android:textColor="@color/color_579ffb"-->
+            <!--                                    android:textSize="@dimen/textSize_40pt" />-->
+
+
+            <!--                            </LinearLayout>-->
+
+
+            <!--                            <TextView-->
+            <!--                                android:id="@+id/text_biz_main_hot_deal_reward"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_marginTop="@dimen/height_30"-->
+            <!--                                android:textColor="@color/color_ff4646"-->
+            <!--                                android:textSize="@dimen/textSize_42pt" />-->
+
+            <!--                            <View-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="@dimen/height_2"-->
+            <!--                                android:layout_marginTop="@dimen/height_30"-->
+            <!--                                android:background="@color/color_f0f0f0" />-->
+
+
+            <!--                            <TextView-->
+            <!--                                android:id="@+id/text_biz_main_hot_deal_contents"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_marginTop="@dimen/height_30"-->
+            <!--                                android:maxLines="3"-->
+            <!--                                android:textColor="@color/color_737373"-->
+            <!--                                android:textSize="@dimen/textSize_44pt" />-->
+
+            <!--                        </LinearLayout>-->
+
+            <!--                    </RelativeLayout>-->
+
+
+            <!--                </LinearLayout>-->
+
+            <!--            </android.support.v4.widget.NestedScrollView>-->
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_3"
+                android:background="@color/color_efefef" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layout_biz_main_plus_customer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/gnb_main_plus_nor"
+                        android:gravity="center"
+                        android:text="@string/word_plus_customer"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_biz_main_keyword"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/gnb_main_ad_nor"
+                        android:gravity="center"
+                        android:text="@string/word_new_customer"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_biz_main_store_config"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/gnb_main_store_nor"
+                        android:gravity="center"
+                        android:text="@string/word_store_config"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_biz_main_user_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/height_26"
+        android:src="@drawable/gnb_main_pr"
+        android:visibility="gone" />
+
+</RelativeLayout>

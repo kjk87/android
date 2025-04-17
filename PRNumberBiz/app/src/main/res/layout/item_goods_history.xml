@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/height_60"
+        android:paddingEnd="@dimen/width_72"
+        android:paddingStart="@dimen/width_72"
+        android:paddingTop="@dimen/height_60">
+
+        <ImageView
+            android:id="@+id/image_goods_history_image"
+            android:layout_width="@dimen/width_360"
+            android:layout_height="@dimen/height_270"
+            android:layout_marginEnd="@dimen/width_40"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_goods_history_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_48pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_goods_history_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_12"
+                android:textColor="@color/color_737373"
+                android:textSize="@dimen/textSize_36pt"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_marginEnd="@dimen/width_72"
+        android:layout_marginStart="@dimen/width_72"
+        android:background="@color/color_f0f0f0"/>
+
+</LinearLayout>

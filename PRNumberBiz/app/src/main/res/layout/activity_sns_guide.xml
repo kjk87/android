@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <com.pplus.prnumberbiz.apps.common.ui.custom.autoscrollviewpager.AutoScrollViewPager
+        android:id="@+id/page_sns_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/image_sns_guide_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/height_17"
+        android:layout_marginRight="@dimen/width_40"
+        android:background="@drawable/ic_top_close"/>
+
+    <com.pplus.prnumberbiz.apps.common.ui.custom.DirectionIndicator
+        android:id="@+id/indicator_sns_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_100"/>
+
+    <TextView
+        android:id="@+id/text_sns_guide_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_136"
+        android:background="@color/black"
+        android:textSize="@dimen/textSize_40pt"
+        android:textColor="@color/color_ffffff_a3a3a3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_150"
+        android:layout_marginLeft="@dimen/width_72"
+        android:layout_marginRight="@dimen/width_72"
+        android:gravity="center"
+        android:text="@string/word_confirm"/>
+
+
+</RelativeLayout>

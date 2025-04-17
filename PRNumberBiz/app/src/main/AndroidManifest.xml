@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pplus.prnumberbiz">
+    <!-- 계정 관리 싱크 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- <uses-permission android:name="android.permission.WRITE_SETTINGS"/> -->
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SOCIAL_STREAM" />
+    <uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- VERY IMPORTANT! Don't forget this permission, or in-app billing won't work. -->
+    <!-- <uses-permission android:name="com.android.vending.BILLING" /> -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".PRNumberBizApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".apps.coupon.ui.CouponConfigDetailActivity"></activity>
+        <activity android:name=".apps.coupon.ui.CouponRegActivity" />
+        <activity android:name=".apps.coupon.ui.CouponConfigActivity" />
+        <activity android:name=".apps.signin.ui.PageStatusActivity" />
+        <activity android:name=".apps.goods.ui.ReviewReplyActivity" />
+        <activity android:name=".apps.nfc.ui.NFCInstallmentActivity" />
+        <activity android:name=".apps.nfc.ui.NFCPayWaitActivity" />
+        <activity android:name=".apps.nfc.ui.NFCPayActivity" />
+        <activity android:name=".apps.goods.ui.BankSelectActivity" />
+        <activity android:name=".apps.main.ui.PersonMainActivity" />
+        <activity
+            android:name=".apps.goods.ui.GoodsNoticeInfoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.main.ui.BackgroundImageDetailActivity" />
+        <activity
+            android:name=".apps.ads.ui.AlertSendEventActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.ads.ui.SendEventActivity" />
+        <activity android:name=".apps.goods.ui.BizRegMethodActivity" />
+        <activity android:name=".apps.keyword.ui.HashTagSearchActivity" />
+        <activity android:name=".apps.keyword.ui.KeywordActivity" />
+        <activity android:name=".apps.pages.ui.PageModifyActivity" />
+        <activity android:name=".apps.pages.ui.PageEditActivity" />
+        <activity android:name=".apps.main.ui.PRLinkActivity" />
+        <activity
+            android:name=".apps.number.ui.MakePrnumberPreActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.marketing.ui.TargetMarketingActivity" />
+        <activity android:name=".apps.ads.ui.AdvertiseActivity" />
+        <activity android:name=".apps.number.ui.MakePRNumberActivity" />
+        <activity android:name=".apps.pages.ui.OperationInfoActivity" />
+        <activity android:name=".apps.goods.ui.PlusGoodsDetailActivity" />
+        <activity android:name=".apps.sale.ui.SaleOrderDetailActivity" />
+        <activity android:name=".apps.goods.ui.MenuCategoryConfigActivity" />
+        <activity android:name=".apps.menu.ui.MenuConfigActivity" />
+        <activity android:name=".apps.signup.ui.SelectPageTypeActivity" />
+        <activity android:name=".apps.pages.ui.MainYoutubeActivity" />
+        <activity android:name=".apps.coupon.ui.CouponSaleHistoryActivity"/>
+        <activity android:name=".apps.coupon.ui.SelectCouponActivity"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="@string/file_provider_authority"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider> <!-- [START firebase_service] -->
+        <service android:name=".push.firebase.PRNumberBizMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <!-- <service android:name=".push.firebase.PRNumberBizIDService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <!-- 애드팝콘 -->
+        <meta-data
+            android:name="igaworks_app_key"
+            android:value="@string/igaworks_app_key" />
+        <meta-data
+            android:name="igaworks_hash_key"
+            android:value="@string/igaworks_hash_key" /> <!-- 구글 -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBUB3tOCg_oi9Q9LqBUNq-LMfbTHiDGhJ4" /> <!-- 트위터 -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e8437159ad1e99968a5fad3a07eb0c4069ed811c" /> <!-- 카카오 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" /> <!-- 페이스북 -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" /> <!-- <provider -->
+        <!-- android:name="com.facebook.FacebookContentProvider" -->
+        <!-- android:authorities="com.facebook.app.FacebookContentProvider1820387054699036" -->
+        <!-- android:exported="true"/> -->
+        <receiver
+            android:name=".apps.common.receiver.InstallReferrerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver> <!-- [naveroauthlogin][start] 네이버아이디로로그인을 사용하기 위해서 넣어줘야하는 부분 -->
+        <!-- <activity -->
+        <!-- android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity" -->
+        <!-- android:label="OAuth2.0 In-app" -->
+        <!-- android:theme="@style/NoTitleBar.Fullscreen.Translucent" /> -->
+        <!-- [naveroauthlogin][end] -->
+        <activity android:name=".apps.LauncherScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".apps.common.ui.common.AlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.group.ui.GroupConfigActivity" />
+        <activity android:name=".apps.group.ui.GroupNameEditActivity" />
+        <activity
+            android:name=".apps.group.ui.GroupAddActivity"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".apps.post.ui.ReplyEditActivity" />
+        <activity
+            android:name=".apps.pages.ui.PhotoTakerActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".apps.post.ui.PhotoDetailViewerActivity" />
+        <activity android:name=".apps.signin.ui.ChangePWActivity" />
+        <activity android:name=".apps.setting.ui.SecessionActivity" />
+        <activity android:name=".apps.common.ui.common.WebViewActivity" />
+        <activity android:name=".apps.setting.ui.FAQActivity" />
+        <activity android:name=".apps.setting.ui.AlimActivity" />
+        <activity android:name=".apps.setting.ui.AlarmContainerActivity" />
+        <activity android:name=".apps.setting.ui.AccountConfigActivity" />
+        <activity android:name=".apps.setting.ui.ServiceVersionActivity" />
+        <activity android:name=".apps.setting.ui.NoticeActivity" />
+        <activity
+            android:name="com.pple.pplus.utils.part.apps.permission.PermissionActivity"
+            android:theme="@style/Theme.Permission" />
+        <activity
+            android:name=".apps.customer.ui.CustomerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.guide.ui.SignUpGuideActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.main.ui.OneGalleryActivity" />
+        <activity
+            android:name=".apps.setting.ui.InquiryActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.post.ui.PostDetailActivity" /> <!-- <activity android:name=".apps.post.ui.ReviewGiftBolActivity" /> -->
+        <activity android:name=".apps.post.ui.ReplyDetailActivity" />
+        <activity android:name=".apps.post.ui.PostGalleryActivity" />
+        <activity android:name=".apps.GrantPermissionActivity" />
+        <activity android:name=".apps.post.ui.ImageFilterActivity" />
+        <activity
+            android:name=".apps.post.ui.PostWriteActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.post.ui.PostOptionSettingActivity" />
+        <activity android:name=".apps.post.ui.ImageDeleteActivity" />
+        <activity android:name=".apps.post.ui.PostImageEditActivity" />
+        <activity
+            android:name=".apps.customer.ui.SelectCustomerConfigActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.cash.ui.CashConfigDetailActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.cash.ui.CashHistoryDetailActivity" />
+        <activity
+            android:name=".apps.keyword.ui.KeywordConfigActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.push.ui.PushPreviewActivity" />
+        <activity
+            android:name=".apps.customer.ui.CustomerAddActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.customer.ui.SelectContactActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.customer.ui.CustomerDirectRegActivity" />
+        <activity android:name=".apps.push.ui.PushReservationActivity" /> <!-- <activity android:name=".apps.result.DashBoardActivity" /> -->
+        <activity android:name=".apps.push.ui.PushResultActivity" />
+        <activity android:name=".apps.offer.OfferDetailActivity" />
+        <activity
+            android:name=".apps.signin.ui.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.common.ui.common.CropActivity" />
+        <activity
+            android:name=".apps.post.ui.SetLuckyBolActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.signup.ui.VerificationMeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.pages.ui.SearchAddressActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.offer.OfferActivity" />
+        <activity android:name=".apps.sms.SmsResultActivity" />
+        <activity
+            android:name=".apps.customer.ui.SelectPlusActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.customer.ui.SelectCustomerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.customer.ui.SmsLockerActivity" />
+        <activity android:name=".apps.pages.ui.GalleryActivity" />
+        <activity android:name=".apps.pages.ui.IntroImageDeleteActivity" />
+        <activity android:name=".apps.pages.ui.TemplateActivity" />
+        <activity android:name=".apps.pages.ui.IntroduceImageDetailActivity" />
+        <activity android:name=".apps.customer.ui.RecommendActivity" />
+        <activity android:name=".apps.signin.ui.FindIdActivity" />
+        <activity android:name=".apps.signin.ui.FindPWActivity" />
+        <activity android:name=".apps.setting.ui.NoticeDetailActivity" />
+        <activity
+            android:name=".apps.pages.ui.ApplyCategoryActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.sms.SmsPreviewActivity" />
+        <activity
+            android:name=".apps.post.ui.ReplyActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.shop.ui.LocationShopActivity" />
+        <activity android:name=".apps.signin.ui.NotSignedTermsActivity" />
+        <activity android:name=".apps.post.ui.ReviewActivity" />
+        <activity android:name=".apps.push.ui.PushResultDetailActivity" />
+        <activity android:name=".apps.push.ui.PushReceiverActivity" />
+        <activity
+            android:name=".apps.customer.ui.SelectOneContactActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.bol.ui.BolConfigDetailActivity" />
+        <activity
+            android:name=".apps.outgoingnumber.OutGoingNumberConfigActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.common.ui.common.YoutubePlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".apps.customer.ui.SelectBolUserActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.bol.ui.BolGiftContainerActivity" />
+        <activity android:name=".apps.bol.ui.BolGiftDetailActivity" />
+        <activity android:name=".apps.guide.ui.SnsGuideActivity" />
+        <activity android:name=".apps.guide.ui.GuideActivity" />
+        <activity android:name=".apps.mobilegift.ui.MobileGiftDetailActivity" />
+        <activity android:name=".apps.mobilegift.ui.MobileGiftGuideActivity" />
+        <activity
+            android:name=".apps.mobilegift.ui.MobileGiftPurchaseActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.post.ui.PostActivity" /> <!-- <activity android:name=".apps.billing.ui.CashBillingActivity" /> -->
+        <activity
+            android:name=".apps.common.ui.common.PGActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="pg"
+                    android:scheme="prnumberbiz" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".apps.mobilegift.ui.MobileGiftHistoryActivity" />
+        <activity android:name=".apps.mobilegift.ui.MobileGiftHistoryDetailActivity" />
+        <activity android:name=".apps.push.ui.PushGuideActivity" />
+        <activity android:name=".apps.post.ui.ReviewDetailActivity" />
+        <activity android:name=".apps.bol.ui.PointConfigActivity" />
+        <activity android:name=".apps.bol.ui.PointHistoryDetailActivity" />
+        <activity android:name=".apps.main.ui.BizMainActivity" />
+        <activity android:name=".apps.post.ui.SelectPostActivity" />
+        <activity android:name=".apps.push.ui.PushSendActivity" />
+        <activity android:name=".apps.customer.ui.PlusActivity" />
+        <activity android:name=".apps.cash.ui.CashConfigActivity2" />
+        <activity android:name=".apps.pages.ui.SecretModeActivity" />
+        <activity android:name=".apps.pages.ui.PageConfigActivity" />
+        <activity android:name=".apps.marketing.ui.SnsUrlActivity" />
+        <activity android:name=".apps.signin.ui.AddTermsActivity" />
+        <activity android:name=".apps.signup.ui.JoinActivity" />
+        <activity
+            android:name=".apps.common.ui.common.DatePickerActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.pages.ui.OpenTimePickerActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.goods.ui.UseTimePickerActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.goods.ui.GoodsDatePickerActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.signup.ui.AlertPageTypeActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.pages.ui.PageActivity2" />
+        <activity
+            android:name=".apps.marketing.ui.SnsSyncActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.sms.SmsSendActivity" />
+        <activity android:name=".apps.signup.ui.JoinCompleteActivity" />
+        <activity android:name=".apps.setting.ui.SettingActivity" />
+        <activity
+            android:name=".apps.cash.ui.CashChargeAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.goods.ui.SaleGoodsPreActivity" />
+        <activity android:name=".apps.goods.ui.SaleGoodsSampleActivity" />
+        <activity android:name=".apps.goods.ui.SaleGoodsSampleDetailActivity" />
+        <activity android:name=".apps.goods.ui.SellerApplyActivity" />
+        <activity android:name=".apps.customer.ui.ContactCustomerActivity" />
+        <activity android:name=".apps.goods.ui.GoodsListActivity" />
+        <activity android:name=".apps.goods.ui.GoodsDetailActivity" />
+        <activity android:name=".apps.goods.ui.GoodsSaleHistoryActivity" />
+        <activity android:name=".apps.goods.ui.GoodsSaleTotalHistoryActivity" />
+        <activity android:name=".apps.goods.ui.WithDrawConfigActivity" />
+        <activity android:name=".apps.goods.ui.GoodsReviewActivity" />
+        <activity
+            android:name=".apps.signup.ui.JoinConfirmActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.number.ui.MakePrnumberConfirmActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.pages.ui.PageSetActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.sale.ui.SaleOrderProcessyActivity" />
+        <activity android:name=".apps.goods.ui.GoodsSaleHistoryDetailActivity" />
+        <activity android:name=".apps.customer.ui.ContactConfigActivity" />
+        <activity android:name=".apps.goods.ui.SelectGoodsActivity" />
+        <activity android:name=".apps.goods.ui.GoodsDetailViewerActivity" />
+        <activity
+            android:name=".apps.goods.ui.SalePriceInfoAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.goods.ui.SaleGoodsTermsActivity" />
+        <activity android:name=".apps.UseInfoActivity" />
+        <activity
+            android:name=".apps.NightAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.goods.ui.GoodsSaleApplyPreActivity" />
+        <activity
+            android:name=".apps.goods.ui.GoodsUseAlertActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.pages.ui.PageLinkActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".apps.main.ui.AlertSecretModeActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.main.ui.AlertPromotionActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.goods.ui.GoodsRegActivity2"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.goods.ui.MenuRegActivity" />
+        <activity android:name=".apps.cash.ui.CashChargeActivity" />
+        <activity
+            android:name=".apps.main.ui.AlertGoodsGuideActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.nfc.ui.AlertNFCPayCompleteActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.signin.ui.AlertRefuseActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.pages.ui.AlertPageLinkActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.menu.ui.AlertCategoryRegActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.sale.ui.SaleHistoryActivity" />
+        <activity android:name=".apps.sale.ui.SaleOrderHistoryActivity" />
+        <activity android:name=".apps.sale.ui.SaleDeliveryDetailActivity" />
+        <activity android:name=".apps.sale.ui.SaleGoodsHistoryActivity" />
+        <activity android:name=".apps.sale.ui.SaleGoodsDetailActivity" />
+        <activity android:name=".apps.goods.ui.PlusGoodsActivity" />
+        <activity
+            android:name=".apps.sale.ui.AlertSaleOrderActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".apps.pages.ui.AlertPageSetGuideActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".apps.post.ui.PostRegActivity" />
+        <activity android:name=".apps.setting.ui.OpenLicenseActivity" />
+        <activity android:name=".apps.goods.ui.HotDealActivity" />
+        <activity
+            android:name=".apps.setting.ui.VerificationActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".apps.signin.ui.SnsLoginActivity" />
+        <activity android:name=".apps.sale.ui.BuyHistoryDetailActivity" />
+        <activity
+            android:name=".apps.verification.AuthCodeConfigActivity"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

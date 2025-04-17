@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_92"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_outgoing_number_no"
+            android:layout_width="@dimen/width_134"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_34pt"/>
+
+        <TextView
+            android:id="@+id/text_outgoing_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_34pt"/>
+
+        <TextView
+            android:id="@+id/text_outgoing_number_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_34pt"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_outgoing_number_delete"
+            android:layout_width="@dimen/width_134"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/underbar_ff4646_ffffff"
+                android:gravity="center"
+                android:text="@string/word_delete"
+                android:textColor="@color/color_ff4646"
+                android:textSize="@dimen/textSize_34pt"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:background="@color/color_d8d8d8"/>
+
+</LinearLayout>

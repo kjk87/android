@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_location_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/text_location_page_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/height_50"
+                android:layout_marginLeft="@dimen/width_72"
+                android:layout_marginRight="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_50"
+                android:background="@drawable/underbar_000000_ffffff_10px"
+                android:paddingBottom="@dimen/height_12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_42pt"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_location_pageMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

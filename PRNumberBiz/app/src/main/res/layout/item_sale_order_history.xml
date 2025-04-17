@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_270">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/width_72"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_sale_order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_58pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_sale_order_buyer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_38pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/width_72">
+
+        <TextView
+            android:id="@+id/text_sale_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_40pt" />
+
+        <TextView
+            android:id="@+id/text_sale_order_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_40pt" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_f0f0f0" />
+</RelativeLayout>

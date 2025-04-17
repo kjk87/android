@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height_150"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/width_72"
+        android:layout_marginEnd="@dimen/width_72"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/height_20"
+        android:orientation="horizontal">
+
+        <com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout
+            android:id="@+id/layout_order_detail_menu"
+            android:layout_width="@dimen/width_200"
+            android:layout_height="@dimen/height_150"
+            android:layout_marginEnd="@dimen/width_30"
+            app:mask="@drawable/img_goods_mask"
+            app:porterduffxfermode="DST_IN">
+
+            <ImageView
+                android:id="@+id/image_order_detail_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_goods_default" />
+
+        </com.pplus.prnumberbiz.apps.common.ui.custom.MaskableFrameLayout>
+
+
+        <TextView
+            android:id="@+id/text_order_detail_menu_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_30"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_45pt" />
+
+
+        <TextView
+            android:id="@+id/text_order_detail_menu_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_45pt" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

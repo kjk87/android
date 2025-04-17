@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="public_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuNiWWKTyU0vj+vj+YinVGIWeRneMzkxzNC62RxWHWAhopv5SRTUvskN72CRE5e0jTh6vm9MoEj9YA3vbq941P40p+62+vS4ZE/cbOOMYSiX3xosjsxdrNEDDoT2u+HYKIq4wsuRCmfEzVuJiMBmWgigyvjFuqTD01u2OcD9rVvyBIv9SSgsTIBBqzBAE9biFM7iwF1AOQgCn/a/myVge4omhIHaL5zD6I69PobE4XcDaTEd5M2NAw68f3+nQfUkDAVl0NDhYW0uHKeLDDO02E0qm0MQ+uky9g1Mug9vdDVgEQl7uUiNIQVh0/vbqE2Vpq42a8pCvV+Mo3PznWIF1MwIDAQAB</string>
+    <!--google-->
+    <!--<string name="google_client_id">783471476128-hobjtu7826slv4eo2vvssfl0fhftrp82.apps.googleusercontent.com</string>-->
+
+    <!-- Your Facebook App ID from your app settings on https://developers.facebook.com/ -->
+    <!-- More details here: https://www.firebase.com/docs/android/guide/user/facebook.html -->
+    <string name="facebook_app_id">2347062361986726</string>
+    <string name="fb_login_protocol_scheme">fb2347062361986726</string>
+
+    <!-- Your Twitter consumer key and secret from your app settings on https://apps.twitter.com/ -->
+    <!-- More details here: https://www.firebase.com/docs/android/guide/user/twitter.html -->
+    <string name="twitter_consumer_key">w5jC5uteMDl5hME7PkwVifERb</string>
+    <string name="twitter_consumer_secret">ZF2STwW7NpfMjwp9eKUvtGY7JKyN3mbs2vg3VlBhhayCoED6W3</string>
+
+    <!--kakao-->
+    <string name="kakao_app_key">d96ec68219056322337d4582a4bc7221</string>
+    <string name="kakao_scheme">kakaob9120479e4cc062b19463a8d7eaa662b</string>
+    <string name="kakaostory_host">kakaostory</string>
+
+    <!-- adpapcorn -->
+    <string name="igaworks_app_key">171064744</string>
+    <string name="igaworks_hash_key">178d2be76ace453c</string>
+
+    <string name="boot_pay_id">5c36dafeb6d49c67f6bf706f</string>
+    <string name="boot_pay_id_stage">5c00fb0fb6d49c08cce3cc2a</string>
+    <string name="boot_pay_id_dev">5c0504a0396fa60d65bd2c03</string>
+
+    <!--naver-->
+    <string name="naver_client_id">iYRpug1XISBxHSymjBy3</string>
+    <string name="naver_client_secret">v3gr4_mdKR</string>
+</resources>

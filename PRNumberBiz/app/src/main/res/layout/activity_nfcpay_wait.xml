@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".apps.nfc.ui.NFCPayWaitActivity">
+
+    <TextView
+        android:id="@+id/text_nfcpay_wait_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_120"
+        android:textColor="@color/color_ff4646"
+        android:textSize="@dimen/textSize_85pt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_40"
+        android:drawableTop="@drawable/img_nfc_progress"
+        android:gravity="center"
+        android:text="@string/msg_pay_wait_nfc_desc"
+        android:textColor="@color/color_737373"
+        android:textSize="@dimen/textSize_46pt" />
+
+    <TextView
+        android:id="@+id/text_nfcpay_wait_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/height_90"
+        android:layout_marginEnd="@dimen/width_72"
+        android:background="@drawable/underbar_b7b7b7_ffffff"
+        android:text="@string/msg_cancel"
+        android:textColor="@color/color_b7b7b7"
+        android:textSize="@dimen/textSize_40pt"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_610"
+        android:layout_marginStart="@dimen/width_72"
+        android:layout_marginTop="@dimen/height_50"
+        android:layout_marginEnd="@dimen/width_72"
+        android:src="@drawable/img_nfc_info" />
+</LinearLayout>

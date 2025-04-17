@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_alarm_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_152"
+            android:text="@string/msg_alim_storage"
+            android:textSize="@dimen/textSize_40pt"
+            android:textColor="@color/color_737373"
+            android:gravity="center|left"
+            android:drawableLeft="@drawable/ic_talk_info_gray"
+            android:drawablePadding="@dimen/width_15"
+            android:layout_marginLeft="@dimen/width_72"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:background="@color/color_e5e5e5"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

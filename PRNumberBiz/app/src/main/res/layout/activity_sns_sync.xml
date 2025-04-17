@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_579ffb"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.marketing.ui.SnsSyncActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168">
+
+            <TextView
+                android:id="@+id/text_sync_sns_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/width_40"
+                android:drawableStart="@drawable/ic_top_prev_white"
+                android:gravity="center_vertical"
+                android:text="@string/word_sync_sns"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_52pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/height_100"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_572"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:src="@drawable/img_sns_guide" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_110"
+                    android:text="@string/word_sync_homepage"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:drawableStart="@drawable/ic_sns_homepage"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_homepage"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                            android:id="@+id/switch_sync_homepage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:thumb="@drawable/btn_onoff_circle"
+                            app:switchMinWidth="@dimen/width_150"
+                            app:track="@drawable/switch_setting" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_2"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/color_f0f0f0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sync_homepage_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_sync_homepage_url"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <TextView
+                            android:id="@+id/text_sync_homepage_url_modify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/underbar_579ffb_ffffff"
+                            android:text="@string/word_modified"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_48pt" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:text="@string/word_sync_blog"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:drawableStart="@drawable/ic_sns_blog"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_blog"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                            android:id="@+id/switch_sync_blog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:thumb="@drawable/btn_onoff_circle"
+                            app:switchMinWidth="@dimen/width_150"
+                            app:track="@drawable/switch_setting" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_2"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/color_f0f0f0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sync_blog_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_sync_blog_url"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <TextView
+                            android:id="@+id/text_sync_blog_url_modify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/underbar_579ffb_ffffff"
+                            android:text="@string/word_modified"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_48pt" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:text="@string/word_sync_youtube"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:drawableStart="@drawable/ic_sns_youtube"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_youtube"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                            android:id="@+id/switch_sync_youtube"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:thumb="@drawable/btn_onoff_circle"
+                            app:switchMinWidth="@dimen/width_150"
+                            app:track="@drawable/switch_setting" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_2"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/color_f0f0f0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sync_youtube_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_sync_youtube_url"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <TextView
+                            android:id="@+id/text_sync_youtube_url_modify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/underbar_579ffb_ffffff"
+                            android:text="@string/word_modified"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_48pt" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:text="@string/word_sync_kakao_channel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:drawableStart="@drawable/ic_sns_kakaochannel"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_kakao_channel"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                            android:id="@+id/switch_sync_kakaochannel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:thumb="@drawable/btn_onoff_circle"
+                            app:switchMinWidth="@dimen/width_150"
+                            app:track="@drawable/switch_setting" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_2"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/color_f0f0f0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sync_kakaochannel_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_sync_kakaochannel_url"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <TextView
+                            android:id="@+id/text_sync_kakaochannel_url_modify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/underbar_579ffb_ffffff"
+                            android:text="@string/word_modified"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_48pt" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:text="@string/word_sync_twitter"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:drawableStart="@drawable/ic_sns_twitter"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_twitter"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                            android:id="@+id/switch_sync_twitter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:thumb="@drawable/btn_onoff_circle"
+                            app:switchMinWidth="@dimen/width_150"
+                            app:track="@drawable/switch_setting" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_2"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/color_f0f0f0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sync_twitter_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_sync_twitter_url"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <TextView
+                            android:id="@+id/text_sync_twitter_url_modify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/underbar_579ffb_ffffff"
+                            android:text="@string/word_modified"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_48pt" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:text="@string/word_sync_facebook"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:drawableStart="@drawable/ic_sns_facebook"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_facebook"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                            android:id="@+id/switch_sync_facebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:thumb="@drawable/btn_onoff_circle"
+                            app:switchMinWidth="@dimen/width_150"
+                            app:track="@drawable/switch_setting" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_2"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/color_f0f0f0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sync_facebook_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_sync_facebook_url"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <TextView
+                            android:id="@+id/text_sync_facebook_url_modify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/underbar_579ffb_ffffff"
+                            android:text="@string/word_modified"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_48pt" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:text="@string/word_sync_instagram"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:drawableStart="@drawable/ic_sns_instagram"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_instagram"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                            android:id="@+id/switch_sync_instagram"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:thumb="@drawable/btn_onoff_circle"
+                            app:switchMinWidth="@dimen/width_150"
+                            app:track="@drawable/switch_setting" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_2"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/color_f0f0f0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sync_instagram_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_sync_instagram_url"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <TextView
+                            android:id="@+id/text_sync_instagram_url_modify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/underbar_579ffb_ffffff"
+                            android:text="@string/word_modified"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_48pt" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_40"
+                    android:text="@string/word_sync_kakaostory"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_44pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingEnd="@dimen/width_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:drawableStart="@drawable/ic_sns_kakaostory"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_kakao_story"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                            android:id="@+id/switch_sync_kakao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:thumb="@drawable/btn_onoff_circle"
+                            app:switchMinWidth="@dimen/width_150"
+                            app:track="@drawable/switch_setting" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_2"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/color_f0f0f0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sync_kakao_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_160"
+                        android:paddingStart="@dimen/width_40"
+                        android:paddingEnd="@dimen/width_40"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_sync_kakao_url"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/color_232323"
+                            android:textSize="@dimen/textSize_48pt" />
+
+                        <TextView
+                            android:id="@+id/text_sync_kakao_url_modify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/underbar_579ffb_ffffff"
+                            android:text="@string/word_modified"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_48pt" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

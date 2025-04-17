@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apps.goods.ui.SaleGoodsSampleActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/commerce_sample_top"/>
+
+    <ImageView
+        android:id="@+id/image_sale_goods_sample1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/commerce_sample_list_1"/>
+
+    <ImageView
+        android:id="@+id/image_sale_goods_sample2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/commerce_sample_list_2"/>
+
+    <ImageView
+        android:id="@+id/image_sale_goods_sample3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/commerce_sample_list_3"/>
+
+    <ImageView
+        android:id="@+id/image_sale_goods_sample4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/commerce_sample_list_4"/>
+</LinearLayout>

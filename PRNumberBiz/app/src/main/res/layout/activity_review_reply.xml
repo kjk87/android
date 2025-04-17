@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apps.goods.ui.ReviewReplyActivity">
+
+    <TextView
+        android:id="@+id/text_review_reply_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginTop="@dimen/height_60"
+        android:layout_marginEnd="@dimen/width_54"
+        android:textColor="@color/color_737373"
+        android:textSize="@dimen/textSize_38pt" />
+
+    <TextView
+        android:id="@+id/text_review_reply_review_reg_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_marginEnd="@dimen/width_54"
+        android:textColor="@color/color_b7b7b7"
+        android:textSize="@dimen/textSize_34pt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginTop="@dimen/height_60"
+        android:layout_marginEnd="@dimen/width_54"
+        android:layout_marginBottom="@dimen/height_60"
+        android:background="@color/color_f0f0f0" />
+
+    <EditText
+        android:id="@+id/edit_review_reply_contents"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1000"
+        android:layout_marginStart="@dimen/width_54"
+        android:layout_marginEnd="@dimen/width_54"
+        android:background="@drawable/border_color_dcdcdc_4px"
+        android:gravity="top"
+        android:hint="@string/hint_input_review_of_reply"
+        android:maxLength="500"
+        android:padding="@dimen/width_30"
+        android:textSize="@dimen/textSize_38pt" />
+
+    <TextView
+        android:id="@+id/text_edit_review_reply_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_38pt"
+        android:layout_marginTop="@dimen/height_30"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/width_54"
+        android:textColor="@color/color_bbbbbb"/>
+
+
+</LinearLayout>

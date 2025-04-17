@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pplus.prnumberbiz.apps.mobilegift.ui.MobileGiftPurchaseActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_60"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72"
+                android:paddingTop="@dimen/height_60">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_receiver"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/text_mobile_gift_purchase_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width_30"
+                        android:background="@drawable/underbar_8700ff_ffffff"
+                        android:text="@string/word_plus_add"
+                        android:textColor="@color/color_8700ff"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+
+                    <TextView
+                        android:id="@+id/text_mobile_gift_purchase_my_customer"
+                        android:layout_width="@dimen/width_237"
+                        android:layout_height="@dimen/height_92"
+                        android:background="@drawable/border_color_3a3a3a_2px"
+                        android:gravity="center"
+                        android:text="@string/word_my_customer"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_mobile_gift_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/text_mobile_gift_target_all_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/height_30"
+                    android:background="@drawable/underbar_bbbbbb_ffffff"
+                    android:text="@string/word_total_delete"
+                    android:textColor="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_30pt"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:background="@color/color_d8d8d8"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_18"
+                android:background="@color/color_f0f0f0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/height_60"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72"
+                android:paddingTop="@dimen/height_60">
+
+                <ImageView
+                    android:id="@+id/image_mobile_gift_purchase"
+                    android:layout_width="@dimen/width_460"
+                    android:layout_height="@dimen/width_460"
+                    android:background="@drawable/border_color_d8d8d8_2px"
+                    android:padding="@dimen/width_2"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width_30"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_mobile_gift_purchase_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_48pt"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/text_mobile_gift_purchase_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_60"
+                        android:text="@string/format_product_price"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_38pt"/>
+
+                    <TextView
+                        android:id="@+id/text_mobile_gift_purchase_use_term"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/format_use_term"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_38pt"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:background="@color/color_d8d8d8"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_18"
+                android:background="@color/color_f0f0f0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_60"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72"
+                android:paddingTop="@dimen/height_60">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/word_msg"/>
+
+                <EditText
+                    android:id="@+id/edit_mobile_gift_purchase_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_245"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:background="@drawable/border_color_a0a0a0_2px"
+                    android:gravity="top"
+                    android:hint="@string/msg_input_mobile_gift_msg"
+                    android:padding="@dimen/width_40"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_46pt"/>
+
+                <TextView
+                    android:id="@+id/text_mobile_gift_purchase_msg_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="@dimen/textSize_34pt"
+                    android:layout_marginTop="@dimen/height_14"
+                    android:text="@string/format_count_per"
+                    android:textColor="@color/color_bbbbbb"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72"
+                android:background="@color/color_e1e1e1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_46pt"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_purchase_info"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_60"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/word_retention_cash"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_36pt"/>
+
+                <TextView
+                    android:id="@+id/text_mobile_gift_purchase_charge_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/word_charge_cash"
+                    android:textColor="@color/color_8700ff"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize_36pt"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/text_mobile_gift_purchase_retention_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_160"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="@dimen/textSize_52pt"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_60"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/word_product_price"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_36pt"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/text_mobile_gift_purchase_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_160"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_52pt"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72"
+                android:textStyle="bold"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_60"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/word_total_product_count"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_36pt"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/text_mobile_gift_purchase_product_count"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_160"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_52pt"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:background="@color/color_d8d8d8"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160"
+                android:paddingRight="@dimen/width_72"
+                android:paddingLeft="@dimen/width_72">
+
+                <TextView
+                    android:id="@+id/text_mobile_gift_purchase_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/textSize_62pt"
+                    android:textColor="@color/black"
+                    android:text="@string/html_total_purchase_price"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mobile_gift_purchase_pg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_100"
+                    android:background="@color/color_e1e1e1"
+                    android:paddingLeft="@dimen/width_72"
+                    android:paddingRight="@dimen/width_72">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/word_pay_method"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_46pt"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/height_100"
+                    android:layout_marginLeft="@dimen/width_72"
+                    android:layout_marginRight="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_100"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_mobile_gift_purchase_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/btn_write_radio"
+                        android:drawablePadding="@dimen/width_20"
+                        android:gravity="center_vertical"
+                        android:text="@string/word_credit_card"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_46pt"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/text_mobile_gift_purchase_depositless"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:drawableLeft="@drawable/btn_write_radio"
+                            android:drawablePadding="@dimen/width_20"
+                            android:gravity="center_vertical"
+                            android:text="@string/word_depositless"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_46pt"/>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_mobile_gift_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160"
+                android:background="@color/color_8700ff"
+                android:gravity="center"
+                android:text="@string/msg_gift"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_40pt"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_60"
+                android:layout_marginBottom="@dimen/height_150"
+                android:text="@string/word_input_info"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_90pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_name"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_40pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_verification_me_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_name"
+                android:textColor="@color/color_737373"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_mobile_number"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_40pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_verification_me_mobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_msg_input_mobile_number"
+                android:inputType="number"
+                android:textColor="@color/color_737373"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_birthday"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_40pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_verification_me_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_birthday"
+                android:inputType="number"
+                android:textColor="@color/color_737373"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_country"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_40pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="@dimen/width_620"
+                android:layout_height="@dimen/height_150"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/bg_selectbox_shadow"
+                android:orientation="horizontal"
+                android:padding="@dimen/width_10">
+
+                <TextView
+                    android:id="@+id/text_verification_me_local"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_transparent_select_left"
+                    android:gravity="center"
+                    android:text="@string/word_local"
+                    android:textColor="@color/color_737373_ffffff"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:id="@+id/text_verification_me_foreigner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_transparent_select_right"
+                    android:gravity="center"
+                    android:text="@string/word_foreigner"
+                    android:textColor="@color/color_737373_ffffff"
+                    android:textSize="@dimen/textSize_38pt" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_gender"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_40pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="@dimen/width_620"
+                android:layout_height="@dimen/height_150"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/bg_selectbox_shadow"
+                android:orientation="horizontal"
+                android:padding="@dimen/width_10">
+
+                <TextView
+                    android:id="@+id/text_verification_me_male"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_transparent_select_left"
+                    android:gravity="center"
+                    android:text="@string/word_male"
+                    android:textColor="@color/color_737373_ffffff"
+                    android:textSize="@dimen/textSize_38pt" />
+
+                <TextView
+                    android:id="@+id/text_verification_me_female"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_transparent_select_right"
+                    android:gravity="center"
+                    android:text="@string/word_female"
+                    android:textColor="@color/color_737373_ffffff"
+                    android:textSize="@dimen/textSize_38pt" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_110"
+                android:text="@string/word_mobile_corp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_verification_me_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:layout_marginTop="@dimen/height_30"
+                android:background="@drawable/border_color_dcdcdc_4px"
+                android:drawableEnd="@drawable/ic_input_arrow"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_select"
+                android:paddingStart="@dimen/width_20"
+                android:paddingEnd="@dimen/width_20"
+                android:textColor="@color/color_737373"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/textSize_48pt"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_verification_me_verification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160"
+                android:layout_marginTop="@dimen/height_150"
+                android:layout_marginBottom="@dimen/height_100"
+                android:background="@drawable/btn_blue"
+                android:gravity="center"
+                android:text="@string/word_req_auth"
+                android:textColor="@color/color_ffffff_a3a3a3"
+                android:textSize="@dimen/textSize_40pt"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180">
+
+            <ImageView
+                android:id="@+id/image_alert_sale_order_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/height_20"
+                android:layout_marginEnd="@dimen/height_20"
+                android:src="@drawable/ic_top_close" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120"
+            android:paddingStart="@dimen/width_72"
+            android:paddingEnd="@dimen/width_72">
+
+            <TextView
+                android:id="@+id/text_alert_sale_order_normal_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/ic_goods_basic"
+                android:drawablePadding="@dimen/width_15"
+                android:gravity="center"
+                android:text="@string/word_normal_menu"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_42pt" />
+
+            <TextView
+                android:id="@+id/text_alert_sale_order_normal_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_42pt" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120"
+            android:paddingStart="@dimen/width_72"
+            android:paddingEnd="@dimen/width_72">
+
+            <TextView
+                android:id="@+id/text_alert_sale_order_hotdeal_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/ic_goods_hotdeal"
+                android:drawablePadding="@dimen/width_15"
+                android:gravity="center"
+                android:text="@string/word_hotdeal_goods"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_42pt" />
+
+            <TextView
+                android:id="@+id/text_alert_sale_order_hotdeal_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_42pt" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120"
+            android:paddingStart="@dimen/width_72"
+            android:paddingEnd="@dimen/width_72">
+
+            <TextView
+                android:id="@+id/text_alert_sale_order_plus_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/ic_goods_plus"
+                android:drawablePadding="@dimen/width_15"
+                android:gravity="center"
+                android:text="@string/word_plus_goods"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_42pt" />
+
+            <TextView
+                android:id="@+id/text_alert_sale_order_plus_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_42pt" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_4"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginEnd="@dimen/width_72"
+            android:background="@color/color_f0f0f0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180"
+            android:layout_marginBottom="@dimen/height_60"
+            android:paddingStart="@dimen/width_72"
+            android:paddingEnd="@dimen/width_72">
+
+            <TextView
+                android:id="@+id/text_alert_sale_order_total_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_alert_sale_order_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_ff4646"
+                android:textSize="@dimen/textSize_44pt"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

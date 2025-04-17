@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/height_513"
+    android:gravity="center">
+
+<ImageView
+    android:id="@+id/image_post_pager_image"
+    android:layout_width="@dimen/width_840"
+    android:layout_height="@dimen/height_630"
+    android:layout_marginRight="@dimen/width_40"/>
+</RelativeLayout>

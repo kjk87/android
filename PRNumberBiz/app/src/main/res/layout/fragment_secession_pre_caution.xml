@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_90"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_setting_info"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_15"
+                android:text="@string/msg_account_leave_attention"
+                android:textColor="@color/color_ff0000"
+                android:textSize="@dimen/textSize_40pt"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_90"
+            android:text="@string/msg_account_leave_caution"
+            android:textColor="@color/color_585858"
+            android:textSize="@dimen/textSize_48pt"/>
+
+        <TextView
+            android:id="@+id/tv_secession_caution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_30"
+            android:background="@color/color_f2f2f2"
+            android:padding="@dimen/width_48"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_90"
+            android:text="@string/msg_account_leave_method"
+            android:textColor="@color/color_585858"
+            android:textSize="@dimen/textSize_48pt"/>
+
+        <TextView
+            android:id="@+id/tv_secession_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_30"
+            android:background="@color/color_f2f2f2"
+            android:text="@string/msg_leave_method"
+            android:padding="@dimen/width_48"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_90"
+            android:text="@string/msg_account_leave_standby"
+            android:textColor="@color/color_585858"
+            android:textSize="@dimen/textSize_48pt"/>
+
+        <TextView
+            android:id="@+id/tv_secession_pre_caution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_30"
+            android:background="@color/color_f2f2f2"
+            android:padding="@dimen/width_48"/>
+
+        <TextView
+            android:id="@+id/text_secession"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_136"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/height_110"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_105"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="@string/msg_account_disabled_secession"
+            android:textColor="@color/color_ffffff_a3a3a3"
+            android:textSize="@dimen/textSize_40pt"/>
+
+    </LinearLayout>
+
+</ScrollView>

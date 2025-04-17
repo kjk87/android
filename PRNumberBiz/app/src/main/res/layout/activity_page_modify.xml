@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.pages.ui.PageModifyActivity">
+
+    <ImageView
+        android:id="@+id/image_page_modify_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_4d000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_168">
+
+        <ImageView
+            android:id="@+id/image_page_modify_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/width_40"
+            android:src="@drawable/ic_top_prev_white" />
+
+        <TextView
+            android:id="@+id/text_page_modify_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/width_72"
+            android:drawableStart="@drawable/ic_edit_check"
+            android:drawablePadding="@dimen/width_15"
+            android:gravity="center"
+            android:text="@string/word_complete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_48pt" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_72"
+        android:layout_marginTop="@dimen/height_420"
+        android:layout_marginEnd="@dimen/width_72"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_page_modify_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underbar_80ffffff_transparent"
+            android:gravity="center"
+            android:paddingBottom="@dimen/height_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_106pt"
+            android:maxLength="12"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_page_modify_catchphrase"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_140"
+            android:layout_marginTop="@dimen/height_30"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:maxLength="36"
+            android:background="@drawable/border_color_80ffffff_2px"
+            android:textSize="@dimen/textSize_50pt" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_840"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/img_edit_photo_bottom_cover" />
+
+
+</RelativeLayout>

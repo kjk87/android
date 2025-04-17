@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp"
+            app:expanded="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_goods_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fitsSystemWindows="true"
+                android:visibility="visible"
+                app:contentScrim="@color/white"
+                app:expandedTitleTextAppearance="@android:color/transparent"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_60"
+                        android:text="@string/word_goods_list_title"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_76pt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_2"
+                        android:text="@string/msg_goods_list_description"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_41pt"/>
+
+                    <TextView
+                        android:id="@+id/text_goods_list_view_goods"
+                        android:layout_width="@dimen/width_530"
+                        android:layout_height="@dimen/height_135"
+                        android:layout_marginTop="@dimen/height_40"
+                        android:background="@drawable/btn_commerce_white_bg"
+                        android:gravity="center"
+                        android:text="@string/msg_view_real_time_goods"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_33pt"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/text_goods_list_reg"
+                        android:layout_width="@dimen/width_530"
+                        android:layout_height="@dimen/height_135"
+                        android:layout_marginBottom="@dimen/height_100"
+                        android:background="@drawable/btn_commerce_red_bg"
+                        android:gravity="center"
+                        android:text="@string/msg_reg_goods"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_33pt"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:background="@color/color_f8f8f8">
+
+                <TextView
+                    android:id="@+id/text_goods_list_total_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_32pt"/>
+
+                <TextView
+                    android:id="@+id/text_goods_list_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/width_72"
+                    android:drawableRight="@drawable/ic_sort_down"
+                    android:drawablePadding="@dimen/width_15"
+                    android:text="@string/word_sort_recent"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_32pt"/>
+
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_goods_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_goods_list_not_exist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/msg_not_exist_goods"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_40pt"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

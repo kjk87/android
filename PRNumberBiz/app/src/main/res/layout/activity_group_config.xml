@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_group_config_notExist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_558"
+        android:drawablePadding="@dimen/height_57"
+        android:drawableTop="@drawable/ic_folder_no"
+        android:text="@string/msg_no_group"
+        android:textColor="@color/color_585858"
+        android:textSize="@dimen/textSize_55pt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_174"
+            android:background="@color/color_f2f2f2"
+            android:paddingLeft="@dimen/width_72"
+            android:paddingRight="@dimen/width_72"
+            android:paddingTop="@dimen/height_42"
+            android:text="@string/msg_group_config_description"
+            android:textColor="@color/color_313131"
+            android:textSize="@dimen/textSize_40pt"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:background="@color/color_dfdfdf"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_group_config"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

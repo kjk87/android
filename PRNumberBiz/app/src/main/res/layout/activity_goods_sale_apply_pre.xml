@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.goods.ui.GoodsSaleApplyPreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word_goods"
+            android:textColor="@color/color_232323"
+            android:layout_marginTop="@dimen/height_40"
+            android:textSize="@dimen/textSize_90pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_goods_sale_apply_description1"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_90pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/msg_goods_sale_apply_description2"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_42pt"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_commerce_intro"
+            android:layout_marginTop="@dimen/height_40"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_70"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_apply_pre_other_goods"
+                android:layout_width="@dimen/width_480"
+                android:layout_height="@dimen/height_135"
+                android:background="@drawable/btn_commerce_white_bg"
+                android:textSize="@dimen/textSize_33pt"
+                android:textStyle="bold"
+                android:textColor="@color/color_737373"
+                android:gravity="center"
+                android:text="@string/msg_view_other_goods"/>
+
+            <TextView
+                android:id="@+id/text_apply_pre_apply"
+                android:layout_width="@dimen/width_480"
+                android:layout_height="@dimen/height_135"
+                android:background="@drawable/btn_commerce_red_bg"
+                android:textSize="@dimen/textSize_33pt"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/msg_apply_service"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

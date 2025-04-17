@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_180">
+
+    <TextView
+        android:id="@+id/text_franchise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/width_72"
+        android:gravity="center"
+        android:textColor="@color/color_737373_ff4646"
+        android:textSize="@dimen/textSize_40pt"/>
+
+    <ImageView
+        android:id="@+id/image_franchise_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_gift_checkbox_on"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_e5e5e5"/>
+
+</RelativeLayout>

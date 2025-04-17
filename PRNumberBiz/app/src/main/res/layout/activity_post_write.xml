@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_579ffb"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_579ffb"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_168"
+            android:paddingStart="@dimen/width_40"
+            android:paddingEnd="@dimen/width_72">
+
+            <ImageView
+                android:id="@+id/image_post_reg_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_top_prev_white" />
+
+
+            <TextView
+                android:id="@+id/text_post_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/word_reg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_48pt" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_post_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_702"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/color_f0f0f0">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_post_add_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/msg_click_photo_reg"
+                                android:textColor="@color/color_579ffb"
+                                android:textSize="@dimen/textSize_36pt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/msg_post_write_description1"
+                                android:textColor="@color/color_b7b7b7"
+                                android:textSize="@dimen/textSize_29pt" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager_post_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" />
+
+                    <com.pplus.prnumberbiz.apps.common.ui.custom.DirectionIndicator
+                        android:id="@+id/indicator_post_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/height_30" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_post_add_image2"
+                        android:layout_width="@dimen/width_260"
+                        android:layout_height="@dimen/height_130"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/width_20"
+                        android:layout_marginBottom="@dimen/width_20"
+                        android:background="@drawable/btn_commerce_photo_add">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/word_plus_add_image"
+                            android:textColor="@color/color_579ffb"
+                            android:textSize="@dimen/textSize_32pt" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edit_post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_160"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:hint="@string/msg_input_title"
+                    android:paddingStart="@dimen/width_40"
+                    android:paddingEnd="@dimen/width_40"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_48pt" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_2"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/color_f0f0f0" />
+
+                <EditText
+                    android:id="@+id/edit_post_contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_400"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="@string/msg_input_contents"
+                    android:inputType="textMultiLine"
+                    android:lines="10"
+                    android:maxLength="2000"
+                    android:minHeight="@dimen/height_200"
+                    android:paddingStart="@dimen/width_40"
+                    android:paddingTop="@dimen/height_40"
+                    android:paddingEnd="@dimen/width_40"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_48pt" />
+
+                <EditText
+                    android:id="@+id/edit_post_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_160"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="@string/hint_input_post_url"
+                    android:inputType="textUri"
+                    android:minHeight="@dimen/height_200"
+                    android:paddingStart="@dimen/width_40"
+                    android:paddingTop="@dimen/height_40"
+                    android:paddingEnd="@dimen/width_40"
+                    android:textColor="@color/color_232323"
+                    android:textColorHint="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_48pt" />
+
+                <TextView
+                    android:id="@+id/text_post_reg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_160"
+                    android:layout_marginStart="@dimen/width_72"
+                    android:layout_marginTop="@dimen/height_80"
+                    android:layout_marginEnd="@dimen/width_72"
+                    android:background="@drawable/btn_white"
+                    android:gravity="center"
+                    android:text="@string/msg_reg_post"
+                    android:textColor="@color/color_579ffb"
+                    android:textSize="@dimen/textSize_40pt"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

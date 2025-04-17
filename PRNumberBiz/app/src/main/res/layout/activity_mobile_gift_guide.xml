@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pplus.prnumberbiz.apps.mobilegift.ui.MobileGiftGuideActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_770">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager_mobile_gift_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+                <com.pplus.prnumberbiz.apps.common.ui.custom.DirectionIndicator
+                    android:id="@+id/indicator_mobile_gift_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/height_30"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/width_72"
+                android:layout_marginRight="@dimen/width_72">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:text="@string/word_notice2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_mobile_gift_notice_description1"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_36pt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:text="@string/word_purchase_cancel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_mobile_gift_notice_description2"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_36pt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_60"
+                    android:text="@string/word_unused_mobile_gift_refund"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/height_110"
+                    android:text="@string/msg_mobile_gift_notice_description3"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_36pt"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

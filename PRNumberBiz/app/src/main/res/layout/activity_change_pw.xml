@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_change_pw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/width_72"
+        android:paddingRight="@dimen/width_72">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_32"
+            android:text="@string/msg_change_password"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_90pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_10"
+            android:text="@string/msg_input_new_password"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_48pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_150"
+            android:text="@string/word_password"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_40pt"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edit_change_pw_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_80"
+            android:layout_marginTop="@dimen/height_30"
+            android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+            android:hint="@string/msg_input_password"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColor="@color/color_232323"
+            android:textColorHint="@color/color_bbbbbb"
+            android:textSize="@dimen/textSize_48pt" />
+
+        <TextView
+            android:id="@+id/text_change_pw_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160"
+            android:layout_marginTop="@dimen/height_150"
+            android:background="@drawable/btn_blue"
+            android:gravity="center"
+            android:text="@string/word_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_40pt"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/width_72"
+        android:paddingRight="@dimen/width_72">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_56"
+            android:text="@string/msg_push_preview_description"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_34pt"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_marginTop="@dimen/height_20"
+            android:background="@color/color_ebebeb"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_150"
+            android:layout_marginTop="@dimen/height_60"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_push_preview_androidTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/color_transparent_underbar_black"
+                    android:text="@string/word_android"
+                    android:textColor="@color/color_cfcfcf_000000"
+                    android:textSize="@dimen/textSize_50pt"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/width_2"
+                android:layout_height="@dimen/height_30"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_ebebeb"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_push_preview_iphoneTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/color_transparent_underbar_black"
+                    android:text="@string/word_iphone"
+                    android:textColor="@color/color_cfcfcf_000000"
+                    android:textSize="@dimen/textSize_50pt"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_60"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/width_72"
+            android:paddingRight="@dimen/width_72">
+
+            <View
+                android:id="@+id/image_push_review_phone_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_413"
+                android:background="@drawable/img_mylist_android_bg_top"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_mylist_phone_bg_bottom"
+                android:paddingLeft="@dimen/width_70"
+                android:paddingRight="@dimen/width_70">
+
+                <LinearLayout
+                    android:id="@+id/layout_push_preview_android"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_294"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/width_30"
+                    android:paddingRight="@dimen/width_40"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/image_push_preview_android"
+                        android:layout_width="@dimen/width_144"
+                        android:layout_height="@dimen/width_144"
+                        android:layout_marginRight="@dimen/width_20"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_gift_profile_default"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_push_preview_android_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_42pt"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/text_push_preview_android_contents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_10"
+                            android:maxLines="2"
+                            android:text="안드로이드 푸시입니다."
+                            android:textColor="@color/color_565656"
+                            android:textSize="@dimen/textSize_33pt"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_push_preview_iphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_50"
+                        android:background="@drawable/img_mylist_iphone_push_bg_top"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/img_mylist_iphone_push_bg_middle"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/width_30"
+                        android:paddingRight="@dimen/width_30">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/img_mylist_pr_logo"
+                            android:drawablePadding="@dimen/width_20"
+                            android:gravity="center"
+                            android:text="@string/app_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_36pt"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/text_push_preview_iphone_contents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_20"
+                            android:maxLines="5"
+                            android:text="아이폰 푸시입니다."
+                            android:textColor="@color/color_565656"
+                            android:textSize="@dimen/textSize_33pt"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_50"
+                        android:background="@drawable/img_mylist_iphone_push_bg_bottom"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

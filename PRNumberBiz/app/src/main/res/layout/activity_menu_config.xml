@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_menu_config"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            app:expanded="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <RelativeLayout
+                    android:id="@+id/layout_category_menu_select_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_180"
+                    android:background="@color/color_f8f8f8">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/width_72"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_category_menu_select_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_b7b7b7"
+                            android:textSize="@dimen/textSize_40pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/msg_select_goods_desc"
+                            android:textColor="@color/color_b7b7b7"
+                            android:textSize="@dimen/textSize_34pt"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <com.pplus.prnumberbiz.apps.common.ui.custom.SlidingTabLayout
+                    android:id="@+id/tabLayout_category_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_140"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="@dimen/width_72" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_2"
+                    android:background="@color/color_d8d8d8" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_18"
+                    android:background="@color/color_f8f8f8" />
+
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager_category_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <TextView
+        android:id="@+id/text_menu_config_reg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_180"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_579ffb"
+        android:gravity="center"
+        android:text="@string/msg_reg_menu"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_44pt"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_menu_config_not_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_menu_config_not_exist1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_not_exist_menu"
+            android:textColor="@color/color_579ffb"
+            android:textSize="@dimen/textSize_60pt" />
+
+        <TextView
+            android:id="@+id/text_menu_config_not_exist2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_20"
+            android:gravity="center"
+            android:text="@string/msg_not_exist_menu_desc"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_40pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_menu_config_reg_menu2"
+            android:layout_width="@dimen/width_760"
+            android:layout_height="@dimen/height_160"
+            android:layout_marginTop="@dimen/height_60"
+            android:background="@drawable/btn_blue"
+            android:gravity="center"
+            android:text="@string/msg_reg_menu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_40pt"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

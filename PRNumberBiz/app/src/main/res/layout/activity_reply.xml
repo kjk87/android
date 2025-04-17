@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_reply"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_reply_not_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_40pt"
+        android:textColor="@color/color_737373"
+        android:layout_centerInParent="true"
+        android:text="@string/msg_not_exist_reply"/>
+
+
+
+</RelativeLayout>

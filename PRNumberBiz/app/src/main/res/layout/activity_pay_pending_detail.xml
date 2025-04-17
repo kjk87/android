@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/text_pay_pending_detail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_40"
+                android:layout_marginLeft="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_40"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_46pt"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_deposit_bank"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_pay_pending_detail_bank"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_48pt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_receiver"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_mname"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_48pt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_deposit_account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_pay_pending_detail_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_48pt"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_deposit_price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_pay_pending_detail_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_48pt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_deposit_period"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_pay_pending_detail_period"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_48pt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_72"
+                android:layout_marginRight="@dimen/width_72"
+                android:textSize="@dimen/textSize_34pt"
+                android:textColor="@color/color_bbbbbb"
+                android:layout_marginTop="@dimen/height_206"
+                android:text="@string/msg_pay_pending_detail_description"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

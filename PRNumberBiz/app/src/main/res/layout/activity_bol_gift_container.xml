@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pplus.prnumberbiz.apps.bol.ui.BolGiftContainerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_56"
+            android:text="@string/msg_gift_container_description"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_34pt"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_20"
+            android:background="@color/color_ebebeb"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_gift_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

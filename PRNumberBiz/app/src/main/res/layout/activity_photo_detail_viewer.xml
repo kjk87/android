@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black">
+
+    <com.pplus.prnumberbiz.apps.common.ui.custom.ImageViewTouchViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_0d000000">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_52pt"
+            android:textStyle="normal"/>
+
+        <ImageView
+            android:id="@+id/image_photo_detail_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            style="?metaButtonBarButtonStyle"
+            android:clickable="true"
+            android:background="@drawable/ic_tittle_x"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

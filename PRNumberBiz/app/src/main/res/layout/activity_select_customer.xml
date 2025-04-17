@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_select_customer_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_117"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_60"
+            android:background="@drawable/underbar_000000_ffffff_10px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_select_customer_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_input_nickname"
+                android:maxLength="12"
+                android:paddingLeft="@dimen/width_40"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/height_42"/>
+
+            <ImageView
+                android:id="@+id/image_select_customer_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_gift_search"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/width_72"
+            android:paddingRight="@dimen/width_72">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_select_my_customer_select_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_38pt"/>
+
+                <TextView
+                    android:id="@+id/text_select_my_customer_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_2"
+                    android:textColor="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_34pt"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_gift_search_customer_select_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/width_20"
+                android:drawableRight="@drawable/btn_contact_checkbox"
+                android:gravity="center_vertical"
+                android:text="@string/word_total"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_38pt"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_40"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_gift_search_my_customer_side"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="@dimen/width_183"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/width_36">
+
+                        <TextView
+                            android:id="@+id/text_select_customer_all"
+                            android:layout_width="@dimen/width_132"
+                            android:layout_height="@dimen/height_148"
+                            android:gravity="center"
+                            android:text="@string/word_all_en"
+                            android:textColor="@color/color_000000_9e9e9e"
+                            android:textSize="@dimen/textSize_48pt"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/text_select_customer_plus"
+                            android:layout_width="@dimen/width_132"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_40"
+                            android:drawableTop="@drawable/btn_gift_plus"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/height_10"
+                            android:text="@string/word_plus"
+                            android:visibility="gone"
+                            android:textColor="@color/color_000000_9e9e9e"
+                            android:textSize="@dimen/textSize_30pt"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_select_customer_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+                <View
+                    android:layout_width="@dimen/width_3"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_e5e5e5"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_select_customer_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_select_customer_notExist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_210"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_gift_search_customer_notExist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/format_msg_gift_search_my_customer_notExist1"
+                        android:textColor="@color/color_737373"
+                        android:textSize="@dimen/textSize_40pt"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

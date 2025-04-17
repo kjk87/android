@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_cash_billing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140"
+                android:background="@color/color_f0f0f0">
+
+                <TextView
+                    android:id="@+id/text_billing_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/msg_select_charge_cash"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_36pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginTop="@dimen/height_40"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <TextView
+                    android:id="@+id/text_billing_retention_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/word_retention_cash"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_50pt" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/text_cash_billing_retention_cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_70pt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_money_unit"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_28pt" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_2"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_d8d8d8" />
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_cash_billing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_60"
+                android:layout_marginRight="@dimen/width_72"
+                android:overScrollMode="never"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <TextView
+                android:id="@+id/text_cash_billing_charge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140"
+                android:layout_marginLeft="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_80"
+                android:layout_marginRight="@dimen/width_72"
+                android:background="@drawable/btn_blue"
+                android:gravity="center"
+                android:text="@string/msg_charge"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_38pt" />
+
+            <LinearLayout
+                android:id="@+id/layout_cash_billing_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_72"
+                android:layout_marginTop="@dimen/height_40"
+                android:layout_marginRight="@dimen/width_72"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

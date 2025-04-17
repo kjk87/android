@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_180"
+            android:text="@string/msg_goods_use_title"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_64pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_goods_use_alert_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_3"
+            android:layout_marginEnd="@dimen/width_72"
+            android:gravity="center"
+            android:text="@string/format_goods_use_alert"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_40pt"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:background="@color/color_f0f0f0"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_40"
+            android:layout_marginEnd="@dimen/width_72"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/height_120"
+            android:paddingEnd="@dimen/width_72"
+            android:paddingStart="@dimen/width_72">
+
+            <ImageView
+                android:id="@+id/image_goods_use_alert_image"
+                android:layout_width="@dimen/width_360"
+                android:layout_height="@dimen/height_270"
+                android:layout_marginEnd="@dimen/width_40"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_goods_use_alert_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_39pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/text_goods_use_alert_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_12"
+                    android:textColor="@color/color_737373"
+                    android:textSize="@dimen/textSize_36pt"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_goods_use_alert_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:layout_marginTop="@dimen/height_180"
+            android:background="@color/color_579ffb">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/word_confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scroll_add_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_54"
+            android:layout_marginRight="@dimen/width_54"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_90"
+                android:text="@string/msg_agree_add_terms"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_84pt"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/height_60"
+                android:layout_marginTop="@dimen/height_60"
+                android:background="@color/color_d8d8d8"/>
+
+            <CheckBox
+                android:id="@+id/check_add_terms_total_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_check"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/width_20"
+                android:text="@string/word_total_agree"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_39pt"/>
+
+
+            <LinearLayout
+                android:id="@+id/layout_add_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_110"
+                android:layout_marginTop="@dimen/height_60"
+                android:orientation="vertical"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

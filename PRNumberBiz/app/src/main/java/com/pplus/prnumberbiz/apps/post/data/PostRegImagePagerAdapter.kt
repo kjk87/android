@@ -1,0 +1,217 @@
+package com.pplus.prnumberbiz.apps.post.data
+
+import android.content.Context
+import androidx.viewpager.widget.PagerAdapter
+import android.util.SparseArray
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.model.GlideUrl
+import com.bumptech.glide.request.RequestOptions
+import com.pple.pplus.utils.part.utils.StringUtils
+import com.pplus.prnumberbiz.Const
+import com.pplus.prnumberbiz.R
+import com.pplus.prnumberbiz.core.network.model.dto.Attachment
+import kotlinx.android.synthetic.main.item_post_write_image.view.*
+import java.util.*
+
+
+class PostRegImagePagerAdapter : androidx.viewpager.widget.PagerAdapter {
+
+
+    var mDataList: ArrayList<Attachment>? = null
+    var viewList = arrayListOf<View>()
+    var listener: OnItemChangeListener? = null
+    private val mInflater: LayoutInflater
+
+
+    interface OnItemChangeListener {
+
+        fun onChange()
+    }
+
+    constructor(context: Context) : super() {
+        mInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        mDataList = ArrayList<Attachment>()
+        viewList = arrayListOf<View>()
+//        views = SparseArray()
+    }
+
+    fun setOnItemChangeListener(listener: OnItemChangeListener) {
+        this.listener = listener
+    }
+
+    fun getItem(position: Int): Attachment {
+
+        return mDataList!!.get(position)
+    }
+
+    fun getDataList(): MutableList<Attachment>? {
+
+        return mDataList
+    }
+
+    fun add(data: Attachment) {
+
+        if (mDataList == null) {
+            mDataList = ArrayList<Attachment>()
+        }
+        mDataList!!.add(data)
+        notifyDataSetChanged()
+    }
+
+    fun insertAttach(index: String, attachment: Attachment) {
+
+        mDataList!![index.toInt()] = attachment
+        notifyDataSetChanged()
+    }
+
+    fun addAll(dataList: List<Attachment>) {
+
+        if (this.mDataList == null) {
+            this.mDataList = ArrayList<Attachment>()
+        }
+
+        this.mDataList!!.addAll(dataList)
+        notifyDataSetChanged()
+    }
+
+    fun replaceData(position: Int, data: Attachment) {
+
+        mDataList!!.removeAt(position)
+        mDataList!!.add(position, data)
+        notifyDataSetChanged()
+    }
+
+    fun clear() {
+
+        mDataList = ArrayList<Attachment>()
+        notifyDataSetChanged()
+    }
+
+    fun setDataList(dataList: ArrayList<Attachment>) {
+
+        this.mDataList = dataList
+        notifyDataSetChanged()
+    }
+
+    override fun destroyItem(container: ViewGroup, postion: Int, obj: Any) {
+
+        var v: View? = obj as View
+        if (v is ImageView) {
+//            val imgView = v as ImageView?
+            v.setImageDrawable(null)
+        }
+        container.removeView(v)
+        v = null
+    }
+
+    override fun getCount(): Int {
+
+        return mDataList!!.size
+    }
+
+    override fun instantiateItem(container: ViewGroup, position: Int): Any {
+        val item = mDataList!![position]
+        val view = mInflater.inflate(R.layout.item_post_write_image, container, false)
+
+        val imageView = view.image_post_write
+
+        var id = ""
+        if(StringUtils.isNotEmpty(item.id)){
+            id = item.id
+        }
+
+        val glideUrl = GlideUrl("${Const.API_URL}attachment/image?id=${id}")
+        Glide.with(view.context).load(glideUrl).apply(RequestOptions().centerCrop().placeholder(R.drawable.prnumber_default_img).error(R.drawable.prnumber_default_img)).into(imageView)
+
+
+//        LogUtil.e("attached", "attach size : {}", attachedList.size)
+//        if (position < attachedList.size) {
+//
+//            val glideUrl = GlideUrl("${Const.API_URL}attachment/image?id=${attachedList[position]}")
+//            Glide.with(view.context).load(glideUrl).apply(RequestOptions().centerCrop().placeholder(R.drawable.prnumber_default_img).error(R.drawable.prnumber_default_img)).into(imageView)
+//
+//        } else {
+//            val data = this.dataList[position - attachedList.size]
+//            LogUtil.e("ImageAdapter", data)
+//            Glide.with(view.context).load(data).apply(RequestOptions().fitCenter().placeholder(R.drawable.prnumber_default_img).error(R.drawable.prnumber_default_img).diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true)).into(imageView)
+//        }
+
+        val image_delete = view.image_post_write_delete
+        image_delete.visibility = View.VISIBLE
+        image_delete.setOnClickListener {
+            mDataList!!.removeAt(position)
+            notifyDataSetChanged()
+            if(listener != null){
+                listener!!.onChange()
+            }
+
+//            if (position < attachedList.size) {
+//                attachedList.removeAt(position)
+//                removeView(position)
+//            } else {
+//
+//                if(attachList[position - attachedList.size] != null){
+//                    attachList.remove(position - attachedList.size)
+//                    dataList.removeAt(position - attachedList.size)
+//                    removeView(position)
+//                }
+//            }
+
+        }
+
+//        imageView.setOnClickListener {
+//            val builder = AlertBuilder.Builder()
+//            builder.setLeftText(view.context.getString(R.string.word_cancel))
+//            builder.setContents(view.context.getString(R.string.word_add), view.context.getString(R.string.word_delete))
+//
+//            builder.setStyle_alert(AlertBuilder.STYLE_ALERT.LIST_CENTER).setOnAlertResultListener(object : OnAlertResultListener {
+//
+//                override fun onCancel() {
+//
+//                }
+//
+//                override fun onResult(event_alert: AlertBuilder.EVENT_ALERT) {
+//
+//                    when (event_alert.getValue()) {
+//                        1 -> (view.context as GoodsRegActivity).goPostGallery()
+//                        2 -> {
+//                            if (position < attachedList.size) {
+//                                attachedList.removeAt(position)
+//                            } else {
+//                                attachList.remove(position - attachedList.size)
+//                            }
+//                            notifyDataSetChanged()
+//                        }
+//                    }
+//                }
+//            }).builder().show(view.context)
+//        }
+        container.addView(view)
+        return view
+    }
+
+    override fun isViewFromObject(view: View, `object`: Any): Boolean {
+
+        return view === `object`
+    }
+
+    override fun getItemPosition(`object`: Any): Int {
+
+        return POSITION_NONE
+    }
+
+    companion object {
+
+        fun <C> asList(sparseArray: SparseArray<C>?): List<C>? {
+            if (sparseArray == null) return null
+            val arrayList = ArrayList<C>(sparseArray.size())
+            for (i in 0 until sparseArray.size())
+                arrayList.add(sparseArray.valueAt(i))
+            return arrayList
+        }
+    }
+}

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.goods.ui.SaleGoodsPreActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/commerce_sample_intro"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_300"
+            android:background="@color/color_f8f8f8">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_72"
+                android:layout_marginStart="@dimen/width_72"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_sale_goods_title1"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_45pt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_sale_goods_title2"
+                    android:textColor="@color/color_232323"
+                    android:textSize="@dimen/textSize_58pt"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_90"
+            android:text="@string/msg_sale_goods_description1"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_45pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_5"
+            android:text="@string/msg_sale_goods_description1_1"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_33pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_90"
+            android:text="@string/msg_sale_goods_description2"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_45pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_5"
+            android:text="@string/msg_sale_goods_description2_1"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_33pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_90"
+            android:text="@string/msg_sale_goods_description3"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_45pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_5"
+            android:text="@string/msg_sale_goods_description3_1"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_33pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_90"
+            android:text="@string/msg_sale_goods_description4"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_45pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_5"
+            android:text="@string/msg_sale_goods_description4_1"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_33pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_90"
+            android:text="@string/msg_sale_goods_description5"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_45pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/width_72"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_5"
+            android:text="@string/msg_sale_goods_description5_1"
+            android:textColor="@color/color_b7b7b7"
+            android:textSize="@dimen/textSize_33pt"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_sale_goods_sample"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_140"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_100"
+        android:layout_marginEnd="@dimen/width_72"
+        android:layout_marginStart="@dimen/width_72"
+        android:background="@drawable/btn_blue"
+        android:gravity="center"
+        android:text="@string/msg_view_sale_goods_sample"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_38pt"/>
+
+    <TextView
+        android:id="@+id/text_apply_sale_goods"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_140"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_100"
+        android:layout_marginEnd="@dimen/width_72"
+        android:layout_marginStart="@dimen/width_72"
+        android:background="@drawable/btn_blue"
+        android:gravity="center"
+        android:text="@string/msg_apply_sale_goods"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_38pt"
+        android:visibility="gone"/>
+</RelativeLayout>

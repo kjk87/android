@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_74"
+            android:gravity="center"
+            android:text="@string/msg_gift_search_description1"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_40pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_117"
+            android:layout_marginLeft="@dimen/width_72"
+            android:layout_marginRight="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_60"
+            android:background="@drawable/underbar_000000_ffffff_10px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_gift_search_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_input_nickname"
+                android:paddingLeft="@dimen/width_40"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_bbbbbb"
+                android:textSize="@dimen/height_42"/>
+
+            <ImageView
+                android:id="@+id/image_gift_search_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_gift_search"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_gift_search_total_count"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_87"
+            android:layout_marginTop="@dimen/height_80"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_72"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_38pt"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_gift_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</RelativeLayout>

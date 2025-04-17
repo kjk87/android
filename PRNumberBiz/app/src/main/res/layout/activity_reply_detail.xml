@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_reply_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/width_72"
+            android:paddingRight="@dimen/width_72"
+            android:paddingTop="@dimen/height_50"
+            android:paddingBottom="@dimen/height_50"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_reply_profileImage"
+                android:layout_width="@dimen/width_70"
+                android:layout_height="@dimen/width_70"
+                android:layout_marginRight="@dimen/width_30"
+                android:src="@drawable/img_post_profile_default"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_reply_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_32pt"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/text_reply_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_565656"
+                    android:textSize="@dimen/textSize_32pt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_reply_regDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/width_30"
+                    android:textColor="@color/color_bbbbbb"
+                    android:textSize="@dimen/textSize_32pt"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_reply_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_reply_detail_not_exist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_40pt"
+                android:textColor="@color/color_737373"
+                android:layout_centerInParent="true"
+                android:text="@string/msg_not_exist_reply_of_reply"/>
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:background="@color/color_ebebeb"/>
+
+        <include
+            layout="@layout/layout_input_reply"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

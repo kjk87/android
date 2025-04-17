@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_100">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_push_en"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_200"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <TextView
+                    android:layout_width="@dimen/width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/word_push_notice"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_40pt"/>
+
+                <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                    android:id="@+id/switch_alim_push"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:thumb="@drawable/btn_onoff_circle"
+                    app:switchMinWidth="@dimen/width_150"
+                    app:track="@drawable/switch_setting"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_pr_shop"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_200"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="@dimen/width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_review_post"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_40pt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_10"
+                        android:text="@string/msg_push_review_post"
+                        android:textColor="@color/color_bbbbbb"
+                        android:textSize="@dimen/textSize_36pt"/>
+
+
+                </LinearLayout>
+
+                <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                    android:id="@+id/switch_alim_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:thumb="@drawable/btn_onoff_circle"
+                    app:switchMinWidth="@dimen/width_150"
+                    app:track="@drawable/switch_setting"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"
+                android:background="@color/color_ebebeb"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_200"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="@dimen/width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_reply"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_40pt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_10"
+                        android:text="@string/msg_push_reply"
+                        android:textColor="@color/color_bbbbbb"
+                        android:textSize="@dimen/textSize_36pt"/>
+
+                </LinearLayout>
+
+                <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                    android:id="@+id/switch_alim_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:thumb="@drawable/btn_onoff_circle"
+                    app:switchMinWidth="@dimen/width_150"
+                    app:track="@drawable/switch_setting"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"
+                android:background="@color/color_ebebeb"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_200"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <LinearLayout
+                    android:layout_width="@dimen/width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_plus"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_40pt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_10"
+                        android:text="@string/msg_push_plus"
+                        android:textColor="@color/color_bbbbbb"
+                        android:textSize="@dimen/textSize_36pt"/>
+
+                </LinearLayout>
+
+                <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                    android:id="@+id/switch_alim_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:thumb="@drawable/btn_onoff_circle"
+                    app:switchMinWidth="@dimen/width_150"
+                    app:track="@drawable/switch_setting"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/color_f3f3f3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width_72"
+                android:text="@string/word_operation"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_36pt"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_200"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72">
+
+                <LinearLayout
+                    android:layout_width="@dimen/width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_cash_exhausted"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_40pt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_10"
+                        android:text="@string/msg_push_cash_exhausted"
+                        android:textColor="@color/color_bbbbbb"
+                        android:textSize="@dimen/textSize_36pt"/>
+
+                </LinearLayout>
+
+                <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                    android:id="@+id/switch_alim_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:thumb="@drawable/btn_onoff_circle"
+                    app:switchMinWidth="@dimen/width_150"
+                    app:track="@drawable/switch_setting"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"
+                android:background="@color/color_ebebeb"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_200"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_72"
+                android:paddingRight="@dimen/width_72"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="@dimen/width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_note"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_40pt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_10"
+                        android:text="@string/msg_push_note"
+                        android:textColor="@color/color_bbbbbb"
+                        android:textSize="@dimen/textSize_36pt"/>
+
+                </LinearLayout>
+
+                <com.pplus.prnumberbiz.apps.common.ui.custom.SafeSwitchCompat
+                    android:id="@+id/switch_alim_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:thumb="@drawable/btn_onoff_circle"
+                    app:switchMinWidth="@dimen/width_150"
+                    app:track="@drawable/switch_setting"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"
+                android:background="@color/color_ebebeb"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

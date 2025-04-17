@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/width_54"
+        android:paddingRight="@dimen/width_54">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_60"
+            android:text="@string/word_mobile_number"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_39pt"/>
+
+        <EditText
+            android:id="@+id/edit_change_mobile_mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/height_18"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/msg_input_mobile_number"
+            android:inputType="number"
+            android:textColor="@color/color_232323"
+            android:textColorHint="@color/color_d0d0d0"
+            android:textSize="@dimen/textSize_45pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_120"
+            android:text="@string/word_verification_number"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_39pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_18"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_change_mobile_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/msg_input_verification_number"
+                android:inputType="number"
+                android:textColor="@color/color_232323"
+                android:textColorHint="@color/color_d0d0d0"
+                android:textSize="@dimen/textSize_45pt"/>
+
+            <TextView
+                android:id="@+id/text_change_mobile_auth"
+                android:layout_width="@dimen/width_210"
+                android:layout_height="@dimen/height_120"
+                android:background="@drawable/btn_login_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/word_req_auth"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

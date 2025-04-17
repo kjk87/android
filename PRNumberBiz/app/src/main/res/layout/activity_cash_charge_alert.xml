@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.cash.ui.CashChargeAlertActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/width_90"
+        android:layout_marginStart="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_180">
+
+            <ImageView
+                android:id="@+id/image_cash_charge_alert_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/width_20"
+                android:layout_marginTop="@dimen/width_20"
+                android:src="@drawable/ic_top_close"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word_cash_charge_step"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_64pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_180"
+            android:layout_marginTop="@dimen/height_60"
+            android:gravity="center"
+            android:text="@string/msg_cash_charge_step1"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_35pt"/>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_cash_charge_inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:background="@color/color_579ffb">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableStart="@drawable/ic_popup_tel"
+                android:drawablePadding="@dimen/width_15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt"
+                android:text="@string/msg_inquiry_charge"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

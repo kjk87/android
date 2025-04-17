@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_60">
+
+        <RelativeLayout
+            android:id="@+id/layout_person_main_not_exist_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_650"
+                android:layout_marginStart="@dimen/width_62"
+                android:layout_marginEnd="@dimen/width_62"
+                android:background="@drawable/bg_box_shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/width_60"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_post_desc1"
+                        android:textColor="@color/color_232323"
+                        android:textSize="@dimen/textSize_50pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_post_desc2"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_person_main_not_exist_post_reg"
+                        android:layout_width="@dimen/width_350"
+                        android:layout_height="@dimen/height_100"
+                        android:layout_marginTop="@dimen/height_30"
+                        android:background="@drawable/btn_home_event_goods"
+                        android:gravity="center"
+                        android:text="@string/msg_reg_post"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_28pt"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/width_320"
+                android:layout_height="@dimen/height_611"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/height_70"
+                android:layout_marginEnd="@dimen/width_132"
+                android:src="@drawable/img_home_event_news_guide" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_person_main_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/width_72"
+                android:text="@string/word_page_news"
+                android:textColor="@color/color_232323"
+                android:textSize="@dimen/textSize_60pt"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/text_person_main_post_reg"
+                android:layout_width="@dimen/width_270"
+                android:layout_height="@dimen/height_100"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/width_72"
+                android:background="@drawable/btn_home_event_goods">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/word_reg_post"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_28pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bf000000"
+    android:fitsSystemWindows="true"
+    tools:context=".apps.cash.ui.CashChargeAlertActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/width_90"
+        android:layout_marginEnd="@dimen/width_90"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_180"
+            android:text="@string/word_sale_price_alert_title1"
+            android:textColor="@color/color_232323"
+            android:textSize="@dimen/textSize_64pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_40"
+            android:layout_marginEnd="@dimen/width_72"
+            android:gravity="center"
+            android:text="@string/msg_sale_price_alert1"
+            android:textColor="@color/color_737373"
+            android:textSize="@dimen/textSize_42pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_60"
+            android:text="@string/word_sale_price_alert_title2"
+            android:textColor="@color/color_ff4646"
+            android:textSize="@dimen/textSize_42pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/width_72"
+            android:layout_marginTop="@dimen/height_40"
+            android:layout_marginEnd="@dimen/width_72"
+            android:gravity="center"
+            android:text="@string/msg_sale_price_alert2"
+            android:textColor="@color/color_ff4646"
+            android:textSize="@dimen/textSize_42pt"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout_sale_price_info_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_171"
+            android:layout_marginTop="@dimen/height_180"
+            android:background="@color/color_579ffb">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/word_confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_39pt"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/height_54"
+              android:layout_marginTop="@dimen/height_20"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/edit_add_youtube"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_120"
+        android:layout_weight="1"
+        android:background="@drawable/underbar_dcdcdc_ffffff_4px"
+        android:hint="@string/hint_msg_input_youtube_url"
+        android:lineSpacingExtra="@dimen/height_20"
+        android:textColor="@color/color_737373"
+        android:textColorHint="@color/color_bbbbbb"
+        android:inputType="textUri"
+        android:textSize="@dimen/textSize_48pt"/>
+
+    <ImageView
+        android:id="@+id/image_add_youtube_delete"
+        android:layout_width="@dimen/width_99"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:scaleType="center"
+        android:src="@drawable/btn_search_delete"/>
+
+
+</LinearLayout>
